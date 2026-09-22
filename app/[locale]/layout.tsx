@@ -85,6 +85,11 @@ export const metadata: Metadata = {
 // The id is public, it ships in the HTML of every page.
 const DATAFAST_ID = 'dfid_Ng89GKEbaJuLkJLiRk3eQ'
 
+// Umami Cloud, on trial next to DataFast so the two can be compared on the same
+// traffic. Also cookieless, so it changes nothing about consent. Proxied through
+// this domain as well, see the rewrites in next.config.mjs.
+const UMAMI_ID = '7784b827-3d87-4266-985b-5cc299c63a36'
+
 const geist = Geist({
   variable: '--font-geist',
   subsets: ['latin'],
@@ -134,6 +139,11 @@ export default async function RootLayout({
           src="/js/script.js"
           data-website-id={DATAFAST_ID}
           data-domain="mucahitk.com"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/js/u.js"
+          data-website-id={UMAMI_ID}
           strategy="afterInteractive"
         />
       </body>
