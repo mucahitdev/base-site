@@ -1,0 +1,128 @@
+export const meta = {
+  title: "iPadOS 27 Pencereleri: Ayak Uyduran Bir Ana Ekran Kurun",
+  description:
+    "iPadOS 27, iPadOS 26 ile gelen masaüstü tarzı pencere sistemini geliştiriyor. iPad Ana Ekranınızı buna göre nasıl düzenleyeceğinizi, uygulamaları pencere olarak açan bir başlatıcı widget'ı dahil, burada anlatıyoruz.",
+  keywords: [
+    "ipados 27 çoklu görev",
+    "ipados 27 pencere sistemi",
+    "ipad ana ekran düzeni 2026",
+    "ipad uygulama pencere boyutlandırma",
+    "ipad başlatıcı widget",
+    "ipados 27 ipuçları",
+  ],
+  ogTitle: "iPadOS 27 Pencereleri için Tasarlanmış Bir iPad Ana Ekranı",
+  ogDescription:
+    "Pencereler, iPad'de uygulama açma biçiminizi değiştirdi. Ana Ekranınız da onlarla birlikte değişmeli.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline: "iPadOS 27 Pencereleri: Ayak Uyduran Bir Ana Ekran Kurun",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Bir widget'tan açılan uygulama pencere olarak mı açılır?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. Widget karesi, uygulamayı Ana Ekran simgesiyle aynı şekilde başlatır; bu yüzden pencere olarak açılır ve diğerleri gibi yeniden boyutlandırılıp düzenlenebilir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iPad'de hâlâ uygulama klasörlerine ihtiyacım var mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Eskisi kadar değil. Bir klasör, açmak için bir dokunuş, kapatmak için bir dokunuş demek. Başlatıcı widget ise aynı uygulamaları sayfada görünür tutar; üst üste birkaç pencere açtığınızda bu daha çok işe yarar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iPadOS 27'de Ana Ekran düzenlemesini geri alabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. iPadOS 27, simgeler titrerken geri al ve ileri al düğmeleri ekliyor; böylece bir düzeni deneyip ondan geri dönebiliyorsunuz.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPadOS 27 Pencereleri: Ayak Uyduran Bir Ana Ekran Kurun
+
+**Kısa cevap:** iPadOS 27, iPadOS 26'nın masaüstü tarzı pencere sistemini koruyor ve pencere açmayı, boyutlandırmayı, aralarında geçiş yapmayı hızlandırıyor. Bu, iyi bir Ana Ekranın neye benzediğini değiştiriyor: artık uygulamaları tek tek değil, arka arkaya açıyorsunuz, yani sayfa bir sürü uygulamayı tek dokunuş uzaklıkta tutmalı. Bunu klasörlerden daha iyi yapan şey bir başlatıcı widget.
+
+---
+
+## Kısaca ne değişti
+
+iPadOS 26, iPad'i pencereli bir makineye dönüştürdü. iPadOS 27 aynı yönde devam ediyor: pencereler daha hızlı tepki veriyor, iPad'de çalışan iPhone uygulamaları yeniden boyutlandırılabiliyor ve Ana Ekran, simgeleri yeniden düzenlerken geri al ile ileri al kazanıyor.
+
+Düzen açısından iki küçük değişiklik önemli. Kilit Ekranı saati yeniden konumlandırılabiliyor, yani duvar kağıdınızın yarısı artık kapalı değil. Ayrıca Liquid Glass'ın Ayarlar'da bir sürgüsü var, böylece arayüzün ne kadar saydam görüneceğine siz karar veriyorsunuz.
+
+## Pencereler Ana Ekranınızı neden değiştirir
+
+Tek seferde tek uygulamayla Ana Ekran, içinden geçtiğiniz bir yerdir. Pencerelerle birlikte bir hazırlık alanına dönüşür. Bir işin ikinci, üçüncü ve dördüncü uygulamasını çekmek için ona geri dönersiniz ve bunu günde pek çok kez yaparsınız.
+
+Bu da iki şeyi pahalı hale getirir:
+
+- **Klasörler.** Her seferinde iki dokunuş.
+- **Arama.** Tek bir uygulama için hızlı, alışkanlık olarak yavaş ve ellerinizi düzenden koparır.
+
+Bunun yerine istediğiniz şey, yirmi ya da otuz uygulamanın görünür ve tek dokunuş uzaklıkta olduğu bir sayfa.
+
+## Düzen
+
+1. **Sayfanın en üstünde tek bir başlatıcı widget.** [WidgetLoft](/widgetloft)'tan geniş bir Ekstra Büyük widget ekleyin ve onu çalışırken açtığınız tüm uygulamaların bulunduğu bir gruba bağlayın. Küçük simgeler 72 kareye kadar sığar; [iPad başlatıcı rehberinde tam kapasite tablosu var](/blog/ipad-app-launcher-widget).
+2. **Türe göre değil, işe göre gruplayın.** Pencere temelli bir akış, uygulamaları kümeler halinde açar: notlar artı tarayıcı artı mail. Kümeleri ızgarada bir arada tutun ya da her birine kendi klasör karesini verin.
+3. **Dock'u her zaman açık olan iki üç uygulamaya saklayın.** Dock her sayfada durur, bu yüzden ara sıra kullanılan hiçbir şey için doğru yer değil.
+4. **Sayfanın alt yarısını boş bırakın.** Pencereler oraya iniyor. Kenarlarına kadar dolu bir sayfa, asıl yaptığınız işle çekişir.
+
+Her kare, uygulamasını normal bir pencere olarak açar, çünkü kare uygulamayı tam olarak simgesinin açtığı gibi başlatır.
+
+## Sayfalar yerine alt klasörler
+
+Ana Ekran sayfaları arasında kaydırmak göründüğünden yavaştır ve pencereler açıkken sayfa noktalarını çoğu zaman hiç göremezsiniz. Bir başlatıcı widget'ın klasör kareleri **yerinde** açılır: klasör karesine dokunun, ızgara onun içeriğine geçer, geri karesine dokunup yukarı çıkın.
+
+Bu size sayfadan ayrılmadan birkaç sayfalık derinlik verir. Her klasör 100 uygulama ve 20 alt klasöre kadar tutar ve istediğiniz kadar derin iç içe geçebilirsiniz. Widget'ın bıraktığınız yerde durmak yerine kendini en üst seviyeye sıfırlaması için Ayarlar, Widget bölümünde **Klasöre otomatik dön**'ü açın.
+
+## Ayarlamaya değer iki şey daha
+
+**Düzenlerken geri alma.** Simgeler titreyene kadar Ana Ekrana uzun basın, geri al ve ileri al'ı göreceksiniz. Her şeyi rahatça taşıyın; artık kesin karar vermiş olmuyorsunuz.
+
+**Liquid Glass sürgüsü.** Ayarlar, Görünüm, Liquid Glass. Daha hafif bir arayüz için Şeffaf'a doğru çekin, yoğun bir duvar kağıdında metin ve denetimlerin daha net okunmasını istiyorsanız Renkli'ye doğru çekin. Siz sürüklerken canlı olarak yeniden çizilir.
+
+## Sık sorulan sorular
+
+**Bir widget'tan açılan uygulama pencere olarak mı açılır?**
+Evet. Kare, uygulamayı simgeyle aynı şekilde başlatır; pencere olarak açılır ve diğerleri gibi davranır.
+
+**iPad'de hâlâ uygulama klasörlerine ihtiyacım var mı?**
+Eskisi kadar değil. Başlatıcı widget içindeki klasör kareleri aynı ihtiyacı sayfadan ayrılmadan karşılar.
+
+**iPadOS 27'de Ana Ekran düzenlemesini geri alabilir miyim?**
+Evet, simgeler titrerken geri al ve ileri al orada.
+
+---
+
+Sayfayı bir kez kurun, pencere kullanmak angarya olmaktan çıkar. Başlatıcıyı oluşturmak için [WidgetLoft'u App Store'dan indirin](/widgetloft/download).

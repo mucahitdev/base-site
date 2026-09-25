@@ -1,0 +1,163 @@
+export const meta = {
+  title:
+    "How to Turn an iPad Widget Into an App Launcher (Up to 72 Apps)",
+  description:
+    "The iPad has had a wide Extra Large widget since iPadOS 15. Learn how to add it, how many app tiles fit at each icon size, and how to make every tile open an app directly.",
+  keywords: [
+    "ipad app launcher widget",
+    "ipad extra large widget",
+    "ipad home screen widget apps",
+    "launch apps from widget ipad",
+    "ipad widget folder",
+    "ipados 27 widgets",
+  ],
+  ogTitle: "Turn an iPad Widget Into a 72-App Launcher",
+  ogDescription:
+    "The iPad's wide Extra Large widget holds up to 72 app tiles, and every tile can open an app.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Turn an iPad Widget Into an App Launcher (Up to 72 Apps)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-app-launcher-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Turn an iPad widget into an app launcher",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Build a group",
+        text: "Open WidgetLoft on the iPad, create a group and add the apps you want on the launcher.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add the widget",
+        text: "Long-press the iPad Home Screen, tap Edit, then Add Widget, choose WidgetLoft and swipe to the Extra Large size.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pick the group",
+        text: "Long-press the new widget, tap Edit Widget and choose the group you built.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose an icon size",
+        text: "Pick an icon size for the group: small icons fit up to 72 tiles on the iPad's wide Extra Large widget, medium 50, large 32 and extra large 18.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How many apps fit in an iPad widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "On the iPad's wide Extra Large widget, up to 72 tiles with small icons, 50 with medium, 32 with large and 18 with extra large icons. Sub-folders hold more apps behind a single tile.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do the tiles open the real apps?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Each tile launches the installed app directly from the Home Screen widget, without opening WidgetLoft first.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which iPads support the Extra Large widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The wide Extra Large size has been available on iPad since iPadOS 15 and appears in the widget gallery when you swipe past the Large size.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Turn an iPad Widget Into an App Launcher (Up to 72 Apps)
+
+**Quick answer:** the iPad has a widget size the iPhone never had: the wide Extra Large, about twice as wide as it is tall. Add it from the Home Screen widget gallery, point it at a [WidgetLoft](/widgetloft) group, and you get a grid of up to 72 app tiles that each open the real app.
+
+The iPad's Home Screen has always had the opposite problem to the iPhone's. There is plenty of space, and loose icons swim in it. A widget that holds a tidy grid of apps uses that width instead of wasting it.
+
+---
+
+## Why a launcher widget suits the iPad
+
+An iPad page fits far more icons than a phone page, so folders fill up and everything becomes two taps away: open the folder, find the app. A launcher widget flattens that. The apps sit on the page itself, visible, and one tap away.
+
+It also survives the thing that breaks most iPad layouts: you rotate the device. A widget keeps its internal grid, so your arrangement does not reflow the way loose icons do.
+
+## Step-by-step
+
+1. **Build a group.** Open [WidgetLoft](/widgetloft) on the iPad, create a group and add the apps you want. Tap **New Folder** for anything that deserves a level of its own.
+2. **Add the widget.** Long-press the Home Screen, tap **Edit**, then **Add Widget**. Choose WidgetLoft and swipe through the sizes until you reach Extra Large.
+3. **Pick the group.** Long-press the new widget, tap **Edit Widget** and choose your group.
+4. **Choose an icon size.** Small icons fit the most apps; extra large icons are the easiest to hit with a thumb while holding the iPad.
+
+Tap a tile and that app opens. Tap a folder tile and it opens inside the widget, with a back tile to step up a level.
+
+## How many apps fit at each icon size
+
+| Icon size | Wide Extra Large (iPad) | Large |
+| --- | --- | --- |
+| Small | 72 | 49 |
+| Medium | 50 | 36 |
+| Large | 32 | 25 |
+| Extra large | 18 | 16 |
+
+The wide Extra Large widget lays out 12 columns by 6 rows at the small icon size. That is more apps than most people keep on a whole iPad page.
+
+If you would rather have a tall block than a wide one, iOS 27 and iPadOS 27 add a portrait Extra Large size that fits up to 77 tiles. There is a separate guide on [the Extra Large widget as a one-page launcher](/blog/extra-large-widget-ios-27).
+
+## Three iPad layouts worth copying
+
+**The work page.** One wide Extra Large widget at the top with everything you use for work, small icons, no folders. The rest of the page stays empty on purpose.
+
+**The split page.** A wide Extra Large widget for apps and the space under it for a calendar or notes widget. You get a launcher and a glance in one page.
+
+**The category page.** Six folder tiles at large icon size, one per area: work, media, games, travel, finance, utilities. Each opens in place on the widget. It reads like a menu rather than a wall.
+
+## What goes in a tile besides apps
+
+A tile does not have to be an app. WidgetLoft also takes websites, contacts (call or message someone in one tap), Shortcuts, and blank spacers you use to shape the grid. On an iPad, spacers matter more than on a phone: a 12-column grid looks better in deliberate blocks than as one solid slab.
+
+## Common questions
+
+**How many apps fit in an iPad widget?**
+Up to 72 with small icons on the wide Extra Large size, 50 with medium, 32 with large and 18 with extra large icons. Sub-folders add more behind a single tile.
+
+**Do the tiles open the real apps?**
+Yes, straight from the Home Screen widget. WidgetLoft does not open first.
+
+**Which iPads support the Extra Large widget?**
+Every iPad on iPadOS 15 or later. Swipe past Large in the widget gallery and it is there.
+
+A note on limits: the free version of WidgetLoft holds up to 21 apps in its library, which is less than one full iPad widget. WidgetLoft Pro lifts that.
+
+---
+
+Want your iPad page to work like a menu instead of a pile? [Download WidgetLoft on the App Store](/widgetloft/download).

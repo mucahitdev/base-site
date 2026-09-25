@@ -1,0 +1,128 @@
+export const meta = {
+  title: "Fenêtres d'iPadOS 27 : un écran d'accueil à la hauteur",
+  description:
+    "iPadOS 27 affine la gestion des fenêtres façon ordinateur apparue avec iPadOS 26. Voici comment organiser l'écran d'accueil de l'iPad autour d'elle, avec un widget lanceur qui ouvre les apps en fenêtres.",
+  keywords: [
+    "multitâche ipados 27",
+    "fenêtres ipados 27",
+    "organiser l'écran d'accueil ipad 2026",
+    "redimensionner les fenêtres d'apps ipad",
+    "widget lanceur d'apps ipad",
+    "astuces ipados 27",
+  ],
+  ogTitle: "Un écran d'accueil iPad conçu pour les fenêtres d'iPadOS 27",
+  ogDescription:
+    "Les fenêtres ont changé la façon d'ouvrir les apps sur iPad. Votre écran d'accueil devrait changer avec elles.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline: "Fenêtres d'iPadOS 27 : un écran d'accueil à la hauteur",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Ouvrir une app depuis un widget lui donne-t-il une fenêtre ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui. Une case de widget lance l'app exactement comme son icône sur l'écran d'accueil : elle s'ouvre donc en fenêtre et peut être redimensionnée et disposée comme n'importe quelle autre.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ai-je encore besoin de dossiers d'apps sur iPad ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Moins qu'avant. Un dossier coûte une touche pour l'ouvrir et une pour le fermer. Un widget lanceur garde les mêmes apps visibles sur la page, ce qui compte davantage quand vous ouvrez plusieurs fenêtres à la suite.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Peut-on annuler un réagencement de l'écran d'accueil sur iPadOS 27 ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui. iPadOS 27 ajoute des boutons annuler et rétablir pendant que les icônes frémissent, ce qui permet d'essayer une disposition puis de revenir en arrière.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Fenêtres d'iPadOS 27 : un écran d'accueil à la hauteur
+
+**Réponse rapide :** iPadOS 27 conserve la gestion des fenêtres façon ordinateur d'iPadOS 26 et rend l'ouverture, le redimensionnement et le changement de fenêtre plus rapides. Cela change ce à quoi ressemble un bon écran d'accueil : vous ouvrez maintenant plusieurs apps à la suite plutôt qu'une à la fois, la page doit donc mettre beaucoup d'apps à une touche. Un widget lanceur fait ça mieux que des dossiers.
+
+---
+
+## Ce qui a changé, en bref
+
+iPadOS 26 a fait de l'iPad une machine à fenêtres. iPadOS 27 continue dans la même direction : les fenêtres réagissent plus vite, les apps iPhone exécutées sur un iPad peuvent être redimensionnées, et l'écran d'accueil lui-même gagne annuler et rétablir pendant que vous réagencez les icônes.
+
+Deux changements plus discrets comptent pour la disposition. L'horloge de l'écran verrouillé peut être repositionnée, votre fond d'écran n'est donc plus à moitié masqué. Et Liquid Glass a désormais un curseur dans Réglages : c'est vous qui décidez du degré de transparence de l'interface.
+
+## Pourquoi les fenêtres changent votre écran d'accueil
+
+Avec une app à la fois, l'écran d'accueil est un lieu de passage. Avec les fenêtres, c'est une zone de préparation. Vous y revenez pour chercher la deuxième, la troisième et la quatrième app d'une tâche, et vous le faites plusieurs fois par jour.
+
+Deux choses deviennent alors coûteuses :
+
+- **Les dossiers.** Deux touches à chaque fois.
+- **La recherche.** Rapide pour une app, lente comme habitude, et elle éloigne vos mains de la disposition.
+
+Ce que vous voulez à la place, c'est une page où vingt ou trente apps sont visibles et à une touche.
+
+## La disposition
+
+1. **Un widget lanceur, en haut de la page.** Ajoutez un large widget Très grand depuis [WidgetLoft](/widgetloft) et pointez-le vers un groupe contenant toutes les apps que vous ouvrez au travail. Les petites icônes tiennent jusqu'à 72 cases ; il y a un [tableau complet des capacités dans le guide du lanceur iPad](/blog/ipad-app-launcher-widget).
+2. **Groupez par tâche, pas par type.** Un flux de travail à fenêtres ouvre les apps par grappes : notes plus navigateur plus mail. Gardez les grappes ensemble dans la grille, ou donnez à chacune sa propre case de dossier.
+3. **Réservez le Dock aux deux ou trois apps toujours ouvertes.** Le Dock survit à toutes les pages : c'est donc le mauvais endroit pour quoi que ce soit d'occasionnel.
+4. **Laissez vide la moitié basse de la page.** C'est là que les fenêtres atterrissent. Une page remplie jusqu'aux bords se bat contre ce que vous êtes réellement en train de faire.
+
+Chaque case ouvre son app en fenêtre normale, parce que la case lance l'app exactement comme son icône le fait.
+
+## Des sous-dossiers plutôt que des pages
+
+Balayer entre les pages de l'écran d'accueil est plus lent qu'il n'y paraît, et avec des fenêtres ouvertes vous ne voyez souvent même pas les points de page. Les cases de dossier d'un widget lanceur s'ouvrent **sur place** : touchez une case de dossier, la grille passe à son contenu, touchez la case retour pour remonter.
+
+Vous obtenez la profondeur de plusieurs pages sans quitter la page. Chaque dossier contient jusqu'à 100 apps et 20 sous-dossiers, et vous pouvez imbriquer aussi profondément que vous voulez. Activez **Retour automatique au dossier** dans Réglages, Widget, pour que le widget se remette au niveau supérieur au lieu de rester là où vous l'avez laissé.
+
+## Deux autres choses à régler
+
+**Annuler pendant l'organisation.** Maintenez le doigt sur l'écran d'accueil jusqu'à ce que les icônes frémissent et vous verrez annuler et rétablir. Déplacez librement : vous ne vous engagez plus.
+
+**Le curseur Liquid Glass.** Réglages, Apparence, Liquid Glass. Tirez-le vers Transparent pour une interface plus légère, vers Teinté si vous voulez que le texte et les commandes se lisent mieux sur un fond d'écran chargé. Il se redessine en direct pendant que vous faites glisser.
+
+## Questions fréquentes
+
+**Ouvrir une app depuis un widget lui donne-t-il une fenêtre ?**
+Oui. La case lance l'app comme l'icône le fait : elle s'ouvre en fenêtre et se comporte comme n'importe quelle autre.
+
+**Ai-je encore besoin de dossiers d'apps sur iPad ?**
+Moins qu'avant. Les cases de dossier d'un widget lanceur couvrent le même besoin sans quitter la page.
+
+**Peut-on annuler un réagencement de l'écran d'accueil sur iPadOS 27 ?**
+Oui, annuler et rétablir sont là pendant que les icônes frémissent.
+
+---
+
+Réglez la page une fois et les fenêtres cessent d'être une corvée. [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download) pour construire le lanceur.

@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Widget trên Màn hình khóa iPad: chúng làm được gì và cách mở ứng dụng",
+  description:
+    "Cách thêm widget vào Màn hình khóa iPad, ô hình chữ nhật đó chứa được những gì, và cách biến nó thành chỗ mở ứng dụng chỉ bằng một lần chạm.",
+  keywords: [
+    "widget màn hình khóa ipad",
+    "cách thêm widget màn hình khóa ipad",
+    "ứng dụng trên màn hình khóa ipad",
+    "mở ứng dụng từ màn hình khóa ipad",
+    "tùy chỉnh màn hình khóa ipad",
+    "màn hình khóa ipados 27",
+  ],
+  ogTitle: "Widget trên Màn hình khóa iPad và cách mở ứng dụng từ đó",
+  ogDescription:
+    "Màn hình khóa iPad có chỗ cho widget bên cạnh đồng hồ. Một trong số đó có thể là một hàng ô ứng dụng.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Widget trên Màn hình khóa iPad: chúng làm được gì và cách mở ứng dụng",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-lock-screen-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Thêm widget mở ứng dụng vào Màn hình khóa iPad",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Vào chế độ chỉnh sửa Màn hình khóa",
+        text: "Nhấn giữ Màn hình khóa, sau đó chạm Tùy chỉnh và chọn Màn hình khóa.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mở khu vực widget",
+        text: "Chạm vào khu vực widget bên cạnh hoặc bên dưới đồng hồ để mở bộ chọn widget.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm widget mở ứng dụng",
+        text: "Chọn WidgetLoft và thêm widget hình chữ nhật của nó, rồi chạm vào widget để chọn nhóm sẽ hiển thị.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chạm vào một ứng dụng",
+        text: "Chạm vào một ô trên Màn hình khóa. iPad yêu cầu bạn mở khóa, rồi mở ứng dụng.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Một widget trên Màn hình khóa iPad chứa được bao nhiêu ứng dụng?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Widget hình chữ nhật trên Màn hình khóa chỉ là một hàng: tối đa 4 ô ứng dụng với biểu tượng nhỏ, hoặc 3 ô với biểu tượng lớn.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Chạm vào một ô có mở được ứng dụng khi iPad đang khóa không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. iPadOS yêu cầu bạn mở khóa trước, sau đó ứng dụng mới mở. Đó là quy định của hệ thống, không phải cài đặt của ứng dụng.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Widget trên Màn hình khóa iPad có màu không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. iPadOS vẽ widget trên Màn hình khóa bằng một tông màu duy nhất, nên biểu tượng ứng dụng hiện ra dưới dạng hình đơn sắc thay vì màu riêng của chúng.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Widget trên Màn hình khóa iPad: chúng làm được gì và cách mở ứng dụng
+
+**Trả lời nhanh:** nhấn giữ Màn hình khóa iPad, chạm **Tùy chỉnh**, rồi chạm vào khu vực widget bên cạnh đồng hồ. Mọi thứ bạn thêm vào đó đều hiện ra trước khi mở khóa. Với [WidgetLoft](/widgetloft), một trong những ô đó biến thành một hàng ô ứng dụng, nên thứ đầu tiên bạn chạm sau khi cầm iPad lên chính là ứng dụng bạn thật sự muốn dùng.
+
+---
+
+## Widget nằm ở đâu trên Màn hình khóa iPad
+
+iPad đặt widget của Màn hình khóa thành một cột hoặc một hàng gần đồng hồ, tùy theo hướng máy, và trên iPadOS 27 bạn có thể di chuyển chính đồng hồ để nó không còn che ảnh nền.
+
+Khác với Màn hình chính, ở đây không có lưới nào để lấp đầy. Bạn chỉ có vài ô, và tất cả đều tranh nhau cùng một cái nhìn. Vì thế một ô đầy các ô ứng dụng đáng giá hơn thêm một ô thời tiết trên iPad: iPad là thiết bị bạn cầm lên để làm một việc, và việc đó bắt đầu ở Màn hình khóa.
+
+## Từng bước
+
+1. **Nhấn giữ Màn hình khóa** cho đến khi nút tùy chỉnh xuất hiện, rồi chạm **Tùy chỉnh** và chọn Màn hình khóa.
+2. **Chạm vào khu vực widget** bên cạnh hoặc bên dưới đồng hồ. Bộ chọn widget sẽ mở ra.
+3. **Chọn WidgetLoft** và thêm widget hình chữ nhật của nó.
+4. **Chạm vào widget bạn vừa thêm** và chọn nhóm mà nó hiển thị.
+5. **Chạm Xong, rồi chạm vào một ô.** iPad yêu cầu Face ID hoặc mật mã của bạn, sau đó ứng dụng mở ra.
+
+## Nói thật thì chứa được bao nhiêu
+
+Widget hình chữ nhật trên Màn hình khóa chỉ là một hàng:
+
+| Cỡ biểu tượng | Ô |
+| --- | --- |
+| Nhỏ | 4 |
+| Lớn | 3 |
+
+Đó là giới hạn, và là giới hạn của hệ thống: Apple cho mọi ứng dụng cùng một hình chữ nhật. Vậy hãy xem nó như một thanh lối tắt cho ba hoặc bốn ứng dụng bạn mở đầu tiên, chứ không phải một trình mở ứng dụng. Camera, ghi chú, một trình duyệt và ứng dụng nhắn tin là một bộ thực tế.
+
+Muốn một lưới thật sự thì Màn hình chính mới là chỗ. Có một hướng dẫn về [widget mở ứng dụng trên iPad với tối đa 72 ô](/blog/ipad-app-launcher-widget).
+
+## Hai điều cần lường trước
+
+**Không có màu.** iPadOS vẽ widget trên Màn hình khóa bằng một tông màu duy nhất, nên các biểu tượng đọc ra như bóng đổ. Hãy chọn những ứng dụng có hình dạng khác nhau rõ rệt; bốn hình vuông bo góc màu xám rất khó phân biệt trong một cái nhìn.
+
+**Mở khóa trước.** Chạm vào một ô không thể mở ứng dụng khi iPad đang khóa. Lần chạm được ghi nhận, thiết bị yêu cầu Face ID hoặc mật mã, và ứng dụng mở sau đó. Không cách nào lách được điều này, và bạn cũng chẳng muốn một ứng dụng lách được.
+
+## Nên dùng kèm với
+
+- **Một chiếc đồng hồ đã dời chỗ.** Trên iPadOS 27 bạn có thể di chuyển nó, và việc đó thường giải phóng đúng khoảng trống mà các widget đang tranh nhau.
+- **Một widget mở ứng dụng trên Màn hình chính.** Hàng trên Màn hình khóa cho lần chạm đầu tiên, lưới trên Màn hình chính cho mọi thứ còn lại.
+- **Thanh trượt Liquid Glass** trong Cài đặt, phần Hiển thị, nếu chữ trên widget khó đọc trên ảnh nền của bạn.
+
+## Câu hỏi thường gặp
+
+**Một widget trên Màn hình khóa iPad chứa được bao nhiêu ứng dụng?**
+Bốn với biểu tượng nhỏ, ba với biểu tượng lớn. Chỉ một hàng.
+
+**Chạm vào một ô có mở được ứng dụng khi iPad đang khóa không?**
+Không, iPadOS yêu cầu bạn mở khóa trước rồi mới mở ứng dụng.
+
+**Widget trên Màn hình khóa iPad có màu không?**
+Không. Chúng được vẽ bằng một tông màu, nên các biểu tượng trông đơn sắc.
+
+---
+
+Bạn muốn lần chạm đầu tiên sau khi cầm iPad lên là lần chạm đúng? [Tải WidgetLoft trên App Store](/widgetloft/download).

@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Automações do app Atalhos no iOS 27 que melhoram sua Tela de Início",
+  description:
+    "Cinco automações do Atalhos que valem a pena criar no iOS 27, incluindo o novo acionador de notificação, e como cada uma muda o que a Tela de Início faz por você.",
+  keywords: [
+    "automações atalhos ios 27",
+    "acionador de notificação atalhos",
+    "automação iphone tela de início",
+    "dicas de atalhos ios 27",
+    "automação pessoal iphone",
+    "automatizar widget iphone",
+  ],
+  ogTitle: "Automações do Atalhos no iOS 27 para uma Tela de Início melhor",
+  ogDescription:
+    "O acionador de notificação, automações por horário e por local, e para que elas realmente servem.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline: "Automações do app Atalhos no iOS 27 que melhoram sua Tela de Início",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Criar uma automação pessoal no Atalhos no iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Abra a aba Automação",
+        text: "Abra o app Atalhos e toque em Automação na parte inferior.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adicione uma automação",
+        text: "Toque no botão de mais e escolha um acionador, como um horário do dia, chegar a um lugar ou uma notificação de um app escolhido.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Escolha o que será executado",
+        text: "Adicione as ações que quiser. Deixe Executar imediatamente ativado e Notificar ao executar desativado se quiser que aconteça silenciosamente.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Teste",
+        text: "Provoque a condição uma vez você mesmo e confira o resultado antes de depender dela.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "O que é o acionador de notificação no Atalhos?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "É um acionador de automação que dispara quando um app escolhido envia uma notificação. Chegou com o iOS 27 e pode executar suas ações silenciosamente.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "As automações são executadas sem me perguntar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sim, se Executar imediatamente estiver ativado. Desative também Notificar ao executar e a automação acontece sem nada na tela.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Uma automação pode mudar o que um widget mostra?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ela pode mudar os dados que um widget lê. O WidgetLoft usa isso para os pontos de notificação nos blocos do lançador: a automação registra que um app tem uma notificação e o widget desenha um ponto nesse bloco.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Automações do app Atalhos no iOS 27 que melhoram sua Tela de Início
+
+**Resposta rápida:** abra o Atalhos, toque em **Automação**, depois no botão de mais e escolha um acionador. O novo acionador interessante do iOS 27 dispara quando um app específico envia uma notificação, e pode ser executado silenciosamente. Abaixo estão cinco automações que mudam o que a sua Tela de Início faz, em vez de cinco que só parecem espertas.
+
+---
+
+## 1. Pontos de notificação em um widget lançador
+
+Um widget não consegue ler seus contadores de não lidos; a Apple não os expõe. Mas uma automação pode perceber que um app enviou uma notificação, e um widget pode ler o que a automação escreveu.
+
+É exatamente assim que o [WidgetLoft](/widgetloft) coloca um ponto em um bloco do lançador. Você escolhe os apps, a automação roda silenciosamente quando um deles te notifica, e o bloco fica com um ponto até você abrir o app. Há um passo a passo completo em [selos de notificação em widgets](/blog/notification-badges-on-widgets-iphone).
+
+Dois ajustes importam ao montar a automação: **Executar imediatamente** ativado, **Notificar ao executar** desativado. Caso contrário, cada notificação gera uma segunda notificação, o que é um tipo especial de irritação.
+
+## 2. Uma página de foco que acompanha o horário
+
+Crie uma automação para o seu horário de trabalho que ative um Foco e associe esse Foco a uma página da Tela de Início. O iOS troca de página junto com o Foco, então às nove da manhã o iPhone mostra sua página de trabalho e às seis mostra a outra.
+
+Funciona melhor do que reorganizar ícones à mão, e é a automação que quase todo mundo mantém.
+
+## 3. Chegar a um lugar abre o que você sempre abre
+
+Acionador: **Chegar**, à academia, ao escritório, a uma loja que você visita toda semana. Ação: abrir o app que você sempre abre ali, ou iniciar uma playlist.
+
+Limite isso a lugares que você realmente repete. Uma automação que dispara em um lugar onde você vai duas vezes por ano é ruído que você vai ter que depurar depois.
+
+## 4. Colocar na tomada à noite
+
+Acionador: **Carregador** conectado, com uma condição de horário. Ações: desativar o Modo de Baixo Consumo, checar o alarme, ativar um Foco. Tanto no iPadOS quanto no iOS, essa é a automação mais barata de montar e a que mais se percebe, porque elimina uma tarefa de toda noite.
+
+## 5. Um único bloco que executa uma rotina inteira
+
+Um atalho não precisa morar no app Atalhos. Os blocos do WidgetLoft podem executar atalhos, então um widget lançador pode guardar "sair para o trabalho" ou "começar a gravar" ao lado dos seus apps. Uma grade só, apps e rotinas juntos, sem um widget do Atalhos separado ocupando espaço.
+
+## A que prestar atenção
+
+- **Teste antes de confiar.** Provoque a condição uma vez você mesmo e olhe o resultado. Automações falham silenciosamente.
+- **Confira os botões.** Automações novas, por padrão, perguntam antes de rodar, e o acionador de notificação vem com a automação ativada e o aviso desativado. Vale confirmar os dois.
+- **Tenha poucas.** Dez automações que você esqueceu se comportam como um telefone mal-assombrado. Cinco que você sabe nomear são um sistema.
+
+## Perguntas comuns
+
+**O que é o acionador de notificação?**
+Uma automação que dispara quando um app escolhido envia uma notificação. Chegou com o iOS 27 e pode rodar sem mostrar nada.
+
+**As automações rodam sem me perguntar?**
+Sim, quando Executar imediatamente está ativado. Desative também Notificar ao executar para que seja silenciosa.
+
+**Uma automação pode mudar o que um widget mostra?**
+Ela pode mudar o que um widget lê. Os pontos de notificação nos blocos do WidgetLoft funcionam assim.
+
+---
+
+Quer seus apps, pastas e rotinas em uma única grade na Tela de Início? [Baixe o WidgetLoft na App Store](/widgetloft/download).

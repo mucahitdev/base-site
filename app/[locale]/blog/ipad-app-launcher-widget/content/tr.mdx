@@ -1,0 +1,163 @@
+export const meta = {
+  title:
+    "iPad Widget'ını Uygulama Başlatıcıya Dönüştürme (72 Uygulamaya Kadar)",
+  description:
+    "iPad'de iPadOS 15'ten beri geniş bir Çok Büyük widget var. Nasıl ekleneceğini, her simge boyutunda kaç uygulama karesinin sığdığını ve her karenin bir uygulamayı doğrudan nasıl açacağını öğrenin.",
+  keywords: [
+    "ipad uygulama başlatıcı widget",
+    "ipad çok büyük widget",
+    "ipad ana ekran uygulama widget",
+    "widget'tan uygulama açma ipad",
+    "ipad widget klasörü",
+    "ipados 27 widget",
+  ],
+  ogTitle: "iPad Widget'ını 72 Uygulamalık Başlatıcıya Dönüştürün",
+  ogDescription:
+    "iPad'in geniş Çok Büyük widget'ı 72 uygulama karesine kadar tutar ve her kare bir uygulamayı açabilir.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPad Widget'ını Uygulama Başlatıcıya Dönüştürme (72 Uygulamaya Kadar)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-app-launcher-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "Bir iPad widget'ını uygulama başlatıcıya dönüştürün",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Bir grup oluşturun",
+        text: "iPad'de WidgetLoft'u açın, bir grup oluşturun ve başlatıcıda görmek istediğiniz uygulamaları ekleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget'ı ekleyin",
+        text: "iPad Ana Ekranı'nda basılı tutun, Düzenle'ye ve ardından Widget Ekle'ye dokunun, WidgetLoft'u seçin ve Çok Büyük boyuta kaydırın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Grubu seçin",
+        text: "Yeni widget'a basılı tutun, Widget'ı Düzenle'ye dokunun ve oluşturduğunuz grubu seçin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bir simge boyutu seçin",
+        text: "Grup için bir simge boyutu seçin: iPad'in geniş Çok Büyük widget'ında küçük simgeler 72 kareye kadar, orta 50, büyük 32 ve çok büyük 18 kare sığdırır.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Bir iPad widget'ına kaç uygulama sığar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "iPad'in geniş Çok Büyük widget'ında küçük simgelerle 72 kareye kadar, ortayla 50, büyükle 32 ve çok büyük simgelerle 18 kare. Alt klasörler tek bir karenin arkasında daha fazla uygulama tutar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kareler gerçek uygulamaları açıyor mu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. Her kare, önce WidgetLoft'u açmadan, yüklü uygulamayı doğrudan Ana Ekran widget'ından başlatır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hangi iPad'ler Çok Büyük widget'ı destekliyor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Geniş Çok Büyük boyut iPad'de iPadOS 15'ten beri mevcut ve widget galerisinde Büyük boyutu geçip kaydırdığınızda görünüyor.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPad Widget'ını Uygulama Başlatıcıya Dönüştürme (72 Uygulamaya Kadar)
+
+**Kısa yanıt:** iPad'de iPhone'da hiç olmayan bir widget boyutu var: geniş Çok Büyük, yüksekliğinin yaklaşık iki katı genişlikte. Onu Ana Ekran widget galerisinden ekleyin, bir [WidgetLoft](/widgetloft) grubuna yönlendirin ve her biri gerçek uygulamayı açan 72 uygulama karesine kadar bir ızgara elde edin.
+
+iPad'in Ana Ekranı her zaman iPhone'unkinin tam tersi bir sorun yaşadı. Bol bol yer var ve dağınık simgeler bu boşlukta yüzüyor. Uygulamaları düzenli bir ızgarada tutan bir widget, o genişliği harcamak yerine kullanır.
+
+---
+
+## Bir başlatıcı widget'ı iPad'e neden yakışır
+
+Bir iPad sayfası telefon sayfasından çok daha fazla simge alır, bu yüzden klasörler dolar ve her şey iki dokunuş uzağa düşer: klasörü aç, uygulamayı bul. Bir başlatıcı widget bunu düzleştirir. Uygulamalar sayfanın kendisinde durur, görünür ve tek dokunuş uzakta.
+
+Ayrıca çoğu iPad düzenini bozan şeye de dayanır: cihazı döndürürsünüz. Bir widget kendi iç ızgarasını korur, bu yüzden düzeniniz dağınık simgeler gibi yeniden akmaz.
+
+## Adım adım
+
+1. **Bir grup oluşturun.** iPad'de [WidgetLoft](/widgetloft)'u açın, bir grup oluşturun ve istediğiniz uygulamaları ekleyin. Kendine ait bir katmanı hak eden her şey için **Yeni Klasör**'e dokunun.
+2. **Widget'ı ekleyin.** Ana Ekran'da basılı tutun, **Düzenle**'ye, ardından **Widget Ekle**'ye dokunun. WidgetLoft'u seçin ve Çok Büyük boyuta gelene kadar boyutlar arasında kaydırın.
+3. **Grubu seçin.** Yeni widget'a basılı tutun, **Widget'ı Düzenle**'ye dokunun ve grubunuzu seçin.
+4. **Bir simge boyutu seçin.** Küçük simgeler en çok uygulamayı sığdırır; çok büyük simgeler iPad'i elinizde tutarken başparmakla en kolay isabet ettirilenlerdir.
+
+Bir kareye dokunun, o uygulama açılır. Bir klasör karesine dokunun, widget'ın içinde açılır ve bir üst katmana çıkmak için geri karesi bulunur.
+
+## Her simge boyutunda kaç uygulama sığar
+
+| Simge boyutu | Geniş Çok Büyük (iPad) | Büyük |
+| --- | --- | --- |
+| Küçük | 72 | 49 |
+| Orta | 50 | 36 |
+| Büyük | 32 | 25 |
+| Çok büyük | 18 | 16 |
+
+Geniş Çok Büyük widget, küçük simge boyutunda 12 sütun ve 6 satır olarak yerleşir. Bu, çoğu insanın koca bir iPad sayfasında tuttuğundan daha fazla uygulama.
+
+Geniş bir blok yerine uzun bir blok tercih ederseniz, iOS 27 ve iPadOS 27, 77 kareye kadar sığdıran dikey bir Çok Büyük boyut ekliyor. [Tek sayfalık başlatıcı olarak Çok Büyük widget](/blog/extra-large-widget-ios-27) hakkında ayrı bir rehber var.
+
+## Kopyalamaya değer üç iPad düzeni
+
+**İş sayfası.** En üstte, iş için kullandığınız her şeyi içeren tek bir geniş Çok Büyük widget, küçük simgeler, klasör yok. Sayfanın geri kalanı bilinçli olarak boş kalır.
+
+**Bölünmüş sayfa.** Uygulamalar için bir geniş Çok Büyük widget ve altındaki alan bir takvim ya da notlar widget'ı için. Tek sayfada hem bir başlatıcı hem de bir bakış elde edersiniz.
+
+**Kategori sayfası.** Büyük simge boyutunda altı klasör karesi, her alan için bir tane: iş, medya, oyunlar, seyahat, finans, araçlar. Her biri widget üzerinde yerinde açılır. Bir duvar gibi değil, bir menü gibi okunur.
+
+## Bir karede uygulamalardan başka ne olabilir
+
+Bir karenin uygulama olması gerekmez. WidgetLoft web siteleri, kişiler (tek dokunuşla arama ya da mesaj), Kısayollar ve ızgarayı şekillendirmek için kullandığınız boş ayırıcıları da alır. iPad'de ayırıcılar telefondan daha çok önem taşır: 12 sütunlu bir ızgara, tek bir masif blok yerine kasıtlı bloklar halinde daha iyi görünür.
+
+## Sık sorulan sorular
+
+**Bir iPad widget'ına kaç uygulama sığar?**
+Geniş Çok Büyük boyutta küçük simgelerle 72'ye kadar, ortayla 50, büyükle 32 ve çok büyük simgelerle 18. Alt klasörler tek bir karenin arkasına daha fazlasını ekler.
+
+**Kareler gerçek uygulamaları açıyor mu?**
+Evet, doğrudan Ana Ekran widget'ından. WidgetLoft önce açılmaz.
+
+**Hangi iPad'ler Çok Büyük widget'ı destekliyor?**
+iPadOS 15 veya sonrasındaki her iPad. Widget galerisinde Büyük'ü geçip kaydırın, orada.
+
+Sınırlar hakkında bir not: WidgetLoft'un ücretsiz sürümü kitaplığında 21 uygulamaya kadar tutar, bu da tam bir iPad widget'ından az. WidgetLoft Pro bu sınırı kaldırır.
+
+---
+
+iPad sayfanızın bir yığın gibi değil, bir menü gibi çalışmasını ister misiniz? [WidgetLoft'u App Store'dan indirin](/widgetloft/download).

@@ -1,0 +1,152 @@
+export const meta = {
+  title: "iOS 27 Opdrachten-automatiseringen die je beginscherm beter maken",
+  description:
+    "Vijf automatiseringen in Opdrachten die het waard zijn op iOS 27, inclusief de nieuwe meldingstrigger, en hoe elke automatisering verandert wat je beginscherm voor je doet.",
+  keywords: [
+    "ios 27 opdrachten automatisering",
+    "opdrachten melding trigger",
+    "iphone automatisering beginscherm",
+    "ios 27 opdrachten tips",
+    "persoonlijke automatisering iphone",
+    "widget automatiseren iphone",
+  ],
+  ogTitle: "iOS 27 Opdrachten-automatiseringen voor een beter beginscherm",
+  ogDescription:
+    "De meldingstrigger, automatiseringen op tijd en locatie, en waar ze echt goed voor zijn.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline: "iOS 27 Opdrachten-automatiseringen die je beginscherm beter maken",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Een persoonlijke automatisering maken in Opdrachten op iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Open de tab Automatisering",
+        text: "Open de app Opdrachten en tik onderaan op Automatisering.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg een automatisering toe",
+        text: "Tik op de plusknop en kies een trigger, bijvoorbeeld een tijdstip, ergens aankomen of een melding van een gekozen app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies wat er wordt uitgevoerd",
+        text: "Voeg de acties toe die je wilt. Laat Onmiddellijk uitvoeren aanstaan en Melden bij uitvoering uitstaan als het stil moet gebeuren.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Test het",
+        text: "Roep de voorwaarde één keer zelf op en controleer het resultaat voordat je erop vertrouwt.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Wat is de meldingstrigger in Opdrachten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Het is een automatiseringstrigger die afgaat wanneer een gekozen app een melding stuurt. Hij kwam met iOS 27 en kan zijn acties stil uitvoeren.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Lopen automatiseringen zonder het mij te vragen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, als Onmiddellijk uitvoeren aanstaat. Zet Melden bij uitvoering er ook uit en de automatisering gebeurt zonder dat er iets op het scherm komt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan een automatisering veranderen wat een widget toont?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ze kan de gegevens veranderen die een widget leest. WidgetLoft gebruikt dit voor meldingsstipjes op tegels in de launcher: de automatisering legt vast dat een app een melding heeft en de widget tekent een stip op die tegel.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27 Opdrachten-automatiseringen die je beginscherm beter maken
+
+**Snel antwoord:** open Opdrachten, tik op **Automatisering**, dan op de plusknop, en kies een trigger. De interessante nieuwe trigger op iOS 27 gaat af wanneer een specifieke app een melding stuurt, en hij kan stil lopen. Hieronder staan vijf automatiseringen die veranderen wat je beginscherm doet, niet vijf die er alleen slim uitzien.
+
+---
+
+## 1. Meldingsstipjes op een launcher-widget
+
+Een widget kan je ongelezen-tellers niet lezen; Apple geeft ze niet vrij. Maar een automatisering kan wel merken dat een app een melding heeft gestuurd, en een widget kan lezen wat de automatisering heeft opgeschreven.
+
+Precies zo zet [WidgetLoft](/widgetloft) een stip op een tegel in de launcher. Jij kiest de apps, de automatisering loopt stil wanneer een van die apps je een melding stuurt, en de tegel houdt een stip tot je de app opent. Er staat een volledige uitleg in [meldingsbadges op widgets](/blog/notification-badges-on-widgets-iphone).
+
+Twee instellingen doen ertoe als je de automatisering bouwt: **Onmiddellijk uitvoeren** aan, **Melden bij uitvoering** uit. Anders levert elke melding een tweede melding op, en dat is een heel eigen soort irritatie.
+
+## 2. Een focuspagina die de klok volgt
+
+Maak een automatisering voor je werkuren die een Focus aanzet, en koppel die Focus aan een pagina van het beginscherm. iOS wisselt van pagina met de Focus, dus om negen uur 's ochtends laat de iPhone je werkpagina zien en om zes uur de andere.
+
+Dit werkt beter dan met de hand iconen verslepen, en het is de ene automatisering die bijna iedereen aanhoudt.
+
+## 3. Ergens aankomen opent wat je altijd opent
+
+Trigger: **Aankomen**, bij de sportschool, het kantoor, een winkel waar je elke week komt. Actie: de app openen die je daar altijd opent, of een playlist starten.
+
+Houd het bij plekken die je echt herhaalt. Een automatisering die afgaat op een plek waar je twee keer per jaar komt, is ruis die je later moet uitzoeken.
+
+## 4. 's Avonds aan de lader
+
+Trigger: **Lader** aangesloten, met een tijdvoorwaarde. Acties: Energiespaarstand uit, wekker controleren, Focus aan. Op iPadOS en iOS beide is dit de goedkoopste automatisering om te maken en degene die je het meest merkt, want ze haalt een avondklusje weg.
+
+## 5. Eén tegel die een hele routine uitvoert
+
+Een opdracht hoeft niet in de app Opdrachten te wonen. WidgetLoft-tegels kunnen opdrachten uitvoeren, dus een launcher-widget kan "naar werk vertrekken" of "opname starten" naast je apps bewaren. Eén raster, apps en routines samen, geen aparte Opdrachten-widget die ruimte inneemt.
+
+## Waar je op moet letten
+
+- **Test voordat je vertrouwt.** Roep de voorwaarde één keer zelf op en kijk naar het resultaat. Automatiseringen falen stil.
+- **Controleer de schakelaars.** Nieuwe automatiseringen vragen standaard eerst om toestemming, en bij de meldingstrigger staat de automatisering standaard aan en de melding uit. Beide zijn het bevestigen waard.
+- **Houd het bij weinig.** Tien automatiseringen die je vergeten bent gedragen zich als een spooktelefoon. Vijf die je kunt benoemen zijn een systeem.
+
+## Veelgestelde vragen
+
+**Wat is de meldingstrigger?**
+Een automatisering die afgaat wanneer een gekozen app een melding stuurt. Ze kwam met iOS 27 en kan lopen zonder iets te tonen.
+
+**Lopen automatiseringen zonder het mij te vragen?**
+Ja, als Onmiddellijk uitvoeren aanstaat. Zet Melden bij uitvoering ook uit voor een stille versie.
+
+**Kan een automatisering veranderen wat een widget toont?**
+Ze kan veranderen wat een widget leest. De meldingsstipjes op WidgetLoft-tegels werken zo.
+
+---
+
+Wil je je apps, mappen en routines in één raster op het beginscherm? [Download WidgetLoft in de App Store](/widgetloft/download).

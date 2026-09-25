@@ -1,0 +1,163 @@
+export const meta = {
+  title:
+    "Cách biến tiện ích trên iPad thành trình mở ứng dụng (tối đa 72 ứng dụng)",
+  description:
+    "iPad đã có tiện ích Cực lớn dạng ngang kể từ iPadOS 15. Tìm hiểu cách thêm nó, mỗi cỡ biểu tượng chứa được bao nhiêu ô ứng dụng, và cách để mỗi ô mở thẳng một ứng dụng.",
+  keywords: [
+    "tiện ích mở ứng dụng ipad",
+    "tiện ích cực lớn ipad",
+    "tiện ích ứng dụng màn hình chính ipad",
+    "mở ứng dụng từ tiện ích ipad",
+    "thư mục ứng dụng trong tiện ích ipad",
+    "tiện ích ipados 27",
+  ],
+  ogTitle: "Biến tiện ích iPad thành trình mở 72 ứng dụng",
+  ogDescription:
+    "Tiện ích Cực lớn dạng ngang của iPad chứa tới 72 ô ứng dụng, và mỗi ô đều có thể mở một ứng dụng.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách biến tiện ích trên iPad thành trình mở ứng dụng (tối đa 72 ứng dụng)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-app-launcher-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Biến tiện ích trên iPad thành trình mở ứng dụng",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Tạo một nhóm",
+        text: "Mở WidgetLoft trên iPad, tạo một nhóm và thêm những ứng dụng bạn muốn có trên trình mở.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm tiện ích",
+        text: "Nhấn giữ Màn hình chính của iPad, chạm Sửa, rồi chạm Thêm tiện ích, chọn WidgetLoft và vuốt đến cỡ Cực lớn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn nhóm",
+        text: "Nhấn giữ tiện ích mới, chạm Sửa tiện ích và chọn nhóm bạn đã tạo.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn cỡ biểu tượng",
+        text: "Chọn cỡ biểu tượng cho nhóm: trên tiện ích Cực lớn dạng ngang của iPad, biểu tượng nhỏ chứa tới 72 ô, cỡ vừa 50, cỡ lớn 32 và cực lớn 18.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Một tiện ích trên iPad chứa được bao nhiêu ứng dụng?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Trên tiện ích Cực lớn dạng ngang của iPad, tối đa 72 ô với biểu tượng nhỏ, 50 với cỡ vừa, 32 với cỡ lớn và 18 với biểu tượng cực lớn. Thư mục con giữ thêm nhiều ứng dụng phía sau một ô duy nhất.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Các ô có mở đúng ứng dụng thật không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Mỗi ô mở ứng dụng đã cài đặt ngay từ tiện ích trên Màn hình chính, không cần mở WidgetLoft trước.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Những iPad nào hỗ trợ tiện ích Cực lớn?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Cỡ Cực lớn dạng ngang đã có trên iPad từ iPadOS 15 và xuất hiện trong thư viện tiện ích khi bạn vuốt qua cỡ Lớn.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách biến tiện ích trên iPad thành trình mở ứng dụng (tối đa 72 ứng dụng)
+
+**Trả lời nhanh:** iPad có một cỡ tiện ích mà iPhone chưa bao giờ có: Cực lớn dạng ngang, rộng gần gấp đôi chiều cao. Thêm nó từ thư viện tiện ích trên Màn hình chính, trỏ nó tới một nhóm [WidgetLoft](/widgetloft), và bạn có một lưới tối đa 72 ô ứng dụng, mỗi ô đều mở đúng ứng dụng thật.
+
+Màn hình chính của iPad luôn gặp vấn đề ngược với iPhone. Chỗ thì thừa, còn các biểu tượng rời rạc thì trôi nổi trong đó. Một tiện ích giữ các ứng dụng trong một lưới gọn gàng sẽ dùng được chiều rộng ấy thay vì bỏ không.
+
+---
+
+## Vì sao tiện ích trình mở phù hợp với iPad
+
+Một trang iPad chứa nhiều biểu tượng hơn hẳn một trang điện thoại, nên thư mục đầy lên và mọi thứ cách bạn hai lần chạm: mở thư mục, tìm ứng dụng. Tiện ích trình mở làm phẳng chuyện đó. Ứng dụng nằm ngay trên trang, nhìn thấy được và chỉ cách một lần chạm.
+
+Nó còn trụ được trước thứ phá vỡ hầu hết cách bố trí trên iPad: bạn quay ngang thiết bị. Tiện ích giữ nguyên lưới bên trong, nên cách xếp của bạn không chảy lại như các biểu tượng rời.
+
+## Từng bước
+
+1. **Tạo một nhóm.** Mở [WidgetLoft](/widgetloft) trên iPad, tạo một nhóm và thêm những ứng dụng bạn muốn. Chạm **Thư mục mới** cho bất cứ thứ gì đáng có một tầng riêng.
+2. **Thêm tiện ích.** Nhấn giữ Màn hình chính, chạm **Sửa**, rồi chạm **Thêm tiện ích**. Chọn WidgetLoft và vuốt qua các cỡ cho đến khi tới Cực lớn.
+3. **Chọn nhóm.** Nhấn giữ tiện ích mới, chạm **Sửa tiện ích** và chọn nhóm của bạn.
+4. **Chọn cỡ biểu tượng.** Biểu tượng nhỏ chứa được nhiều ứng dụng nhất; biểu tượng cực lớn là dễ chạm đúng bằng ngón cái nhất khi bạn đang cầm iPad.
+
+Chạm một ô và ứng dụng đó mở ra. Chạm một ô thư mục và nó mở ngay trong tiện ích, kèm một ô quay lại để lên một tầng.
+
+## Mỗi cỡ biểu tượng chứa được bao nhiêu ứng dụng
+
+| Cỡ biểu tượng | Cực lớn dạng ngang (iPad) | Lớn |
+| --- | --- | --- |
+| Nhỏ | 72 | 49 |
+| Vừa | 50 | 36 |
+| Lớn | 32 | 25 |
+| Cực lớn | 18 | 16 |
+
+Tiện ích Cực lớn dạng ngang xếp 12 cột nhân 6 hàng ở cỡ biểu tượng nhỏ. Đó là nhiều ứng dụng hơn số mà phần lớn mọi người giữ trên cả một trang iPad.
+
+Nếu bạn muốn một khối cao thay vì một khối rộng, iOS 27 và iPadOS 27 thêm cỡ Cực lớn dạng dọc chứa tới 77 ô. Có một hướng dẫn riêng về [tiện ích Cực lớn dùng làm trình mở một trang](/blog/extra-large-widget-ios-27).
+
+## Ba cách bố trí iPad đáng sao chép
+
+**Trang làm việc.** Một tiện ích Cực lớn dạng ngang ở trên cùng với mọi thứ bạn dùng để làm việc, biểu tượng nhỏ, không thư mục. Phần còn lại của trang được để trống có chủ ý.
+
+**Trang chia đôi.** Một tiện ích Cực lớn dạng ngang cho ứng dụng và khoảng trống bên dưới cho tiện ích lịch hoặc ghi chú. Bạn có cả trình mở và một cái nhìn nhanh trong một trang.
+
+**Trang phân loại.** Sáu ô thư mục ở cỡ biểu tượng lớn, mỗi lĩnh vực một ô: công việc, giải trí, trò chơi, du lịch, tài chính, tiện ích. Mỗi ô mở tại chỗ trên tiện ích. Nó đọc như một bảng chọn chứ không như một bức tường.
+
+## Trong một ô còn có gì ngoài ứng dụng
+
+Một ô không nhất thiết phải là ứng dụng. WidgetLoft cũng nhận trang web, danh bạ (gọi hoặc nhắn tin cho ai đó bằng một lần chạm), Phím tắt, và các ô đệm trống mà bạn dùng để tạo hình cho lưới. Trên iPad, ô đệm quan trọng hơn trên điện thoại: một lưới 12 cột trông đẹp hơn khi chia thành những khối có chủ ý thay vì một tấm liền khối.
+
+## Câu hỏi thường gặp
+
+**Một tiện ích trên iPad chứa được bao nhiêu ứng dụng?**
+Tối đa 72 với biểu tượng nhỏ ở cỡ Cực lớn dạng ngang, 50 với cỡ vừa, 32 với cỡ lớn và 18 với biểu tượng cực lớn. Thư mục con thêm được nhiều hơn phía sau một ô duy nhất.
+
+**Các ô có mở đúng ứng dụng thật không?**
+Có, ngay từ tiện ích trên Màn hình chính. WidgetLoft không mở trước.
+
+**Những iPad nào hỗ trợ tiện ích Cực lớn?**
+Mọi iPad chạy iPadOS 15 hoặc mới hơn. Vuốt qua cỡ Lớn trong thư viện tiện ích là thấy.
+
+Một lưu ý về giới hạn: bản miễn phí của WidgetLoft giữ tối đa 21 ứng dụng trong thư viện, ít hơn một tiện ích iPad đầy. WidgetLoft Pro bỏ giới hạn đó.
+
+---
+
+Bạn muốn trang iPad của mình hoạt động như một bảng chọn chứ không như một đống? [Tải WidgetLoft trên App Store](/widgetloft/download).

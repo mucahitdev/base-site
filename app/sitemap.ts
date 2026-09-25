@@ -16,6 +16,11 @@ const enPosts = [
 
 // Blog posts translated into every locale (same slug per locale).
 const multilingualPosts = [
+  'ipad-app-launcher-widget',
+  'ipados-27-multitasking-home-screen',
+  'ipad-lock-screen-widgets',
+  'liquid-glass-app-icons-ios-27',
+  'ios-27-shortcuts-automations-home-screen',
   'iphone-duo-home-screen-setup',
   'iphone-duo-cover-screen-apps',
   'best-widgets-iphone-duo',

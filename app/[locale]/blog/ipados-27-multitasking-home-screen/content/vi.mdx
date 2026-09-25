@@ -1,0 +1,128 @@
+export const meta = {
+  title: "Cửa sổ trên iPadOS 27: dựng Màn hình chính theo kịp nhịp",
+  description:
+    "iPadOS 27 tinh chỉnh kiểu cửa sổ như máy tính đã xuất hiện ở iPadOS 26. Đây là cách sắp xếp Màn hình chính của iPad quanh nó, gồm cả một widget trình khởi chạy mở ứng dụng thành cửa sổ.",
+  keywords: [
+    "đa nhiệm ipados 27",
+    "cửa sổ ipados 27",
+    "cách sắp xếp màn hình chính ipad 2026",
+    "thay đổi kích thước cửa sổ ứng dụng ipad",
+    "widget mở nhanh ứng dụng ipad",
+    "thủ thuật ipados 27",
+  ],
+  ogTitle: "Một Màn hình chính iPad dựng cho cửa sổ của iPadOS 27",
+  ogDescription:
+    "Cửa sổ đã thay đổi cách bạn mở ứng dụng trên iPad. Màn hình chính của bạn cũng nên thay đổi theo.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Cửa sổ trên iPadOS 27: dựng Màn hình chính theo kịp nhịp",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Mở ứng dụng từ widget thì nó có thành một cửa sổ không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Ô trên widget khởi chạy ứng dụng đúng theo cách biểu tượng của nó trên Màn hình chính vẫn làm, nên ứng dụng mở ra như một cửa sổ và có thể thay đổi kích thước, sắp đặt như mọi cửa sổ khác.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi còn cần thư mục ứng dụng trên iPad nữa không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ít hơn trước. Một thư mục tốn một lần chạm để mở và một lần chạm để đóng. Widget trình khởi chạy giữ đúng những ứng dụng đó hiện ra ngay trên trang, điều càng đáng giá khi bạn mở liên tiếp nhiều cửa sổ.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Trên iPadOS 27 có hoàn tác được việc sắp xếp lại Màn hình chính không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. iPadOS 27 thêm nút hoàn tác và làm lại trong lúc các biểu tượng đang rung, nên bạn có thể thử một cách bố trí rồi lùi lại.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cửa sổ trên iPadOS 27: dựng Màn hình chính theo kịp nhịp
+
+**Trả lời nhanh:** iPadOS 27 giữ kiểu cửa sổ như máy tính của iPadOS 26 và làm cho việc mở, thay đổi kích thước, chuyển qua lại giữa các cửa sổ nhanh hơn. Điều đó thay đổi dáng vẻ của một Màn hình chính tốt: giờ bạn mở liên tiếp nhiều ứng dụng chứ không phải từng cái một, nên trang đó nên đặt thật nhiều ứng dụng trong tầm một lần chạm. Việc này widget trình khởi chạy làm tốt hơn thư mục.
+
+---
+
+## Những gì đã thay đổi, nói ngắn
+
+iPadOS 26 biến iPad thành một cỗ máy có cửa sổ. iPadOS 27 đi tiếp cùng hướng ấy: cửa sổ phản hồi nhanh hơn, ứng dụng iPhone chạy trên iPad có thể thay đổi kích thước, và chính Màn hình chính cũng có hoàn tác cùng làm lại trong lúc bạn sắp xếp lại biểu tượng.
+
+Hai thay đổi nhỏ hơn lại quan trọng với cách bố trí. Đồng hồ trên Màn hình khóa có thể đổi chỗ, nên ảnh nền của bạn không còn bị che mất một nửa. Và Liquid Glass giờ có một thanh trượt trong Cài đặt, nên bạn quyết định giao diện trông trong suốt tới đâu.
+
+## Vì sao cửa sổ thay đổi Màn hình chính của bạn
+
+Khi chỉ dùng một ứng dụng mỗi lần, Màn hình chính là chỗ bạn đi ngang qua. Khi có cửa sổ, nó thành khu chuẩn bị. Bạn quay lại đó để lấy ứng dụng thứ hai, thứ ba, thứ tư cho một việc, và bạn làm vậy nhiều lần mỗi ngày.
+
+Điều đó khiến hai thứ trở nên đắt đỏ:
+
+- **Thư mục.** Hai lần chạm, lần nào cũng vậy.
+- **Tìm kiếm.** Nhanh với một ứng dụng, chậm khi thành thói quen, và nó kéo tay bạn ra khỏi cách bố trí.
+
+Thay vào đó, điều bạn muốn là một trang hiện ra hai ba mươi ứng dụng, tất cả cách bạn một lần chạm.
+
+## Cách bố trí
+
+1. **Một widget trình khởi chạy, ở đầu trang.** Thêm một widget Cực lớn dạng rộng từ [WidgetLoft](/widgetloft) và trỏ nó tới một nhóm chứa mọi ứng dụng bạn mở trong lúc làm việc. Biểu tượng nhỏ xếp được tối đa 72 ô; có [bảng dung lượng đầy đủ trong hướng dẫn trình khởi chạy cho iPad](/blog/ipad-app-launcher-widget).
+2. **Nhóm theo công việc, không theo loại.** Lối làm việc dựa trên cửa sổ mở ứng dụng theo từng chùm: ghi chú cộng trình duyệt cộng thư. Hãy để các chùm cạnh nhau trong lưới, hoặc cho mỗi chùm một ô thư mục riêng.
+3. **Dành Dock cho hai hoặc ba ứng dụng bạn luôn mở.** Dock sống qua mọi trang, nên đó là chỗ sai cho bất cứ thứ gì thỉnh thoảng mới dùng.
+4. **Để trống nửa dưới của trang.** Cửa sổ đáp xuống đúng chỗ đó. Một trang chật kín tới rìa sẽ cản chính việc bạn đang làm.
+
+Mỗi ô mở ứng dụng của nó như một cửa sổ bình thường, vì ô đó khởi chạy ứng dụng đúng theo cách biểu tượng vẫn làm.
+
+## Thư mục con thay cho nhiều trang
+
+Quét qua lại giữa các trang Màn hình chính chậm hơn vẻ ngoài của nó, và khi có cửa sổ mở bạn thường không thấy cả những dấu chấm trang. Các ô thư mục của widget trình khởi chạy mở **ngay tại chỗ**: chạm một ô thư mục, lưới chuyển sang nội dung bên trong, chạm ô quay lại để lên trên.
+
+Như vậy bạn có độ sâu của vài trang mà không rời khỏi trang. Mỗi thư mục chứa tối đa 100 ứng dụng và 20 thư mục con, và bạn có thể lồng sâu tùy ý. Hãy bật **Tự động quay lại thư mục** trong Cài đặt, Widget, để widget tự đặt lại về mức trên cùng thay vì nằm nguyên nơi bạn bỏ dở.
+
+## Hai thứ nữa đáng thiết lập
+
+**Hoàn tác trong lúc sắp xếp.** Nhấn giữ Màn hình chính cho tới khi các biểu tượng rung lên, bạn sẽ thấy hoàn tác và làm lại. Cứ di chuyển thoải mái; bạn không còn chốt cứng điều gì.
+
+**Thanh trượt Liquid Glass.** Cài đặt, Giao diện, Liquid Glass. Kéo về phía Trong suốt cho giao diện nhẹ hơn, về phía Có sắc màu nếu bạn muốn chữ và các nút dễ đọc hơn trên một ảnh nền rối. Nó vẽ lại ngay trong lúc bạn kéo.
+
+## Câu hỏi thường gặp
+
+**Mở ứng dụng từ widget thì nó có thành một cửa sổ không?**
+Có. Ô đó khởi chạy ứng dụng như biểu tượng vẫn làm, nên nó mở ra như một cửa sổ và hoạt động như mọi cửa sổ khác.
+
+**Tôi còn cần thư mục ứng dụng trên iPad nữa không?**
+Ít hơn trước. Các ô thư mục bên trong widget trình khởi chạy đáp ứng đúng nhu cầu đó mà không phải rời khỏi trang.
+
+**Trên iPadOS 27 có hoàn tác được việc sắp xếp lại Màn hình chính không?**
+Có, hoàn tác và làm lại ở đó trong lúc các biểu tượng đang rung.
+
+---
+
+Sắp xếp trang này một lần và việc dùng cửa sổ không còn là gánh nặng. [Tải WidgetLoft trên App Store](/widgetloft/download) để dựng trình khởi chạy.

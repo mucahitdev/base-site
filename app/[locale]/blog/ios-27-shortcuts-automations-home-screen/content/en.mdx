@@ -1,0 +1,152 @@
+export const meta = {
+  title: "iOS 27 Shortcuts Automations That Improve Your Home Screen",
+  description:
+    "Five Shortcuts automations worth setting up on iOS 27, including the new notification trigger, and how each one changes what your Home Screen does for you.",
+  keywords: [
+    "ios 27 shortcuts automations",
+    "shortcuts notification trigger",
+    "iphone automation home screen",
+    "ios 27 shortcuts tips",
+    "personal automation iphone",
+    "widget automation iphone",
+  ],
+  ogTitle: "iOS 27 Shortcuts Automations for a Better Home Screen",
+  ogDescription:
+    "The notification trigger, time and location automations, and what they are actually good for.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline: "iOS 27 Shortcuts Automations That Improve Your Home Screen",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Create a personal automation in Shortcuts on iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Open the Automation tab",
+        text: "Open the Shortcuts app and tap Automation at the bottom.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add an automation",
+        text: "Tap the plus button and pick a trigger, such as a time of day, arriving somewhere, or a notification from a chosen app.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose what runs",
+        text: "Add the actions you want. Leave Run Immediately on and Notify When Run off if you want it to happen silently.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Test it",
+        text: "Trigger the condition once yourself and check the result before you rely on it.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the notification trigger in Shortcuts?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It is an automation trigger that fires when a chosen app posts a notification. It arrived with iOS 27 and can run its actions silently.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do automations run without asking me?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, if Run Immediately is on. Turn Notify When Run off as well and the automation happens with nothing on screen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can an automation change what a widget shows?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It can change data a widget reads. WidgetLoft uses this for notification dots on launcher tiles: the automation records that an app has a notification and the widget draws a dot on that tile.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27 Shortcuts Automations That Improve Your Home Screen
+
+**Quick answer:** open Shortcuts, tap **Automation**, then the plus button, and pick a trigger. The interesting new one on iOS 27 fires when a specific app posts a notification, and it can run silently. Below are five automations that change what your Home Screen does, rather than five that just look clever.
+
+---
+
+## 1. Notification dots on a launcher widget
+
+A widget cannot read your unread counts; Apple does not expose them. But an automation can notice that an app posted a notification, and a widget can read what the automation wrote.
+
+That is exactly how [WidgetLoft](/widgetloft) puts a dot on a launcher tile. You pick the apps, the automation runs silently when one of them notifies you, and the tile gets a dot until you open the app. There is a full walkthrough in [notification badges on widgets](/blog/notification-badges-on-widgets-iphone).
+
+Two settings matter when you build the automation: **Run Immediately** on, **Notify When Run** off. Otherwise every notification produces a second notification, which is a special kind of annoying.
+
+## 2. A focus page that follows the time
+
+Set an automation for your working hours that turns on a Focus, and pair the Focus with a Home Screen page. iOS switches pages with the Focus, so at nine in the morning the iPhone shows your work page and at six it shows the other one.
+
+This works better than rearranging icons by hand, and it is the one automation almost everybody keeps.
+
+## 3. Arriving somewhere opens the thing you always open
+
+Trigger: **Arrive**, at the gym, the office, a shop you visit weekly. Action: open the app you always open there, or start a playlist.
+
+Keep it to places you genuinely repeat. An automation that fires somewhere you go twice a year is noise you will have to debug later.
+
+## 4. Plugging in at night
+
+Trigger: **Charger** connected, with a time condition. Actions: Low Power Mode off, alarm check, Focus on. On iPadOS and iOS both, this is the cheapest automation to set up and the one you notice most, because it removes a nightly chore.
+
+## 5. A single tile that runs a whole routine
+
+A Shortcut does not need to live in the Shortcuts app. WidgetLoft tiles can run Shortcuts, so a launcher widget can hold "leave for work" or "start recording" next to your apps. One grid, apps and routines together, no separate Shortcuts widget taking up space.
+
+## What to watch out for
+
+- **Test before you trust.** Trigger the condition once yourself and look at the result. Automations fail quietly.
+- **Check the toggles.** New automations default to asking before they run, and the notification trigger defaults to Automation on and Notify off. Both are worth confirming.
+- **Keep them few.** Ten automations you forgot about behave like a haunted phone. Five that you can name is a system.
+
+## Common questions
+
+**What is the notification trigger?**
+An automation that fires when a chosen app posts a notification. It arrived with iOS 27 and can run without showing anything.
+
+**Do automations run without asking me?**
+Yes, when Run Immediately is on. Turn Notify When Run off too for a silent one.
+
+**Can an automation change what a widget shows?**
+It can change what a widget reads. The notification dots on WidgetLoft tiles work this way.
+
+---
+
+Want your apps, folders and routines in one grid on the Home Screen? [Download WidgetLoft on the App Store](/widgetloft/download).

@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Klare, getönte und dunkle App-Symbole in iOS 27 (und der Glas-Regler)",
+  description:
+    "In iOS 27 lassen sich App-Symbole auf Klar, Getönt, Dunkel oder Hell stellen, und in den Einstellungen gibt es einen neuen Liquid Glass Regler. Hier steht, wo jede Einstellung liegt und wie Widgets mitziehen.",
+  keywords: [
+    "ios 27 klare app symbole",
+    "ios 27 liquid glass regler",
+    "getönte app symbole iphone",
+    "dunkle app symbole ios 27",
+    "home bildschirm anpassen ios 27",
+    "ios 27 symbol darstellung",
+  ],
+  ogTitle: "Klare, getönte und dunkle Symbole in iOS 27",
+  ogDescription:
+    "Wo die Einstellungen für die Symboldarstellung liegen, was der Liquid Glass Regler macht und wie Widgets mithalten.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline:
+      "Klare, getönte und dunkle App-Symbole in iOS 27 (und der Glas-Regler)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/liquid-glass-app-icons-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Darstellung der App-Symbole in iOS 27 ändern",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "In den Bearbeitungsmodus wechseln",
+        text: "Halte eine leere Stelle auf dem Home-Bildschirm gedrückt, bis die Symbole wackeln, und tippe dann auf Bearbeiten.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Anpassen öffnen",
+        text: "Tippe auf Anpassen, um die Optionen für die Symboldarstellung zu sehen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Eine Darstellung wählen",
+        text: "Wähle Hell, Dunkel, Klar oder Getönt. Getönt bietet eine Farbauswahl.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Glasstufe festlegen",
+        text: "Für die übrige Benutzeroberfläche öffne Einstellungen, Erscheinungsbild, Liquid Glass und ziehe den Regler zwischen Klar und Getönt.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kann ich Liquid Glass in iOS 27 ausschalten?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Es gibt keinen Schalter zum Ausschalten. iOS 27 ergänzt unter Einstellungen, Erscheinungsbild, Liquid Glass einen Regler, der die Oberfläche zwischen einem klareren und einem stärker getönten Look verschiebt.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Gilt der Stil Klar für jede App?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Er gilt für den Home-Bildschirm als Ganzes. Apps, die die passenden Symbolebenen mitliefern, werden korrekt dargestellt, die übrigen näherungsweise vom System.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Übernehmen App-Kacheln in Widgets die Symboldarstellung?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nicht automatisch, denn ein Widget zeichnet seinen eigenen Inhalt. WidgetLoft bringt echte dunkle Versionen der App-Symbole mit und erlaubt ein eigenes Bild pro Darstellung, sodass ein Launcher-Widget zu einem dunklen oder getönten Home-Bildschirm passt.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Klare, getönte und dunkle App-Symbole in iOS 27 (und der Glas-Regler)
+
+**Kurze Antwort:** Halte eine leere Stelle auf dem Home-Bildschirm gedrückt, tippe auf **Bearbeiten**, dann auf **Anpassen**, und wähle für deine Symbole Hell, Dunkel, Klar oder Getönt. Für die übrige Oberfläche öffne **Einstellungen, Erscheinungsbild, Liquid Glass** und ziehe den Regler. Zwei verschiedene Einstellungen, zwei verschiedene Aufgaben, und sie werden ständig verwechselt.
+
+---
+
+## Die beiden Einstellungen, getrennt betrachtet
+
+**Die Symboldarstellung** liegt auf dem Home-Bildschirm, nicht in den Einstellungen. Sie ändert, wie App-Symbole gezeichnet werden: normale helle Symbole, dunkle Versionen, ein gläserner Look namens Klar, oder Getönt, wo du eine Farbe wählst und jedes Symbol sie übernimmt.
+
+**Der Liquid Glass Regler** liegt unter Einstellungen, Erscheinungsbild, Liquid Glass und ist neu in iOS 27. Er verändert deine Symbole nicht. Er steuert, wie transparent die Systemoberfläche ist: Menüs, Symbolleisten, eingeblendete Fenster, das Kontrollzentrum. Zieh ihn Richtung Klar, dann wirkt alles leichter und durchscheinender. Zieh ihn Richtung Getönt, dann bekommen dieselben Flächen einen deckenden Untergrund, der sich vor einem unruhigen Hintergrundbild leichter lesen lässt.
+
+Es gibt keinen Schalter, der Liquid Glass ausschaltet. Der Regler ist die Einstellung, die Apple mitgibt, und ihn ganz auf Getönt zu ziehen ist das Nächstliegende.
+
+## So änderst du die Symboldarstellung
+
+1. Halte eine leere Stelle auf dem Home-Bildschirm gedrückt, bis die Symbole wackeln.
+2. Tippe auf **Bearbeiten**, dann auf **Anpassen**.
+3. Wähle **Hell**, **Dunkel**, **Klar** oder **Getönt**. Getönt gibt dir eine Farbauswahl.
+4. Tippe irgendwohin, um fertig zu sein.
+
+Klar ist die Option, die für Aufsehen sorgt: Die Symbole werden gläsern und nehmen Farbe vom Hintergrundbild auf. Am besten sieht das über einem Hintergrundbild mit etwas Kontrast aus, am schlechtesten über einem unruhigen Foto, wo mehrere Symbole nicht mehr unterscheidbar sind.
+
+## Der Punkt, den niemand erwähnt: Widgets ziehen nicht mit
+
+Die Symboldarstellung wendet das System auf App-Symbole an. Ein Widget zeichnet seinen eigenen Inhalt und erbt deshalb weder Klar noch Getönt. Stell den Home-Bildschirm auf Dunkel, und ein Widget voller heller App-Symbole wirkt plötzlich wie ein Loch in der Seite.
+
+[WidgetLoft](/widgetloft) geht das bewusst an:
+
+- **Echte dunkle Symbole.** Die echten dunklen Versionen der Systemsymbole von Apple sind in der App enthalten, und für die häufigsten Symbole von Drittanbietern sind dunkle Versionen vorgerendert, sodass ein dunkler Home-Bildschirm auch im Widget dunkel bleibt.
+- **Eigene Symbole pro Darstellung.** Du kannst pro App ein Bild für den hellen Modus und ein anderes für den dunklen festlegen.
+- **Ein transparenter Widget-Hintergrund** ab iOS 26, sodass das Widget auf dem Hintergrundbild sitzt und nicht auf einer grauen Karte.
+
+Es gibt eigene Anleitungen zu [App-Symbolen im Dunkelmodus](/blog/dark-mode-app-icons-iphone) und zu [transparenten Widgets](/blog/transparent-widget-iphone).
+
+## Welche Kombination wirklich gut aussieht
+
+- **Klare Symbole, ein schlichtes Hintergrundbild, transparente Widgets.** Der aufgeräumteste Look, den iOS 27 hergibt, und genau der, für den der Glaseffekt gedacht war.
+- **Dunkle Symbole, dunkles Hintergrundbild, dunkle Widget-Kacheln.** Am besten lesbar und am wenigsten vom Hintergrundbild abhängig.
+- **Getönte Symbole in einer Farbe und passende eigene Widget-Kacheln.** Am persönlichsten und am aufwendigsten.
+
+Getönt mit einem Foto als Hintergrundbild solltest du vermeiden. Alles wird zu einem einfarbigen Brei, und du suchst deine Apps nur noch nach ihrer Position.
+
+## Häufige Fragen
+
+**Kann ich Liquid Glass in iOS 27 ausschalten?**
+Nein. Der Regler unter Einstellungen, Erscheinungsbild, Liquid Glass ist die einzige Einstellung, und er reicht von klarer bis stärker getönt.
+
+**Gilt Klar für jede App?**
+Es gilt für den Home-Bildschirm als Ganzes. Apps mit passenden Symbolebenen sehen richtig aus, der Rest wird angenähert.
+
+**Übernehmen App-Kacheln in Widgets die Symboldarstellung?**
+Nein, ein Widget zeichnet sich selbst. Genau darum bringt WidgetLoft echte dunkle Symbole und eigene Bilder pro Darstellung mit.
+
+---
+
+Soll dein Launcher-Widget zu einem klaren oder dunklen Home-Bildschirm passen, statt mit ihm zu kämpfen? [Lade WidgetLoft im App Store](/widgetloft/download).

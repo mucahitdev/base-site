@@ -1,0 +1,156 @@
+export const meta = {
+  title: "iOS 27'de Şeffaf, Renk Tonlu ve Koyu Uygulama Simgeleri (ve Cam Sürgüsü)",
+  description:
+    "iOS 27, uygulama simgelerini Şeffaf, Renk Tonlu, Koyu veya Açık yapmanıza izin veriyor ve Ayarlar'a bir Liquid Glass sürgüsü ekliyor. Her denetimin nerede olduğunu ve widget'ların bunu nasıl takip ettiğini anlatıyoruz.",
+  keywords: [
+    "ios 27 şeffaf uygulama simgeleri",
+    "ios 27 liquid glass sürgüsü",
+    "iphone renk tonlu uygulama simgeleri",
+    "ios 27 koyu uygulama simgeleri",
+    "ios 27 ana ekran özelleştirme",
+    "ios 27 simge görünümü",
+  ],
+  ogTitle: "iOS 27'de Şeffaf, Renk Tonlu ve Koyu Simgeler",
+  ogDescription:
+    "Simge görünümü denetimleri nerede, Liquid Glass sürgüsü ne yapıyor ve widget'lar buna nasıl ayak uyduruyor.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iOS 27'de Şeffaf, Renk Tonlu ve Koyu Uygulama Simgeleri (ve Cam Sürgüsü)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/liquid-glass-app-icons-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iOS 27'de uygulama simgesi görünümünü değiştirme",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Düzenleme moduna geçin",
+        text: "Ana Ekran'ın boş bir yerine simgeler titreyene kadar basılı tutun, sonra Düzenle'ye dokunun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Özelleştir'i açın",
+        text: "Simge görünümü seçeneklerini görmek için Özelleştir'e dokunun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bir görünüm seçin",
+        text: "Açık, Koyu, Şeffaf veya Renk Tonlu arasından seçim yapın. Renk Tonlu bir renk seçici sunar.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Cam düzeyini ayarlayın",
+        text: "Arayüzün geri kalanı için Ayarlar, Görünüm, Liquid Glass'ı açın ve sürgüyü Şeffaf ile Renk Tonlu arasında sürükleyin.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iOS 27'de Liquid Glass'ı kapatabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kapatma düğmesi yok. iOS 27, Ayarlar, Görünüm, Liquid Glass içine arayüzü daha şeffaf ve daha renk tonlu bir görünüm arasında gezdiren bir sürgü ekliyor.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Şeffaf simge stili her uygulamada geçerli mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ana Ekran'ın tamamına uygulanır. Doğru simge katmanlarını gönderen uygulamalar düzgün görünür, diğerlerini sistem yaklaştırarak üretir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Widget'taki uygulama karoları simge görünümünü takip eder mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kendiliğinden etmez, çünkü widget kendi içeriğini çizer. WidgetLoft uygulama simgelerinin gerçek koyu sürümlerini içerir ve her görünüm için özel bir görüntü ayarlamanıza izin verir, böylece bir başlatıcı widget'ı koyu veya renk tonlu bir Ana Ekran'la uyuşabilir.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27'de Şeffaf, Renk Tonlu ve Koyu Uygulama Simgeleri (ve Cam Sürgüsü)
+
+**Kısa cevap:** Ana Ekran'ın boş bir noktasına basılı tutun, **Düzenle**'ye, sonra **Özelleştir**'e dokunun ve simgeleriniz için Açık, Koyu, Şeffaf veya Renk Tonlu'yu seçin. Arayüzün geri kalanı için **Ayarlar, Görünüm, Liquid Glass**'ı açıp sürgüyü sürükleyin. İki ayrı denetim, iki ayrı iş ve insanlar bunları sürekli karıştırıyor.
+
+---
+
+## İki denetim, ayrı ayrı
+
+**Simge görünümü** Ayarlar'da değil, Ana Ekran'da durur. Uygulama simgelerinin nasıl çizildiğini değiştirir: normal açık simgeler, koyu sürümler, camsı bir Şeffaf görünüm ya da bir renk seçtiğiniz ve her simgenin onu benimsediği Renk Tonlu.
+
+**Liquid Glass sürgüsü** Ayarlar, Görünüm, Liquid Glass içinde durur ve iOS 27 ile yeni geldi. Simgelerinize dokunmaz. Sistem arayüzünün ne kadar saydam olduğunu denetler: menüler, araç çubukları, yaprak pencereler, Denetim Merkezi. Şeffaf tarafına çekin, her şey daha hafif ve daha görünür okunur. Renk Tonlu tarafına çekin, aynı yüzeyler dolu bir zemin kazanır ve yoğun bir duvar kağıdının üstünde okumak kolaylaşır.
+
+Liquid Glass'ı kapatan bir düğme yok. Apple'ın verdiği denetim bu sürgü ve onu Renk Tonlu'ya sürüklemek ulaşabileceğiniz en yakın nokta.
+
+## Simge görünümünü değiştirme
+
+1. Ana Ekran'ın boş bir yerine simgeler titreyene kadar basılı tutun.
+2. **Düzenle**'ye, sonra **Özelleştir**'e dokunun.
+3. **Açık**, **Koyu**, **Şeffaf** veya **Renk Tonlu**'yu seçin. Renk Tonlu size bir renk seçici verir.
+4. Bitirmek için herhangi bir yere dokunun.
+
+İlgiyi çeken seçenek Şeffaf: simgeler camsı hale gelir ve rengini duvar kağıdından alır. Biraz kontrastı olan bir duvar kağıdının üstünde en iyi, yoğun bir fotoğrafın üstünde ise en kötü görünür, çünkü orada birkaç simge birbirinden ayırt edilemez olur.
+
+## Kimsenin söylemediği kısım: widget'lar bunu takip etmez
+
+Simge görünümü, sistem tarafından uygulama simgelerine uygulanır. Bir widget kendi içeriğini çizer, dolayısıyla Şeffaf'ı veya Renk Tonlu'yu miras almaz. Ana Ekran'ınızı Koyu'ya alın, parlak uygulama simgeleriyle dolu bir widget birden sayfada bir delik gibi görünür.
+
+[WidgetLoft](/widgetloft) bunu bilinçli olarak ele alıyor:
+
+- **Gerçek koyu simgeler.** Apple'ın sistem simgelerinin gerçek koyu sürümleri uygulamayla birlikte gelir ve en yaygın üçüncü taraf simgelerinin koyu sürümleri önceden hazırlanmıştır, böylece koyu bir Ana Ekran widget'ın içinde de koyu kalır.
+- **Görünüm başına özel simgeler.** Uygulama başına açık mod için bir görüntü, koyu mod için başka bir görüntü ayarlayabilirsiniz.
+- **Şeffaf widget arka planı** iOS 26 ve sonrasında, böylece widget gri bir kartın değil, duvar kağıdının üstünde oturur.
+
+[Koyu mod uygulama simgeleri](/blog/dark-mode-app-icons-iphone) ve [şeffaf widget'lar](/blog/transparent-widget-iphone) için ayrı birer anlatım var.
+
+## Hangi bileşim gerçekten iyi görünüyor
+
+- **Şeffaf simgeler, sade bir duvar kağıdı, şeffaf widget'lar.** iOS 27'nin üretebildiği en temiz görünüm ve cam etkisinin tasarlandığı kullanım.
+- **Koyu simgeler, koyu duvar kağıdı, koyu widget karoları.** En okunur olan ve duvar kağıdınıza en az bağımlı olan.
+- **Tek renkte renk tonlu simgeler, onlara uyan özel widget karoları.** En kişisel olan ve en çok emek isteyen.
+
+Renk Tonlu'yu fotoğraf duvar kağıdıyla kullanmaktan kaçının. Her şey aynı renkli bir bulamaca döner ve uygulamaları konumlarına göre aramaya başlarsınız.
+
+## Sık sorulan sorular
+
+**iOS 27'de Liquid Glass'ı kapatabilir miyim?**
+Hayır. Ayarlar, Görünüm, Liquid Glass içindeki sürgü tek denetim ve daha şeffaf ile daha renk tonlu arasında gezinir.
+
+**Şeffaf her uygulamada geçerli mi?**
+Ana Ekran'ın tamamına uygulanır. Doğru simge katmanlarını gönderen uygulamalar düzgün görünür, geri kalanı yaklaştırılır.
+
+**Widget'taki uygulama karoları simge görünümünü takip eder mi?**
+Hayır, bir widget kendini çizer. WidgetLoft'un gerçek koyu simgeler ve görünüm başına geçersiz kılmalar içermesinin nedeni bu.
+
+---
+
+Başlatıcı widget'ınız Şeffaf veya Koyu bir Ana Ekran'la savaşmak yerine ona uysun ister misiniz? [WidgetLoft'u App Store'dan indirin](/widgetloft/download).

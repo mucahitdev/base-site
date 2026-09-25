@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Przezroczyste, zabarwione i ciemne ikony aplikacji w iOS 27 (oraz suwak szkła)",
+  description:
+    "iOS 27 pozwala ustawić ikony aplikacji jako Przezroczyste, Zabarwione, Ciemne lub Jasne i dodaje suwak Liquid Glass w Ustawieniach. Oto gdzie znajduje się każde ustawienie i jak nadążają za nim widżety.",
+  keywords: [
+    "przezroczyste ikony aplikacji ios 27",
+    "suwak liquid glass ios 27",
+    "zabarwione ikony aplikacji iphone",
+    "ciemne ikony aplikacji ios 27",
+    "personalizacja ekranu początkowego ios 27",
+    "wygląd ikon ios 27",
+  ],
+  ogTitle: "Przezroczyste, zabarwione i ciemne ikony w iOS 27",
+  ogDescription:
+    "Gdzie są ustawienia wyglądu ikon, co robi suwak Liquid Glass i jak radzą sobie z tym widżety.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Przezroczyste, zabarwione i ciemne ikony aplikacji w iOS 27 (oraz suwak szkła)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/liquid-glass-app-icons-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Jak zmienić wygląd ikon aplikacji w iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Włącz tryb edycji",
+        text: "Naciśnij i przytrzymaj puste miejsce na ekranie początkowym, aż ikony zaczną drgać, a następnie dotknij Edytuj.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Otwórz Dostosuj",
+        text: "Dotknij Dostosuj, aby zobaczyć opcje wyglądu ikon.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz wygląd",
+        text: "Wybierz Jasny, Ciemny, Przezroczysty lub Zabarwiony. Zabarwiony udostępnia próbnik kolorów.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ustaw poziom szkła",
+        text: "Dla pozostałej części interfejsu otwórz Ustawienia, Wygląd, Liquid Glass i przesuń suwak między Przezroczystym a Zabarwionym.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy mogę wyłączyć Liquid Glass w iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie ma przełącznika wyłączającego. iOS 27 dodaje w Ustawieniach, Wygląd, Liquid Glass suwak, który przesuwa interfejs między wyglądem bardziej przezroczystym i bardziej zabarwionym.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy styl Przezroczysty działa w każdej aplikacji?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dotyczy on ekranu początkowego jako całości. Aplikacje, które dostarczają właściwe warstwy ikony, wyglądają poprawnie, pozostałe system odtwarza w przybliżeniu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy kafelki aplikacji w widżecie przejmują wygląd ikon?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie automatycznie, bo widżet rysuje własną treść. WidgetLoft zawiera prawdziwe ciemne wersje ikon aplikacji i pozwala ustawić własny obraz dla każdego wyglądu, dzięki czemu widżet z ikonami może pasować do ciemnego lub zabarwionego ekranu początkowego.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Przezroczyste, zabarwione i ciemne ikony aplikacji w iOS 27 (oraz suwak szkła)
+
+**Krótka odpowiedź:** naciśnij i przytrzymaj puste miejsce na ekranie początkowym, dotknij **Edytuj**, potem **Dostosuj** i wybierz dla ikon Jasny, Ciemny, Przezroczysty lub Zabarwiony. Dla pozostałej części interfejsu otwórz **Ustawienia, Wygląd, Liquid Glass** i przesuń suwak. Dwa różne ustawienia, dwa różne zadania, a ludzie bez przerwy je mieszają.
+
+---
+
+## Dwa ustawienia, po kolei
+
+**Wygląd ikon** znajduje się na ekranie początkowym, a nie w Ustawieniach. Zmienia sposób rysowania ikon aplikacji: zwykłe jasne ikony, wersje ciemne, szklany wariant Przezroczysty albo Zabarwiony, w którym wybierasz kolor, a każda ikona go przyjmuje.
+
+**Suwak Liquid Glass** znajduje się w Ustawieniach, Wygląd, Liquid Glass i jest nowością iOS 27. Nie rusza twoich ikon. Decyduje o tym, jak przejrzysty jest interfejs systemu: menu, paski narzędzi, panele, Centrum sterowania. Przesuń go w stronę Przezroczystego i wszystko staje się lżejsze i bardziej prześwitujące. Przesuń w stronę Zabarwionego i te same powierzchnie zyskują pełne tło, które łatwiej czytać na zatłoczonej tapecie.
+
+Nie ma przełącznika, który wyłącza Liquid Glass. Suwak to jedyne, co dała Apple, a przeciągnięcie go do Zabarwionego jest najbliższe, co osiągniesz.
+
+## Jak zmienić wygląd ikon
+
+1. Naciśnij i przytrzymaj puste miejsce na ekranie początkowym, aż ikony zaczną drgać.
+2. Dotknij **Edytuj**, potem **Dostosuj**.
+3. Wybierz **Jasny**, **Ciemny**, **Przezroczysty** lub **Zabarwiony**. Zabarwiony daje próbnik kolorów.
+4. Dotknij dowolnego miejsca, aby zakończyć.
+
+Największą uwagę przyciąga Przezroczysty: ikony stają się szkliste i biorą kolor z tapety. Wygląda najlepiej na tapecie o pewnym kontraście, a najgorzej na zatłoczonym zdjęciu, gdzie kilka ikon przestaje się od siebie różnić.
+
+## Część, o której nikt nie mówi: widżety tego nie przejmują
+
+Wygląd ikon nakłada system i tylko na ikony aplikacji. Widżet rysuje własną treść, więc nie dziedziczy ani Przezroczystego, ani Zabarwionego. Ustaw ekran początkowy na Ciemny, a widżet pełen jasnych ikon nagle wygląda jak dziura w stronie.
+
+[WidgetLoft](/widgetloft) podchodzi do tego świadomie:
+
+- **Prawdziwe ciemne ikony.** Autentyczne ciemne wersje systemowych ikon Apple są dołączone do aplikacji, a ciemne wersje najpopularniejszych ikon innych firm są przygotowane z wyprzedzeniem, więc ciemny ekran początkowy pozostaje ciemny również w widżecie.
+- **Własne ikony dla każdego wyglądu.** Dla każdej aplikacji możesz ustawić jeden obraz dla trybu jasnego i inny dla ciemnego.
+- **Przezroczyste tło widżetu** w iOS 26 i nowszych, aby widżet leżał na tapecie, a nie na szarej karcie.
+
+Jest osobny przewodnik o [ikonach aplikacji w trybie ciemnym](/blog/dark-mode-app-icons-iphone) i o [przezroczystych widżetach](/blog/transparent-widget-iphone).
+
+## Które połączenie naprawdę dobrze wygląda
+
+- **Przezroczyste ikony, prosta tapeta, przezroczyste widżety.** Najczystszy efekt, jaki potrafi dać iOS 27, i dokładnie ten, dla którego zaprojektowano szkło.
+- **Ciemne ikony, ciemna tapeta, ciemne kafelki widżetu.** Najczytelniejszy i najmniej zależny od tapety.
+- **Zabarwione ikony w jednym kolorze i dopasowane własne kafelki widżetu.** Najbardziej osobisty i najbardziej pracochłonny.
+
+Unikaj Zabarwionego ze zdjęciem jako tapetą. Wszystko zamienia się w jedną kolorową maź i zaczynasz szukać aplikacji po ich położeniu.
+
+## Częste pytania
+
+**Czy mogę wyłączyć Liquid Glass w iOS 27?**
+Nie. Suwak w Ustawieniach, Wygląd, Liquid Glass to jedyne ustawienie i przesuwa się między bardziej przezroczystym a bardziej zabarwionym.
+
+**Czy Przezroczysty działa w każdej aplikacji?**
+Dotyczy ekranu początkowego jako całości. Aplikacje z właściwymi warstwami ikony wyglądają dobrze, pozostałe są odtwarzane w przybliżeniu.
+
+**Czy kafelki aplikacji w widżecie przejmują wygląd ikon?**
+Nie, widżet rysuje się sam. Właśnie dlatego WidgetLoft zawiera prawdziwe ciemne ikony i zamienniki dla każdego wyglądu.
+
+---
+
+Chcesz, aby twój widżet z ikonami pasował do Przezroczystego lub Ciemnego ekranu początkowego, a nie z nim walczył? [Pobierz WidgetLoft w App Store](/widgetloft/download).

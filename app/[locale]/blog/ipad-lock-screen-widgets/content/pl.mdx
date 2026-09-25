@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Widgety na ekranie blokady iPada: co potrafią i jak otwierać aplikacje",
+  description:
+    "Jak dodać widgety do ekranu blokady iPada, co mieści prostokątne miejsce i jak sprawić, by jednym stuknięciem otwierało twoje aplikacje.",
+  keywords: [
+    "widgety ekran blokady ipad",
+    "jak dodać widget na ekran blokady ipada",
+    "aplikacje na ekranie blokady ipada",
+    "otwieranie aplikacji z ekranu blokady ipad",
+    "personalizacja ekranu blokady ipada",
+    "ekran blokady ipados 27",
+  ],
+  ogTitle: "Widgety na ekranie blokady iPada i jak otwierać z nich aplikacje",
+  ogDescription:
+    "Ekran blokady iPada przyjmuje widgety obok zegara. Jeden z nich może być rzędem kafelków aplikacji.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Widgety na ekranie blokady iPada: co potrafią i jak otwierać aplikacje",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-lock-screen-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Dodawanie widgetu uruchamiającego aplikacje na ekran blokady iPada",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Przejdź do edycji ekranu blokady",
+        text: "Dotknij i przytrzymaj ekran blokady, następnie stuknij Dostosuj i wybierz ekran blokady.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Otwórz obszar widgetów",
+        text: "Stuknij obszar widgetów obok zegara lub pod nim, aby otworzyć listę widgetów.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj widget uruchamiający",
+        text: "Wybierz WidgetLoft i dodaj jego prostokątny widget, potem stuknij go, aby wybrać wyświetlaną grupę.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Stuknij aplikację",
+        text: "Stuknij kafelek na ekranie blokady. iPad poprosi o odblokowanie, a potem otworzy aplikację.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Ile aplikacji mieści się w widgecie na ekranie blokady iPada?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Prostokątny widget ekranu blokady to jeden rząd: do 4 kafelków aplikacji z małymi ikonami albo 3 z dużymi ikonami.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy stuknięcie kafelka otwiera aplikację, gdy iPad jest zablokowany?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. iPadOS najpierw prosi o odblokowanie, a dopiero potem otwiera aplikację. To zasada systemu, nie ustawienie aplikacji.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy widgety na ekranie blokady iPada są kolorowe?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. iPadOS rysuje widgety ekranu blokady jednym odcieniem, więc ikony aplikacji wyglądają jak jednobarwne kształty, a nie we własnych kolorach.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Widgety na ekranie blokady iPada: co potrafią i jak otwierać aplikacje
+
+**Krótka odpowiedź:** dotknij i przytrzymaj ekran blokady iPada, stuknij **Dostosuj**, a potem stuknij obszar widgetów obok zegara. Wszystko, co tam dodasz, jest widoczne jeszcze przed odblokowaniem. Z [WidgetLoft](/widgetloft) jedno z tych miejsc zamienia się w rząd kafelków aplikacji, więc pierwszą rzeczą, której dotkniesz po wzięciu iPada do ręki, jest właśnie ta aplikacja, o którą ci chodziło.
+
+---
+
+## Gdzie na ekranie blokady iPada są widgety
+
+iPad ustawia widgety ekranu blokady w kolumnie lub rzędzie blisko zegara, zależnie od orientacji, a w iPadOS 27 sam zegar można przesunąć, żeby przestał zasłaniać tapetę.
+
+W odróżnieniu od ekranu początkowego nie ma tu siatki do zapełnienia. Dostajesz kilka miejsc i każde z nich walczy o to samo spojrzenie. Właśnie dlatego miejsce pełne kafelków aplikacji opłaca się na iPadzie bardziej niż kolejny kwadrat z pogodą: iPada bierzesz do ręki, by zrobić jedną rzecz, a ta rzecz zaczyna się na ekranie blokady.
+
+## Krok po kroku
+
+1. **Dotknij i przytrzymaj ekran blokady**, aż pojawi się przycisk dostosowywania, potem stuknij **Dostosuj** i wybierz ekran blokady.
+2. **Stuknij obszar widgetów** obok zegara lub pod nim. Otworzy się lista widgetów.
+3. **Wybierz WidgetLoft** i dodaj jego prostokątny widget.
+4. **Stuknij właśnie dodany widget** i wybierz, którą grupę pokazuje.
+5. **Stuknij Gotowe, a potem kafelek.** iPad poprosi o Face ID lub kod, po czym aplikacja się otworzy.
+
+## Co się tu naprawdę mieści
+
+Prostokątny widget ekranu blokady to jeden rząd:
+
+| Rozmiar ikony | Kafelki |
+| --- | --- |
+| Mały | 4 |
+| Duży | 3 |
+
+To sufit i pochodzi od systemu: Apple daje każdej aplikacji ten sam prostokąt. Traktuj go więc jak pasek skrótów do trzech czy czterech aplikacji, które otwierasz pierwsze, a nie jak launcher. Kamera, notatki, przeglądarka i komunikator to realistyczny zestaw.
+
+Po prawdziwą siatkę idź na ekran początkowy. Jest przewodnik o [widgecie uruchamiającym na iPada z nawet 72 kafelkami](/blog/ipad-app-launcher-widget).
+
+## Dwie rzeczy, których należy się spodziewać
+
+**Brak koloru.** iPadOS rysuje widgety ekranu blokady jednym odcieniem, więc ikony czyta się jak sylwetki. Wybieraj aplikacje o wyraźnie różnych kształtach; cztery szare zaokrąglone kwadraty trudno rozróżnić jednym spojrzeniem.
+
+**Najpierw odblokowanie.** Stuknięcie kafelka nie otworzy aplikacji, dopóki iPad jest zablokowany. Stuknięcie jest rejestrowane, urządzenie prosi o Face ID albo kod, i dopiero potem aplikacja się otwiera. Nic tego nie obejdzie i nie chciałbyś aplikacji, która to robi.
+
+## Warto połączyć z
+
+- **Przesuniętym zegarem.** W iPadOS 27 można go ruszyć, co zwykle uwalnia miejsce, o które walczyły twoje widgety.
+- **Widgetem uruchamiającym na ekranie początkowym.** Rząd na ekranie blokady na pierwsze stuknięcie, siatka na ekranie początkowym na wszystko inne.
+- **Suwakiem Liquid Glass** w Ustawieniach, sekcja Wygląd, jeśli tekst widgetu słabo się czyta na twojej tapecie.
+
+## Częste pytania
+
+**Ile aplikacji mieści się w widgecie na ekranie blokady iPada?**
+Cztery z małymi ikonami, trzy z dużymi. To jeden rząd.
+
+**Czy stuknięcie kafelka otwiera aplikację, gdy iPad jest zablokowany?**
+Nie, iPadOS najpierw prosi o odblokowanie, a potem ją otwiera.
+
+**Czy widgety na ekranie blokady iPada są kolorowe?**
+Nie. Są rysowane jednym odcieniem, więc ikony wyglądają jednobarwnie.
+
+---
+
+Chcesz, żeby pierwsze stuknięcie po wzięciu iPada było tym właściwym? [Pobierz WidgetLoft z App Store](/widgetloft/download).

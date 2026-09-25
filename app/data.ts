@@ -285,6 +285,42 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title: 'How to Turn an iPad Widget Into an App Launcher (Up to 72 Apps)',
+    description:
+      'The iPad\'s wide Extra Large widget holds up to 72 app tiles, and every tile opens the real app.',
+    link: '/blog/ipad-app-launcher-widget',
+    uid: 'blog-32',
+  },
+  {
+    title: 'iPadOS 27 Windowing: Build a Home Screen That Keeps Up',
+    description:
+      'Windows changed how you open apps on iPad, so the Home Screen should change with them.',
+    link: '/blog/ipados-27-multitasking-home-screen',
+    uid: 'blog-31',
+  },
+  {
+    title: 'iPad Lock Screen Widgets: What They Do and How to Launch Apps',
+    description:
+      'What the iPad Lock Screen widget slots can hold, and how one of them becomes a row of app tiles.',
+    link: '/blog/ipad-lock-screen-widgets',
+    uid: 'blog-30',
+  },
+  {
+    title:
+      'Clear, Tinted and Dark App Icons in iOS 27 (and the Glass Slider)',
+    description:
+      'Where the icon appearance controls live, what the Liquid Glass slider does, and how widgets keep up.',
+    link: '/blog/liquid-glass-app-icons-ios-27',
+    uid: 'blog-29',
+  },
+  {
+    title: 'iOS 27 Shortcuts Automations That Improve Your Home Screen',
+    description:
+      'Five automations worth setting up, including the new notification trigger, and what each one changes.',
+    link: '/blog/ios-27-shortcuts-automations-home-screen',
+    uid: 'blog-28',
+  },
+  {
     title:
       'How to Set Up the iPhone Duo Home Screen (Inner and Outer Display)',
     description:

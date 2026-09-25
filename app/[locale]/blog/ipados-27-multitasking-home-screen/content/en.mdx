@@ -1,0 +1,128 @@
+export const meta = {
+  title: "iPadOS 27 Windowing: Build a Home Screen That Keeps Up",
+  description:
+    "iPadOS 27 refines the desktop-style windowing introduced in iPadOS 26. Here is how to arrange an iPad Home Screen around it, including a launcher widget that opens apps into windows.",
+  keywords: [
+    "ipados 27 multitasking",
+    "ipados 27 windowing",
+    "ipad home screen setup 2026",
+    "ipad window resize apps",
+    "ipad launcher widget",
+    "ipados 27 tips",
+  ],
+  ogTitle: "An iPad Home Screen Built for iPadOS 27 Windowing",
+  ogDescription:
+    "Windows changed how you open apps on iPad. Your Home Screen should change with them.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline: "iPadOS 27 Windowing: Build a Home Screen That Keeps Up",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does opening an app from a widget give it a window?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. A widget tile launches the app the same way its Home Screen icon does, so it opens as a window and can be resized and arranged like any other.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I still need app folders on iPad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Less than before. A folder costs a tap to open and a tap to close. A launcher widget keeps the same apps visible on the page, which matters more when you are opening several windows in a row.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I undo a Home Screen rearrangement on iPadOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. iPadOS 27 adds undo and redo buttons while the icons are jiggling, so you can try a layout and step back out of it.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPadOS 27 Windowing: Build a Home Screen That Keeps Up
+
+**Quick answer:** iPadOS 27 keeps the desktop-style windowing of iPadOS 26 and makes opening, resizing and switching windows faster. That changes what a good Home Screen looks like: you now open several apps in a row rather than one at a time, so the page should put a lot of apps one tap away. A launcher widget does that better than folders.
+
+---
+
+## What changed, briefly
+
+iPadOS 26 turned the iPad into a windowed machine. iPadOS 27 keeps going in the same direction: windows respond faster, iPhone apps running on an iPad can be resized, and the Home Screen itself gains undo and redo while you are rearranging icons.
+
+Two smaller changes matter for layout. The Lock Screen clock can be repositioned, so your wallpaper is no longer half covered. And Liquid Glass now has a slider in Settings, so you decide how transparent the interface looks.
+
+## Why windows change your Home Screen
+
+With one app at a time, the Home Screen is a place you pass through. With windows, it is a staging area. You go back to it to pull in the second, third and fourth app of a task, and you do that many times a day.
+
+That makes two things expensive:
+
+- **Folders.** Two taps each, every time.
+- **Search.** Fast for one app, slow as a habit, and it pulls your hands off the layout.
+
+What you want instead is a page where twenty or thirty apps are visible and one tap away.
+
+## The layout
+
+1. **One launcher widget, top of the page.** Add a wide Extra Large widget from [WidgetLoft](/widgetloft) and point it at a group with every app you open during work. Small icons fit up to 72 tiles; there is a [full capacity table in the iPad launcher guide](/blog/ipad-app-launcher-widget).
+2. **Group by task, not by type.** A window-based workflow opens apps in clusters: notes plus browser plus mail. Put clusters together in the grid, or give each its own folder tile.
+3. **Keep the dock for the two or three apps you always have open.** The dock survives every page, so it is the wrong place for anything occasional.
+4. **Leave the bottom half of the page empty.** That is where windows land. A page crowded to the edges fights the thing you are actually doing.
+
+Each tile opens its app as a normal window, because the tile launches the app exactly the way its icon does.
+
+## Sub-folders instead of pages
+
+Swiping between Home Screen pages is slower than it looks, and with windows open you often cannot see the page dots at all. A launcher widget's folder tiles open **in place**: tap a folder tile, the grid switches to its contents, tap the back tile to come up.
+
+That gives you the depth of several pages without leaving the page. Each folder holds up to 100 apps and 20 sub-folders, and you can nest as deep as you like. Turn on **Auto-return to folder** in Settings, Widget, so the widget resets itself to the top level instead of sitting where you left it.
+
+## Two more things worth setting
+
+**Undo while arranging.** Long-press the Home Screen until the icons jiggle and you will see undo and redo. Move things freely; you are no longer committing.
+
+**The Liquid Glass slider.** Settings, Appearance, Liquid Glass. Pull it toward Clear for a lighter interface, toward Tinted if you want text and controls to read harder against a busy wallpaper. It redraws live as you drag.
+
+## Common questions
+
+**Does opening an app from a widget give it a window?**
+Yes. The tile launches the app the same way the icon does, so it opens as a window and behaves like any other.
+
+**Do I still need app folders on iPad?**
+Less than before. Folder tiles inside a launcher widget cover the same need without leaving the page.
+
+**Can I undo a Home Screen rearrangement on iPadOS 27?**
+Yes, undo and redo are there while the icons jiggle.
+
+---
+
+Set the page up once and windowing stops being a chore. [Download WidgetLoft on the App Store](/widgetloft/download) to build the launcher.

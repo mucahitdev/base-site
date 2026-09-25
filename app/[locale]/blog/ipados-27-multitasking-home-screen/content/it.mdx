@@ -1,0 +1,128 @@
+export const meta = {
+  title: "Finestre in iPadOS 27: costruisci una schermata Home al passo",
+  description:
+    "iPadOS 27 perfeziona la gestione delle finestre in stile desktop arrivata con iPadOS 26. Ecco come organizzare la schermata Home dell'iPad intorno a essa, incluso un widget di avvio che apre le app in finestre.",
+  keywords: [
+    "multitasking ipados 27",
+    "finestre ipados 27",
+    "organizzare la schermata home ipad 2026",
+    "ridimensionare finestre app ipad",
+    "widget avvio app ipad",
+    "trucchi ipados 27",
+  ],
+  ogTitle: "Una schermata Home per iPad pensata per le finestre di iPadOS 27",
+  ogDescription:
+    "Le finestre hanno cambiato il modo di aprire le app su iPad. La tua schermata Home dovrebbe cambiare con loro.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline: "Finestre in iPadOS 27: costruisci una schermata Home al passo",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Aprire un'app da un widget la apre in una finestra?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sì. Un riquadro del widget avvia l'app allo stesso modo della sua icona nella schermata Home, quindi si apre come finestra e può essere ridimensionata e disposta come qualsiasi altra.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Mi servono ancora le cartelle di app su iPad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Meno di prima. Una cartella costa un tocco per aprirla e un tocco per chiuderla. Un widget di avvio tiene le stesse app visibili nella pagina, cosa che conta di più quando apri diverse finestre di seguito.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Posso annullare una riorganizzazione della schermata Home su iPadOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sì. iPadOS 27 aggiunge i pulsanti annulla e ripristina mentre le icone tremolano, così puoi provare una disposizione e tornare indietro.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Finestre in iPadOS 27: costruisci una schermata Home al passo
+
+**Risposta rapida:** iPadOS 27 mantiene la gestione delle finestre in stile desktop di iPadOS 26 e rende più rapido aprirle, ridimensionarle e passare da una all'altra. Questo cambia l'aspetto di una buona schermata Home: adesso apri diverse app di seguito invece di una alla volta, quindi la pagina dovrebbe tenere molte app a un solo tocco. Un widget di avvio ci riesce meglio delle cartelle.
+
+---
+
+## Cosa è cambiato, in breve
+
+iPadOS 26 ha trasformato l'iPad in una macchina a finestre. iPadOS 27 continua nella stessa direzione: le finestre rispondono più in fretta, le app per iPhone in esecuzione su un iPad si possono ridimensionare e la schermata Home stessa guadagna annulla e ripristina mentre riorganizzi le icone.
+
+Due cambiamenti minori contano per la disposizione. L'orologio della schermata di blocco si può riposizionare, quindi lo sfondo non è più coperto a metà. E Liquid Glass ora ha un cursore in Impostazioni, così decidi tu quanto appare trasparente l'interfaccia.
+
+## Perché le finestre cambiano la tua schermata Home
+
+Con un'app alla volta, la schermata Home è un posto di passaggio. Con le finestre è un'area di allestimento. Ci torni per prendere la seconda, la terza e la quarta app di un'attività, e lo fai molte volte al giorno.
+
+Questo rende costose due cose:
+
+- **Le cartelle.** Due tocchi ogni volta, sempre.
+- **La ricerca.** Rapida per una singola app, lenta come abitudine, e ti stacca le mani dalla disposizione.
+
+Quello che vuoi invece è una pagina in cui venti o trenta app siano visibili e a un solo tocco.
+
+## La disposizione
+
+1. **Un widget di avvio, in cima alla pagina.** Aggiungi un widget Extra grande e largo da [WidgetLoft](/widgetloft) e puntalo a un gruppo con tutte le app che apri durante il lavoro. Le icone piccole stanno in un massimo di 72 riquadri; c'è una [tabella completa delle capacità nella guida al launcher per iPad](/blog/ipad-app-launcher-widget).
+2. **Raggruppa per attività, non per tipo.** Un flusso basato sulle finestre apre le app a gruppi: note più browser più mail. Tieni i gruppi vicini nella griglia, oppure dai a ciascuno un proprio riquadro cartella.
+3. **Lascia il Dock alle due o tre app che hai sempre aperte.** Il Dock sopravvive a ogni pagina, quindi è il posto sbagliato per qualsiasi cosa occasionale.
+4. **Lascia vuota la metà inferiore della pagina.** È lì che atterrano le finestre. Una pagina piena fino ai bordi combatte con ciò che stai davvero facendo.
+
+Ogni riquadro apre la sua app come una normale finestra, perché il riquadro avvia l'app esattamente come fa la sua icona.
+
+## Sottocartelle invece di pagine
+
+Scorrere tra le pagine della schermata Home è più lento di quanto sembri, e con le finestre aperte spesso non vedi nemmeno i puntini delle pagine. I riquadri cartella di un widget di avvio si aprono **sul posto**: tocca un riquadro cartella, la griglia passa al suo contenuto, tocca il riquadro indietro per risalire.
+
+Ottieni la profondità di diverse pagine senza lasciare la pagina. Ogni cartella contiene fino a 100 app e 20 sottocartelle, e puoi annidare quanto vuoi. Attiva **Ritorno automatico alla cartella** in Impostazioni, Widget, così il widget si riporta al livello principale invece di restare dove l'hai lasciato.
+
+## Altre due cose che vale la pena impostare
+
+**Annulla mentre sistemi.** Tieni premuto sulla schermata Home finché le icone non tremolano e vedrai annulla e ripristina. Sposta liberamente: non stai più decidendo per sempre.
+
+**Il cursore di Liquid Glass.** Impostazioni, Aspetto, Liquid Glass. Portalo verso Trasparente per un'interfaccia più leggera, verso Colorato se vuoi che testo e controlli si leggano meglio su uno sfondo affollato. Si ridisegna in tempo reale mentre trascini.
+
+## Domande frequenti
+
+**Aprire un'app da un widget la apre in una finestra?**
+Sì. Il riquadro avvia l'app come fa l'icona, quindi si apre come finestra e si comporta come qualsiasi altra.
+
+**Mi servono ancora le cartelle di app su iPad?**
+Meno di prima. I riquadri cartella dentro un widget di avvio coprono la stessa esigenza senza lasciare la pagina.
+
+**Posso annullare una riorganizzazione della schermata Home su iPadOS 27?**
+Sì, annulla e ripristina sono lì mentre le icone tremolano.
+
+---
+
+Imposta la pagina una volta e le finestre smettono di essere una fatica. [Scarica WidgetLoft sull'App Store](/widgetloft/download) per costruire il launcher.

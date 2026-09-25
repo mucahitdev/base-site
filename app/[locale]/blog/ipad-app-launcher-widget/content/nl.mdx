@@ -1,0 +1,163 @@
+export const meta = {
+  title:
+    "Een iPad-widget omtoveren tot een app-starter (tot 72 apps)",
+  description:
+    "De iPad heeft sinds iPadOS 15 een brede widget in het formaat Extra groot. Lees hoe je hem toevoegt, hoeveel apptegels er per symboolformaat in passen en hoe je elke tegel meteen een app laat openen.",
+  keywords: [
+    "ipad app starter widget",
+    "ipad extra grote widget",
+    "ipad beginscherm app widget",
+    "apps openen vanuit widget ipad",
+    "ipad widget map met apps",
+    "ipados 27 widgets",
+  ],
+  ogTitle: "Maak van een iPad-widget een starter met 72 apps",
+  ogDescription:
+    "De brede Extra grote widget van de iPad houdt tot 72 apptegels, en elke tegel kan een app openen.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline:
+      "Een iPad-widget omtoveren tot een app-starter (tot 72 apps)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-app-launcher-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Een iPad-widget omtoveren tot een app-starter",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Maak een groep",
+        text: "Open WidgetLoft op de iPad, maak een groep en voeg de apps toe die je op de starter wilt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg de widget toe",
+        text: "Houd je vinger op het beginscherm van de iPad, tik op Wijzig en dan op Voeg widget toe, kies WidgetLoft en veeg naar het formaat Extra groot.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies de groep",
+        text: "Houd je vinger op de nieuwe widget, tik op Wijzig widget en kies de groep die je hebt gemaakt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies een symboolformaat",
+        text: "Kies een symboolformaat voor de groep: op de brede Extra grote widget van de iPad passen bij kleine symbolen tot 72 tegels, bij middelgrote 50, bij grote 32 en bij extra grote 18.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Hoeveel apps passen er in een iPad-widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Op de brede Extra grote widget van de iPad tot 72 tegels met kleine symbolen, 50 met middelgrote, 32 met grote en 18 met extra grote symbolen. Submappen houden meer apps achter één tegel.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Openen de tegels de echte apps?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Elke tegel start de geïnstalleerde app rechtstreeks vanuit de widget op het beginscherm, zonder dat WidgetLoft eerst opengaat.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Welke iPads ondersteunen de Extra grote widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Het brede formaat Extra groot bestaat op de iPad sinds iPadOS 15 en verschijnt in de widgetgalerie als je voorbij het formaat Groot veegt.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Een iPad-widget omtoveren tot een app-starter (tot 72 apps)
+
+**Kort antwoord:** de iPad heeft een widgetformaat dat de iPhone nooit had: de brede Extra groot, ongeveer twee keer zo breed als hoog. Voeg hem toe via de widgetgalerie op het beginscherm, richt hem op een [WidgetLoft](/widgetloft)-groep, en je krijgt een raster van maximaal 72 apptegels die elk de echte app openen.
+
+Het beginscherm van de iPad had altijd het omgekeerde probleem van dat van de iPhone. Er is ruimte in overvloed, en losse symbolen zwemmen erin. Een widget die een net raster met apps vasthoudt, gebruikt die breedte in plaats van hem te verspillen.
+
+---
+
+## Waarom een starterwidget bij de iPad past
+
+Op een iPad-pagina passen veel meer symbolen dan op een telefoonpagina, dus mappen lopen vol en alles ligt twee tikken ver: map openen, app zoeken. Een starterwidget maakt dat plat. De apps staan op de pagina zelf, zichtbaar en één tik ver.
+
+Hij overleeft ook wat de meeste iPad-indelingen sloopt: je draait het apparaat. Een widget houdt zijn eigen raster, dus je indeling loopt niet opnieuw door zoals losse symbolen doen.
+
+## Stap voor stap
+
+1. **Maak een groep.** Open [WidgetLoft](/widgetloft) op de iPad, maak een groep en voeg de apps toe die je wilt. Tik op **Nieuwe map** voor alles wat een eigen niveau verdient.
+2. **Voeg de widget toe.** Houd je vinger op het beginscherm, tik op **Wijzig** en dan op **Voeg widget toe**. Kies WidgetLoft en veeg door de formaten tot je bij Extra groot bent.
+3. **Kies de groep.** Houd je vinger op de nieuwe widget, tik op **Wijzig widget** en kies je groep.
+4. **Kies een symboolformaat.** Bij kleine symbolen passen de meeste apps; extra grote symbolen raak je met je duim het makkelijkst terwijl je de iPad vasthoudt.
+
+Tik op een tegel en die app gaat open. Tik op een maptegel en die opent binnen de widget, met een terugtegel om een niveau omhoog te gaan.
+
+## Hoeveel apps er per symboolformaat in passen
+
+| Symboolformaat | Brede Extra groot (iPad) | Groot |
+| --- | --- | --- |
+| Klein | 72 | 49 |
+| Middelgroot | 50 | 36 |
+| Groot | 32 | 25 |
+| Extra groot | 18 | 16 |
+
+De brede Extra grote widget legt bij het kleine symboolformaat 12 kolommen bij 6 rijen neer. Dat zijn meer apps dan de meeste mensen op een hele iPad-pagina hebben.
+
+Wil je liever een hoog blok dan een breed blok, dan voegen iOS 27 en iPadOS 27 een staand formaat Extra groot toe waar tot 77 tegels in passen. Er is een aparte gids over [de Extra grote widget als starter op één pagina](/blog/extra-large-widget-ios-27).
+
+## Drie iPad-indelingen die het kopiëren waard zijn
+
+**De werkpagina.** Bovenaan één brede Extra grote widget met alles wat je voor je werk gebruikt, kleine symbolen, geen mappen. De rest van de pagina blijft met opzet leeg.
+
+**De gesplitste pagina.** Een brede Extra grote widget voor apps en de ruimte eronder voor een agenda- of notitiewidget. Je hebt een starter en een blik op één pagina.
+
+**De categoriepagina.** Zes maptegels op groot symboolformaat, één per gebied: werk, media, games, reizen, financiën, hulpprogramma's. Elke tegel opent ter plekke in de widget. Het leest als een menu en niet als een muur.
+
+## Wat er naast apps in een tegel kan
+
+Een tegel hoeft geen app te zijn. WidgetLoft neemt ook websites, contacten (iemand bellen of berichten met één tik), Opdrachten en lege tussenruimtes waarmee je het raster vormgeeft. Op een iPad tellen tussenruimtes zwaarder dan op een telefoon: een raster van 12 kolommen ziet beter uit in bewuste blokken dan als één massieve plaat.
+
+## Veelgestelde vragen
+
+**Hoeveel apps passen er in een iPad-widget?**
+Tot 72 met kleine symbolen op het brede formaat Extra groot, 50 met middelgrote, 32 met grote en 18 met extra grote symbolen. Submappen voegen er meer toe achter één tegel.
+
+**Openen de tegels de echte apps?**
+Ja, rechtstreeks vanuit de widget op het beginscherm. WidgetLoft gaat niet eerst open.
+
+**Welke iPads ondersteunen de Extra grote widget?**
+Elke iPad met iPadOS 15 of nieuwer. Veeg in de widgetgalerie voorbij Groot en daar staat hij.
+
+Een noot over limieten: de gratis versie van WidgetLoft houdt tot 21 apps in de bibliotheek, minder dan één volle iPad-widget. WidgetLoft Pro haalt dat weg.
+
+---
+
+Wil je dat je iPad-pagina werkt als een menu in plaats van als een stapel? [Download WidgetLoft in de App Store](/widgetloft/download).

@@ -1,0 +1,130 @@
+export const meta = {
+  title:
+    "Ventanas en iPadOS 27: crea una pantalla de inicio que esté a la altura",
+  description:
+    "iPadOS 27 perfecciona el sistema de ventanas al estilo del escritorio que llegó con iPadOS 26. Así puedes organizar la pantalla de inicio del iPad a su alrededor, incluido un widget lanzador que abre las apps en ventanas.",
+  keywords: [
+    "multitarea ipados 27",
+    "ventanas ipados 27",
+    "configurar pantalla de inicio ipad 2026",
+    "redimensionar ventanas de apps en ipad",
+    "widget lanzador de apps ipad",
+    "trucos ipados 27",
+  ],
+  ogTitle: "Una pantalla de inicio de iPad pensada para las ventanas de iPadOS 27",
+  ogDescription:
+    "Las ventanas cambiaron la forma de abrir apps en el iPad. Tu pantalla de inicio debería cambiar con ellas.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline:
+      "Ventanas en iPadOS 27: crea una pantalla de inicio que esté a la altura",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Al abrir una app desde un widget se abre en una ventana?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí. Una casilla del widget abre la app igual que su icono en la pantalla de inicio, así que se abre como ventana y se puede redimensionar y colocar como cualquier otra.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Sigo necesitando carpetas de apps en el iPad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Menos que antes. Una carpeta cuesta un toque para abrirla y otro para cerrarla. Un widget lanzador mantiene las mismas apps visibles en la página, algo que importa más cuando abres varias ventanas seguidas.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Puedo deshacer una reorganización de la pantalla de inicio en iPadOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí. iPadOS 27 añade botones de deshacer y rehacer mientras los iconos se mueven, así que puedes probar una distribución y volver atrás.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Ventanas en iPadOS 27: crea una pantalla de inicio que esté a la altura
+
+**Respuesta rápida:** iPadOS 27 mantiene el sistema de ventanas al estilo del escritorio de iPadOS 26 y hace que abrirlas, redimensionarlas y cambiar entre ellas sea más rápido. Eso cambia el aspecto de una buena pantalla de inicio: ahora abres varias apps seguidas en lugar de una a una, así que la página debería dejar muchas apps a un solo toque. Un widget lanzador lo consigue mejor que las carpetas.
+
+---
+
+## Qué cambió, en pocas palabras
+
+iPadOS 26 convirtió el iPad en una máquina con ventanas. iPadOS 27 sigue en la misma dirección: las ventanas responden más rápido, las apps de iPhone que se ejecutan en un iPad se pueden redimensionar y la propia pantalla de inicio gana deshacer y rehacer mientras reorganizas los iconos.
+
+Dos cambios menores importan para la distribución. El reloj de la pantalla bloqueada se puede recolocar, así que tu fondo de pantalla ya no queda medio tapado. Y Liquid Glass ahora tiene un regulador en Ajustes, así que tú decides cuánta transparencia tiene la interfaz.
+
+## Por qué las ventanas cambian tu pantalla de inicio
+
+Con una app a la vez, la pantalla de inicio es un lugar de paso. Con ventanas, es una zona de preparación. Vuelves a ella para traer la segunda, la tercera y la cuarta app de una tarea, y lo haces muchas veces al día.
+
+Eso hace que dos cosas resulten caras:
+
+- **Las carpetas.** Dos toques cada vez, siempre.
+- **La búsqueda.** Rápida para una app, lenta como costumbre, y te saca las manos de la distribución.
+
+Lo que quieres en su lugar es una página donde veinte o treinta apps estén visibles y a un solo toque.
+
+## La distribución
+
+1. **Un widget lanzador, arriba de la página.** Añade un widget Extragrande y ancho de [WidgetLoft](/widgetloft) y apúntalo a un grupo con todas las apps que abres durante el trabajo. Los iconos pequeños caben hasta 72 casillas; hay una [tabla de capacidad completa en la guía del lanzador para iPad](/blog/ipad-app-launcher-widget).
+2. **Agrupa por tarea, no por tipo.** Un flujo basado en ventanas abre las apps en grupos: notas más navegador más correo. Pon los grupos juntos en la cuadrícula o dale a cada uno su propia casilla de carpeta.
+3. **Reserva el Dock para las dos o tres apps que siempre tienes abiertas.** El Dock sobrevive a todas las páginas, así que es el sitio equivocado para cualquier cosa ocasional.
+4. **Deja vacía la mitad inferior de la página.** Ahí es donde aterrizan las ventanas. Una página abarrotada hasta los bordes pelea con lo que de verdad estás haciendo.
+
+Cada casilla abre su app como una ventana normal, porque la casilla lanza la app exactamente igual que lo hace su icono.
+
+## Subcarpetas en vez de páginas
+
+Deslizarse entre las páginas de la pantalla de inicio es más lento de lo que parece, y con ventanas abiertas a menudo no ves ni los puntos de página. Las casillas de carpeta de un widget lanzador se abren **ahí mismo**: toca una casilla de carpeta, la cuadrícula cambia a su contenido, toca la casilla de volver para subir.
+
+Eso te da la profundidad de varias páginas sin salir de la página. Cada carpeta admite hasta 100 apps y 20 subcarpetas, y puedes anidar tan profundo como quieras. Activa **Volver automáticamente a la carpeta** en Ajustes, Widget, para que el widget se reinicie al nivel superior en lugar de quedarse donde lo dejaste.
+
+## Dos cosas más que merece la pena ajustar
+
+**Deshacer mientras organizas.** Mantén pulsada la pantalla de inicio hasta que los iconos se muevan y verás deshacer y rehacer. Mueve cosas con libertad; ya no te estás comprometiendo.
+
+**El regulador de Liquid Glass.** Ajustes, Aspecto, Liquid Glass. Llévalo hacia Transparente para una interfaz más ligera, o hacia Teñido si quieres que el texto y los controles se lean mejor sobre un fondo cargado. Se redibuja en vivo mientras arrastras.
+
+## Preguntas frecuentes
+
+**¿Al abrir una app desde un widget se abre en una ventana?**
+Sí. La casilla lanza la app igual que el icono, así que se abre como ventana y se comporta como cualquier otra.
+
+**¿Sigo necesitando carpetas de apps en el iPad?**
+Menos que antes. Las casillas de carpeta dentro de un widget lanzador cubren la misma necesidad sin salir de la página.
+
+**¿Puedo deshacer una reorganización de la pantalla de inicio en iPadOS 27?**
+Sí, deshacer y rehacer están ahí mientras los iconos se mueven.
+
+---
+
+Configura la página una vez y las ventanas dejan de ser una molestia. [Descarga WidgetLoft en el App Store](/widgetloft/download) para montar el lanzador.

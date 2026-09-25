@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Widgets op het iPad-toegangsscherm: wat ze doen en hoe je apps opent",
+  description:
+    "Hoe je widgets toevoegt aan het toegangsscherm van de iPad, wat er in de rechthoekige plek past en hoe je er met één tik apps mee opent.",
+  keywords: [
+    "widgets toegangsscherm ipad",
+    "widget toevoegen toegangsscherm ipad",
+    "apps op het toegangsscherm van de ipad",
+    "app openen vanaf toegangsscherm ipad",
+    "toegangsscherm ipad aanpassen",
+    "ipados 27 toegangsscherm",
+  ],
+  ogTitle: "Widgets op het iPad-toegangsscherm, en hoe je er apps mee opent",
+  ogDescription:
+    "Het toegangsscherm van de iPad heeft ruimte voor widgets naast de klok. Eén daarvan kan een rij app-tegels zijn.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline: "Widgets op het iPad-toegangsscherm: wat ze doen en hoe je apps opent",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-lock-screen-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Een app-startwidget toevoegen aan het toegangsscherm van de iPad",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Het toegangsscherm gaan bewerken",
+        text: "Houd je vinger op het toegangsscherm, tik op Pas aan en kies het toegangsscherm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Het widgetgebied openen",
+        text: "Tik op het widgetgebied naast of onder de klok om de widgetkiezer te openen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "De startwidget toevoegen",
+        text: "Kies WidgetLoft en voeg de rechthoekige widget toe, tik er daarna op om te kiezen welke groep hij laat zien.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Op een app tikken",
+        text: "Tik op een tegel op het toegangsscherm. De iPad vraagt je te ontgrendelen en opent dan de app.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Hoeveel apps passen er in een widget op het iPad-toegangsscherm?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "De rechthoekige widget op het toegangsscherm is één rij: tot 4 app-tegels met kleine symbolen, of 3 met grote symbolen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Opent een tik op een tegel de app terwijl de iPad vergrendeld is?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. iPadOS vraagt je eerst te ontgrendelen en daarna opent de app. Dat is een systeemregel, geen instelling van de app.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Zijn widgets op het toegangsscherm in kleur op de iPad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. iPadOS geeft widgets op het toegangsscherm weer in één tint, dus app-symbolen verschijnen als monochrome vormen in plaats van in hun eigen kleuren.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Widgets op het iPad-toegangsscherm: wat ze doen en hoe je apps opent
+
+**Kort antwoord:** houd je vinger op het toegangsscherm van de iPad, tik op **Pas aan** en tik dan op het widgetgebied naast de klok. Alles wat je daar toevoegt is zichtbaar voordat je ontgrendelt. Met [WidgetLoft](/widgetloft) wordt een van die plekken een rij app-tegels, zodat het eerste wat je aanraakt nadat je de iPad oppakt precies de app is die je wilde.
+
+---
+
+## Waar de widgets op het iPad-toegangsscherm staan
+
+De iPad zet de widgets van het toegangsscherm in een kolom of een rij bij de klok, afhankelijk van de stand, en op iPadOS 27 kun je de klok zelf verplaatsen zodat die de achtergrond niet meer bedekt.
+
+Anders dan op het beginscherm is er hier geen raster om te vullen. Je krijgt een klein aantal plekken en ze strijden allemaal om dezelfde blik. Daarom levert een plek vol app-tegels op de iPad meer op dan nog een weerblokje: de iPad is een apparaat dat je oppakt om één ding te doen, en dat ding begint op het toegangsscherm.
+
+## Stap voor stap
+
+1. **Houd je vinger op het toegangsscherm** tot de aanpasknop verschijnt, tik dan op **Pas aan** en kies het toegangsscherm.
+2. **Tik op het widgetgebied** naast of onder de klok. De widgetkiezer gaat open.
+3. **Kies WidgetLoft** en voeg de rechthoekige widget toe.
+4. **Tik op de widget die je net hebt toegevoegd** en kies welke groep hij laat zien.
+5. **Tik op Gereed en tik dan op een tegel.** De iPad vraagt om Face ID of je toegangscode, daarna opent de app.
+
+## Wat er eerlijk gezegd in past
+
+De rechthoekige widget op het toegangsscherm is één rij:
+
+| Symboolgrootte | Tegels |
+| --- | --- |
+| Klein | 4 |
+| Groot | 3 |
+
+Dat is het plafond, en het komt van het systeem: Apple geeft elke app dezelfde rechthoek. Behandel het dus als een snelkoppelingsbalk voor de drie of vier apps die je als eerste opent, niet als een launcher. Camera, notities, een browser en je berichtenapp is een realistische set.
+
+Voor een echt raster is het beginscherm de plek. Er is een gids over [de iPad-startwidget met tot 72 tegels](/blog/ipad-app-launcher-widget).
+
+## Twee dingen om te verwachten
+
+**Geen kleur.** iPadOS tekent widgets op het toegangsscherm in één tint, dus symbolen lezen als silhouetten. Kies apps waarvan de vormen duidelijk van elkaar verschillen; vier grijze afgeronde vierkanten zijn in één oogopslag moeilijk te onderscheiden.
+
+**Eerst ontgrendelen.** Een tik op een tegel kan geen app openen zolang de iPad vergrendeld is. De tik wordt geregistreerd, het apparaat vraagt om Face ID of de toegangscode, en daarna opent de app. Niets omzeilt dit, en je zou ook geen app willen die dat wel deed.
+
+## Mooie combinaties
+
+- **Een verplaatste klok.** Op iPadOS 27 kun je hem verplaatsen, wat meestal de ruimte vrijmaakt waar je widgets om vochten.
+- **Een startwidget op het beginscherm.** De rij op het toegangsscherm voor de eerste tik, het raster op het beginscherm voor al het andere.
+- **De Liquid Glass-schuifknop** in Instellingen, Weergave, als de widgettekst slecht leesbaar is boven je achtergrond.
+
+## Veelgestelde vragen
+
+**Hoeveel apps passen er in een widget op het iPad-toegangsscherm?**
+Vier met kleine symbolen, drie met grote. Het is één rij.
+
+**Opent een tik op een tegel de app terwijl de iPad vergrendeld is?**
+Nee, iPadOS vraagt je eerst te ontgrendelen en opent hem dan.
+
+**Zijn widgets op het toegangsscherm in kleur op de iPad?**
+Nee. Ze worden in één tint weergegeven, dus symbolen zien monochroom uit.
+
+---
+
+Wil je dat de eerste tik nadat je de iPad oppakt de juiste is? [Download WidgetLoft in de App Store](/widgetloft/download).

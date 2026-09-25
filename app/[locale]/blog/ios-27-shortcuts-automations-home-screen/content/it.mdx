@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Automazioni Comandi rapidi di iOS 27 che migliorano la schermata Home",
+  description:
+    "Cinque automazioni di Comandi rapidi che vale la pena creare su iOS 27, incluso il nuovo attivatore basato sulle notifiche, e come ognuna cambia ciò che la schermata Home fa per te.",
+  keywords: [
+    "automazioni comandi rapidi ios 27",
+    "attivatore notifica comandi rapidi",
+    "automazione iphone schermata home",
+    "trucchi comandi rapidi ios 27",
+    "automazione personale iphone",
+    "automatizzare widget iphone",
+  ],
+  ogTitle: "Automazioni Comandi rapidi di iOS 27 per una schermata Home migliore",
+  ogDescription:
+    "L'attivatore basato sulle notifiche, le automazioni per orario e posizione, e a cosa servono davvero.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline: "Automazioni Comandi rapidi di iOS 27 che migliorano la schermata Home",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Creare un'automazione personale in Comandi rapidi su iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Apri il pannello Automazione",
+        text: "Apri l'app Comandi rapidi e tocca Automazione in basso.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi un'automazione",
+        text: "Tocca il pulsante più e scegli un attivatore, come un'ora del giorno, l'arrivo in un luogo o una notifica da un'app scelta.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli cosa eseguire",
+        text: "Aggiungi le azioni che vuoi. Lascia Esegui immediatamente attivo e Notifica all'esecuzione disattivato se vuoi che accada in silenzio.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Provala",
+        text: "Provoca la condizione una volta tu stesso e controlla il risultato prima di affidarti a essa.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Cos'è l'attivatore basato sulle notifiche in Comandi rapidi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "È un attivatore di automazione che scatta quando un'app scelta invia una notifica. È arrivato con iOS 27 e può eseguire le sue azioni in silenzio.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Le automazioni partono senza chiedermelo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sì, se Esegui immediatamente è attivo. Disattiva anche Notifica all'esecuzione e l'automazione avviene senza mostrare niente sullo schermo.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Un'automazione può cambiare quello che mostra un widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Può cambiare i dati che un widget legge. WidgetLoft lo usa per i punti di notifica sui riquadri del launcher: l'automazione registra che un'app ha una notifica e il widget disegna un punto su quel riquadro.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Automazioni Comandi rapidi di iOS 27 che migliorano la schermata Home
+
+**Risposta rapida:** apri Comandi rapidi, tocca **Automazione**, poi il pulsante più, e scegli un attivatore. Quello nuovo e interessante di iOS 27 scatta quando una specifica app invia una notifica, e può girare in silenzio. Qui sotto trovi cinque automazioni che cambiano ciò che fa la tua schermata Home, non cinque che sembrano solo furbe.
+
+---
+
+## 1. Punti di notifica su un widget launcher
+
+Un widget non può leggere i tuoi contatori di messaggi non letti; Apple non li espone. Ma un'automazione può accorgersi che un'app ha inviato una notifica, e un widget può leggere quello che l'automazione ha scritto.
+
+È esattamente così che [WidgetLoft](/widgetloft) mette un punto su un riquadro del launcher. Scegli tu le app, l'automazione gira in silenzio quando una di loro ti notifica, e il riquadro resta con un punto finché non apri l'app. La guida completa è in [i badge di notifica sui widget](/blog/notification-badges-on-widgets-iphone).
+
+Due impostazioni contano quando costruisci l'automazione: **Esegui immediatamente** attivo, **Notifica all'esecuzione** disattivato. Altrimenti ogni notifica ne produce una seconda, che è un tipo di fastidio tutto suo.
+
+## 2. Una pagina di concentrazione che segue l'orario
+
+Imposta un'automazione per il tuo orario di lavoro che attivi una Full Immersion, e abbina la Full Immersion a una pagina della schermata Home. iOS cambia pagina insieme alla Full Immersion, così alle nove del mattino l'iPhone mostra la pagina di lavoro e alle sei mostra l'altra.
+
+Funziona meglio che riordinare le icone a mano, ed è l'automazione che quasi tutti tengono.
+
+## 3. Arrivare in un posto apre quello che apri sempre
+
+Attivatore: **Arrivo**, in palestra, in ufficio, in un negozio dove passi ogni settimana. Azione: aprire l'app che apri sempre lì, o avviare una playlist.
+
+Tienilo per i posti che ripeti davvero. Un'automazione che scatta dove vai due volte l'anno è rumore che dovrai poi andare a sbrogliare.
+
+## 4. Mettere in carica la sera
+
+Attivatore: **Caricabatterie** collegato, con una condizione di orario. Azioni: Risparmio energetico disattivato, controllo della sveglia, Full Immersion attiva. Sia su iPadOS sia su iOS, è l'automazione più economica da creare e quella che si nota di più, perché elimina una faccenda di ogni sera.
+
+## 5. Un solo riquadro che esegue un'intera routine
+
+Un comando rapido non deve vivere nell'app Comandi rapidi. I riquadri di WidgetLoft possono eseguire comandi rapidi, quindi un widget launcher può tenere "vado al lavoro" o "inizia a registrare" accanto alle tue app. Una griglia sola, app e routine insieme, senza un widget Comandi rapidi separato che occupa spazio.
+
+## A cosa fare attenzione
+
+- **Prova prima di fidarti.** Provoca la condizione una volta tu stesso e guarda il risultato. Le automazioni falliscono in silenzio.
+- **Controlla gli interruttori.** Le nuove automazioni per impostazione predefinita chiedono prima di partire, e l'attivatore delle notifiche arriva con l'automazione attiva e l'avviso disattivato. Vale la pena confermare entrambi.
+- **Tienile poche.** Dieci automazioni di cui ti sei dimenticato si comportano come un telefono infestato. Cinque che sai nominare sono un sistema.
+
+## Domande frequenti
+
+**Cos'è l'attivatore basato sulle notifiche?**
+Un'automazione che scatta quando un'app scelta invia una notifica. È arrivata con iOS 27 e può girare senza mostrare niente.
+
+**Le automazioni partono senza chiedermelo?**
+Sì, quando Esegui immediatamente è attivo. Disattiva anche Notifica all'esecuzione per averla silenziosa.
+
+**Un'automazione può cambiare quello che mostra un widget?**
+Può cambiare quello che un widget legge. I punti di notifica sui riquadri di WidgetLoft funzionano così.
+
+---
+
+Vuoi app, cartelle e routine in un'unica griglia sulla schermata Home? [Scarica WidgetLoft dall'App Store](/widgetloft/download).

@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Transparante, getinte en donkere app-symbolen in iOS 27 (en de glasschuifknop)",
+  description:
+    "In iOS 27 kun je app-symbolen op Transparant, Getint, Donker of Licht zetten, en er komt een Liquid Glass-schuifknop bij in Instellingen. Hier lees je waar elke instelling staat en hoe widgets meegaan.",
+  keywords: [
+    "ios 27 transparante app symbolen",
+    "ios 27 liquid glass schuifknop",
+    "getinte app symbolen iphone",
+    "donkere app symbolen ios 27",
+    "beginscherm aanpassen ios 27",
+    "ios 27 symboolweergave",
+  ],
+  ogTitle: "Transparante, getinte en donkere symbolen in iOS 27",
+  ogDescription:
+    "Waar de instellingen voor symboolweergave staan, wat de Liquid Glass-schuifknop doet en hoe widgets bijblijven.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline:
+      "Transparante, getinte en donkere app-symbolen in iOS 27 (en de glasschuifknop)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/liquid-glass-app-icons-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "De weergave van app-symbolen wijzigen in iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Ga naar de wijzigmodus",
+        text: "Houd een leeg deel van het beginscherm ingedrukt tot de symbolen bewegen en tik daarna op Wijzig.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Open Pas aan",
+        text: "Tik op Pas aan om de opties voor symboolweergave te zien.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies een weergave",
+        text: "Kies Licht, Donker, Transparant of Getint. Bij Getint krijg je een kleurkiezer.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Stel het glasniveau in",
+        text: "Open voor de rest van de interface Instellingen, Weergave, Liquid Glass en sleep de schuifknop tussen Transparant en Getint.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kan ik Liquid Glass uitschakelen in iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Er is geen knop om het uit te zetten. iOS 27 voegt in Instellingen, Weergave, Liquid Glass een schuifknop toe die de interface tussen een helderder en een meer getinte look verplaatst.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Geldt de stijl Transparant voor elke app?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Die geldt voor het beginscherm als geheel. Apps die de juiste symboollagen meeleveren worden goed getekend, de rest benadert het systeem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Volgen app-tegels in een widget de symboolweergave?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Niet automatisch, want een widget tekent zijn eigen inhoud. WidgetLoft bevat echte donkere versies van app-symbolen en laat je per weergave een eigen afbeelding instellen, zodat een launcher-widget bij een donker of getint beginscherm past.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Transparante, getinte en donkere app-symbolen in iOS 27 (en de glasschuifknop)
+
+**Kort antwoord:** houd een lege plek op het beginscherm ingedrukt, tik op **Wijzig** en daarna op **Pas aan**, en kies Licht, Donker, Transparant of Getint voor je symbolen. Open voor de rest van de interface **Instellingen, Weergave, Liquid Glass** en sleep de schuifknop. Twee verschillende instellingen, twee verschillende taken, en ze worden constant met elkaar verward.
+
+---
+
+## De twee instellingen, apart bekeken
+
+**De symboolweergave** staat op het beginscherm, niet in Instellingen. Die bepaalt hoe app-symbolen worden getekend: gewone lichte symbolen, donkere versies, een glasachtige Transparant-look, of Getint, waarbij je een kleur kiest die elk symbool overneemt.
+
+**De Liquid Glass-schuifknop** staat in Instellingen, Weergave, Liquid Glass en is nieuw in iOS 27. Hij raakt je symbolen niet aan. Hij regelt hoe doorzichtig de systeeminterface is: menu's, knoppenbalken, panelen, het Bedieningspaneel. Trek hem naar Transparant en alles wordt lichter en doorschijnender. Trek hem naar Getint en dezelfde oppervlakken krijgen een dekkende achtergrond, die beter leesbaar is boven een drukke achtergrond.
+
+Er is geen schakelaar die Liquid Glass uitzet. De schuifknop is de instelling die Apple geeft, en hem helemaal naar Getint slepen is het dichtste wat je komt.
+
+## De symboolweergave wijzigen
+
+1. Houd een leeg deel van het beginscherm ingedrukt tot de symbolen bewegen.
+2. Tik op **Wijzig** en daarna op **Pas aan**.
+3. Kies **Licht**, **Donker**, **Transparant** of **Getint**. Getint geeft je een kleurkiezer.
+4. Tik waar dan ook om te stoppen.
+
+Transparant is de optie die alle aandacht krijgt: symbolen worden glasachtig en nemen kleur over van de achtergrond. Het ziet er het best uit boven een achtergrond met wat contrast en het slechtst boven een drukke foto, waar meerdere symbolen niet meer van elkaar te onderscheiden zijn.
+
+## Het deel dat niemand noemt: widgets gaan niet mee
+
+De symboolweergave wordt door het systeem toegepast op app-symbolen. Een widget tekent zijn eigen inhoud en erft dus Transparant of Getint niet. Zet je beginscherm op Donker en een widget vol felle app-symbolen lijkt plots een gat in de pagina.
+
+[WidgetLoft](/widgetloft) pakt dit bewust aan:
+
+- **Echte donkere symbolen.** De echte donkere versies van Apple's systeemsymbolen zitten in de app, en van de meest gebruikte symbolen van derden zijn donkere versies voorbereid, dus een donker beginscherm blijft ook in de widget donker.
+- **Eigen symbolen per weergave.** Je kunt per app een afbeelding voor de lichte modus en een andere voor de donkere instellen.
+- **Een transparante widgetachtergrond** op iOS 26 en later, zodat de widget op de achtergrond staat in plaats van op een grijze kaart.
+
+Er is een aparte uitleg over [app-symbolen in de donkere modus](/blog/dark-mode-app-icons-iphone) en over [transparante widgets](/blog/transparent-widget-iphone).
+
+## Welke combinatie er echt goed uitziet
+
+- **Transparante symbolen, een rustige achtergrond, transparante widgets.** De strakste look die iOS 27 kan maken, en precies waarvoor het glaseffect bedoeld was.
+- **Donkere symbolen, donkere achtergrond, donkere widgettegels.** Het best leesbaar en het minst afhankelijk van je achtergrond.
+- **Getinte symbolen in één kleur met bijpassende eigen widgettegels.** Het meest persoonlijk en het meeste werk.
+
+Vermijd Getint met een foto als achtergrond. Alles wordt dezelfde gekleurde pap en je gaat apps op hun positie zoeken.
+
+## Veelgestelde vragen
+
+**Kan ik Liquid Glass uitschakelen in iOS 27?**
+Nee. De schuifknop in Instellingen, Weergave, Liquid Glass is de enige instelling, en die gaat van helderder naar meer getint.
+
+**Geldt Transparant voor elke app?**
+Het geldt voor het beginscherm als geheel. Apps met goede symboollagen zien er juist uit, de rest wordt benaderd.
+
+**Volgen app-tegels in een widget de symboolweergave?**
+Nee, een widget tekent zichzelf. Daarom bevat WidgetLoft echte donkere symbolen en eigen afbeeldingen per weergave.
+
+---
+
+Wil je dat je launcher-widget bij een Transparant of Donker beginscherm past in plaats van ertegen te vechten? [Download WidgetLoft in de App Store](/widgetloft/download).

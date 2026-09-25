@@ -1,0 +1,156 @@
+export const meta = {
+  title: "iPad Lock Screen Widgets: What They Do and How to Launch Apps",
+  description:
+    "How to add widgets to an iPad Lock Screen, what the rectangular slot can hold, and how to make one launch your apps in a single tap.",
+  keywords: [
+    "ipad lock screen widgets",
+    "add widget ipad lock screen",
+    "ipad lock screen apps",
+    "launch app from lock screen ipad",
+    "ipad lock screen customization",
+    "ipados 27 lock screen",
+  ],
+  ogTitle: "iPad Lock Screen Widgets, and How to Launch Apps From One",
+  ogDescription:
+    "The iPad Lock Screen takes widgets beside the clock. One of them can be a row of app tiles.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline: "iPad Lock Screen Widgets: What They Do and How to Launch Apps",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-lock-screen-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Add an app launcher widget to an iPad Lock Screen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Enter Lock Screen editing",
+        text: "Long-press the Lock Screen, then tap Customise and choose the Lock Screen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Open the widget area",
+        text: "Tap the widget area beside or under the clock to open the widget picker.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add the launcher widget",
+        text: "Choose WidgetLoft and add its rectangular widget, then tap it to pick which group it shows.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tap an app",
+        text: "Tap a tile on the Lock Screen. The iPad asks you to unlock, then opens the app.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How many apps fit in an iPad Lock Screen widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The rectangular Lock Screen widget is a single row: up to 4 app tiles with small icons, or 3 with large icons.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does tapping a Lock Screen tile open the app while locked?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. iPadOS asks you to unlock first, then the app opens. That is a system rule, not an app setting.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are Lock Screen widgets in colour on iPad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. iPadOS renders Lock Screen widgets in a single tint, so app icons appear as monochrome shapes rather than in their own colours.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPad Lock Screen Widgets: What They Do and How to Launch Apps
+
+**Quick answer:** long-press the iPad Lock Screen, tap **Customise**, then tap the widget area beside the clock. Anything you add there is visible before you unlock. With [WidgetLoft](/widgetloft) one of those slots becomes a row of app tiles, so the first thing you touch after picking up the iPad is the app you actually wanted.
+
+---
+
+## Where widgets live on an iPad Lock Screen
+
+The iPad puts its Lock Screen widgets in a column or row near the clock, depending on orientation, and the clock itself can be repositioned on iPadOS 27 so it stops covering the wallpaper.
+
+Unlike the Home Screen, there is no grid to fill here. You get a small number of slots, and every one of them competes for the same glance. That is why a slot full of app tiles pays off more on iPad than another weather square: the iPad is a device you pick up to do one thing, and the Lock Screen is where that thing starts.
+
+## Step-by-step
+
+1. **Long-press the Lock Screen** until the customise button appears, then tap **Customise** and choose the Lock Screen.
+2. **Tap the widget area** beside or under the clock. The widget picker opens.
+3. **Choose WidgetLoft** and add its rectangular widget.
+4. **Tap the widget you just added** and pick which group it shows.
+5. **Done, then tap a tile.** The iPad asks for Face ID or your passcode, then the app opens.
+
+## What fits, honestly
+
+The rectangular Lock Screen widget is one row:
+
+| Icon size | Tiles |
+| --- | --- |
+| Small | 4 |
+| Large | 3 |
+
+That is the ceiling, and it is a system one: Apple gives every app the same rectangle. So treat it as a shortcut bar for the three or four apps you open first, not as a launcher. Camera, notes, a browser and your messaging app is a realistic set.
+
+For a real grid, the Home Screen is the place. There is a guide to [the iPad launcher widget with up to 72 tiles](/blog/ipad-app-launcher-widget).
+
+## Two things to expect
+
+**No colour.** iPadOS draws Lock Screen widgets in a single tint, so icons read as silhouettes. Pick apps whose shapes are distinct from each other; four grey rounded squares are hard to tell apart at a glance.
+
+**Unlock first.** Tapping a tile cannot open an app while the iPad is locked. The tap is registered, the device asks for Face ID or the passcode, and the app opens after that. Nothing gets around this, and you would not want an app that did.
+
+## Worth pairing with
+
+- **A repositioned clock.** On iPadOS 27 you can move it, which usually frees the space your widgets were fighting.
+- **A Home Screen launcher widget.** The Lock Screen row for the first tap, the Home Screen grid for everything else.
+- **The Liquid Glass slider** in Settings, Appearance, if the widget text does not read well over your wallpaper.
+
+## Common questions
+
+**How many apps fit in an iPad Lock Screen widget?**
+Four with small icons, three with large ones. It is a single row.
+
+**Does tapping a tile open the app while locked?**
+No, iPadOS asks you to unlock first and then opens it.
+
+**Are Lock Screen widgets in colour on iPad?**
+No. They are rendered in one tint, so icons look monochrome.
+
+---
+
+Want the first tap after you pick up the iPad to be the right one? [Download WidgetLoft on the App Store](/widgetloft/download).

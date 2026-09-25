@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Automatyzacje Skrótów w iOS 27, które usprawniają ekran początkowy",
+  description:
+    "Pięć automatyzacji w Skrótach wartych ustawienia w iOS 27, w tym nowy wyzwalacz powiadomień, oraz jak każda z nich zmienia to, co ekran początkowy robi dla ciebie.",
+  keywords: [
+    "automatyzacje skrótów ios 27",
+    "wyzwalacz powiadomienia skróty",
+    "automatyzacja iphone ekran początkowy",
+    "porady skróty ios 27",
+    "automatyzacja osobista iphone",
+    "automatyzacja widżetów iphone",
+  ],
+  ogTitle: "Automatyzacje Skrótów w iOS 27 na lepszy ekran początkowy",
+  ogDescription:
+    "Wyzwalacz powiadomień, automatyzacje czasowe i lokalizacyjne, oraz do czego naprawdę się nadają.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Automatyzacje Skrótów w iOS 27, które usprawniają ekran początkowy",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Tworzenie automatyzacji osobistej w Skrótach w iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Otwórz kartę Automatyzacja",
+        text: "Otwórz aplikację Skróty i stuknij Automatyzacja na dole.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj automatyzację",
+        text: "Stuknij przycisk plusa i wybierz wyzwalacz, na przykład godzinę, przyjazd w określone miejsce albo powiadomienie z wybranej aplikacji.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz, co ma się wykonać",
+        text: "Dodaj potrzebne czynności. Pozostaw włączone Uruchom natychmiast i wyłączone Powiadom o uruchomieniu, jeśli chcesz, aby działo się to po cichu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Przetestuj",
+        text: "Wywołaj warunek raz samodzielnie i sprawdź wynik, zanim zaczniesz na tym polegać.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czym jest wyzwalacz powiadomień w Skrótach?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To wyzwalacz automatyzacji, który uruchamia się, gdy wybrana aplikacja wysyła powiadomienie. Pojawił się w iOS 27 i może wykonywać swoje czynności po cichu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy automatyzacje uruchamiają się bez pytania?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak, jeśli włączone jest Uruchom natychmiast. Wyłącz też Powiadom o uruchomieniu i automatyzacja wykona się bez niczego na ekranie.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy automatyzacja może zmienić to, co pokazuje widżet?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Może zmienić dane, które widżet odczytuje. WidgetLoft wykorzystuje to do kropek powiadomień na kafelkach launchera: automatyzacja zapisuje, że aplikacja ma powiadomienie, a widżet rysuje kropkę na tym kafelku.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Automatyzacje Skrótów w iOS 27, które usprawniają ekran początkowy
+
+**Szybka odpowiedź:** otwórz Skróty, stuknij **Automatyzacja**, potem przycisk plusa i wybierz wyzwalacz. Ten ciekawy nowy w iOS 27 uruchamia się, gdy konkretna aplikacja wysyła powiadomienie, i może działać po cichu. Poniżej pięć automatyzacji, które zmieniają to, co robi twój ekran początkowy, a nie pięć, które tylko wyglądają sprytnie.
+
+---
+
+## 1. Kropki powiadomień na widżecie launchera
+
+Widżet nie może odczytać liczników nieprzeczytanych; Apple ich nie udostępnia. Ale automatyzacja może zauważyć, że aplikacja wysłała powiadomienie, a widżet może odczytać to, co zapisała automatyzacja.
+
+Dokładnie tak [WidgetLoft](/widgetloft) stawia kropkę na kafelku launchera. Ty wybierasz aplikacje, automatyzacja działa po cichu, gdy któraś z nich cię powiadomi, a kafelek ma kropkę, dopóki nie otworzysz aplikacji. Pełny przewodnik znajdziesz w [plakietki powiadomień na widżetach](/blog/notification-badges-on-widgets-iphone).
+
+Przy budowaniu automatyzacji liczą się dwa ustawienia: **Uruchom natychmiast** włączone, **Powiadom o uruchomieniu** wyłączone. W przeciwnym razie każde powiadomienie tworzy drugie powiadomienie, a to szczególny rodzaj irytacji.
+
+## 2. Strona skupienia, która idzie za zegarem
+
+Ustaw automatyzację na godziny pracy, która włącza tryb Skupienia, i powiąż to Skupienie ze stroną ekranu początkowego. iOS przełącza strony razem ze Skupieniem, więc o dziewiątej rano iPhone pokazuje stronę do pracy, a o szóstej tę drugą.
+
+Działa to lepiej niż przekładanie ikon ręcznie i jest to ta jedna automatyzacja, którą prawie każdy zostawia.
+
+## 3. Przyjazd w jakieś miejsce otwiera to, co zawsze otwierasz
+
+Wyzwalacz: **Przyjazd**, na siłownię, do biura, do sklepu, w którym bywasz co tydzień. Czynność: otworzyć aplikację, którą zawsze tam otwierasz, albo puścić playlistę.
+
+Ogranicz się do miejsc, które naprawdę powtarzasz. Automatyzacja, która uruchamia się tam, gdzie bywasz dwa razy w roku, to szum, który później będziesz musiał rozplątywać.
+
+## 4. Podłączenie do ładowania wieczorem
+
+Wyzwalacz: podłączona **ładowarka**, z warunkiem czasowym. Czynności: wyłączenie trybu niskiego zużycia energii, sprawdzenie budzika, włączenie Skupienia. Zarówno w iPadOS, jak i w iOS to najtańsza w ustawieniu automatyzacja i ta najbardziej odczuwalna, bo usuwa jeden wieczorny obowiązek.
+
+## 5. Jeden kafelek, który wykonuje całą rutynę
+
+Skrót nie musi mieszkać w aplikacji Skróty. Kafelki WidgetLoft mogą uruchamiać skróty, więc widżet launchera może trzymać "wyjście do pracy" albo "start nagrywania" obok twoich aplikacji. Jedna siatka, aplikacje i rutyny razem, bez osobnego widżetu Skrótów zajmującego miejsce.
+
+## Na co uważać
+
+- **Przetestuj, zanim zaufasz.** Wywołaj warunek raz samodzielnie i spójrz na wynik. Automatyzacje zawodzą po cichu.
+- **Sprawdź przełączniki.** Nowe automatyzacje domyślnie pytają przed uruchomieniem, a wyzwalacz powiadomień ma domyślnie automatyzację włączoną i powiadamianie wyłączone. Oba warto potwierdzić.
+- **Niech będzie ich mało.** Dziesięć automatyzacji, o których zapomniałeś, zachowuje się jak nawiedzony telefon. Pięć, które umiesz wymienić, to system.
+
+## Częste pytania
+
+**Czym jest wyzwalacz powiadomień?**
+Automatyzacją, która uruchamia się, gdy wybrana aplikacja wysyła powiadomienie. Pojawiła się w iOS 27 i może działać, nie pokazując niczego.
+
+**Czy automatyzacje uruchamiają się bez pytania?**
+Tak, gdy włączone jest Uruchom natychmiast. Wyłącz też Powiadom o uruchomieniu, żeby była cicha.
+
+**Czy automatyzacja może zmienić to, co pokazuje widżet?**
+Może zmienić to, co widżet odczytuje. Kropki powiadomień na kafelkach WidgetLoft działają w ten sposób.
+
+---
+
+Chcesz mieć aplikacje, foldery i rutyny w jednej siatce na ekranie początkowym? [Pobierz WidgetLoft z App Store](/widgetloft/download).

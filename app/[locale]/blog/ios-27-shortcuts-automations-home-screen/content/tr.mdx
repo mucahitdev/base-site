@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Ana Ekranınızı İyileştiren iOS 27 Kısayollar Otomasyonları",
+  description:
+    "iOS 27'de kurmaya değer beş Kısayollar otomasyonu, yeni bildirim tetikleyicisi dahil, ve her birinin Ana Ekranınızın sizin için yaptığı işi nasıl değiştirdiği.",
+  keywords: [
+    "ios 27 kısayollar otomasyonları",
+    "kısayollar bildirim tetikleyicisi",
+    "iphone otomasyon ana ekran",
+    "ios 27 kısayollar ipuçları",
+    "iphone kişisel otomasyon",
+    "iphone widget otomasyonu",
+  ],
+  ogTitle: "Daha İyi Bir Ana Ekran İçin iOS 27 Kısayollar Otomasyonları",
+  ogDescription:
+    "Bildirim tetikleyicisi, saat ve konum otomasyonları, ve gerçekten neye yaradıkları.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline: "Ana Ekranınızı İyileştiren iOS 27 Kısayollar Otomasyonları",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iOS 27'de Kısayollar uygulamasında kişisel otomasyon oluşturma",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Otomasyon sekmesini açın",
+        text: "Kısayollar uygulamasını açın ve alttaki Otomasyon sekmesine dokunun.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bir otomasyon ekleyin",
+        text: "Artı düğmesine dokunun ve bir tetikleyici seçin: günün belirli bir saati, bir yere varış ya da seçtiğiniz bir uygulamadan gelen bildirim.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ne çalışacağını seçin",
+        text: "İstediğiniz eylemleri ekleyin. Sessizce gerçekleşmesini istiyorsanız Hemen Çalıştır açık, Çalıştırıldığında Bildir kapalı kalsın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Test edin",
+        text: "Koşulu bir kez kendiniz tetikleyin ve ona güvenmeden önce sonucu kontrol edin.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kısayollar'daki bildirim tetikleyicisi nedir?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Seçtiğiniz bir uygulama bildirim gönderdiğinde çalışan bir otomasyon tetikleyicisidir. iOS 27 ile geldi ve eylemlerini sessizce çalıştırabilir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Otomasyonlar bana sormadan çalışır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hemen Çalıştır açıksa evet. Çalıştırıldığında Bildir'i de kapatın, otomasyon ekranda hiçbir şey göstermeden gerçekleşir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bir otomasyon bir widget'ın gösterdiği şeyi değiştirebilir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bir widget'ın okuduğu veriyi değiştirebilir. WidgetLoft bunu başlatıcı karolarındaki bildirim noktaları için kullanıyor: otomasyon bir uygulamanın bildirimi olduğunu kaydeder, widget da o karoya bir nokta çizer.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Ana Ekranınızı İyileştiren iOS 27 Kısayollar Otomasyonları
+
+**Kısa yanıt:** Kısayollar'ı açın, **Otomasyon**'a, ardından artı düğmesine dokunun ve bir tetikleyici seçin. iOS 27'deki ilginç yeni tetikleyici, belirli bir uygulama bildirim gönderdiğinde çalışır ve sessiz kalabilir. Aşağıda, sadece zekice görünen değil, Ana Ekranınızın işini gerçekten değiştiren beş otomasyon var.
+
+---
+
+## 1. Başlatıcı widget'ında bildirim noktaları
+
+Bir widget okunmamış sayılarınızı okuyamaz; Apple bunları açmıyor. Ama bir otomasyon, bir uygulamanın bildirim gönderdiğini fark edebilir ve bir widget da otomasyonun yazdığını okuyabilir.
+
+[WidgetLoft](/widgetloft) bir başlatıcı karosuna noktayı tam olarak böyle koyuyor. Uygulamaları siz seçiyorsunuz, biri size bildirim gönderdiğinde otomasyon sessizce çalışıyor ve uygulamayı açana kadar karoda bir nokta duruyor. Tüm adımlar [widget'larda bildirim işaretleri](/blog/notification-badges-on-widgets-iphone) yazısında.
+
+Otomasyonu kurarken iki ayar önemli: **Hemen Çalıştır** açık, **Çalıştırıldığında Bildir** kapalı. Yoksa her bildirim ikinci bir bildirim üretir, ki bu apayrı bir sinir bozucudur.
+
+## 2. Saate göre değişen bir odak sayfası
+
+Çalışma saatleriniz için bir Odak'ı açan bir otomasyon kurun ve Odak'ı bir Ana Ekran sayfasıyla eşleştirin. iOS sayfaları Odak ile birlikte değiştirir, böylece sabah dokuzda iPhone iş sayfanızı, akşam altıda diğerini gösterir.
+
+Bu, simgeleri elle yeniden dizmekten iyi çalışır ve neredeyse herkesin bırakmadığı otomasyon bu.
+
+## 3. Bir yere varınca her zaman açtığınız şeyi açmak
+
+Tetikleyici: **Varış**; spor salonu, ofis, her hafta uğradığınız bir dükkân. Eylem: orada her zaman açtığınız uygulamayı açmak ya da bir çalma listesi başlatmak.
+
+Bunu gerçekten tekrarladığınız yerlerle sınırlı tutun. Yılda iki kez gittiğiniz bir yerde çalışan bir otomasyon, sonra ayıklamanız gereken bir gürültüdür.
+
+## 4. Geceleri şarja takmak
+
+Tetikleyici: **Şarj Aleti** bağlandığında, bir saat koşuluyla. Eylemler: Düşük Güç Modu kapalı, alarm kontrolü, Odak açık. Hem iPadOS'ta hem iOS'ta kurulumu en ucuz ve en çok fark edilen otomasyon budur, çünkü her gecenin bir işini ortadan kaldırır.
+
+## 5. Bütün bir rutini çalıştıran tek bir karo
+
+Bir Kısayol'un Kısayollar uygulamasında yaşaması gerekmez. WidgetLoft karoları Kısayolları çalıştırabilir, yani bir başlatıcı widget'ı "işe çık" ya da "kayda başla" komutlarını uygulamalarınızın yanında tutabilir. Tek bir ızgara, uygulamalar ve rutinler bir arada, yer kaplayan ayrı bir Kısayollar widget'ı yok.
+
+## Dikkat edilmesi gerekenler
+
+- **Güvenmeden önce test edin.** Koşulu bir kez kendiniz tetikleyin ve sonuca bakın. Otomasyonlar sessizce başarısız olur.
+- **Anahtarları kontrol edin.** Yeni otomasyonlar varsayılan olarak çalışmadan önce sorar, bildirim tetikleyicisinde ise varsayılan olarak Otomasyon açık, bildirim kapalıdır. İkisini de doğrulamaya değer.
+- **Sayılarını az tutun.** Varlığını unuttuğunuz on otomasyon, perili bir telefon gibi davranır. Adını sayabildiğiniz beş tanesi ise bir sistemdir.
+
+## Sık sorulan sorular
+
+**Bildirim tetikleyicisi nedir?**
+Seçtiğiniz bir uygulama bildirim gönderdiğinde çalışan bir otomasyon. iOS 27 ile geldi ve hiçbir şey göstermeden çalışabilir.
+
+**Otomasyonlar bana sormadan çalışır mı?**
+Hemen Çalıştır açık olduğunda evet. Sessiz olması için Çalıştırıldığında Bildir'i de kapatın.
+
+**Bir otomasyon bir widget'ın gösterdiğini değiştirebilir mi?**
+Bir widget'ın okuduğunu değiştirebilir. WidgetLoft karolarındaki bildirim noktaları bu şekilde çalışıyor.
+
+---
+
+Uygulamalarınızı, klasörlerinizi ve rutinlerinizi Ana Ekran'da tek bir ızgarada ister misiniz? [WidgetLoft'u App Store'dan indirin](/widgetloft/download).

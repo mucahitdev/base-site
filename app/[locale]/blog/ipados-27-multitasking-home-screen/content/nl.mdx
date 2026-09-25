@@ -1,0 +1,128 @@
+export const meta = {
+  title: "Vensters in iPadOS 27: bouw een beginscherm dat meekomt",
+  description:
+    "iPadOS 27 verfijnt de vensters in desktopstijl die met iPadOS 26 kwamen. Zo richt je het beginscherm van je iPad daarop in, inclusief een launcher-widget die apps als venster opent.",
+  keywords: [
+    "ipados 27 multitasking",
+    "ipados 27 vensters",
+    "ipad beginscherm indelen 2026",
+    "app-venster grootte aanpassen ipad",
+    "ipad app launcher widget",
+    "ipados 27 tips",
+  ],
+  ogTitle: "Een iPad-beginscherm gemaakt voor de vensters van iPadOS 27",
+  ogDescription:
+    "Vensters hebben veranderd hoe je apps opent op de iPad. Je beginscherm zou mee moeten veranderen.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline: "Vensters in iPadOS 27: bouw een beginscherm dat meekomt",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Krijgt een app een venster als ik hem via een widget open?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Een tegel in de widget start de app precies zoals het symbool op het beginscherm dat doet, dus hij opent als venster en je kunt hem net als elk ander venster vergroten en neerzetten.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Heb ik nog appmappen nodig op de iPad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Minder dan eerst. Een map kost een tik om te openen en een tik om te sluiten. Een launcher-widget houdt dezelfde apps zichtbaar op de pagina, en dat weegt zwaarder als je meerdere vensters achter elkaar opent.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kan ik een herindeling van het beginscherm in iPadOS 27 ongedaan maken?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. iPadOS 27 voegt knoppen voor ongedaan maken en opnieuw toe terwijl de symbolen bewegen, dus je kunt een indeling proberen en er weer uit stappen.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Vensters in iPadOS 27: bouw een beginscherm dat meekomt
+
+**Kort antwoord:** iPadOS 27 houdt de vensters in desktopstijl van iPadOS 26 en maakt openen, vergroten en wisselen sneller. Daarmee verandert hoe een goed beginscherm eruitziet: je opent nu meerdere apps achter elkaar in plaats van één per keer, dus de pagina moet veel apps op één tik afstand zetten. Een launcher-widget doet dat beter dan mappen.
+
+---
+
+## Wat er kort gezegd veranderde
+
+iPadOS 26 maakte van de iPad een machine met vensters. iPadOS 27 gaat dezelfde richting verder op: vensters reageren sneller, iPhone-apps op een iPad kunnen van grootte veranderen, en het beginscherm zelf krijgt ongedaan maken en opnieuw terwijl je symbolen herschikt.
+
+Twee kleinere wijzigingen doen iets voor de indeling. De klok op het toegangsscherm kan verplaatst worden, dus je achtergrond is niet meer half bedekt. En Liquid Glass heeft nu een schuifknop in Instellingen, dus jij bepaalt hoe doorzichtig de interface lijkt.
+
+## Waarom vensters je beginscherm veranderen
+
+Met één app per keer is het beginscherm een plek waar je doorheen loopt. Met vensters is het een opstelplaats. Je gaat ernaartoe terug om de tweede, derde en vierde app van een taak binnen te halen, en dat doe je veel keer per dag.
+
+Daardoor worden twee dingen duur:
+
+- **Mappen.** Elke keer twee tikken.
+- **Zoeken.** Snel voor één app, langzaam als gewoonte, en het haalt je handen van de indeling.
+
+Wat je in plaats daarvan wilt, is een pagina waar twintig of dertig apps zichtbaar en op één tik afstand zijn.
+
+## De indeling
+
+1. **Eén launcher-widget, bovenaan de pagina.** Voeg een brede Extra groot-widget van [WidgetLoft](/widgetloft) toe en richt hem op een groep met alle apps die je tijdens het werk opent. Kleine symbolen passen tot 72 tegels; er is een [volledige capaciteitstabel in de iPad-launchergids](/blog/ipad-app-launcher-widget).
+2. **Groepeer op taak, niet op soort.** Een werkwijze met vensters opent apps in clusters: notities plus browser plus mail. Houd clusters bij elkaar in het rooster, of geef elk zijn eigen maptegel.
+3. **Houd het Dock voor de twee of drie apps die altijd open staan.** Het Dock overleeft elke pagina, dus het is de verkeerde plek voor iets wat je af en toe gebruikt.
+4. **Laat de onderste helft van de pagina leeg.** Daar landen de vensters. Een pagina die tot de randen vol staat, vecht met waar je eigenlijk mee bezig bent.
+
+Elke tegel opent zijn app als een gewoon venster, want de tegel start de app precies zoals het symbool dat doet.
+
+## Submappen in plaats van pagina's
+
+Tussen pagina's van het beginscherm vegen is langzamer dan het lijkt, en met vensters open zie je de paginastipjes vaak helemaal niet. De maptegels van een launcher-widget openen **ter plekke**: tik op een maptegel, het rooster wisselt naar de inhoud, tik op de terugtegel om omhoog te gaan.
+
+Dat geeft je de diepte van meerdere pagina's zonder de pagina te verlaten. Elke map bevat tot 100 apps en 20 submappen, en je kunt zo diep nesten als je wilt. Zet **Automatisch terug naar map** aan in Instellingen, Widget, zodat de widget zichzelf terugzet naar het hoogste niveau in plaats van te blijven staan waar je hem achterliet.
+
+## Nog twee dingen die het instellen waard zijn
+
+**Ongedaan maken tijdens het schikken.** Houd het beginscherm ingedrukt tot de symbolen bewegen en je ziet ongedaan maken en opnieuw. Verplaats vrijuit; je legt je niet meer vast.
+
+**De Liquid Glass-schuifknop.** Instellingen, Weergave, Liquid Glass. Trek hem naar Transparant voor een lichtere interface, naar Getint als je wilt dat tekst en regelaars beter leesbaar zijn tegen een drukke achtergrond. Hij tekent live opnieuw terwijl je sleept.
+
+## Veelgestelde vragen
+
+**Krijgt een app een venster als ik hem via een widget open?**
+Ja. De tegel start de app zoals het symbool dat doet, dus hij opent als venster en gedraagt zich als elk ander venster.
+
+**Heb ik nog appmappen nodig op de iPad?**
+Minder dan eerst. Maptegels in een launcher-widget dekken dezelfde behoefte zonder de pagina te verlaten.
+
+**Kan ik een herindeling van het beginscherm in iPadOS 27 ongedaan maken?**
+Ja, ongedaan maken en opnieuw zijn er terwijl de symbolen bewegen.
+
+---
+
+Richt de pagina één keer in en werken met vensters wordt geen karwei meer. [Download WidgetLoft in de App Store](/widgetloft/download) om de launcher te bouwen.

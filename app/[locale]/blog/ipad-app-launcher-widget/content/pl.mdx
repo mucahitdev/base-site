@@ -1,0 +1,163 @@
+export const meta = {
+  title:
+    "Jak zamienić widżet na iPadzie w program uruchamiający aplikacje (do 72 aplikacji)",
+  description:
+    "iPad ma szeroki widżet w rozmiarze Bardzo duży już od iPadOS 15. Sprawdź, jak go dodać, ile kafelków aplikacji mieści się przy każdym rozmiarze ikon i jak sprawić, by każdy kafelek otwierał aplikację od razu.",
+  keywords: [
+    "widżet do uruchamiania aplikacji ipad",
+    "bardzo duży widżet ipad",
+    "widżet z aplikacjami ekran początkowy ipad",
+    "uruchamianie aplikacji z widżetu ipad",
+    "folder aplikacji w widżecie ipad",
+    "widżety ipados 27",
+  ],
+  ogTitle: "Zamień widżet iPada w launcher na 72 aplikacje",
+  ogDescription:
+    "Szeroki widżet Bardzo duży na iPadzie mieści do 72 kafelków aplikacji, a każdy kafelek może otworzyć aplikację.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak zamienić widżet na iPadzie w program uruchamiający aplikacje (do 72 aplikacji)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-app-launcher-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Zamień widżet na iPadzie w program uruchamiający aplikacje",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Zbuduj grupę",
+        text: "Otwórz WidgetLoft na iPadzie, utwórz grupę i dodaj aplikacje, które mają się znaleźć w launcherze.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj widżet",
+        text: "Przytrzymaj palec na ekranie początkowym iPada, dotknij Edytuj, potem Dodaj widżet, wybierz WidgetLoft i przesuń do rozmiaru Bardzo duży.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz grupę",
+        text: "Przytrzymaj palec na nowym widżecie, dotknij Edytuj widżet i wybierz zbudowaną grupę.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz rozmiar ikon",
+        text: "Wybierz rozmiar ikon dla grupy: na szerokim widżecie Bardzo duży na iPadzie małe ikony mieszczą do 72 kafelków, średnie 50, duże 32, a bardzo duże 18.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Ile aplikacji mieści się w widżecie na iPadzie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Na szerokim widżecie Bardzo duży na iPadzie do 72 kafelków przy małych ikonach, 50 przy średnich, 32 przy dużych i 18 przy bardzo dużych. Podfoldery kryją więcej aplikacji za jednym kafelkiem.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy kafelki otwierają prawdziwe aplikacje?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Każdy kafelek uruchamia zainstalowaną aplikację bezpośrednio z widżetu na ekranie początkowym, bez wcześniejszego otwierania WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Które iPady obsługują widżet Bardzo duży?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Szeroki rozmiar Bardzo duży jest dostępny na iPadzie od iPadOS 15 i pojawia się w galerii widżetów, gdy przesuniesz dalej niż rozmiar Duży.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak zamienić widżet na iPadzie w program uruchamiający aplikacje (do 72 aplikacji)
+
+**Krótka odpowiedź:** iPad ma rozmiar widżetu, którego iPhone nigdy nie miał: szeroki Bardzo duży, około dwa razy szerszy niż wyższy. Dodaj go z galerii widżetów na ekranie początkowym, wskaż mu grupę [WidgetLoft](/widgetloft) i dostajesz siatkę do 72 kafelków aplikacji, z których każdy otwiera prawdziwą aplikację.
+
+Ekran początkowy iPada zawsze miał problem odwrotny do iPhone'a. Miejsca jest w nadmiarze, a luźne ikony w nim pływają. Widżet, który trzyma uporządkowaną siatkę aplikacji, wykorzystuje tę szerokość, zamiast ją marnować.
+
+---
+
+## Dlaczego widżet launcher pasuje do iPada
+
+Na stronę iPada wchodzi znacznie więcej ikon niż na stronę telefonu, więc foldery się zapełniają i wszystko jest dwa dotknięcia dalej: otwórz folder, znajdź aplikację. Widżet launcher to spłaszcza. Aplikacje leżą na samej stronie, widoczne i jedno dotknięcie dalej.
+
+Przeżywa też to, co psuje większość układów na iPadzie: obracasz urządzenie. Widżet zachowuje swoją wewnętrzną siatkę, więc twoje ustawienie nie przepływa tak, jak robią to luźne ikony.
+
+## Krok po kroku
+
+1. **Zbuduj grupę.** Otwórz [WidgetLoft](/widgetloft) na iPadzie, utwórz grupę i dodaj wybrane aplikacje. Dotknij **Nowy folder** dla wszystkiego, co zasługuje na własny poziom.
+2. **Dodaj widżet.** Przytrzymaj palec na ekranie początkowym, dotknij **Edytuj**, a potem **Dodaj widżet**. Wybierz WidgetLoft i przesuwaj przez rozmiary, aż dojdziesz do Bardzo duży.
+3. **Wybierz grupę.** Przytrzymaj palec na nowym widżecie, dotknij **Edytuj widżet** i wybierz swoją grupę.
+4. **Wybierz rozmiar ikon.** Małe ikony mieszczą najwięcej aplikacji; w bardzo duże najłatwiej trafić kciukiem, trzymając iPada.
+
+Dotknij kafelka i aplikacja się otworzy. Dotknij kafelka folderu i otworzy się on w widżecie, z kafelkiem powrotu o jeden poziom wyżej.
+
+## Ile aplikacji mieści się przy każdym rozmiarze ikon
+
+| Rozmiar ikon | Szeroki Bardzo duży (iPad) | Duży |
+| --- | --- | --- |
+| Małe | 72 | 49 |
+| Średnie | 50 | 36 |
+| Duże | 32 | 25 |
+| Bardzo duże | 18 | 16 |
+
+Szeroki widżet Bardzo duży układa 12 kolumn na 6 rzędów przy małym rozmiarze ikon. To więcej aplikacji, niż większość osób trzyma na całej stronie iPada.
+
+Jeśli wolisz blok wysoki niż szeroki, iOS 27 i iPadOS 27 dodają pionowy rozmiar Bardzo duży, który mieści do 77 kafelków. Jest osobny przewodnik o [widżecie Bardzo duży jako launcherze na jednej stronie](/blog/extra-large-widget-ios-27).
+
+## Trzy układy iPada warte skopiowania
+
+**Strona do pracy.** Jeden szeroki widżet Bardzo duży na górze ze wszystkim, czego używasz do pracy, małe ikony, żadnych folderów. Resztę strony celowo zostawiasz pustą.
+
+**Strona podzielona.** Szeroki widżet Bardzo duży na aplikacje, a miejsce pod nim na widżet kalendarza albo notatek. Masz launcher i podgląd na jednej stronie.
+
+**Strona kategorii.** Sześć kafelków folderów przy dużym rozmiarze ikon, po jednym na obszar: praca, media, gry, podróże, finanse, narzędzia. Każdy otwiera się w miejscu, w widżecie. Czyta się jak menu, a nie jak ściana.
+
+## Co jeszcze poza aplikacjami wchodzi w kafelek
+
+Kafelek nie musi być aplikacją. WidgetLoft przyjmuje też strony internetowe, kontakty (zadzwoń lub napisz do kogoś jednym dotknięciem), Skróty i puste przekładki, którymi kształtujesz siatkę. Na iPadzie przekładki liczą się bardziej niż na telefonie: siatka z 12 kolumn wygląda lepiej w świadomych blokach niż jako jedna zbita płyta.
+
+## Częste pytania
+
+**Ile aplikacji mieści się w widżecie na iPadzie?**
+Do 72 przy małych ikonach w szerokim rozmiarze Bardzo duży, 50 przy średnich, 32 przy dużych i 18 przy bardzo dużych. Podfoldery dodają więcej za jednym kafelkiem.
+
+**Czy kafelki otwierają prawdziwe aplikacje?**
+Tak, wprost z widżetu na ekranie początkowym. WidgetLoft nie otwiera się pierwszy.
+
+**Które iPady obsługują widżet Bardzo duży?**
+Każdy iPad z iPadOS 15 lub nowszym. Przesuń dalej niż Duży w galerii widżetów i tam jest.
+
+Uwaga o limitach: darmowa wersja WidgetLoft trzyma w bibliotece do 21 aplikacji, czyli mniej niż jeden pełny widżet iPada. WidgetLoft Pro znosi ten limit.
+
+---
+
+Chcesz, żeby strona iPada działała jak menu, a nie jak sterta? [Pobierz WidgetLoft z App Store](/widgetloft/download).

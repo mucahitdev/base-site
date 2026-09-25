@@ -1,0 +1,156 @@
+export const meta = {
+  title: "iPad 锁定屏幕小组件：它们能做什么，以及如何启动应用",
+  description:
+    "如何在 iPad 锁定屏幕上添加小组件，那个长方形位置能放什么，以及怎样让它一次轻点就打开你的应用。",
+  keywords: [
+    "ipad 锁定屏幕小组件",
+    "ipad 锁定屏幕添加小组件",
+    "ipad 锁定屏幕应用",
+    "从锁定屏幕打开应用 ipad",
+    "ipad 锁定屏幕个性化",
+    "ipados 27 锁定屏幕",
+  ],
+  ogTitle: "iPad 锁定屏幕小组件，以及如何从中启动应用",
+  ogDescription:
+    "iPad 锁定屏幕可以在时钟旁边放小组件。其中一个可以是一排应用图块。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline: "iPad 锁定屏幕小组件：它们能做什么，以及如何启动应用",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ipad-lock-screen-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPad 锁定屏幕上添加应用启动小组件",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "进入锁定屏幕编辑",
+        text: "长按锁定屏幕，然后轻点“自定义”并选择锁定屏幕。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开小组件区域",
+        text: "轻点时钟旁边或下方的小组件区域，打开小组件选择器。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加启动小组件",
+        text: "选择 WidgetLoft 并添加它的长方形小组件，然后轻点它来选择要显示的分组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "轻点一个应用",
+        text: "轻点锁定屏幕上的图块。iPad 会要求你解锁，然后打开该应用。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "一个 iPad 锁定屏幕小组件能放多少个应用？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "长方形的锁定屏幕小组件只有一排：小图标最多放 4 个应用图块，大图标放 3 个。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "在锁定状态下轻点图块会直接打开应用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会。iPadOS 会先要求你解锁，之后应用才打开。这是系统规则，不是应用的设置。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iPad 上的锁定屏幕小组件是彩色的吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不是。iPadOS 用单一色调绘制锁定屏幕小组件，所以应用图标显示为单色形状，而不是各自的颜色。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPad 锁定屏幕小组件：它们能做什么，以及如何启动应用
+
+**快速回答：**长按 iPad 锁定屏幕，轻点**“自定义”**，然后轻点时钟旁边的小组件区域。你放进去的东西在解锁之前就能看到。用 [WidgetLoft](/widgetloft)，其中一个位置会变成一排应用图块，于是你拿起 iPad 后第一个碰到的，就是你真正想开的那个应用。
+
+---
+
+## iPad 锁定屏幕上的小组件放在哪里
+
+iPad 会按方向把锁定屏幕小组件放在时钟附近的一列或一排里，而在 iPadOS 27 上，时钟本身也可以移动位置，不再挡住墙纸。
+
+和主屏幕不同，这里没有需要填满的网格。你只有少数几个位置，而它们都在争夺同一眼。所以在 iPad 上，一个塞满应用图块的位置比再来一个天气方块更划算：iPad 是你为了做一件事才拿起来的设备，而那件事就从锁定屏幕开始。
+
+## 分步操作
+
+1. **长按锁定屏幕**，直到自定义按钮出现，然后轻点**“自定义”**并选择锁定屏幕。
+2. **轻点小组件区域**，在时钟旁边或下方。小组件选择器会打开。
+3. **选择 WidgetLoft**，添加它的长方形小组件。
+4. **轻点刚添加的小组件**，选择它要显示哪个分组。
+5. **轻点“完成”，然后轻点一个图块。** iPad 会要求 Face ID 或你的密码，之后应用打开。
+
+## 老实说，能放多少
+
+长方形的锁定屏幕小组件就是一排：
+
+| 图标尺寸 | 图块 |
+| --- | --- |
+| 小 | 4 |
+| 大 | 3 |
+
+这就是上限，而且是系统给的上限：苹果给每个应用同样的长方形。所以把它当作你最先打开的三四个应用的快捷栏，而不是一个启动器。相机、备忘录、一个浏览器和你的聊天应用，这是个现实的组合。
+
+要真正的网格，主屏幕才是地方。有一篇关于[最多 72 个图块的 iPad 启动器小组件](/blog/ipad-app-launcher-widget)的指南。
+
+## 需要预料的两件事
+
+**没有颜色。** iPadOS 用单一色调绘制锁定屏幕小组件，所以图标读起来像剪影。挑那些形状彼此区别明显的应用；四个灰色圆角方块一眼很难分清。
+
+**先解锁。** iPad 锁定时，轻点图块无法打开应用。轻点会被记录，设备要求 Face ID 或密码，之后应用才打开。没有办法绕过这一点，你也不会想要一个能绕过的应用。
+
+## 值得搭配的东西
+
+- **移动过的时钟。** 在 iPadOS 27 上你可以移动它，这通常能腾出小组件一直在争的位置。
+- **主屏幕上的启动器小组件。** 第一次轻点用锁定屏幕那一排，其余都交给主屏幕的网格。
+- **“设置”里“外观”中的 Liquid Glass 滑块**，如果小组件文字在你的墙纸上不好读。
+
+## 常见问题
+
+**一个 iPad 锁定屏幕小组件能放多少个应用？**
+小图标四个，大图标三个。就一排。
+
+**在锁定状态下轻点图块会直接打开应用吗？**
+不会，iPadOS 会先要求你解锁，然后才打开。
+
+**iPad 上的锁定屏幕小组件是彩色的吗？**
+不是。它们以单一色调绘制，所以图标看起来是单色的。
+
+---
+
+想让你拿起 iPad 后的第一次轻点就点对？[在 App Store 下载 WidgetLoft](/widgetloft/download)。

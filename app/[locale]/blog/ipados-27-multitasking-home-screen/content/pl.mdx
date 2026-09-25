@@ -1,0 +1,128 @@
+export const meta = {
+  title: "Okna w iPadOS 27: zbuduj ekran początkowy, który nadąża",
+  description:
+    "iPadOS 27 dopracowuje okna w stylu komputera, które pojawiły się w iPadOS 26. Oto jak ułożyć wokół nich ekran początkowy iPada, w tym widżet launchera, który otwiera aplikacje w oknach.",
+  keywords: [
+    "wielozadaniowość ipados 27",
+    "okna w ipados 27",
+    "jak ustawić ekran początkowy ipada 2026",
+    "zmiana rozmiaru okien aplikacji na ipadzie",
+    "widżet do uruchamiania aplikacji ipad",
+    "porady ipados 27",
+  ],
+  ogTitle: "Ekran początkowy iPada zrobiony pod okna iPadOS 27",
+  ogDescription:
+    "Okna zmieniły sposób otwierania aplikacji na iPadzie. Twój ekran początkowy powinien zmienić się razem z nimi.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline: "Okna w iPadOS 27: zbuduj ekran początkowy, który nadąża",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ipados-27-multitasking-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy aplikacja otwarta z widżetu dostaje okno?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Kafelek widżetu uruchamia aplikację dokładnie tak, jak jej ikona na ekranie początkowym, więc otwiera się ona jako okno i można jej zmieniać rozmiar oraz układać ją jak każde inne.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy nadal potrzebuję folderów aplikacji na iPadzie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Mniej niż wcześniej. Folder kosztuje jedno stuknięcie na otwarcie i jedno na zamknięcie. Widżet launchera trzyma te same aplikacje widoczne na stronie, co liczy się bardziej, gdy otwierasz kilka okien po kolei.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy w iPadOS 27 mogę cofnąć przestawienie ekranu początkowego?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. iPadOS 27 dodaje przyciski cofania i ponawiania, gdy ikony drżą, więc możesz wypróbować układ i się z niego wycofać.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Okna w iPadOS 27: zbuduj ekran początkowy, który nadąża
+
+**Krótka odpowiedź:** iPadOS 27 zachowuje okna w stylu komputera z iPadOS 26 i przyspiesza ich otwieranie, zmianę rozmiaru oraz przełączanie. To zmienia to, jak wygląda dobry ekran początkowy: teraz otwierasz kilka aplikacji po kolei, a nie jedną po drugiej, więc strona powinna trzymać wiele aplikacji na odległość jednego stuknięcia. Widżet launchera radzi sobie z tym lepiej niż foldery.
+
+---
+
+## Co się zmieniło, w skrócie
+
+iPadOS 26 zamienił iPada w maszynę z oknami. iPadOS 27 idzie w tym samym kierunku: okna reagują szybciej, aplikacjom na iPhone'a działającym na iPadzie można zmieniać rozmiar, a sam ekran początkowy zyskuje cofanie i ponawianie w czasie przestawiania ikon.
+
+Dla układu liczą się dwie mniejsze zmiany. Zegar na ekranie blokady da się przesunąć, więc tapeta nie jest już zasłonięta w połowie. A Liquid Glass ma teraz suwak w Ustawieniach, więc sam decydujesz, jak przejrzysty wydaje się interfejs.
+
+## Dlaczego okna zmieniają twój ekran początkowy
+
+Przy jednej aplikacji naraz ekran początkowy jest miejscem, przez które przechodzisz. Z oknami staje się miejscem przygotowań. Wracasz na niego po drugą, trzecią i czwartą aplikację do zadania, i robisz to wiele razy dziennie.
+
+To sprawia, że dwie rzeczy stają się kosztowne:
+
+- **Foldery.** Za każdym razem dwa stuknięcia.
+- **Wyszukiwanie.** Szybkie dla jednej aplikacji, wolne jako nawyk, i odrywa ręce od układu.
+
+Chcesz w zamian strony, na której dwadzieścia albo trzydzieści aplikacji jest widocznych i leży w jednym stuknięciu.
+
+## Układ
+
+1. **Jeden widżet launchera, u góry strony.** Dodaj szeroki widżet w rozmiarze Bardzo duży z [WidgetLoft](/widgetloft) i wskaż mu grupę ze wszystkimi aplikacjami, które otwierasz w pracy. Małe ikony mieszczą do 72 kafelków; jest [pełna tabela pojemności w przewodniku po launcherze na iPada](/blog/ipad-app-launcher-widget).
+2. **Grupuj po zadaniach, nie po typach.** Praca w oknach otwiera aplikacje grupami: notatki plus przeglądarka plus poczta. Trzymaj grupy razem w siatce albo daj każdej własny kafelek folderu.
+3. **Zostaw Dock dwóm czy trzem aplikacjom, które masz zawsze otwarte.** Dock przeżywa każdą stronę, więc to złe miejsce na cokolwiek okazjonalnego.
+4. **Zostaw dolną połowę strony pustą.** Tam lądują okna. Strona zapchana do krawędzi walczy z tym, co właśnie robisz.
+
+Każdy kafelek otwiera swoją aplikację jako zwykłe okno, bo kafelek uruchamia aplikację dokładnie tak, jak robi to jej ikona.
+
+## Podfoldery zamiast stron
+
+Przesuwanie między stronami ekranu początkowego jest wolniejsze, niż się zdaje, a przy otwartych oknach często nie widać nawet kropek stron. Kafelki folderów w widżecie launchera otwierają się **na miejscu**: stuknij kafelek folderu, siatka przechodzi do jego zawartości, stuknij kafelek powrotu, żeby wyjść wyżej.
+
+To daje głębię kilku stron bez opuszczania strony. Każdy folder pomieści do 100 aplikacji i 20 podfolderów, a zagłębiać możesz się dowolnie. Włącz **Automatyczny powrót do folderu** w Ustawieniach, Widżet, żeby widżet wracał sam na najwyższy poziom, zamiast zostawać tam, gdzie go zostawiłeś.
+
+## Jeszcze dwie rzeczy warte ustawienia
+
+**Cofanie w trakcie porządkowania.** Przytrzymaj ekran początkowy, aż ikony zadrżą, i zobaczysz cofanie oraz ponawianie. Przestawiaj swobodnie: już nic nie przypieczętowujesz.
+
+**Suwak Liquid Glass.** Ustawienia, Wygląd, Liquid Glass. Pociągnij w stronę Przejrzysty dla lżejszego interfejsu, w stronę Barwiony, jeśli chcesz, żeby tekst i przyciski czytały się mocniej na ruchliwej tapecie. Rysuje się na żywo, gdy przeciągasz.
+
+## Częste pytania
+
+**Czy aplikacja otwarta z widżetu dostaje okno?**
+Tak. Kafelek uruchamia aplikację tak jak ikona, więc otwiera się ona jako okno i zachowuje się jak każde inne.
+
+**Czy nadal potrzebuję folderów aplikacji na iPadzie?**
+Mniej niż wcześniej. Kafelki folderów w widżecie launchera pokrywają tę samą potrzebę bez opuszczania strony.
+
+**Czy w iPadOS 27 mogę cofnąć przestawienie ekranu początkowego?**
+Tak, cofanie i ponawianie są na miejscu, gdy ikony drżą.
+
+---
+
+Ustaw stronę raz, a okna przestają być mordęgą. [Pobierz WidgetLoft w App Store](/widgetloft/download), żeby zbudować launcher.

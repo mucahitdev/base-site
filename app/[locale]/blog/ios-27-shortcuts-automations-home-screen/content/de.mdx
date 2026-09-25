@@ -1,0 +1,152 @@
+export const meta = {
+  title: "iOS 27 Kurzbefehl-Automationen, die deinen Home-Bildschirm verbessern",
+  description:
+    "Fünf Kurzbefehl-Automationen, die sich unter iOS 27 lohnen, inklusive des neuen Mitteilungs-Auslösers, und wie jede davon verändert, was dein Home-Bildschirm für dich tut.",
+  keywords: [
+    "ios 27 kurzbefehle automation",
+    "kurzbefehle mitteilung auslöser",
+    "iphone automation home bildschirm",
+    "ios 27 kurzbefehle tipps",
+    "persönliche automation iphone",
+    "widget automatisieren iphone",
+  ],
+  ogTitle: "iOS 27 Kurzbefehl-Automationen für einen besseren Home-Bildschirm",
+  ogDescription:
+    "Der Mitteilungs-Auslöser, Automationen nach Uhrzeit und Ort, und wofür sie wirklich taugen.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline: "iOS 27 Kurzbefehl-Automationen, die deinen Home-Bildschirm verbessern",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Eine persönliche Automation in Kurzbefehle unter iOS 27 erstellen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Den Tab Automation öffnen",
+        text: "Öffne die App Kurzbefehle und tippe unten auf Automation.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Eine Automation hinzufügen",
+        text: "Tippe auf die Plus-Taste und wähle einen Auslöser, etwa eine Tageszeit, das Ankommen an einem Ort oder eine Mitteilung einer bestimmten App.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Festlegen, was ausgeführt wird",
+        text: "Füge die gewünschten Aktionen hinzu. Lass Sofort ausführen aktiviert und Bei Ausführung mitteilen deaktiviert, wenn es lautlos passieren soll.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Testen",
+        text: "Löse die Bedingung einmal selbst aus und prüfe das Ergebnis, bevor du dich darauf verlässt.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Was ist der Mitteilungs-Auslöser in Kurzbefehle?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ein Automations-Auslöser, der reagiert, wenn eine ausgewählte App eine Mitteilung sendet. Er kam mit iOS 27 und kann seine Aktionen lautlos ausführen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Laufen Automationen ohne zu fragen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja, wenn Sofort ausführen aktiviert ist. Deaktiviere zusätzlich Bei Ausführung mitteilen, dann passiert die Automation, ohne dass etwas auf dem Bildschirm erscheint.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kann eine Automation verändern, was ein Widget zeigt?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sie kann die Daten verändern, die ein Widget liest. WidgetLoft nutzt das für Mitteilungspunkte auf Launcher-Feldern: die Automation vermerkt, dass eine App eine Mitteilung hat, und das Widget zeichnet einen Punkt auf dieses Feld.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27 Kurzbefehl-Automationen, die deinen Home-Bildschirm verbessern
+
+**Kurze Antwort:** Öffne Kurzbefehle, tippe auf **Automation**, dann auf die Plus-Taste und wähle einen Auslöser. Der interessante neue Auslöser unter iOS 27 reagiert, wenn eine bestimmte App eine Mitteilung sendet, und er kann lautlos laufen. Unten stehen fünf Automationen, die verändern, was dein Home-Bildschirm tut, und nicht fünf, die nur clever aussehen.
+
+---
+
+## 1. Mitteilungspunkte auf einem Launcher-Widget
+
+Ein Widget kann deine ungelesenen Zähler nicht lesen; Apple gibt sie nicht heraus. Aber eine Automation kann bemerken, dass eine App eine Mitteilung gesendet hat, und ein Widget kann lesen, was die Automation geschrieben hat.
+
+Genau so setzt [WidgetLoft](/widgetloft) einen Punkt auf ein Launcher-Feld. Du wählst die Apps aus, die Automation läuft lautlos, wenn eine davon dich benachrichtigt, und das Feld behält den Punkt, bis du die App öffnest. Eine vollständige Anleitung steht in [Mitteilungskennzeichen auf Widgets](/blog/notification-badges-on-widgets-iphone).
+
+Beim Bauen der Automation sind zwei Einstellungen wichtig: **Sofort ausführen** an, **Bei Ausführung mitteilen** aus. Sonst erzeugt jede Mitteilung eine zweite Mitteilung, und das ist eine ganz eigene Art von nervig.
+
+## 2. Eine Fokus-Seite, die der Uhrzeit folgt
+
+Richte für deine Arbeitszeit eine Automation ein, die einen Fokus aktiviert, und verbinde den Fokus mit einer Seite des Home-Bildschirms. iOS wechselt die Seiten mit dem Fokus, also zeigt das iPhone um neun Uhr morgens deine Arbeitsseite und um sechs die andere.
+
+Das funktioniert besser, als Symbole von Hand umzusortieren, und es ist die eine Automation, die fast jeder behält.
+
+## 3. Ankommen öffnet das, was du sowieso immer öffnest
+
+Auslöser: **Ankommen**, im Fitnessstudio, im Büro, in einem Laden, in dem du jede Woche bist. Aktion: die App öffnen, die du dort immer öffnest, oder eine Playlist starten.
+
+Beschränke es auf Orte, die du wirklich wiederholt aufsuchst. Eine Automation, die an einem Ort auslöst, an dem du zweimal im Jahr bist, ist Lärm, den du später debuggen musst.
+
+## 4. Abends ans Kabel
+
+Auslöser: **Ladegerät** verbunden, mit einer Zeitbedingung. Aktionen: Stromsparmodus aus, Wecker prüfen, Fokus an. Unter iPadOS wie unter iOS ist das die günstigste Automation und die, die man am meisten merkt, weil sie eine abendliche Pflicht abschafft.
+
+## 5. Ein einzelnes Feld, das eine ganze Routine ausführt
+
+Ein Kurzbefehl muss nicht in der App Kurzbefehle wohnen. WidgetLoft-Felder können Kurzbefehle ausführen, also kann ein Launcher-Widget "zur Arbeit los" oder "Aufnahme starten" direkt neben deinen Apps halten. Ein Raster, Apps und Routinen zusammen, kein separates Kurzbefehle-Widget, das Platz frisst.
+
+## Worauf du achten solltest
+
+- **Teste, bevor du vertraust.** Löse die Bedingung einmal selbst aus und sieh dir das Ergebnis an. Automationen scheitern still.
+- **Prüfe die Schalter.** Neue Automationen fragen standardmäßig vor der Ausführung, und beim Mitteilungs-Auslöser ist die Automation standardmäßig an und die Mitteilung aus. Beides lohnt sich zu bestätigen.
+- **Halte sie knapp.** Zehn Automationen, die du vergessen hast, verhalten sich wie ein Spukhandy. Fünf, die du benennen kannst, sind ein System.
+
+## Häufige Fragen
+
+**Was ist der Mitteilungs-Auslöser?**
+Eine Automation, die reagiert, wenn eine ausgewählte App eine Mitteilung sendet. Sie kam mit iOS 27 und kann laufen, ohne etwas anzuzeigen.
+
+**Laufen Automationen ohne zu fragen?**
+Ja, wenn Sofort ausführen aktiviert ist. Deaktiviere für eine lautlose Variante auch Bei Ausführung mitteilen.
+
+**Kann eine Automation verändern, was ein Widget zeigt?**
+Sie kann verändern, was ein Widget liest. Die Mitteilungspunkte auf WidgetLoft-Feldern funktionieren so.
+
+---
+
+Du willst Apps, Ordner und Routinen in einem Raster auf dem Home-Bildschirm? [Lade WidgetLoft im App Store](/widgetloft/download).

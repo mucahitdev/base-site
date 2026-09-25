@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Automatizaciones de Atajos en iOS 27 que mejoran tu pantalla de inicio",
+  description:
+    "Cinco automatizaciones de Atajos que vale la pena crear en iOS 27, incluido el nuevo activador de notificaciones, y cómo cada una cambia lo que tu pantalla de inicio hace por ti.",
+  keywords: [
+    "automatizaciones atajos ios 27",
+    "activador de notificación atajos",
+    "automatizacion iphone pantalla de inicio",
+    "trucos atajos ios 27",
+    "automatizacion personal iphone",
+    "automatizar widgets iphone",
+  ],
+  ogTitle: "Automatizaciones de Atajos en iOS 27 para una mejor pantalla de inicio",
+  ogDescription:
+    "El activador de notificaciones, las automatizaciones por hora y por ubicación, y para qué sirven de verdad.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline: "Automatizaciones de Atajos en iOS 27 que mejoran tu pantalla de inicio",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Crear una automatización personal en Atajos en iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Abre la pestaña Automatización",
+        text: "Abre la app Atajos y toca Automatización en la parte inferior.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Añade una automatización",
+        text: "Toca el botón de más y elige un activador, como una hora del día, llegar a un sitio o una notificación de una app concreta.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige qué se ejecuta",
+        text: "Añade las acciones que quieras. Deja Ejecutar inmediatamente activado y Notificar al ejecutar desactivado si quieres que ocurra en silencio.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pruébala",
+        text: "Provoca tú mismo la condición una vez y comprueba el resultado antes de confiar en ella.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Qué es el activador de notificaciones en Atajos?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Es un activador de automatización que se dispara cuando una app elegida envía una notificación. Llegó con iOS 27 y puede ejecutar sus acciones en silencio.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Las automatizaciones se ejecutan sin preguntarme?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí, si Ejecutar inmediatamente está activado. Desactiva también Notificar al ejecutar y la automatización ocurrirá sin mostrar nada en pantalla.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Puede una automatización cambiar lo que muestra un widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Puede cambiar los datos que lee un widget. WidgetLoft usa esto para los puntos de notificación en las casillas del lanzador: la automatización registra que una app tiene una notificación y el widget dibuja un punto en esa casilla.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Automatizaciones de Atajos en iOS 27 que mejoran tu pantalla de inicio
+
+**Respuesta rápida:** abre Atajos, toca **Automatización**, luego el botón de más y elige un activador. El nuevo activador interesante de iOS 27 se dispara cuando una app concreta envía una notificación, y puede ejecutarse en silencio. Abajo tienes cinco automatizaciones que cambian lo que hace tu pantalla de inicio, no cinco que solo parecen ingeniosas.
+
+---
+
+## 1. Puntos de notificación en un widget lanzador
+
+Un widget no puede leer tus contadores de mensajes sin leer; Apple no los expone. Pero una automatización sí puede notar que una app ha enviado una notificación, y un widget puede leer lo que la automatización escribió.
+
+Así es exactamente como [WidgetLoft](/widgetloft) pone un punto en una casilla del lanzador. Tú eliges las apps, la automatización se ejecuta en silencio cuando una de ellas te notifica y la casilla se queda con un punto hasta que abras la app. Tienes la guía completa en [distintivos de notificación en widgets](/blog/notification-badges-on-widgets-iphone).
+
+Dos ajustes importan al crear la automatización: **Ejecutar inmediatamente** activado, **Notificar al ejecutar** desactivado. Si no, cada notificación produce una segunda notificación, que es un tipo especial de molestia.
+
+## 2. Una página de concentración que sigue la hora
+
+Crea una automatización para tu jornada laboral que active un modo de concentración y vincula ese modo con una página de la pantalla de inicio. iOS cambia de página con el modo de concentración, así que a las nueve de la mañana el iPhone muestra tu página de trabajo y a las seis muestra la otra.
+
+Funciona mejor que reordenar iconos a mano, y es la automatización que casi todo el mundo conserva.
+
+## 3. Llegar a un sitio abre lo que siempre abres
+
+Activador: **Llegar**, al gimnasio, a la oficina, a una tienda a la que vas cada semana. Acción: abrir la app que siempre abres allí, o poner una lista de reproducción.
+
+Limítalo a lugares que repitas de verdad. Una automatización que se dispara en un sitio al que vas dos veces al año es ruido que tendrás que depurar más adelante.
+
+## 4. Enchufar el teléfono por la noche
+
+Activador: **Cargador** conectado, con una condición de hora. Acciones: desactivar el modo de bajo consumo, comprobar la alarma, activar un modo de concentración. Tanto en iPadOS como en iOS, es la automatización más barata de crear y la que más se nota, porque elimina una tarea de cada noche.
+
+## 5. Una sola casilla que ejecuta una rutina entera
+
+Un atajo no tiene que vivir en la app Atajos. Las casillas de WidgetLoft pueden ejecutar atajos, así que un widget lanzador puede guardar "salir al trabajo" o "empezar a grabar" junto a tus apps. Una sola cuadrícula, apps y rutinas juntas, sin un widget de Atajos aparte ocupando espacio.
+
+## A qué prestar atención
+
+- **Pruébalo antes de confiar.** Provoca la condición una vez tú mismo y mira el resultado. Las automatizaciones fallan en silencio.
+- **Revisa los interruptores.** Las automatizaciones nuevas preguntan antes de ejecutarse por omisión, y el activador de notificaciones viene con la automatización activada y el aviso desactivado. Merece la pena confirmar ambos.
+- **Que sean pocas.** Diez automatizaciones que has olvidado se comportan como un teléfono encantado. Cinco que puedas nombrar son un sistema.
+
+## Preguntas frecuentes
+
+**¿Qué es el activador de notificaciones?**
+Una automatización que se dispara cuando una app elegida envía una notificación. Llegó con iOS 27 y puede ejecutarse sin mostrar nada.
+
+**¿Las automatizaciones se ejecutan sin preguntarme?**
+Sí, cuando Ejecutar inmediatamente está activado. Desactiva también Notificar al ejecutar para que sea silenciosa.
+
+**¿Puede una automatización cambiar lo que muestra un widget?**
+Puede cambiar lo que un widget lee. Los puntos de notificación en las casillas de WidgetLoft funcionan así.
+
+---
+
+¿Quieres tus apps, carpetas y rutinas en una sola cuadrícula en la pantalla de inicio? [Descarga WidgetLoft en el App Store](/widgetloft/download).

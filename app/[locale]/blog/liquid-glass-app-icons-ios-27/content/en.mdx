@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Clear, Tinted and Dark App Icons in iOS 27 (and the Glass Slider)",
+  description:
+    "iOS 27 lets you set app icons to Clear, Tinted, Dark or Light, and adds a Liquid Glass slider in Settings. Here is where each control lives and how widgets follow along.",
+  keywords: [
+    "ios 27 clear app icons",
+    "ios 27 liquid glass slider",
+    "tinted app icons iphone",
+    "dark app icons ios 27",
+    "customize home screen ios 27",
+    "ios 27 icon appearance",
+  ],
+  ogTitle: "Clear, Tinted and Dark Icons in iOS 27",
+  ogDescription:
+    "Where the icon appearance controls live, what the Liquid Glass slider does, and how widgets keep up.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "Clear, Tinted and Dark App Icons in iOS 27 (and the Glass Slider)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/liquid-glass-app-icons-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Change app icon appearance in iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Enter edit mode",
+        text: "Long-press an empty part of the Home Screen until the icons jiggle, then tap Edit.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Open Customise",
+        text: "Tap Customise to see the icon appearance options.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pick an appearance",
+        text: "Choose Light, Dark, Clear or Tinted. Tinted offers a colour picker.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Set the glass level",
+        text: "For the rest of the interface, open Settings, Appearance, Liquid Glass and drag the slider between Clear and Tinted.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I turn Liquid Glass off in iOS 27?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There is no off switch. iOS 27 adds a slider in Settings, Appearance, Liquid Glass that moves the interface between a clearer and a more tinted look.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does the Clear icon style apply to every app?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It applies to the Home Screen as a whole. Apps that ship the right icon layers render properly; others are approximated by the system.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do widget app tiles follow the icon appearance?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not automatically, because a widget draws its own content. WidgetLoft ships real dark versions of app icons and lets you set a custom image per appearance, so a launcher widget can match a dark or tinted Home Screen.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Clear, Tinted and Dark App Icons in iOS 27 (and the Glass Slider)
+
+**Quick answer:** long-press an empty spot on the Home Screen, tap **Edit**, then **Customise**, and pick Light, Dark, Clear or Tinted for your icons. For the rest of the interface, open **Settings, Appearance, Liquid Glass** and drag the slider. Two different controls, two different jobs, and people mix them up constantly.
+
+---
+
+## The two controls, separated
+
+**Icon appearance** lives on the Home Screen, not in Settings. It changes how app icons are drawn: normal light icons, dark versions, a glassy Clear look, or Tinted where you pick a colour and every icon adopts it.
+
+**The Liquid Glass slider** lives in Settings, Appearance, Liquid Glass, and it is new in iOS 27. It does not touch your icons. It controls how transparent the system interface is: menus, toolbars, sheets, Control Centre. Pull it toward Clear and everything reads lighter and more see-through; pull it toward Tinted and the same surfaces gain a solid backing, which is easier to read against a busy wallpaper.
+
+There is no switch that turns Liquid Glass off. The slider is the control Apple gave, and dragging it to Tinted is as close as you get.
+
+## How to change icon appearance
+
+1. Long-press an empty part of the Home Screen until the icons jiggle.
+2. Tap **Edit**, then **Customise**.
+3. Choose **Light**, **Dark**, **Clear** or **Tinted**. Tinted gives you a colour picker.
+4. Tap anywhere to finish.
+
+Clear is the one that gets attention: icons become glassy and take colour from the wallpaper. It looks best over a wallpaper with some contrast and worst over a busy photo, where several icons stop being distinguishable.
+
+## The part nobody mentions: widgets do not follow
+
+Icon appearance is applied by the system to app icons. A widget draws its own content, so it does not inherit Clear or Tinted. Set your Home Screen to Dark and a widget full of bright app icons suddenly looks like a hole in the page.
+
+[WidgetLoft](/widgetloft) handles this deliberately:
+
+- **Real dark icons.** Genuine dark versions of Apple's system icons ship with the app, and dark versions of the most common third-party icons are pre-baked, so a dark Home Screen stays dark inside the widget too.
+- **Per-appearance custom icons.** You can set one image for light mode and a different one for dark, per app.
+- **A transparent widget background** on iOS 26 and later, so the widget sits on the wallpaper instead of on a grey card.
+
+There is a separate walkthrough for [dark mode app icons](/blog/dark-mode-app-icons-iphone) and for [transparent widgets](/blog/transparent-widget-iphone).
+
+## Which combination actually looks good
+
+- **Clear icons, a plain wallpaper, transparent widgets.** The cleanest look iOS 27 can produce, and the one the glass effect was designed for.
+- **Dark icons, dark wallpaper, dark widget tiles.** The most legible, and the least dependent on your wallpaper.
+- **Tinted icons in one colour, matching custom widget tiles.** The most personal, and the most work.
+
+Avoid Tinted with a photo wallpaper. Everything turns into the same coloured mush and you start hunting for apps by position.
+
+## Common questions
+
+**Can I turn Liquid Glass off in iOS 27?**
+No. The slider in Settings, Appearance, Liquid Glass is the only control, and it moves between clearer and more tinted.
+
+**Does Clear apply to every app?**
+It applies to the Home Screen as a whole. Apps that ship proper icon layers look right; the rest are approximated.
+
+**Do widget app tiles follow the icon appearance?**
+No, a widget draws itself. That is why WidgetLoft ships real dark icons and per-appearance overrides.
+
+---
+
+Want your launcher widget to match a Clear or Dark Home Screen instead of fighting it? [Download WidgetLoft on the App Store](/widgetloft/download).

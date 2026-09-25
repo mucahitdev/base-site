@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Icônes d'apps Transparent, Teinté et Sombre dans iOS 27 (et le curseur de verre)",
+  description:
+    "iOS 27 permet de régler les icônes d'apps sur Transparent, Teinté, Sombre ou Clair, et ajoute un curseur Liquid Glass dans les Réglages. Voici où se trouve chaque commande et comment les widgets suivent.",
+  keywords: [
+    "icônes transparentes ios 27",
+    "curseur liquid glass ios 27",
+    "icônes teintées iphone",
+    "icônes sombres ios 27",
+    "personnaliser écran d'accueil ios 27",
+    "apparence des icônes ios 27",
+  ],
+  ogTitle: "Icônes Transparent, Teinté et Sombre dans iOS 27",
+  ogDescription:
+    "Où se trouvent les réglages d'apparence des icônes, ce que fait le curseur Liquid Glass et comment les widgets suivent.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Icônes d'apps Transparent, Teinté et Sombre dans iOS 27 (et le curseur de verre)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/liquid-glass-app-icons-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Changer l'apparence des icônes d'apps dans iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Passer en mode modification",
+        text: "Touchez et maintenez une zone vide de l'écran d'accueil jusqu'à ce que les icônes se mettent à bouger, puis touchez Modifier.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ouvrir Personnaliser",
+        text: "Touchez Personnaliser pour afficher les options d'apparence des icônes.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir une apparence",
+        text: "Choisissez Clair, Sombre, Transparent ou Teinté. Teinté propose un sélecteur de couleur.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Régler le niveau de verre",
+        text: "Pour le reste de l'interface, ouvrez Réglages, Apparence, Liquid Glass et faites glisser le curseur entre Transparent et Teinté.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Puis-je désactiver Liquid Glass dans iOS 27 ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Il n'y a pas d'interrupteur de désactivation. iOS 27 ajoute dans Réglages, Apparence, Liquid Glass un curseur qui fait passer l'interface d'un rendu plus transparent à un rendu plus teinté.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Le style Transparent s'applique-t-il à toutes les apps ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Il s'applique à l'écran d'accueil dans son ensemble. Les apps qui fournissent les bons calques d'icône s'affichent correctement, les autres sont approximées par le système.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Les vignettes d'apps dans un widget suivent-elles l'apparence des icônes ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pas automatiquement, car un widget dessine son propre contenu. WidgetLoft fournit de vraies versions sombres des icônes d'apps et permet de définir une image personnalisée par apparence, de sorte qu'un widget de lancement peut s'accorder à un écran d'accueil sombre ou teinté.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Icônes d'apps Transparent, Teinté et Sombre dans iOS 27 (et le curseur de verre)
+
+**Réponse rapide :** touchez et maintenez un emplacement vide de l'écran d'accueil, touchez **Modifier**, puis **Personnaliser**, et choisissez Clair, Sombre, Transparent ou Teinté pour vos icônes. Pour le reste de l'interface, ouvrez **Réglages, Apparence, Liquid Glass** et faites glisser le curseur. Deux commandes différentes, deux rôles différents, et on les confond en permanence.
+
+---
+
+## Les deux commandes, séparément
+
+**L'apparence des icônes** se trouve sur l'écran d'accueil, pas dans les Réglages. Elle change la façon dont les icônes sont dessinées : icônes claires normales, versions sombres, un rendu Transparent en verre, ou Teinté, où vous choisissez une couleur que toutes les icônes adoptent.
+
+**Le curseur Liquid Glass** se trouve dans Réglages, Apparence, Liquid Glass, et il est nouveau dans iOS 27. Il ne touche pas à vos icônes. Il règle la transparence de l'interface du système : menus, barres d'outils, feuilles, Centre de contrôle. Poussez-le vers Transparent et tout devient plus léger et plus translucide. Poussez-le vers Teinté et ces mêmes surfaces gagnent un fond opaque, plus facile à lire sur un fond d'écran chargé.
+
+Aucun réglage ne désactive Liquid Glass. Le curseur est la commande qu'Apple a donnée, et l'amener jusqu'à Teinté est ce qui s'en approche le plus.
+
+## Comment changer l'apparence des icônes
+
+1. Touchez et maintenez une zone vide de l'écran d'accueil jusqu'à ce que les icônes bougent.
+2. Touchez **Modifier**, puis **Personnaliser**.
+3. Choisissez **Clair**, **Sombre**, **Transparent** ou **Teinté**. Teinté vous donne un sélecteur de couleur.
+4. Touchez n'importe où pour terminer.
+
+C'est Transparent qui attire l'attention : les icônes deviennent vitrées et prennent la couleur du fond d'écran. Le rendu est meilleur sur un fond d'écran un peu contrasté et pire sur une photo chargée, où plusieurs icônes cessent d'être distinguables.
+
+## Ce dont personne ne parle : les widgets ne suivent pas
+
+L'apparence des icônes est appliquée par le système aux icônes d'apps. Un widget dessine son propre contenu, il n'hérite donc ni de Transparent ni de Teinté. Mettez votre écran d'accueil en Sombre et un widget rempli d'icônes claires ressemble soudain à un trou dans la page.
+
+[WidgetLoft](/widgetloft) traite ce point volontairement :
+
+- **De vraies icônes sombres.** Les véritables versions sombres des icônes système d'Apple sont livrées avec l'app, et les versions sombres des icônes tierces les plus courantes sont pré-générées, de sorte qu'un écran d'accueil sombre reste sombre à l'intérieur du widget.
+- **Des icônes personnalisées par apparence.** Vous pouvez définir une image pour le mode clair et une autre pour le mode sombre, app par app.
+- **Un arrière-plan de widget transparent** sur iOS 26 et ultérieur, pour que le widget repose sur le fond d'écran et non sur une carte grise.
+
+Il existe un guide à part pour [les icônes d'apps en mode sombre](/blog/dark-mode-app-icons-iphone) et pour [les widgets transparents](/blog/transparent-widget-iphone).
+
+## Quelle combinaison rend vraiment bien
+
+- **Icônes transparentes, fond d'écran sobre, widgets transparents.** Le rendu le plus net que peut produire iOS 27, et celui pour lequel l'effet de verre a été conçu.
+- **Icônes sombres, fond d'écran sombre, vignettes de widget sombres.** Le plus lisible et le moins dépendant de votre fond d'écran.
+- **Icônes teintées dans une seule couleur, avec des vignettes de widget personnalisées assorties.** Le plus personnel et le plus long à mettre en place.
+
+Évitez Teinté avec un fond d'écran photo. Tout se transforme en la même bouillie colorée et vous finissez par chercher vos apps par leur position.
+
+## Questions fréquentes
+
+**Puis-je désactiver Liquid Glass dans iOS 27 ?**
+Non. Le curseur dans Réglages, Apparence, Liquid Glass est la seule commande, et il va de plus transparent à plus teinté.
+
+**Transparent s'applique-t-il à toutes les apps ?**
+Il s'applique à l'écran d'accueil dans son ensemble. Les apps qui fournissent de vrais calques d'icône s'affichent correctement, les autres sont approximées.
+
+**Les vignettes d'apps dans un widget suivent-elles l'apparence des icônes ?**
+Non, un widget se dessine lui-même. C'est pourquoi WidgetLoft fournit de vraies icônes sombres et des remplacements par apparence.
+
+---
+
+Vous voulez que votre widget de lancement s'accorde à un écran d'accueil Transparent ou Sombre au lieu de le contredire ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download).

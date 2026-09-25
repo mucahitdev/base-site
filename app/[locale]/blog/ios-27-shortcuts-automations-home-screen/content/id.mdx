@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Otomatisasi Pintasan iOS 27 yang Membuat Layar Utama Lebih Berguna",
+  description:
+    "Lima otomatisasi Pintasan yang layak dibuat di iOS 27, termasuk pemicu notifikasi yang baru, dan bagaimana masing-masing mengubah apa yang Layar Utama kerjakan untuk Anda.",
+  keywords: [
+    "otomatisasi pintasan ios 27",
+    "pemicu notifikasi pintasan",
+    "otomatisasi iphone layar utama",
+    "tips pintasan ios 27",
+    "otomatisasi pribadi iphone",
+    "otomatisasi widget iphone",
+  ],
+  ogTitle: "Otomatisasi Pintasan iOS 27 untuk Layar Utama yang Lebih Baik",
+  ogDescription:
+    "Pemicu notifikasi, otomatisasi berdasarkan waktu dan lokasi, dan untuk apa semuanya benar-benar berguna.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline: "Otomatisasi Pintasan iOS 27 yang Membuat Layar Utama Lebih Berguna",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Membuat otomatisasi pribadi di Pintasan pada iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Buka tab Otomatisasi",
+        text: "Buka app Pintasan dan ketuk Otomatisasi di bagian bawah.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan otomatisasi",
+        text: "Ketuk tombol plus dan pilih pemicu, misalnya waktu tertentu, tiba di suatu tempat, atau notifikasi dari app yang Anda pilih.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pilih apa yang dijalankan",
+        text: "Tambahkan tindakan yang Anda inginkan. Biarkan Jalankan Segera aktif dan Beri Tahu Saat Dijalankan nonaktif jika Anda ingin semuanya terjadi tanpa suara.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Uji dulu",
+        text: "Picu kondisinya sekali sendiri dan periksa hasilnya sebelum Anda mengandalkannya.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Apa itu pemicu notifikasi di Pintasan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ini pemicu otomatisasi yang berjalan saat app yang Anda pilih mengirim notifikasi. Pemicu ini datang bersama iOS 27 dan bisa menjalankan tindakannya tanpa suara.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah otomatisasi berjalan tanpa bertanya kepada saya?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ya, jika Jalankan Segera aktif. Nonaktifkan juga Beri Tahu Saat Dijalankan, maka otomatisasi terjadi tanpa apa pun muncul di layar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bisakah otomatisasi mengubah apa yang ditampilkan widget?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Otomatisasi bisa mengubah data yang dibaca widget. WidgetLoft memakai cara ini untuk titik notifikasi di kotak peluncur: otomatisasi mencatat bahwa sebuah app punya notifikasi dan widget menggambar titik di kotak itu.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Otomatisasi Pintasan iOS 27 yang Membuat Layar Utama Lebih Berguna
+
+**Jawaban singkat:** buka Pintasan, ketuk **Otomatisasi**, lalu tombol plus, dan pilih pemicu. Pemicu baru yang menarik di iOS 27 berjalan saat sebuah app tertentu mengirim notifikasi, dan bisa berjalan tanpa suara. Di bawah ini lima otomatisasi yang benar-benar mengubah kerja Layar Utama Anda, bukan lima yang cuma tampak cerdas.
+
+---
+
+## 1. Titik notifikasi di widget peluncur
+
+Widget tidak bisa membaca jumlah pesan belum dibaca; Apple tidak membukanya. Tetapi otomatisasi bisa menyadari bahwa sebuah app mengirim notifikasi, dan widget bisa membaca apa yang ditulis otomatisasi itu.
+
+Begitulah tepatnya [WidgetLoft](/widgetloft) menaruh titik di kotak peluncur. Anda memilih app-nya, otomatisasi berjalan tanpa suara ketika salah satunya memberi notifikasi, dan kotak itu punya titik sampai Anda membuka app tersebut. Panduan lengkapnya ada di [lencana notifikasi pada widget](/blog/notification-badges-on-widgets-iphone).
+
+Dua pengaturan penting saat Anda membuat otomatisasinya: **Jalankan Segera** aktif, **Beri Tahu Saat Dijalankan** nonaktif. Kalau tidak, setiap notifikasi akan menghasilkan notifikasi kedua, dan itu jenis gangguan yang khusus menjengkelkan.
+
+## 2. Halaman fokus yang mengikuti waktu
+
+Buat otomatisasi untuk jam kerja Anda yang mengaktifkan sebuah Fokus, lalu pasangkan Fokus itu dengan satu halaman Layar Utama. iOS mengganti halaman bersama Fokus, jadi pada pukul sembilan pagi iPhone menampilkan halaman kerja Anda dan pada pukul enam menampilkan yang lain.
+
+Ini bekerja lebih baik daripada menyusun ikon dengan tangan, dan inilah satu otomatisasi yang hampir semua orang pertahankan.
+
+## 3. Tiba di suatu tempat membuka hal yang selalu Anda buka
+
+Pemicu: **Tiba**, di gym, di kantor, di toko yang Anda kunjungi tiap minggu. Tindakan: buka app yang selalu Anda buka di sana, atau mulai sebuah daftar putar.
+
+Batasi pada tempat yang benar-benar Anda ulangi. Otomatisasi yang berjalan di tempat yang Anda kunjungi dua kali setahun hanyalah bising yang nanti harus Anda telusuri.
+
+## 4. Menancapkan pengisi daya pada malam hari
+
+Pemicu: **Pengisi Daya** tersambung, dengan syarat waktu. Tindakan: Mode Daya Rendah nonaktif, periksa alarm, Fokus aktif. Baik di iPadOS maupun di iOS, ini otomatisasi yang paling murah dibuat dan paling terasa, karena ia menghapus satu pekerjaan rutin tiap malam.
+
+## 5. Satu kotak yang menjalankan seluruh rutinitas
+
+Sebuah pintasan tidak harus tinggal di app Pintasan. Kotak WidgetLoft bisa menjalankan pintasan, jadi widget peluncur bisa menyimpan "pergi kerja" atau "mulai merekam" di sebelah app Anda. Satu kisi, app dan rutinitas bersama-sama, tanpa widget Pintasan terpisah yang memakan tempat.
+
+## Yang perlu diwaspadai
+
+- **Uji sebelum percaya.** Picu kondisinya sekali sendiri dan lihat hasilnya. Otomatisasi gagal dengan diam-diam.
+- **Periksa sakelarnya.** Otomatisasi baru secara bawaan bertanya sebelum berjalan, dan pemicu notifikasi secara bawaan datang dengan otomatisasi aktif dan pemberitahuan nonaktif. Keduanya pantas dipastikan.
+- **Jangan banyak-banyak.** Sepuluh otomatisasi yang Anda lupakan berperilaku seperti ponsel berhantu. Lima yang bisa Anda sebutkan namanya adalah sebuah sistem.
+
+## Pertanyaan umum
+
+**Apa itu pemicu notifikasi?**
+Otomatisasi yang berjalan saat app yang dipilih mengirim notifikasi. Datang bersama iOS 27 dan bisa berjalan tanpa menampilkan apa pun.
+
+**Apakah otomatisasi berjalan tanpa bertanya kepada saya?**
+Ya, saat Jalankan Segera aktif. Nonaktifkan juga Beri Tahu Saat Dijalankan agar benar-benar senyap.
+
+**Bisakah otomatisasi mengubah apa yang ditampilkan widget?**
+Ia bisa mengubah apa yang dibaca widget. Titik notifikasi di kotak WidgetLoft bekerja seperti ini.
+
+---
+
+Ingin app, folder, dan rutinitas Anda dalam satu kisi di Layar Utama? [Unduh WidgetLoft di App Store](/widgetloft/download).

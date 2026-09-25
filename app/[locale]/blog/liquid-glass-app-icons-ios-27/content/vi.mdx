@@ -1,0 +1,156 @@
+export const meta = {
+  title: "Biểu tượng ứng dụng Trong suốt, Nhuộm màu và Tối trên iOS 27 (và thanh trượt kính)",
+  description:
+    "iOS 27 cho phép đặt biểu tượng ứng dụng thành Trong suốt, Nhuộm màu, Tối hoặc Sáng, và thêm thanh trượt Liquid Glass trong Cài đặt. Đây là vị trí của từng tùy chọn và cách các widget bám theo.",
+  keywords: [
+    "biểu tượng trong suốt ios 27",
+    "thanh trượt liquid glass ios 27",
+    "biểu tượng nhuộm màu iphone",
+    "biểu tượng tối ios 27",
+    "tùy chỉnh màn hình chính ios 27",
+    "giao diện biểu tượng ios 27",
+  ],
+  ogTitle: "Biểu tượng Trong suốt, Nhuộm màu và Tối trên iOS 27",
+  ogDescription:
+    "Các tùy chọn giao diện biểu tượng nằm ở đâu, thanh trượt Liquid Glass làm gì, và các widget theo kịp thế nào.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Biểu tượng ứng dụng Trong suốt, Nhuộm màu và Tối trên iOS 27 (và thanh trượt kính)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/liquid-glass-app-icons-ios-27",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Đổi giao diện biểu tượng ứng dụng trên iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Vào chế độ chỉnh sửa",
+        text: "Chạm và giữ một chỗ trống trên Màn hình chính cho đến khi các biểu tượng rung lên, rồi chạm Sửa.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mở Tùy chỉnh",
+        text: "Chạm Tùy chỉnh để xem các tùy chọn giao diện biểu tượng.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn một giao diện",
+        text: "Chọn Sáng, Tối, Trong suốt hoặc Nhuộm màu. Nhuộm màu có bộ chọn màu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Đặt mức kính",
+        text: "Với phần còn lại của giao diện, hãy mở Cài đặt, Giao diện, Liquid Glass và kéo thanh trượt giữa Trong suốt và Nhuộm màu.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Tôi có thể tắt Liquid Glass trên iOS 27 không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không có công tắc tắt. iOS 27 thêm một thanh trượt trong Cài đặt, Giao diện, Liquid Glass để chuyển giao diện giữa vẻ trong hơn và vẻ nhuộm màu hơn.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kiểu biểu tượng Trong suốt có áp dụng cho mọi ứng dụng không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nó áp dụng cho toàn bộ Màn hình chính. Ứng dụng nào kèm đúng các lớp biểu tượng thì hiển thị chuẩn, còn lại được hệ thống ước lượng.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Các ô ứng dụng trong widget có theo giao diện biểu tượng không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không tự động, vì widget tự vẽ nội dung của nó. WidgetLoft kèm theo phiên bản tối thật của các biểu tượng ứng dụng và cho phép đặt ảnh riêng cho từng giao diện, nên một widget khởi chạy có thể ăn khớp với Màn hình chính tối hoặc nhuộm màu.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Biểu tượng ứng dụng Trong suốt, Nhuộm màu và Tối trên iOS 27 (và thanh trượt kính)
+
+**Trả lời nhanh:** chạm và giữ một chỗ trống trên Màn hình chính, chạm **Sửa**, rồi **Tùy chỉnh**, và chọn Sáng, Tối, Trong suốt hoặc Nhuộm màu cho biểu tượng của bạn. Với phần còn lại của giao diện, hãy mở **Cài đặt, Giao diện, Liquid Glass** và kéo thanh trượt. Hai tùy chọn khác nhau, hai nhiệm vụ khác nhau, và người ta liên tục lẫn lộn chúng.
+
+---
+
+## Hai tùy chọn, tách riêng ra
+
+**Giao diện biểu tượng** nằm trên Màn hình chính, không nằm trong Cài đặt. Nó thay đổi cách biểu tượng ứng dụng được vẽ: biểu tượng sáng thông thường, phiên bản tối, vẻ kính của Trong suốt, hoặc Nhuộm màu, nơi bạn chọn một màu và mọi biểu tượng đều theo màu đó.
+
+**Thanh trượt Liquid Glass** nằm trong Cài đặt, Giao diện, Liquid Glass, và nó là điểm mới của iOS 27. Nó không chạm đến biểu tượng của bạn. Nó điều chỉnh độ trong của giao diện hệ thống: menu, thanh công cụ, các bảng trượt lên, Trung tâm điều khiển. Kéo về phía Trong suốt thì mọi thứ nhẹ hơn và nhìn xuyên hơn. Kéo về phía Nhuộm màu thì chính những bề mặt đó có thêm lớp nền đặc, dễ đọc hơn khi đặt trên một ảnh nền rối mắt.
+
+Không có công tắc nào tắt được Liquid Glass. Thanh trượt là thứ Apple đưa ra, và kéo nó hết về Nhuộm màu là mức gần nhất bạn đạt được.
+
+## Cách đổi giao diện biểu tượng
+
+1. Chạm và giữ một chỗ trống trên Màn hình chính cho đến khi các biểu tượng rung lên.
+2. Chạm **Sửa**, rồi **Tùy chỉnh**.
+3. Chọn **Sáng**, **Tối**, **Trong suốt** hoặc **Nhuộm màu**. Nhuộm màu cho bạn một bộ chọn màu.
+4. Chạm vào bất cứ đâu để kết thúc.
+
+Trong suốt là tùy chọn được để ý nhất: biểu tượng trở nên như kính và lấy màu từ ảnh nền. Nó đẹp nhất trên ảnh nền có chút tương phản và tệ nhất trên một tấm ảnh rối mắt, nơi nhiều biểu tượng không còn phân biệt được với nhau.
+
+## Phần chẳng ai nhắc tới: widget không theo
+
+Giao diện biểu tượng do hệ thống áp lên biểu tượng ứng dụng. Widget tự vẽ nội dung của nó, nên nó không thừa hưởng Trong suốt hay Nhuộm màu. Hãy đặt Màn hình chính sang Tối, và một widget đầy biểu tượng ứng dụng sáng rực bỗng nhìn như một cái lỗ trên trang.
+
+[WidgetLoft](/widgetloft) xử lý việc này một cách có chủ ý:
+
+- **Biểu tượng tối thật.** Các phiên bản tối chính gốc của biểu tượng hệ thống Apple đi kèm ứng dụng, và phiên bản tối của những biểu tượng bên thứ ba phổ biến nhất đã được làm trước, nên một Màn hình chính tối vẫn tối cả ở trong widget.
+- **Biểu tượng riêng cho từng giao diện.** Bạn có thể đặt một ảnh cho chế độ sáng và một ảnh khác cho chế độ tối, theo từng ứng dụng.
+- **Nền widget trong suốt** trên iOS 26 và mới hơn, nên widget nằm trên ảnh nền chứ không nằm trên một tấm thẻ xám.
+
+Có hướng dẫn riêng về [biểu tượng ứng dụng chế độ tối](/blog/dark-mode-app-icons-iphone) và về [widget trong suốt](/blog/transparent-widget-iphone).
+
+## Kết hợp nào thật sự đẹp
+
+- **Biểu tượng trong suốt, ảnh nền đơn giản, widget trong suốt.** Vẻ gọn gàng nhất mà iOS 27 tạo ra được, và cũng là điều mà hiệu ứng kính được thiết kế cho.
+- **Biểu tượng tối, ảnh nền tối, ô widget tối.** Dễ đọc nhất và ít phụ thuộc ảnh nền nhất.
+- **Biểu tượng nhuộm một màu, cùng các ô widget riêng cho khớp.** Cá nhân nhất và mất công nhất.
+
+Tránh dùng Nhuộm màu với ảnh nền là ảnh chụp. Mọi thứ biến thành một khối cùng màu nhòe nhoẹt và bạn bắt đầu tìm ứng dụng theo vị trí.
+
+## Câu hỏi thường gặp
+
+**Tôi có thể tắt Liquid Glass trên iOS 27 không?**
+Không. Thanh trượt trong Cài đặt, Giao diện, Liquid Glass là tùy chọn duy nhất, và nó chỉ chạy giữa trong hơn và nhuộm màu hơn.
+
+**Trong suốt có áp dụng cho mọi ứng dụng không?**
+Nó áp dụng cho toàn bộ Màn hình chính. Ứng dụng có các lớp biểu tượng phù hợp thì hiển thị đúng, phần còn lại được ước lượng.
+
+**Các ô ứng dụng trong widget có theo giao diện biểu tượng không?**
+Không, widget tự vẽ chính nó. Đó là lý do WidgetLoft kèm biểu tượng tối thật và ảnh thay thế cho từng giao diện.
+
+---
+
+Bạn muốn widget khởi chạy của mình ăn khớp với Màn hình chính Trong suốt hoặc Tối thay vì lạc tông? [Tải WidgetLoft trên App Store](/widgetloft/download).

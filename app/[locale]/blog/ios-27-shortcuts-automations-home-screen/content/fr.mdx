@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Automatisations Raccourcis iOS 27 qui améliorent votre écran d'accueil",
+  description:
+    "Cinq automatisations Raccourcis à mettre en place sur iOS 27, dont le nouveau déclencheur de notification, et comment chacune change ce que votre écran d'accueil fait pour vous.",
+  keywords: [
+    "automatisation raccourcis ios 27",
+    "déclencheur notification raccourcis",
+    "automatisation iphone écran d'accueil",
+    "astuces raccourcis ios 27",
+    "automatisation personnelle iphone",
+    "automatiser widget iphone",
+  ],
+  ogTitle: "Automatisations Raccourcis iOS 27 pour un meilleur écran d'accueil",
+  ogDescription:
+    "Le déclencheur de notification, les automatisations par heure et par lieu, et à quoi elles servent vraiment.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline: "Automatisations Raccourcis iOS 27 qui améliorent votre écran d'accueil",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Créer une automatisation personnelle dans Raccourcis sur iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Ouvrir l'onglet Automatisation",
+        text: "Ouvrez l'app Raccourcis et touchez Automatisation en bas.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter une automatisation",
+        text: "Touchez le bouton plus et choisissez un déclencheur, par exemple une heure de la journée, l'arrivée à un endroit ou une notification d'une app donnée.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir ce qui s'exécute",
+        text: "Ajoutez les actions souhaitées. Laissez Exécuter immédiatement activé et Notifier lors de l'exécution désactivé si vous voulez que cela se passe en silence.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "La tester",
+        text: "Provoquez la condition une fois vous-même et vérifiez le résultat avant de vous y fier.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Qu'est-ce que le déclencheur de notification dans Raccourcis ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "C'est un déclencheur d'automatisation qui se déclenche quand une app choisie envoie une notification. Il est arrivé avec iOS 27 et peut exécuter ses actions en silence.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Les automatisations s'exécutent-elles sans me demander ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui, si Exécuter immédiatement est activé. Désactivez aussi Notifier lors de l'exécution et l'automatisation se produit sans rien afficher à l'écran.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Une automatisation peut-elle changer ce qu'affiche un widget ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Elle peut changer les données qu'un widget lit. WidgetLoft s'en sert pour les points de notification sur les tuiles du lanceur : l'automatisation note qu'une app a une notification et le widget dessine un point sur cette tuile.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Automatisations Raccourcis iOS 27 qui améliorent votre écran d'accueil
+
+**Réponse rapide :** ouvrez Raccourcis, touchez **Automatisation**, puis le bouton plus, et choisissez un déclencheur. Le nouveau déclencheur intéressant d'iOS 27 se déclenche quand une app précise envoie une notification, et il peut fonctionner en silence. Voici cinq automatisations qui changent ce que fait votre écran d'accueil, plutôt que cinq qui ont juste l'air malignes.
+
+---
+
+## 1. Des points de notification sur un widget lanceur
+
+Un widget ne peut pas lire vos compteurs de messages non lus ; Apple ne les expose pas. Mais une automatisation peut remarquer qu'une app a envoyé une notification, et un widget peut lire ce que l'automatisation a écrit.
+
+C'est exactement ainsi que [WidgetLoft](/widgetloft) pose un point sur une tuile du lanceur. Vous choisissez les apps, l'automatisation s'exécute en silence quand l'une d'elles vous notifie, et la tuile garde un point jusqu'à ce que vous ouvriez l'app. Le pas-à-pas complet est dans [les pastilles de notification sur les widgets](/blog/notification-badges-on-widgets-iphone).
+
+Deux réglages comptent quand vous construisez l'automatisation : **Exécuter immédiatement** activé, **Notifier lors de l'exécution** désactivé. Sinon chaque notification produit une deuxième notification, ce qui est un genre d'agacement bien particulier.
+
+## 2. Une page de concentration qui suit l'heure
+
+Créez une automatisation pour vos heures de travail qui active un mode de concentration, et associez ce mode à une page de l'écran d'accueil. iOS change de page avec le mode de concentration : à neuf heures du matin l'iPhone affiche votre page de travail, et à dix-huit heures l'autre.
+
+Cela marche mieux que de réorganiser les icônes à la main, et c'est l'automatisation que presque tout le monde garde.
+
+## 3. Arriver quelque part ouvre ce que vous ouvrez toujours
+
+Déclencheur : **Arriver**, à la salle de sport, au bureau, dans un magasin où vous allez chaque semaine. Action : ouvrir l'app que vous ouvrez toujours là-bas, ou lancer une playlist.
+
+Limitez-vous aux lieux que vous répétez vraiment. Une automatisation qui se déclenche dans un endroit où vous allez deux fois par an, c'est du bruit qu'il faudra déboguer plus tard.
+
+## 4. Brancher le téléphone le soir
+
+Déclencheur : **Chargeur** connecté, avec une condition d'heure. Actions : mode économie d'énergie désactivé, vérification du réveil, mode de concentration activé. Sur iPadOS comme sur iOS, c'est l'automatisation la moins coûteuse à mettre en place et celle qu'on remarque le plus, parce qu'elle supprime une corvée du soir.
+
+## 5. Une seule tuile qui exécute toute une routine
+
+Un raccourci n'a pas besoin de vivre dans l'app Raccourcis. Les tuiles WidgetLoft peuvent exécuter des raccourcis, donc un widget lanceur peut contenir "partir au travail" ou "démarrer l'enregistrement" à côté de vos apps. Une seule grille, apps et routines ensemble, sans widget Raccourcis séparé qui prend de la place.
+
+## Ce à quoi faire attention
+
+- **Testez avant de faire confiance.** Provoquez la condition une fois vous-même et regardez le résultat. Les automatisations échouent en silence.
+- **Vérifiez les interrupteurs.** Par défaut, les nouvelles automatisations demandent avant de s'exécuter, et le déclencheur de notification arrive avec l'automatisation activée et l'avis désactivé. Les deux méritent une confirmation.
+- **Gardez-en peu.** Dix automatisations que vous avez oubliées se comportent comme un téléphone hanté. Cinq que vous pouvez nommer, c'est un système.
+
+## Questions fréquentes
+
+**Qu'est-ce que le déclencheur de notification ?**
+Une automatisation qui se déclenche quand une app choisie envoie une notification. Elle est arrivée avec iOS 27 et peut s'exécuter sans rien afficher.
+
+**Les automatisations s'exécutent-elles sans me demander ?**
+Oui, quand Exécuter immédiatement est activé. Désactivez aussi Notifier lors de l'exécution pour qu'elle soit silencieuse.
+
+**Une automatisation peut-elle changer ce qu'affiche un widget ?**
+Elle peut changer ce qu'un widget lit. Les points de notification sur les tuiles WidgetLoft fonctionnent ainsi.
+
+---
+
+Vous voulez vos apps, dossiers et routines dans une seule grille sur l'écran d'accueil ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download).

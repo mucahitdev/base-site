@@ -1,0 +1,152 @@
+export const meta = {
+  title: "Những tự động hóa Phím tắt trên iOS 27 giúp Màn hình chính tốt hơn",
+  description:
+    "Năm tự động hóa trong Phím tắt đáng thiết lập trên iOS 27, gồm cả trình khởi chạy theo thông báo mới, và cách mỗi cái thay đổi những gì Màn hình chính làm cho bạn.",
+  keywords: [
+    "tự động hóa phím tắt ios 27",
+    "trình khởi chạy theo thông báo phím tắt",
+    "tự động hóa iphone màn hình chính",
+    "thủ thuật phím tắt ios 27",
+    "tự động hóa cá nhân iphone",
+    "tự động hóa widget iphone",
+  ],
+  ogTitle: "Tự động hóa Phím tắt trên iOS 27 cho Màn hình chính tốt hơn",
+  ogDescription:
+    "Trình khởi chạy theo thông báo, tự động hóa theo thời gian và vị trí, và chúng thực sự hữu ích ở đâu.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline: "Những tự động hóa Phím tắt trên iOS 27 giúp Màn hình chính tốt hơn",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/ios-27-shortcuts-automations-home-screen",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Tạo một tự động hóa cá nhân trong Phím tắt trên iOS 27",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Mở tab Tự động hóa",
+        text: "Mở ứng dụng Phím tắt và chạm Tự động hóa ở dưới cùng.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm một tự động hóa",
+        text: "Chạm nút dấu cộng và chọn một điều kiện khởi chạy, chẳng hạn một thời điểm trong ngày, đến một nơi nào đó, hoặc một thông báo từ ứng dụng bạn chọn.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn nội dung sẽ chạy",
+        text: "Thêm các tác vụ bạn muốn. Hãy để Chạy ngay bật và Thông báo khi chạy tắt nếu bạn muốn mọi thứ diễn ra im lặng.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thử một lần",
+        text: "Tự tạo ra điều kiện đó một lần và kiểm tra kết quả trước khi tin vào nó.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Trình khởi chạy theo thông báo trong Phím tắt là gì?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Đó là một điều kiện khởi chạy tự động hóa, hoạt động khi ứng dụng bạn chọn gửi một thông báo. Nó xuất hiện cùng iOS 27 và có thể thực hiện các tác vụ một cách im lặng.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tự động hóa có chạy mà không hỏi tôi không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có, nếu Chạy ngay đang bật. Hãy tắt luôn Thông báo khi chạy và tự động hóa sẽ diễn ra mà không có gì hiện lên màn hình.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Một tự động hóa có thể thay đổi nội dung widget hiển thị không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nó có thể thay đổi dữ liệu mà widget đọc. WidgetLoft dùng cách này cho các chấm thông báo trên ô của trình khởi chạy: tự động hóa ghi lại rằng một ứng dụng có thông báo và widget vẽ một chấm lên ô đó.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Những tự động hóa Phím tắt trên iOS 27 giúp Màn hình chính tốt hơn
+
+**Trả lời nhanh:** mở Phím tắt, chạm **Tự động hóa**, rồi nút dấu cộng, và chọn một điều kiện khởi chạy. Điều kiện mới thú vị trên iOS 27 hoạt động khi một ứng dụng cụ thể gửi thông báo, và nó có thể chạy im lặng. Dưới đây là năm tự động hóa thay đổi những gì Màn hình chính của bạn làm, chứ không phải năm thứ chỉ trông có vẻ thông minh.
+
+---
+
+## 1. Chấm thông báo trên widget trình khởi chạy
+
+Một widget không thể đọc số tin chưa đọc của bạn; Apple không cung cấp dữ liệu đó. Nhưng một tự động hóa có thể nhận ra rằng một ứng dụng vừa gửi thông báo, và widget có thể đọc những gì tự động hóa đã ghi lại.
+
+Đó đúng là cách [WidgetLoft](/widgetloft) đặt một chấm lên ô của trình khởi chạy. Bạn chọn ứng dụng, tự động hóa chạy im lặng khi một trong số đó gửi thông báo cho bạn, và ô đó giữ một chấm cho tới khi bạn mở ứng dụng. Có hướng dẫn đầy đủ trong bài [huy hiệu thông báo trên widget](/blog/notification-badges-on-widgets-iphone).
+
+Có hai thiết lập quan trọng khi bạn dựng tự động hóa này: **Chạy ngay** bật, **Thông báo khi chạy** tắt. Nếu không, mỗi thông báo lại sinh ra một thông báo thứ hai, và đó là một kiểu phiền rất riêng.
+
+## 2. Một trang tập trung đi theo giờ
+
+Đặt một tự động hóa cho giờ làm việc để bật một chế độ Tập trung, rồi ghép chế độ Tập trung đó với một trang Màn hình chính. iOS đổi trang cùng với chế độ Tập trung, nên chín giờ sáng iPhone hiện trang làm việc của bạn và sáu giờ chiều hiện trang kia.
+
+Cách này tốt hơn việc sắp lại biểu tượng bằng tay, và đây là tự động hóa mà gần như ai cũng giữ lại.
+
+## 3. Đến một nơi thì mở đúng thứ bạn luôn mở
+
+Điều kiện: **Đến**, phòng gym, công ty, một cửa hàng bạn ghé hằng tuần. Tác vụ: mở ứng dụng bạn luôn mở ở đó, hoặc bật một danh sách phát.
+
+Chỉ dùng cho những nơi bạn thật sự lặp lại. Một tự động hóa chạy ở nơi bạn tới hai lần mỗi năm là tiếng ồn mà sau này bạn sẽ phải đi gỡ.
+
+## 4. Cắm sạc vào buổi tối
+
+Điều kiện: **Bộ sạc** được kết nối, kèm điều kiện về thời gian. Tác vụ: tắt Chế độ nguồn điện thấp, kiểm tra báo thức, bật Tập trung. Trên cả iPadOS và iOS, đây là tự động hóa rẻ công nhất để dựng và dễ nhận ra nhất, vì nó bỏ được một việc lặp lại mỗi tối.
+
+## 5. Một ô chạy cả một quy trình
+
+Một phím tắt không nhất thiết phải sống trong ứng dụng Phím tắt. Các ô của WidgetLoft có thể chạy phím tắt, nên một widget trình khởi chạy có thể giữ "đi làm" hoặc "bắt đầu ghi âm" ngay bên cạnh các ứng dụng của bạn. Một lưới duy nhất, ứng dụng và quy trình đi cùng nhau, không cần một widget Phím tắt riêng chiếm chỗ.
+
+## Những điều cần để ý
+
+- **Thử trước khi tin.** Tự tạo ra điều kiện một lần và xem kết quả. Tự động hóa thất bại một cách im lặng.
+- **Kiểm tra các công tắc.** Tự động hóa mới theo mặc định sẽ hỏi trước khi chạy, còn điều kiện theo thông báo mặc định bật tự động hóa và tắt phần thông báo. Cả hai đều nên xác nhận lại.
+- **Giữ số lượng ít.** Mười tự động hóa mà bạn đã quên sẽ khiến điện thoại giống như bị ma nhập. Năm cái bạn gọi được tên là một hệ thống.
+
+## Câu hỏi thường gặp
+
+**Trình khởi chạy theo thông báo là gì?**
+Một tự động hóa hoạt động khi ứng dụng bạn chọn gửi thông báo. Nó xuất hiện cùng iOS 27 và có thể chạy mà không hiện gì.
+
+**Tự động hóa có chạy mà không hỏi tôi không?**
+Có, khi Chạy ngay đang bật. Hãy tắt cả Thông báo khi chạy để nó hoàn toàn im lặng.
+
+**Một tự động hóa có thể thay đổi nội dung widget hiển thị không?**
+Nó có thể thay đổi những gì widget đọc. Các chấm thông báo trên ô WidgetLoft hoạt động theo cách này.
+
+---
+
+Bạn muốn ứng dụng, thư mục và quy trình của mình nằm trong một lưới duy nhất trên Màn hình chính? [Tải WidgetLoft trên App Store](/widgetloft/download).
