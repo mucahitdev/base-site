@@ -18,11 +18,6 @@ const nextConfig = {
         destination: 'https://datafa.st/js/script.cookieless.js',
       },
       { source: '/api/events', destination: 'https://datafa.st/api/events' },
-      // Umami Cloud, running next to DataFast while the two are compared. Proxied
-      // for the same reason: cloud.umami.is is on blocker lists by name. The
-      // script posts to <data-host-url>/api/send, so both paths come from here.
-      { source: '/js/u.js', destination: 'https://cloud.umami.is/script.js' },
-      { source: '/api/send', destination: 'https://cloud.umami.is/api/send' },
     ];
   },
   async headers() {

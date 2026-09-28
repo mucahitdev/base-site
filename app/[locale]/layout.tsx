@@ -85,10 +85,21 @@ export const metadata: Metadata = {
 // The id is public, it ships in the HTML of every page.
 const DATAFAST_ID = 'dfid_Ng89GKEbaJuLkJLiRk3eQ'
 
-// Umami Cloud, on trial next to DataFast so the two can be compared on the same
-// traffic. Also cookieless, so it changes nothing about consent. Proxied through
-// this domain as well, see the rewrites in next.config.mjs.
-const UMAMI_ID = '7784b827-3d87-4266-985b-5cc299c63a36'
+// Umami, self-hosted on our Coolify server, running next to DataFast so the two
+// can be compared on the same traffic. Also cookieless, so it changes nothing
+// about consent. Unlike DataFast it loads straight from analytics.mucahitk.com
+// instead of through a rewrite: neither that host nor the script name is on the
+// EasyPrivacy or AdGuard tracking lists, and behind a Vercel rewrite Umami would
+// see Vercel's IP instead of the visitor's, breaking countries and unique
+// visitors. data-domains keeps preview deployments and localhost out of the stats.
+const UMAMI_ID = '9500877c-a56a-42c4-82e8-0cfc188347bc'
+const UMAMI_SRC = 'https://analytics.mucahitk.com/mkt.js'
+
+// Rybbit, also self-hosted on the Coolify server, on trial next to Umami and
+// DataFast. Loaded straight from its subdomain for the same IP reason. AdGuard
+// blocks Rybbit by path (/api/site/tracking-config), so for those visitors the
+// script falls back to its default settings but still records pageviews.
+const RYBBIT_SRC = 'https://rybbit.mucahitk.com/api/script.js?siteId=a7dec335978f'
 
 const geist = Geist({
   variable: '--font-geist',
@@ -142,10 +153,12 @@ export default async function RootLayout({
           strategy="afterInteractive"
         />
         <Script
-          src="/js/u.js"
+          src={UMAMI_SRC}
           data-website-id={UMAMI_ID}
+          data-domains="mucahitk.com"
           strategy="afterInteractive"
         />
+        <Script src={RYBBIT_SRC} strategy="afterInteractive" />
       </body>
     </html>
   )
