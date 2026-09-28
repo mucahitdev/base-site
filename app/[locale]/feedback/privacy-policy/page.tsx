@@ -35,6 +35,8 @@ export default function FeedbackPrivacyPolicyPage() {
             <li>
               Account information: if you sign up with email, your name, email
               address, and password. Passwords are stored only in hashed form.
+              If you sign in with a one-time email link or code instead, we
+              only need your email address.
             </li>
             <li>
               Sign in with Google: if you choose it, Google shares your name,
@@ -72,6 +74,10 @@ export default function FeedbackPrivacyPolicyPage() {
           </h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>To run the portal and show your feedback and its status.</li>
+            <li>
+              To email you sign-in links, password resets, and updates about
+              posts you created, voted on, or commented on.
+            </li>
             <li>To prevent spam and abuse.</li>
             <li>To decide what to build and fix next in our apps.</li>
             <li>
@@ -119,7 +125,18 @@ export default function FeedbackPrivacyPolicyPage() {
             >
               Cloudflare
             </a>{' '}
-            R2 storage that is not publicly accessible.
+            R2 storage that is not publicly accessible. Emails from the portal
+            are sent through{' '}
+            <a
+              className="underline"
+              href="https://resend.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resend
+            </a>
+            , which receives your email address and the message content only to
+            deliver it.
           </p>
         </section>
 
