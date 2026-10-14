@@ -95,12 +95,6 @@ const DATAFAST_ID = 'dfid_Ng89GKEbaJuLkJLiRk3eQ'
 const UMAMI_ID = '9500877c-a56a-42c4-82e8-0cfc188347bc'
 const UMAMI_SRC = 'https://analytics.mucahitk.com/mkt.js'
 
-// Rybbit, also self-hosted on the Coolify server, on trial next to Umami and
-// DataFast. Loaded straight from its subdomain for the same IP reason. AdGuard
-// blocks Rybbit by path (/api/site/tracking-config), so for those visitors the
-// script falls back to its default settings but still records pageviews.
-const RYBBIT_SRC = 'https://rybbit.mucahitk.com/api/script.js?siteId=a7dec335978f'
-
 const geist = Geist({
   variable: '--font-geist',
   subsets: ['latin'],
@@ -158,7 +152,6 @@ export default async function RootLayout({
           data-domains="mucahitk.com"
           strategy="afterInteractive"
         />
-        <Script src={RYBBIT_SRC} strategy="afterInteractive" />
       </body>
     </html>
   )
