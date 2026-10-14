@@ -45,6 +45,12 @@ export default function FeedbackPrivacyPolicyPage() {
               Google account.
             </li>
             <li>
+              Sign in with Apple: if you choose it, Apple shares your email
+              address and, the first time you sign in, your name. If you use
+              Hide My Email, we receive a private relay address from Apple
+              instead of your real email address.
+            </li>
+            <li>
               Content you submit: posts, comments, votes, and images you
               upload. You can also post without an account; those posts are
               reviewed before they are published.
