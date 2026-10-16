@@ -1,7 +1,7 @@
 export const meta = {
   title: "Zo toon je meldingsstippen op iPhone-widgets (iOS 27)",
   description:
-    "App-pictogrammen in widgets tonen nooit meldingsbadges. Zo zet je stap voor stap een meldingsstip op een widgettegel met de nieuwe meldingstrigger van Opdrachten in iOS 27 en WidgetLoft, met eerlijke beperkingen.",
+    "App-pictogrammen in widgets tonen nooit meldingsbadges. Zo zet je stap voor stap een meldingsstip, met een aantal, op een widgettegel met de nieuwe meldingstrigger van Opdrachten in iOS 27 en WidgetLoft, met eerlijke beperkingen.",
   keywords: [
     "meldingsbadge widget iphone",
     "app pictogrammen widget geen badge",
@@ -73,7 +73,7 @@ export const jsonLd = [
         name: "Kan een widget het aantal ongelezen meldingen van een app tonen?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nee. Een widget van een andere ontwikkelaar kan het aantal ongelezen items van een andere app niet uitlezen. Op iOS 27 kan WidgetLoft een stip op de tegel van de app zetten als er een melding binnenkomt, maar het is een stip, geen getal.",
+          text: "Niet het echte aantal ongelezen: een widget van een andere ontwikkelaar kan de badge van een andere app niet uitlezen. Op iOS 27 zet WidgetLoft een stip op de tegel van de app als er een melding binnenkomt, en de stip toont hoeveel meldingen er zijn binnengekomen sinds je de app voor het laatst opende, tot 9. Het is de eigen telling van WidgetLoft, niet het aantal ongelezen van de app. Wil je alleen een stip zien, zet dan Aantal tonen uit in Instellingen, Meldingsstippen.",
         },
       },
       {
@@ -81,7 +81,7 @@ export const jsonLd = [
         name: "Waarom verdwijnt de stip niet nadat ik de melding heb gelezen?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Een melding alleen op het toegangsscherm of op de Apple Watch lezen wist de stip niet. Open de app via de widget, voeg een automatisering App wordt geopend met Meldingsstip wissen toe of gebruik Wis alle stippen in WidgetLoft.",
+          text: "Een melding alleen op het toegangsscherm of op de Apple Watch lezen wist de stip niet. Open de app via de widget, voeg een automatisering App wordt geopend met Meldingsstip wissen toe of gebruik Alle stippen wissen in WidgetLoft.",
         },
       },
       {
@@ -103,7 +103,7 @@ export const jsonLd = [
 
 # Zo toon je meldingsstippen op iPhone-widgets (iOS 27)
 
-**Snel antwoord:** Widgets kunnen het aantal ongelezen items van andere apps niet uitlezen, dus app-pictogrammen in een launcher-widget tonen nooit badges. Op iOS 27 lost [WidgetLoft](/widgetloft) (voorheen FolderMini) dit op met een Opdrachten-automatisering: stuurt een app een melding, dan zet de automatisering een stip op de tegel van die app, en de stip verdwijnt zodra je de app via de widget opent.
+**Snel antwoord:** Widgets kunnen het aantal ongelezen items van andere apps niet uitlezen, dus app-pictogrammen in een launcher-widget tonen nooit badges. Op iOS 27 lost [WidgetLoft](/widgetloft) (voorheen FolderMini) dit op met een Opdrachten-automatisering: stuurt een app een melding, dan zet de automatisering een stip op de tegel van die app, de stip toont hoeveel meldingen er zijn binnengekomen, en hij verdwijnt zodra je de app via de widget opent. Een map toont ook een stip als een app erin er een heeft.
 
 Je hebt je apps in een widget gezet om je beginscherm op te ruimen, en nu zie je niet meer welke iets nieuws heeft. Zo krijg je dat signaal terug.
 
@@ -123,31 +123,33 @@ iOS 27 veranderde één stukje. Opdrachten biedt nu automatiseringen die draaien
 4. **Voeg de WidgetLoft-actie toe.** Voeg de WidgetLoft-actie **Meldingsstip tonen** toe en kies dezelfde app. Herhaal stap 2 tot en met 4 voor elke app die je wilt volgen. Dat kost ongeveer een minuut per app.
 5. **Optioneel: wis de stip als je de app elders opent.** De stip verdwijnt als je de app via de widget opent. Open je hem vaak op een andere manier, voeg dan voor die app een automatisering **App wordt geopend** toe met de actie **Meldingsstip wissen**.
 
+Sinds WidgetLoft 2.1.6 tonen stippen standaard het aantal meldingen, ook op het toegangsscherm. Wil je alleen een stip zien, ga dan naar **Instellingen → Meldingsstippen** en zet **Aantal tonen** uit.
+
 ## Meldingsstip of badge met getal
 
 | Badge met getal op een pictogram van het beginscherm | Meldingsstip op een WidgetLoft-tegel |
 | --- | --- |
-| Toont een getal, zoals 3 | Toont een stip, zonder getal |
+| Toont het echte aantal ongelezen van de app, zoals 3 | Toont hoeveel meldingen er zijn binnengekomen sinds je de app voor het laatst opende, tot 9, of alleen een stip als je Aantal tonen uitzet |
 | Bijgewerkt door de app zelf | Verdwijnt als je de app via de widget opent of met een automatisering Meldingsstip wissen |
 | Niets in te stellen | Eén Opdrachten-automatisering per app, ongeveer een minuut per stuk |
 | Werkt op elke recente iOS-versie | Vereist iOS 27 |
-| Verschijnt op app-pictogrammen | Verschijnt op app-tegels, niet op websites, Opdrachten-tegels of contacten |
+| Verschijnt op app-pictogrammen | Verschijnt op app-tegels en op mappen waarin ze staan, niet op websites, Opdrachten-tegels of contacten |
 
-Een stip beantwoordt de echte vraag achter een snelle blik: heeft deze app iets nieuws? Tegels van [WidgetLoft](/widgetloft) openen de app nog steeds direct met één tik, en tonen nu ook dat signaal.
+Een stip beantwoordt de echte vraag achter een snelle blik: heeft deze app iets nieuws, en ongeveer hoeveel? Tegels van [WidgetLoft](/widgetloft) openen de app nog steeds direct met één tik, en tonen nu ook dat signaal.
 
 ## Wat meldingsstippen niet kunnen
 
-Het is een stip, geen teller: je weet dat er iets is binnengekomen, niet hoeveel. Instellen vereist iOS 27 en elke app heeft een eigen automatisering nodig.
+Het getal is niet het echte aantal ongelezen van de app. WidgetLoft telt de meldingen die zijn binnengekomen sinds je de app voor het laatst opende, tot 9, dus zie het als een ruwe indicatie. Instellen vereist iOS 27 en elke app heeft een eigen automatisering nodig.
 
-Een melding alleen op het toegangsscherm of op de Apple Watch lezen wist de stip niet. Open de app via de widget of gebruik de knop **Wis alle stippen** in WidgetLoft. Websites, Opdrachten-tegels en contacten kunnen geen stip krijgen, en de hele functie is nog als Beta gemarkeerd.
+Een melding alleen op het toegangsscherm of op de Apple Watch lezen wist de stip niet en verlaagt het getal niet. Open de app via de widget of gebruik de knop **Alle stippen wissen** in WidgetLoft. Websites, Opdrachten-tegels en contacten kunnen geen stip krijgen, en de hele functie is nog als Beta gemarkeerd.
 
 ## Veelgestelde vragen
 
 **Kan een widget het aantal ongelezen meldingen van een app tonen?**
-Nee. Een widget van een andere ontwikkelaar kan het aantal ongelezen items van een andere app niet uitlezen. Op iOS 27 kan WidgetLoft een stip op de tegel van de app zetten als er een melding binnenkomt, maar het is een stip, geen getal.
+Niet het echte aantal ongelezen: een widget van een andere ontwikkelaar kan de badge van een andere app niet uitlezen. Op iOS 27 zet WidgetLoft een stip op de tegel van de app als er een melding binnenkomt, en de stip toont hoeveel meldingen er zijn binnengekomen sinds je de app voor het laatst opende, tot 9. Wil je alleen een stip zien, zet dan **Aantal tonen** uit in **Instellingen → Meldingsstippen**.
 
 **Waarom verdwijnt de stip niet nadat ik de melding heb gelezen?**
-Alleen op het toegangsscherm of op de Apple Watch lezen wist de stip niet. Open de app via de widget, voeg een automatisering App wordt geopend met Meldingsstip wissen toe of tik op Wis alle stippen.
+Alleen op het toegangsscherm of op de Apple Watch lezen wist de stip niet. Open de app via de widget, voeg een automatisering App wordt geopend met Meldingsstip wissen toe of tik op Alle stippen wissen.
 
 **Werken meldingsstippen op iOS 26 of ouder?**
 Nee. Het instellen leunt op de meldingstrigger van Opdrachten die met iOS 27 kwam. WidgetLoft zelf werkt op iOS 18 en later, alleen zonder stippen.

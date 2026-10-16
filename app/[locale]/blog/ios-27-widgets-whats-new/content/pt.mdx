@@ -75,7 +75,7 @@ export const jsonLd = [
         name: "Os widgets do iOS 27 mostram a contagem de notificações?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Contagem não. Com o novo gatilho de Notificação do Atalhos, o WidgetLoft pode mostrar um ponto no bloco de um app. O ponto some quando você abre o app pelo widget. Ler uma notificação só na Tela Bloqueada ou no Apple Watch não o apaga, e sites, blocos de Atalhos e contatos não podem ter pontos.",
+          text: "Sim, com uma ressalva. Com o novo gatilho de Notificação do Atalhos, o WidgetLoft mostra um ponto no bloco de um app e, desde a versão 2.1.6, o ponto mostra quantas notificações chegaram desde a última vez que você abriu o app, até 9. É a contagem do próprio WidgetLoft, não a contagem real de não lidas do app, e você pode desativar o número em Ajustes, Pontos de notificação, Mostrar o número. O ponto some quando você abre o app pelo widget. Ler uma notificação só na Tela Bloqueada ou no Apple Watch não o apaga, e sites, blocos de Atalhos e contatos não podem ter pontos.",
         },
       },
       {
@@ -116,7 +116,7 @@ O iOS 27 não reinventa os widgets, mas as mudanças são práticas. Veja o que 
 O [WidgetLoft](/widgetloft) transforma grupos de apps em widgets da Tela de Início e da Tela Bloqueada, e um toque no bloco abre o app diretamente. O iOS 27 acrescenta duas coisas:
 
 - **Extragrande comporta até 77 apps.** Com ícones pequenos, um widget de página inteira comporta 77 blocos (54 com ícones médios, 40 com grandes, 24 com extragrandes). No iPad, o Extragrande largo comporta até 72.
-- **Pontos de notificação nos blocos.** O WidgetLoft usa o novo gatilho de Notificação para colocar um ponto no bloco de um app quando esse app recebe uma notificação. É um ponto, não um número, e some quando você abre o app pelo widget.
+- **Pontos de notificação nos blocos.** O WidgetLoft usa o novo gatilho de Notificação para colocar um ponto no bloco de um app quando esse app recebe uma notificação. Desde o WidgetLoft 2.1.6, o ponto mostra quantas notificações chegaram (até 9, não a contagem real de não lidas do app), uma pasta mostra um ponto quando um app dentro dela tem um, e o ponto some quando você abre o app pelo widget.
 
 O WidgetLoft 2.1.0 também traz dois recursos que combinam com um widget grande:
 
@@ -127,7 +127,7 @@ O WidgetLoft 2.1.0 também traz dois recursos que combinam com um widget grande:
 
 1. **Atualize para o iOS 27.** Abra **Ajustes → Geral → Atualização de Software** e instale o iOS 27.
 2. **Adicione um widget Extragrande.** No [WidgetLoft](/widgetloft), crie um grupo na aba **Grupos** e adicione seus apps. Depois toque e segure a Tela de Início, toque em **+**, busque WidgetLoft e escolha o tamanho Extragrande.
-3. **Configure um ponto de notificação.** No WidgetLoft, abra **Ajustes → Pontos de Notificação**. No Atalhos, vá em **Automação → Apps → Notificação**, escolha o app, deixe Automação ativada e Notificar desativado e adicione a ação do WidgetLoft **Mostrar ponto de notificação** para o mesmo app. Leva cerca de um minuto por app.
+3. **Configure um ponto de notificação.** No WidgetLoft, abra **Ajustes → Pontos de notificação**. No Atalhos, vá em **Automação → Apps → Notificação**, escolha o app, deixe Automação ativada e Notificar desativado e adicione a ação do WidgetLoft **Mostrar ponto de notificação** para o mesmo app. Leva cerca de um minuto por app.
 4. **Personalize a Tela Bloqueada.** Toque e segure a Tela Bloqueada, toque em **Personalizar**, mude para o relógio compacto e adicione um widget do WidgetLoft com uma fileira de até 4 apps (3 com ícones grandes).
 
 ## As mudanças de widgets do iOS 27 num relance
@@ -147,7 +147,7 @@ Os widgets da Apple mostram principalmente informações. O [WidgetLoft](/widget
 Calendário, Fotos, Música e Tempo, além de apps de terceiros. O WidgetLoft comporta até 77 apps em um só.
 
 **Os widgets do iOS 27 mostram a contagem de notificações?**
-Contagem não. O WidgetLoft mostra um ponto, que some quando você abre o app pelo widget. Ler uma notificação só na Tela Bloqueada ou no Apple Watch não o apaga, e sites, blocos de Atalhos e contatos não podem ter pontos.
+Sim, com uma ressalva. O WidgetLoft mostra um ponto com o número de notificações que chegaram desde a última vez que você abriu o app, até 9. Não é a contagem real de não lidas do app, e você pode desativar o número em **Ajustes → Pontos de notificação → Mostrar o número**. O ponto some quando você abre o app pelo widget. Ler uma notificação só na Tela Bloqueada ou no Apple Watch não o apaga, e sites, blocos de Atalhos e contatos não podem ter pontos.
 
 **Preciso do iOS 27 para usar o WidgetLoft?**
 Não. O WidgetLoft funciona no iOS 18 e posterior. Só o tamanho Extragrande e os pontos de notificação precisam do iOS 27.

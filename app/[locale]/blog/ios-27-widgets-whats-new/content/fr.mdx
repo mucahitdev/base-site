@@ -75,7 +75,7 @@ export const jsonLd = [
         name: "Les widgets d'iOS 27 peuvent-ils afficher le nombre de notifications ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Pas de nombre. Grâce au nouveau déclencheur Notification de Raccourcis, WidgetLoft peut afficher un point sur la tuile d'une app. Le point disparaît quand vous ouvrez l'app depuis le widget. Lire une notification uniquement sur l'écran verrouillé ou l'Apple Watch ne l'efface pas, et les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point.",
+          text: "Oui, avec une nuance. Grâce au nouveau déclencheur Notification de Raccourcis, WidgetLoft affiche un point sur la tuile d'une app, et depuis la version 2.1.6 ce point indique combien de notifications sont arrivées depuis votre dernière ouverture de l'app, jusqu'à 9. C'est le décompte de WidgetLoft, pas le vrai nombre de non-lus de l'app, et vous pouvez masquer le nombre dans Réglages, Pastilles de notification, Afficher le nombre. Le point disparaît quand vous ouvrez l'app depuis le widget. Lire une notification uniquement sur l'écran verrouillé ou l'Apple Watch ne l'efface pas, et les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point.",
         },
       },
       {
@@ -116,7 +116,7 @@ iOS 27 ne réinvente pas les widgets, mais ses changements sont concrets. Voici 
 [WidgetLoft](/widgetloft) transforme des groupes d'apps en widgets pour l'écran d'accueil et l'écran verrouillé, et toucher une tuile ouvre l'app directement. iOS 27 y ajoute deux choses :
 
 - **Très grand contient jusqu'à 77 apps.** Avec de petites icônes, un widget pleine page accueille 77 tuiles (54 avec des icônes moyennes, 40 avec des grandes, 24 avec des très grandes). Sur iPad, le Très grand large contient jusqu'à 72 apps.
-- **Des points de notification sur les tuiles.** WidgetLoft utilise le nouveau déclencheur Notification pour poser un point sur la tuile d'une app quand cette app reçoit une notification. C'est un point, pas un nombre, et il disparaît quand vous ouvrez l'app depuis le widget.
+- **Des points de notification sur les tuiles.** WidgetLoft utilise le nouveau déclencheur Notification pour poser un point sur la tuile d'une app quand cette app reçoit une notification. Depuis WidgetLoft 2.1.6, le point indique combien de notifications sont arrivées (jusqu'à 9, pas le vrai nombre de non-lus de l'app), un dossier affiche un point quand une app qu'il contient en a un, et le point disparaît quand vous ouvrez l'app depuis le widget.
 
 WidgetLoft 2.1.0 ajoute aussi deux fonctions qui vont bien avec un grand widget :
 
@@ -127,7 +127,7 @@ WidgetLoft 2.1.0 ajoute aussi deux fonctions qui vont bien avec un grand widget 
 
 1. **Passez à iOS 27.** Ouvrez **Réglages → Général → Mise à jour logicielle** et installez iOS 27.
 2. **Ajoutez un widget Très grand.** Dans [WidgetLoft](/widgetloft), créez un groupe dans l'onglet **Groupes** et ajoutez vos apps. Touchez ensuite longuement l'écran d'accueil, touchez **+**, cherchez WidgetLoft et choisissez la taille Très grand.
-3. **Configurez un point de notification.** Dans WidgetLoft, ouvrez **Réglages → Points de notification**. Dans Raccourcis, allez dans **Automatisation → Apps → Notification**, choisissez l'app, laissez Automatisation activée et Notifier désactivé, puis ajoutez l'action WidgetLoft **Afficher la pastille de notification** pour la même app. Comptez environ une minute par app.
+3. **Configurez un point de notification.** Dans WidgetLoft, ouvrez **Réglages → Pastilles de notification**. Dans Raccourcis, allez dans **Automatisation → Apps → Notification**, choisissez l'app, laissez Automatisation activée et Notifier désactivé, puis ajoutez l'action WidgetLoft **Afficher la pastille de notification** pour la même app. Comptez environ une minute par app.
 4. **Personnalisez l'écran verrouillé.** Touchez longuement l'écran verrouillé, touchez **Personnaliser**, passez à l'horloge compacte et ajoutez un widget WidgetLoft avec une rangée de jusqu'à 4 apps (3 avec de grandes icônes).
 
 ## Les changements de widgets d'iOS 27 en un coup d'œil
@@ -147,7 +147,7 @@ Les widgets d'Apple affichent surtout des informations. [WidgetLoft](/widgetloft
 Calendrier, Photos, Musique et Météo, ainsi que des apps tierces. WidgetLoft y place jusqu'à 77 apps.
 
 **Les widgets d'iOS 27 peuvent-ils afficher le nombre de notifications ?**
-Pas de nombre. WidgetLoft affiche un point, qui disparaît quand vous ouvrez l'app depuis le widget. Lire une notification uniquement sur l'écran verrouillé ou l'Apple Watch ne l'efface pas, et les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point.
+Oui, avec une nuance. WidgetLoft affiche un point avec le nombre de notifications arrivées depuis votre dernière ouverture de l'app, jusqu'à 9. Ce n'est pas le vrai nombre de non-lus de l'app, et vous pouvez masquer le nombre dans **Réglages → Pastilles de notification → Afficher le nombre**. Le point disparaît quand vous ouvrez l'app depuis le widget. Lire une notification uniquement sur l'écran verrouillé ou l'Apple Watch ne l'efface pas, et les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point.
 
 **Faut-il iOS 27 pour utiliser WidgetLoft ?**
 Non. WidgetLoft fonctionne sous iOS 18 et versions ultérieures. Seuls la taille Très grand et les points de notification nécessitent iOS 27.

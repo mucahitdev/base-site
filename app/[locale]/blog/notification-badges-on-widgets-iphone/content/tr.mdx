@@ -1,7 +1,7 @@
 export const meta = {
   title: "iPhone Widget'larında Bildirim Noktası Nasıl Gösterilir? (iOS 27)",
   description:
-    "Widget içindeki uygulama ikonları hiçbir zaman bildirim rozeti göstermez. iOS 27'nin yeni Kısayollar bildirim tetikleyicisi ve WidgetLoft ile iPhone'da widget kutucuğuna bildirim noktası koymanın adım adım yolu ve dürüst sınırları.",
+    "Widget içindeki uygulama ikonları hiçbir zaman bildirim rozeti göstermez. iOS 27'nin yeni Kısayollar bildirim tetikleyicisi ve WidgetLoft ile iPhone'da widget kutucuğuna sayılı bir bildirim noktası koymanın adım adım yolu ve dürüst sınırları.",
   keywords: [
     "widget bildirim rozeti iphone",
     "widget uygulama ikonu bildirim göstermiyor",
@@ -73,7 +73,7 @@ export const jsonLd = [
         name: "Widget bir uygulamanın okunmamış bildirim sayısını gösterebilir mi?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Hayır. Üçüncü taraf bir widget başka bir uygulamanın okunmamış sayısını okuyamaz. iOS 27'de WidgetLoft bildirim geldiğinde uygulamanın kutucuğuna nokta koyabilir, ama bu bir sayı değil, bir noktadır.",
+          text: "Gerçek okunmamış sayısını gösteremez: üçüncü taraf bir widget başka bir uygulamanın rozetini okuyamaz. iOS 27'de WidgetLoft bildirim geldiğinde uygulamanın kutucuğuna bir nokta koyar ve nokta, uygulamayı son açtığınızdan beri kaç bildirim geldiğini 9'a kadar gösterir. Bu, uygulamanın okunmamış sayısı değil, WidgetLoft'un kendi saydığı sayıdır. Yalnızca nokta görmek için Ayarlar, Bildirim Noktaları bölümünde Sayıyı göster'i kapatın.",
         },
       },
       {
@@ -103,7 +103,7 @@ export const jsonLd = [
 
 # iPhone Widget'larında Bildirim Noktası Nasıl Gösterilir? (iOS 27)
 
-**Kısa cevap:** Widget'lar başka bir uygulamanın okunmamış sayısını okuyamaz, bu yüzden başlatıcı widget içindeki uygulama ikonları rozet göstermez. iOS 27'de [WidgetLoft](/widgetloft) (eski adıyla FolderMini) bunu bir Kısayollar otomasyonuyla aşar: bir uygulama bildirim gönderdiğinde otomasyon o uygulamanın kutucuğuna bir nokta koyar, uygulamayı widget'tan açtığınızda da nokta temizlenir.
+**Kısa cevap:** Widget'lar başka bir uygulamanın okunmamış sayısını okuyamaz, bu yüzden başlatıcı widget içindeki uygulama ikonları rozet göstermez. iOS 27'de [WidgetLoft](/widgetloft) (eski adıyla FolderMini) bunu bir Kısayollar otomasyonuyla aşar: bir uygulama bildirim gönderdiğinde otomasyon o uygulamanın kutucuğuna bir nokta koyar, nokta kaç bildirim geldiğini gösterir ve uygulamayı widget'tan açtığınızda temizlenir. İçindeki bir uygulamada nokta olduğunda klasör de nokta gösterir.
 
 Ana ekranı toparlamak için uygulamalarınızı bir widget'a taşıdınız, ama artık hangisinde yeni bir şey olduğunu göremiyorsunuz. İşte o sinyali geri almanın yolu.
 
@@ -123,28 +123,30 @@ iOS 27 bu tabloda bir parçayı değiştirdi. Kısayollar artık bir uygulama bi
 4. **WidgetLoft eylemini ekleyin.** WidgetLoft'un **Bildirim noktasını göster** eylemini ekleyip aynı uygulamayı seçin. Takip etmek istediğiniz her uygulama için 2 ile 4 arasındaki adımları tekrarlayın. Her biri yaklaşık bir dakika sürer.
 5. **İsteğe bağlı: uygulamayı başka yerden açınca noktayı temizleyin.** Uygulamayı widget'tan açtığınızda nokta temizlenir. Sık sık başka bir yoldan açıyorsanız, o uygulama için **Bildirim Noktasını Temizle** eylemli bir **Uygulama açıldığında** otomasyonu ekleyin.
 
+WidgetLoft 2.1.6'dan beri noktalar varsayılan olarak bildirim sayısını gösterir, Kilit Ekranı'nda da. Yalnızca nokta görmek için **Ayarlar → Bildirim Noktaları** bölümüne gidip **Sayıyı göster**'i kapatın.
+
 ## Bildirim noktası ve sayı rozeti karşılaştırması
 
 | Ana ekran ikonundaki sayı rozeti | WidgetLoft kutucuğundaki bildirim noktası |
 | --- | --- |
-| 3 gibi bir sayı gösterir | Sayı olmadan bir nokta gösterir |
+| Uygulamanın gerçek okunmamış sayısını gösterir, 3 gibi | Uygulamayı son açtığınızdan beri kaç bildirim geldiğini 9'a kadar gösterir, Sayıyı göster'i kapatırsanız yalnızca nokta |
 | Uygulamanın kendisi günceller | Uygulamayı widget'tan açınca ya da Bildirim Noktasını Temizle otomasyonuyla temizlenir |
 | Kurulum gerekmez | Uygulama başına bir Kısayollar otomasyonu, her biri yaklaşık bir dakika |
 | Güncel her iOS sürümünde çalışır | iOS 27 gerektirir |
-| Uygulama ikonlarında görünür | Uygulama kutucuklarında görünür, web siteleri, Kısayollar kutucukları ve kişilerde görünmez |
+| Uygulama ikonlarında görünür | Uygulama kutucuklarında ve onları içeren klasörlerde görünür, web siteleri, Kısayollar kutucukları ve kişilerde görünmez |
 
-Bir nokta, bir bakışın ardındaki asıl soruya cevap verir: bu uygulamada yeni bir şey var mı? [WidgetLoft](/widgetloft) kutucukları uygulamayı hâlâ tek dokunuşla doğrudan açar, artık bu sinyali de gösterir.
+Bir nokta, bir bakışın ardındaki asıl soruya cevap verir: bu uygulamada yeni bir şey var mı, varsa aşağı yukarı ne kadar? [WidgetLoft](/widgetloft) kutucukları uygulamayı hâlâ tek dokunuşla doğrudan açar, artık bu sinyali de gösterir.
 
 ## Bildirim noktalarının yapamadıkları
 
-Bu bir sayı değil, bir nokta: bir şeyin geldiğini bilirsiniz, ne kadar olduğunu değil. Kurulum iOS 27 gerektirir ve her uygulamanın kendi otomasyonu olmalıdır.
+Sayı, uygulamanın gerçek okunmamış sayısı değildir. WidgetLoft, uygulamayı son açtığınızdan beri gelen bildirimleri 9'a kadar sayar, bu yüzden onu kabaca bir gösterge olarak görün. Kurulum iOS 27 gerektirir ve her uygulamanın kendi otomasyonu olmalıdır.
 
-Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı temizlemez. Uygulamayı widget'tan açın ya da WidgetLoft'taki **Tüm noktaları temizle** düğmesini kullanın. Web siteleri, Kısayollar kutucukları ve kişilerde nokta olamaz, özelliğin tamamı da hâlâ Beta olarak işaretli.
+Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı temizlemez, sayıyı da düşürmez. Uygulamayı widget'tan açın ya da WidgetLoft'taki **Tüm noktaları temizle** düğmesini kullanın. Web siteleri, Kısayollar kutucukları ve kişilerde nokta olamaz, özelliğin tamamı da hâlâ Beta olarak işaretli.
 
 ## Sık sorulan sorular
 
 **Widget bir uygulamanın okunmamış bildirim sayısını gösterebilir mi?**
-Hayır. Üçüncü taraf bir widget başka bir uygulamanın okunmamış sayısını okuyamaz. iOS 27'de WidgetLoft bildirim geldiğinde uygulamanın kutucuğuna nokta koyabilir, ama bu bir sayı değil, bir noktadır.
+Gerçek okunmamış sayısını gösteremez: üçüncü taraf bir widget başka bir uygulamanın rozetini okuyamaz. iOS 27'de WidgetLoft bildirim geldiğinde uygulamanın kutucuğuna bir nokta koyar ve nokta, uygulamayı son açtığınızdan beri kaç bildirim geldiğini 9'a kadar gösterir. Yalnızca nokta görmek için **Ayarlar → Bildirim Noktaları** bölümünde **Sayıyı göster**'i kapatın.
 
 **Bildirimi okuduktan sonra nokta neden kaybolmuyor?**
 Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı temizlemez. Uygulamayı widget'tan açın, Bildirim Noktasını Temizle eylemli bir Uygulama açıldığında otomasyonu ekleyin ya da Tüm noktaları temizle'ye dokunun.

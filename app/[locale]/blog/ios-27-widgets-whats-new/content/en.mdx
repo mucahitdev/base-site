@@ -75,7 +75,7 @@ export const jsonLd = [
         name: "Can iOS 27 widgets show notification counts?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Not counts. With the new Shortcuts Notification trigger, WidgetLoft can show a dot on an app's tile. The dot clears when you open the app from the widget. Reading a notification only on the Lock Screen or Apple Watch does not clear it, and websites, Shortcuts tiles and contacts cannot have dots.",
+          text: "Yes, with a caveat. With the new Shortcuts Notification trigger, WidgetLoft shows a dot on an app's tile, and since version 2.1.6 the dot shows how many notifications arrived since you last opened the app, up to 9. It is WidgetLoft's own tally, not the app's real unread count, and you can turn the number off in Settings, Notification Dots, Show the number. The dot clears when you open the app from the widget. Reading a notification only on the Lock Screen or Apple Watch does not clear it, and websites, Shortcuts tiles and contacts cannot have dots.",
         },
       },
       {
@@ -116,7 +116,7 @@ iOS 27 is not a widget overhaul, but its changes are practical. Here is what is 
 [WidgetLoft](/widgetloft) turns groups of apps into Home Screen and Lock Screen widgets, and a tap on a tile opens the app directly. iOS 27 adds two things to that:
 
 - **Extra Large holds up to 77 apps.** With small icons, one full-page widget fits 77 tiles (54 with medium icons, 40 with large, 24 with extra large). On iPad, the wide Extra Large holds up to 72.
-- **Notification dots on tiles.** WidgetLoft uses the new Notification trigger to put a dot on an app's tile when that app gets a notification. It is a dot, not a count, and it clears when you open the app from the widget.
+- **Notification dots on tiles.** WidgetLoft uses the new Notification trigger to put a dot on an app's tile when that app gets a notification. Since WidgetLoft 2.1.6 the dot shows how many notifications arrived (up to 9, not the app's real unread count), a folder shows a dot when an app inside it has one, and the dot clears when you open the app from the widget.
 
 WidgetLoft 2.1.0 also adds two features that pair well with a big widget:
 
@@ -147,7 +147,7 @@ Apple's widgets mostly show information. [WidgetLoft](/widgetloft) uses the same
 Calendar, Photos, Music and Weather, plus third-party apps. WidgetLoft fits up to 77 apps in one.
 
 **Can iOS 27 widgets show notification counts?**
-Not counts. WidgetLoft shows a dot, which clears when you open the app from the widget. Reading a notification only on the Lock Screen or Apple Watch does not clear it, and websites, Shortcuts tiles and contacts cannot have dots.
+Yes, with a caveat. WidgetLoft shows a dot with the number of notifications that arrived since you last opened the app, up to 9. It is not the app's real unread count, and you can turn the number off in **Settings → Notification Dots → Show the number**. The dot clears when you open the app from the widget. Reading a notification only on the Lock Screen or Apple Watch does not clear it, and websites, Shortcuts tiles and contacts cannot have dots.
 
 **Do I need iOS 27 to use WidgetLoft?**
 No. WidgetLoft works on iOS 18 and later. Only the Extra Large size and notification dots need iOS 27.

@@ -75,7 +75,7 @@ export const jsonLd = [
         name: "Czy widżety w iOS 27 pokazują liczbę powiadomień?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Liczby nie. Dzięki nowemu wyzwalaczowi Powiadomienie w Skrótach WidgetLoft może pokazać kropkę na kafelku aplikacji. Kropka znika, gdy otworzysz aplikację z widżetu. Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch jej nie usuwa, a strony internetowe, kafelki Skrótów i kontakty nie mogą mieć kropek.",
+          text: "Tak, z zastrzeżeniem. Dzięki nowemu wyzwalaczowi Powiadomienie w Skrótach WidgetLoft pokazuje kropkę na kafelku aplikacji, a od wersji 2.1.6 kropka pokazuje, ile powiadomień przyszło od ostatniego otwarcia aplikacji, do 9. To własne liczenie WidgetLoft, a nie prawdziwa liczba nieprzeczytanych w aplikacji, i możesz wyłączyć liczbę w Ustawienia, Kropki powiadomień, Pokaż liczbę. Kropka znika, gdy otworzysz aplikację z widżetu. Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch jej nie usuwa, a strony internetowe, kafelki Skrótów i kontakty nie mogą mieć kropek.",
         },
       },
       {
@@ -116,7 +116,7 @@ iOS 27 nie wymyśla widżetów na nowo, ale zmiany są praktyczne. Oto co jest n
 [WidgetLoft](/widgetloft) zamienia grupy aplikacji w widżety na ekran początkowy i ekran blokady, a stuknięcie kafelka otwiera aplikację bezpośrednio. iOS 27 dodaje do tego dwie rzeczy:
 
 - **Bardzo duży mieści do 77 aplikacji.** Z małymi ikonami jeden widżet na całą stronę mieści 77 kafelków (54 ze średnimi ikonami, 40 z dużymi, 24 z bardzo dużymi). Na iPadzie szeroki widżet Bardzo duży mieści do 72.
-- **Kropki powiadomień na kafelkach.** WidgetLoft używa nowego wyzwalacza Powiadomienie, aby umieścić kropkę na kafelku aplikacji, gdy ta aplikacja dostanie powiadomienie. To kropka, a nie liczba, i znika, gdy otworzysz aplikację z widżetu.
+- **Kropki powiadomień na kafelkach.** WidgetLoft używa nowego wyzwalacza Powiadomienie, aby umieścić kropkę na kafelku aplikacji, gdy ta aplikacja dostanie powiadomienie. Od WidgetLoft 2.1.6 kropka pokazuje, ile powiadomień przyszło (do 9, nie prawdziwą liczbę nieprzeczytanych w aplikacji), folder pokazuje kropkę, gdy ma ją aplikacja w środku, a kropka znika, gdy otworzysz aplikację z widżetu.
 
 WidgetLoft 2.1.0 dodaje też dwie funkcje, które dobrze pasują do dużego widżetu:
 
@@ -147,7 +147,7 @@ Widżety Apple głównie pokazują informacje. [WidgetLoft](/widgetloft) używa 
 Kalendarz, Zdjęcia, Muzyka i Pogoda, a także aplikacje innych firm. WidgetLoft mieści w nim do 77 aplikacji.
 
 **Czy widżety w iOS 27 pokazują liczbę powiadomień?**
-Liczby nie. WidgetLoft pokazuje kropkę, która znika, gdy otworzysz aplikację z widżetu. Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch jej nie usuwa, a strony internetowe, kafelki Skrótów i kontakty nie mogą mieć kropek.
+Tak, z zastrzeżeniem. WidgetLoft pokazuje kropkę z liczbą powiadomień, które przyszły od ostatniego otwarcia aplikacji, do 9. To nie jest prawdziwa liczba nieprzeczytanych w aplikacji, a liczbę możesz wyłączyć w **Ustawienia → Kropki powiadomień → Pokaż liczbę**. Kropka znika, gdy otworzysz aplikację z widżetu. Przeczytanie powiadomienia tylko na ekranie blokady lub na Apple Watch jej nie usuwa, a strony internetowe, kafelki Skrótów i kontakty nie mogą mieć kropek.
 
 **Czy do WidgetLoft potrzebuję iOS 27?**
 Nie. WidgetLoft działa na iOS 18 i nowszych. iOS 27 jest potrzebny tylko do rozmiaru Bardzo duży i kropek powiadomień.

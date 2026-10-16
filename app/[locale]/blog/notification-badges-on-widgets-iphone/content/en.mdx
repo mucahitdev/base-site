@@ -1,7 +1,7 @@
 export const meta = {
   title: "How to Show Notification Dots on iPhone Widgets (iOS 27)",
   description:
-    "App icons inside widgets never show badges. Here is how to put a notification dot on a widget tile on iPhone with the new iOS 27 Shortcuts notification trigger and WidgetLoft, step by step, with honest limits.",
+    "App icons inside widgets never show badges. Here is how to put a notification dot, with a count, on a widget tile on iPhone with the new iOS 27 Shortcuts notification trigger and WidgetLoft, step by step, with honest limits.",
   keywords: [
     "notification badges on widgets iphone",
     "widget app icons no notification badge",
@@ -73,7 +73,7 @@ export const jsonLd = [
         name: "Can a widget show the unread notification count of an app?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. A third-party widget cannot read another app's unread count. On iOS 27, WidgetLoft can put a dot on the app's tile when a notification arrives, but it is a dot, not a number.",
+          text: "Not the real unread count: a third-party widget cannot read another app's badge. On iOS 27, WidgetLoft puts a dot on the app's tile when a notification arrives, and the dot shows how many notifications arrived since you last opened the app, up to 9. It is WidgetLoft's own tally, not the app's unread count. To see just a dot, turn off Show the number in Settings, Notification Dots.",
         },
       },
       {
@@ -103,7 +103,7 @@ export const jsonLd = [
 
 # How to Show Notification Dots on iPhone Widgets (iOS 27)
 
-**Quick answer:** Widgets can't read another app's unread count, so app icons inside a launcher widget never show badges. On iOS 27, [WidgetLoft](/widgetloft) (formerly FolderMini) works around this with a Shortcuts automation: when an app sends a notification, the automation puts a dot on that app's tile, and the dot clears when you open the app from the widget.
+**Quick answer:** Widgets can't read another app's unread count, so app icons inside a launcher widget never show badges. On iOS 27, [WidgetLoft](/widgetloft) (formerly FolderMini) works around this with a Shortcuts automation: when an app sends a notification, the automation puts a dot on that app's tile, the dot shows how many notifications arrived, and it clears when you open the app from the widget. A folder shows a dot too when an app inside it has one.
 
 You moved your apps into a widget to tidy up, and now you can't tell which one has something new. Here is how to get that signal back.
 
@@ -123,28 +123,30 @@ iOS 27 changed one piece. Shortcuts now offers automations that run when an app 
 4. **Add the WidgetLoft action.** Add WidgetLoft's **Show Notification Dot** action and pick the same app. Repeat steps 2 to 4 for every app you want to watch. Each one takes about a minute.
 5. **Optional: clear dots when you open the app elsewhere.** The dot clears when you open the app from the widget. If you often open it another way, add an **App is opened** automation for that app with the **Clear Notification Dot** action.
 
+Since WidgetLoft 2.1.6, dots show the number of notifications by default, on the Lock Screen too. To see just a dot, go to **Settings → Notification Dots** and turn off **Show the number**.
+
 ## Notification dot vs number badge
 
 | Number badge on a Home Screen icon | Notification dot on a WidgetLoft tile |
 | --- | --- |
-| Shows a number, like 3 | Shows a dot, with no number |
+| Shows the app's real unread count, like 3 | Shows how many notifications arrived since you last opened the app, up to 9, or just a dot if you turn off Show the number |
 | Updated by the app itself | Clears when you open the app from the widget, or with a Clear Notification Dot automation |
 | Nothing to set up | One Shortcuts automation per app, about a minute each |
 | Works on any recent iOS version | Needs iOS 27 |
-| Appears on app icons | Appears on app tiles, not on websites, Shortcuts tiles or contacts |
+| Appears on app icons | Appears on app tiles and on folders that hold them, not on websites, Shortcuts tiles or contacts |
 
-A dot answers the real question behind a glance: does this app have something new? [WidgetLoft](/widgetloft) tiles still open the app directly with one tap, and now they show that signal too.
+A dot answers the real question behind a glance: does this app have something new, and roughly how much? [WidgetLoft](/widgetloft) tiles still open the app directly with one tap, and now they show that signal too.
 
 ## What notification dots can't do
 
-It is a dot, not a count: you know something arrived, not how much. Setup needs iOS 27, and every app needs its own automation.
+The number is not the app's real unread count. WidgetLoft counts the notifications that arrived since you last opened the app, up to 9, so treat it as a rough guide. Setup needs iOS 27, and every app needs its own automation.
 
-Reading a notification only on the Lock Screen or on Apple Watch does not clear the dot. Open the app from the widget, or use the **Clear all dots** button in WidgetLoft. Websites, Shortcuts tiles and contacts can't have dots, and the whole feature is still marked Beta.
+Reading a notification only on the Lock Screen or on Apple Watch does not clear the dot or lower the number. Open the app from the widget, or use the **Clear all dots** button in WidgetLoft. Websites, Shortcuts tiles and contacts can't have dots, and the whole feature is still marked Beta.
 
 ## Common questions
 
 **Can a widget show the unread notification count of an app?**
-No. A third-party widget can't read another app's unread count. On iOS 27, WidgetLoft can put a dot on the app's tile when a notification arrives, but it is a dot, not a number.
+Not the real unread count: a third-party widget can't read another app's badge. On iOS 27, WidgetLoft puts a dot on the app's tile when a notification arrives, and the dot shows how many arrived since you last opened the app, up to 9. To see just a dot, turn off **Show the number** in **Settings → Notification Dots**.
 
 **Why doesn't the dot go away after I read the notification?**
 Reading it only on the Lock Screen or Apple Watch doesn't clear the dot. Open the app from the widget, add an App is opened automation with Clear Notification Dot, or tap Clear all dots.
