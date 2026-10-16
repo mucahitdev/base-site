@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Comment donner à chaque sous-dossier son propre style dans un widget iPhone",
+  description:
+    "Les dossiers d'un widget n'ont plus besoin de se ressembler. Découvrez comment donner à chaque sous-dossier sa propre taille d'icônes, ses noms d'apps, son espacement et ses couleurs, ainsi qu'une icône de dossier, une tuile retour et une animation d'ouverture personnalisées.",
+  keywords: [
+    "personnaliser dossier widget iphone",
+    "sous-dossier widget iphone",
+    "couleur dossier iphone",
+    "changer icône dossier iphone",
+    "dossiers imbriqués widget personnalisation",
+    "personnaliser dossiers iphone ios 27",
+  ],
+  ogTitle: "Donnez à chaque sous-dossier son propre style",
+  ogDescription:
+    "Taille d'icônes, noms, espacement, couleurs, icône de dossier et tuile retour, réglés sous-dossier par sous-dossier.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Comment donner à chaque sous-dossier son propre style dans un widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/fr/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Personnaliser chaque sous-dossier d'un widget lanceur iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Ouvrir le sous-dossier",
+        text: "Dans WidgetLoft, ouvrez le groupe, puis le sous-dossier à modifier.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ouvrir Apparence",
+        text: "Touchez Apparence. Réglez la taille d'icônes, les noms d'apps, l'espacement et les couleurs propres au sous-dossier.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir la tuile du dossier",
+        text: "Choisissez l'aspect de la tuile du dossier vue de l'extérieur : une mini-grille 2×2 ou 3×3 de ses apps, votre propre photo ou un SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Styliser la tuile retour",
+        text: "Modifiez le symbole, la couleur, le fond, l'opacité et la taille de la tuile retour, puis utilisez Utiliser ce style pour pour l'appliquer à ce dossier, au groupe ou à tous les groupes.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir l'animation d'ouverture",
+        text: "Dans les Réglages de WidgetLoft, réglez Transition des sous-dossiers sur Glissement, Fondu, Zoom ou Instantanée.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Les dossiers dans des dossiers peuvent-ils avoir des styles différents sur iPhone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pas avec les dossiers d'Apple, qui se ressemblent tous. Dans un widget WidgetLoft, chaque sous-dossier peut avoir sa propre taille d'icônes, ses noms d'apps, son espacement et ses couleurs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Combien de sous-dossiers puis-je créer ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Chaque dossier contient jusqu'à 100 apps et 20 sous-dossiers, et l'imbrication n'a pas de limite de profondeur.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Les sous-dossiers affichent-ils des points de notification ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui, sous iOS 27. Un dossier affiche un point quand une app qu'il contient en a un, avec par défaut le nombre de notifications.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment donner à chaque sous-dossier son propre style dans un widget iPhone
+
+**Réponse rapide :** Les dossiers de l'écran d'accueil d'Apple se ressemblent tous. Dans un widget [WidgetLoft](/widgetloft), chaque sous-dossier peut désormais avoir son propre style : ouvrez le sous-dossier, touchez **Apparence** et réglez sa taille d'icônes, ses noms d'apps, son espacement et ses couleurs. Vous pouvez aussi donner à la tuile du dossier une photo ou un symbole, restyler la tuile retour et choisir comment les dossiers s'ouvrent.
+
+Un dossier « Jeux » avec de grandes icônes colorées et un dossier « Travail » avec de petites icônes sobres se lisent plus vite d'un coup d'œil. Désormais, un seul widget peut contenir les deux.
+
+---
+
+## Pourquoi donner un style propre aux sous-dossiers
+
+Les sous-dossiers permettent à un widget de contenir bien plus d'apps qu'il n'a d'emplacements : chaque dossier contient jusqu'à 100 apps et 20 sous-dossiers, et l'imbrication n'a pas de limite de profondeur. Quand vous touchez un dossier sur le widget, il s'ouvre sur place.
+
+Le hic, c'est que chaque niveau se ressemblait. Un dossier de 6 apps avait les mêmes minuscules icônes qu'un dossier de 40. Avec un style par sous-dossier, un dossier court peut utiliser de grandes icônes, et un long de petites icônes pour tout faire tenir sur un seul écran.
+
+## Étape par étape : styliser un sous-dossier
+
+1. **Ouvrez le sous-dossier.** Dans WidgetLoft, ouvrez le groupe, puis le sous-dossier à modifier.
+2. **Touchez Apparence.** Réglez la **taille d'icônes**, les **noms d'apps** (affichés ou non), l'**espacement** et les **couleurs** propres à ce sous-dossier. Le reste du groupe ne change pas.
+3. **Choisissez la tuile du dossier.** Choisissez l'aspect du dossier vu de l'extérieur : une mini-grille 2×2 ou 3×3 de ses apps, votre propre photo ou un SF Symbol.
+4. **Stylisez la tuile retour.** Choisissez son symbole, sa couleur, son fond, son opacité et sa taille, et faites-la glisser vers n'importe quel emplacement. Sous **Utiliser ce style pour**, appliquez-la à ce dossier, à ce groupe ou à tous les groupes, et choisissez si les nouveaux sous-dossiers démarrent avec.
+5. **Choisissez l'animation.** Dans les **Réglages** de WidgetLoft, réglez **Transition des sous-dossiers** sur Glissement, Fondu, Zoom ou Instantanée. Instantanée est la plus rapide.
+
+## Ce que vous pouvez changer, et où
+
+| Réglage | Où | S'applique à |
+| --- | --- | --- |
+| Taille d'icônes, noms, espacement, couleurs | Sous-dossier → Apparence | Ce sous-dossier |
+| Tuile du dossier (mini-grille, photo, symbole) | Réglages du sous-dossier | Son aspect vu de l'extérieur |
+| Tuile retour | Sous-dossier → tuile retour | Dossier, groupe ou tous les groupes |
+| Animation d'ouverture | Réglages → Transition des sous-dossiers | Tous les widgets |
+
+Besoin de réorganiser plus tard ? Vous pouvez déplacer un sous-dossier vers un autre groupe, ou le copier, et tout son contenu suit. Vous découvrez l'imbrication ? Commencez par [comment mettre des dossiers dans des dossiers sur iPhone](/blog/folders-inside-folders-iphone).
+
+## Des points sur les dossiers
+
+Sous iOS 27, un dossier affiche un point de notification quand une app qu'il contient en a un, pour ne pas rater un message caché deux niveaux plus bas. Par défaut, il indique combien de notifications sont arrivées ; pour un simple point, désactivez **Réglages → Points de notification → Afficher le nombre**. Pour la configuration complète, lisez notre guide sur les [points de notification sur les widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Questions fréquentes
+
+**Les dossiers dans des dossiers peuvent-ils avoir des styles différents sur iPhone ?**
+Pas avec les dossiers d'Apple. Dans un widget WidgetLoft, chaque sous-dossier peut avoir sa propre taille d'icônes, ses noms d'apps, son espacement et ses couleurs.
+
+**Combien de sous-dossiers puis-je créer ?**
+Chaque dossier contient jusqu'à 100 apps et 20 sous-dossiers, sans limite de profondeur.
+
+**Les sous-dossiers affichent-ils des points de notification ?**
+Oui, sous iOS 27. Un dossier affiche un point quand une app qu'il contient en a un, avec par défaut le nombre de notifications.
+
+---
+
+Prêt à donner à chaque dossier son propre style ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download) et ouvrez Apparence dans un sous-dossier.

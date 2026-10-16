@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Apps frei platzieren und Lücken lassen in einem iPhone-Widget",
+  description:
+    "iOS lässt dich Lücken zwischen Symbolen auf dem Home-Bildschirm lassen, aber die meisten Widgets füllen jeden Platz der Reihe nach. So setzt du in einem App-Starter-Widget jede App genau auf den gewünschten Platz, mit Lücken und einer verschiebbaren Zurück-Taste.",
+  keywords: [
+    "apps frei platzieren iphone widget",
+    "lücken im iphone widget",
+    "iphone apps mit abstand anordnen",
+    "eigenes widget layout iphone",
+    "ästhetischer home bildschirm ios 27",
+    "apps im widget frei verschieben",
+  ],
+  ogTitle: "Apps frei platzieren in einem iPhone-Widget",
+  ogDescription:
+    "Wähle einen freien Platz, setz eine App dorthin und lass Lücken, wo du sie willst.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline:
+      "Apps frei platzieren und Lücken lassen in einem iPhone-Widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/de/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Apps auf genaue Plätze in einem iPhone-App-Starter-Widget setzen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Deine Gruppe in WidgetLoft öffnen",
+        text: "Öffne WidgetLoft, geh zum Tab Gruppen und öffne die Gruppe, die dein Widget anzeigt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zu Platzieren wechseln",
+        text: "Wähle im Gruppen-Editor Platzieren. Das Raster zeigt jeden Platz des Widgets, auch die freien.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Einen freien Platz wählen und eine App hinzufügen",
+        text: "Tippe auf den freien Platz, an den die App soll, und wähle dann die App. Sie landet genau auf diesem Platz.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bewusst Lücken lassen",
+        text: "Plätze, die du nicht füllst, bleiben im Widget leer. Mit der Taste mit dem gestrichelten Quadrat kannst du auch einen Platzhalter einfügen.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Sichern und das Widget prüfen",
+        text: "Bestätige mit dem Häkchen. Das Widget auf dem Home-Bildschirm übernimmt dein Layout.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kann ich auf dem iPhone-Home-Bildschirm Lücken zwischen Apps lassen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Seit iOS 18 kannst du Symbole an jede Stelle einer Home-Bildschirm-Seite ziehen und Lücken lassen. Innerhalb eines Widgets bestimmt die App des Widgets das Layout; mit WidgetLoft wählst du über Platzieren jeden Platz selbst.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Öffnet ein Tipp auf einen leeren Platz etwas?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Das entscheidest du. Ein Schalter in Widget bearbeiten legt pro Widget fest, ob ein Tipp auf einen leeren Platz WidgetLoft öffnet.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Funktioniert Platzieren auch in Unterordnern?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Unterordner haben ihr eigenes Raster. Die Zurück-Taste eines Unterordners kannst du außerdem auf jeden Platz ziehen, auch auf einen freien.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Apps frei platzieren und Lücken lassen in einem iPhone-Widget
+
+**Kurze Antwort:** Auf dem Home-Bildschirm selbst kannst du ab iOS 18 Symbole beliebig verschieben und Lücken lassen. Innerhalb eines Widgets entscheidet die App, die das Widget liefert. Öffne in [WidgetLoft](/widgetloft) deine Gruppe, wechsle zu **Platzieren**, tippe auf einen freien Platz und füge eine App hinzu: Sie landet genau auf diesem Platz, und die Plätze, die du auslässt, bleiben im Widget leer.
+
+Bei einem aufgeräumten Home-Bildschirm geht es oft um den freien Raum, nicht um die Symbole. Eine Reihe mit einer App links und einer rechts sagt „diese beiden sind wichtig“ besser als ein volles Raster.
+
+---
+
+## Warum die meisten Widgets jeden Platz füllen
+
+Die meisten App-Starter-Widgets funktionieren wie eine Liste: Die erste App kommt oben links hin, die nächste daneben und so weiter. Entfernst du eine App, rutscht alles nach. Für eine lange Liste ist das in Ordnung, aber gestaltete Layouts werden schwierig: eine App in der Ecke, eine Lücke in der Mitte, eine Reihe, die zum Hintergrundbild passt.
+
+## Schritt für Schritt: Apps auf genaue Plätze setzen
+
+1. **Deine Gruppe öffnen.** Geh in WidgetLoft zum Tab **Gruppen** und öffne die Gruppe, die dein Widget anzeigt.
+2. **Zu Platzieren wechseln.** Wähle im Gruppen-Editor **Platzieren**. Das Raster zeigt jeden Platz des Widgets, auch die freien.
+3. **Erst den Platz, dann die App.** Tippe auf den freien Platz, an den die App soll, und wähle die App. Sie landet genau dort.
+4. **Bewusst Lücken lassen.** Plätze, die du nicht füllst, bleiben leer. Für eine Lücke zwischen zwei Apps in einer normalen Liste fügt die Taste mit dem gestrichelten Quadrat einen Platzhalter ein.
+5. **Sichern.** Bestätige mit dem Häkchen. Änderungen erreichen dein Widget erst, wenn du bestätigst.
+
+Soll der freie Raum ruhig bleiben? Ein Schalter in **Widget bearbeiten** legt fest, ob ein Tipp auf einen leeren Platz WidgetLoft öffnet. Stell das pro Widget ein.
+
+## Layout-Ideen mit freiem Raum
+
+| Layout | So baust du es |
+| --- | --- |
+| Vier Ecken | Großes Widget, in jeder Ecke eine App, alles andere leer |
+| Eine klare Reihe | Mittleres Widget, Apps nur in der unteren Reihe, damit darüber das Hintergrundbild zu sehen ist |
+| Ein Foto einrahmen | Extragroßes Widget (iOS 27), Apps an den Rändern, die Mitte bleibt leer |
+| Daumenzone | Apps nur in der unteren Hälfte, wo dein Daumen einhändig hinkommt |
+
+Lücken wirken am besten mit weniger, dafür größeren Symbolen. Wähle im Gruppen-Editor eine größere Symbolgröße, dann werden auch die Plätze größer. Mehr Ideen findest du in [Ideen für den Home-Bildschirm in iOS 27](/blog/ios-27-home-screen-ideas), und wie du eine ganze Seite als ein Widget nutzt, liest du beim [extragroßen Widget in iOS 27](/blog/extra-large-widget-ios-27).
+
+## Unterordner und die Zurück-Taste
+
+Unterordner öffnen sich an Ort und Stelle im Widget und haben ihr eigenes Raster. Darin kannst du die Zurück-Taste auf jeden Platz ziehen, auch auf einen freien, sodass sie dein Layout nie zerstört. Wenn jeder Unterordner anders aussehen soll, lies, [wie du jedem Unterordner seinen eigenen Look gibst](/blog/customize-sub-folders-iphone-widget).
+
+## Häufige Fragen
+
+**Kann ich auf dem iPhone-Home-Bildschirm Lücken zwischen Apps lassen?**
+Ja. Seit iOS 18 kannst du Symbole an jede Stelle einer Seite ziehen und Lücken lassen. Innerhalb eines Widgets entscheidet die App des Widgets; mit WidgetLoft wählst du über Platzieren jeden Platz selbst.
+
+**Öffnet ein Tipp auf einen leeren Platz etwas?**
+Das entscheidest du. Ein Schalter in Widget bearbeiten legt es pro Widget fest.
+
+**Funktioniert Platzieren auch in Unterordnern?**
+Unterordner haben ihr eigenes Raster, und die Zurück-Taste kann auf jeden Platz, auch auf einen freien.
+
+---
+
+Bereit, dein Widget Platz für Platz zu gestalten? [Lade WidgetLoft im App Store](/widgetloft/download) und probier Platzieren aus.

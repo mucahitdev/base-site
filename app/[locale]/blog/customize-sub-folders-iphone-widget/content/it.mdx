@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Come dare a ogni sottocartella il suo stile in un widget di iPhone",
+  description:
+    "Le cartelle dentro un widget non devono più sembrare tutte uguali. Scopri come dare a ogni sottocartella la sua dimensione delle icone, i nomi delle app, la spaziatura e i colori, più un'icona della cartella, un riquadro Indietro e un'animazione di apertura personalizzati.",
+  keywords: [
+    "personalizzare cartella widget iphone",
+    "sottocartelle widget iphone",
+    "colori cartelle iphone",
+    "cambiare icona cartella iphone",
+    "cartelle annidate widget personalizzazione",
+    "personalizzare cartelle iphone ios 27",
+  ],
+  ogTitle: "Dai a ogni sottocartella il suo stile",
+  ogDescription:
+    "Dimensione delle icone, nomi, spaziatura, colori, icona della cartella e riquadro Indietro, impostati per ogni sottocartella.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline:
+      "Come dare a ogni sottocartella il suo stile in un widget di iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/it/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Personalizzare ogni sottocartella in un widget per avviare le app su iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Apri la sottocartella",
+        text: "In WidgetLoft apri il gruppo, poi la sottocartella che vuoi modificare.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Apri Aspetto",
+        text: "Tocca Aspetto. Imposta dimensione delle icone, nomi delle app, spaziatura e colori propri della sottocartella.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli il riquadro della cartella",
+        text: "Scegli come appare da fuori il riquadro della cartella: una minigriglia 2×2 o 3×3 delle sue app, una tua foto o un SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Personalizza il riquadro Indietro",
+        text: "Modifica simbolo, colore, sfondo, opacità e dimensione del riquadro Indietro, poi usa Usa questo aspetto per per applicarlo a questa cartella, al gruppo o a tutti i gruppi.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli l'animazione di apertura",
+        text: "Nelle Impostazioni di WidgetLoft, imposta Transizione sottocartelle su Scorrimento, Dissolvenza, Zoom o Istantanea.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Le cartelle dentro le cartelle possono avere un aspetto diverso su iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non con le cartelle di Apple, che sono tutte uguali. In un widget di WidgetLoft ogni sottocartella può avere la sua dimensione delle icone, i suoi nomi delle app, la sua spaziatura e i suoi colori.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quante sottocartelle posso creare?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ogni cartella contiene fino a 100 app e 20 sottocartelle, e l'annidamento non ha limiti di profondità.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Le sottocartelle mostrano i pallini di notifica?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sì, su iOS 27. Una cartella mostra un pallino quando un'app al suo interno ne ha uno, con il numero di notifiche indicato per impostazione predefinita.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come dare a ogni sottocartella il suo stile in un widget di iPhone
+
+**Risposta rapida:** Le cartelle della schermata Home di Apple sono tutte uguali. In un widget di [WidgetLoft](/widgetloft) ogni sottocartella ora può avere il suo stile: apri la sottocartella, tocca **Aspetto** e imposta la sua dimensione delle icone, i nomi delle app, la spaziatura e i colori. Puoi anche dare al riquadro della cartella una foto o un simbolo, ridisegnare il riquadro Indietro e scegliere come si aprono le cartelle.
+
+Una cartella "Giochi" con icone grandi e colorate e una cartella "Lavoro" con icone piccole e sobrie si leggono meglio a colpo d'occhio. Ora un solo widget può contenerle entrambe.
+
+---
+
+## Perché dare alle sottocartelle uno stile proprio
+
+Le sottocartelle permettono a un widget di contenere molte più app delle sue posizioni: ogni cartella contiene fino a 100 app e 20 sottocartelle, e l'annidamento non ha limiti di profondità. Quando tocchi una cartella sul widget, si apre sul posto.
+
+Il problema era che ogni livello aveva lo stesso aspetto. Una cartella con 6 app aveva le stesse icone minuscole di una con 40. Con uno stile per sottocartella, una cartella corta può usare icone grandi e una lunga icone piccole per far stare tutto in una sola schermata.
+
+## Passo dopo passo: personalizza una sottocartella
+
+1. **Apri la sottocartella.** In WidgetLoft apri il gruppo, poi la sottocartella che vuoi modificare.
+2. **Tocca Aspetto.** Imposta per questa sottocartella **dimensione delle icone**, **nomi delle app** (attivi o no), **spaziatura** e **colori**. Il resto del gruppo resta com'è.
+3. **Scegli il riquadro della cartella.** Scegli come appare la cartella da fuori: una minigriglia 2×2 o 3×3 delle sue app, una tua foto o un SF Symbol.
+4. **Personalizza il riquadro Indietro.** Scegli simbolo, colore, sfondo, opacità e dimensione, e trascinalo in qualsiasi posizione. In **Usa questo aspetto per** applicalo a questa cartella, a questo gruppo o a tutti i gruppi, e scegli se le nuove sottocartelle partono con questo stile.
+5. **Scegli l'animazione.** Nelle **Impostazioni** di WidgetLoft, imposta **Transizione sottocartelle** su Scorrimento, Dissolvenza, Zoom o Istantanea. Istantanea è la più veloce.
+
+## Cosa puoi cambiare, e dove
+
+| Impostazione | Dove | Si applica a |
+| --- | --- | --- |
+| Dimensione delle icone, nomi, spaziatura, colori | Sottocartella → Aspetto | Quella sottocartella |
+| Riquadro della cartella (minigriglia, foto, simbolo) | Impostazioni della sottocartella | Il suo aspetto visto da fuori |
+| Riquadro Indietro | Sottocartella → riquadro Indietro | Cartella, gruppo o tutti i gruppi |
+| Animazione di apertura | Impostazioni → Transizione sottocartelle | Tutti i widget |
+
+Devi riorganizzare in seguito? Puoi spostare una sottocartella in un altro gruppo, o copiarla, e tutto il suo contenuto la segue. Nuovo alle cartelle annidate? Inizia da [come mettere cartelle dentro cartelle su iPhone](/blog/folders-inside-folders-iphone).
+
+## Pallini sulle cartelle
+
+Su iOS 27 una cartella mostra un pallino di notifica quando un'app al suo interno ne ha uno, così non perdi un messaggio nascosto due livelli più in basso. Per impostazione predefinita mostra quante notifiche sono arrivate; per un pallino semplice, disattiva **Impostazioni → Pallini di notifica → Mostra il numero**. Per la configurazione completa, leggi la nostra guida ai [badge di notifica sui widget](/blog/notification-badges-on-widgets-iphone).
+
+## Domande frequenti
+
+**Le cartelle dentro le cartelle possono avere un aspetto diverso su iPhone?**
+Non con le cartelle di Apple. In un widget di WidgetLoft ogni sottocartella può avere la sua dimensione delle icone, i suoi nomi delle app, la sua spaziatura e i suoi colori.
+
+**Quante sottocartelle posso creare?**
+Ogni cartella contiene fino a 100 app e 20 sottocartelle, senza limiti di profondità.
+
+**Le sottocartelle mostrano i pallini di notifica?**
+Sì, su iOS 27. Una cartella mostra un pallino quando un'app al suo interno ne ha uno, con il numero di notifiche per impostazione predefinita.
+
+---
+
+Pronto a dare a ogni cartella il suo stile? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e apri Aspetto in una sottocartella.

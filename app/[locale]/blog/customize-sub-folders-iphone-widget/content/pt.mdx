@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Como dar a cada subpasta um visual próprio em um widget do iPhone",
+  description:
+    "As pastas dentro de um widget não precisam mais ser todas iguais. Veja como dar a cada subpasta seu próprio tamanho de ícone, nomes de apps, espaçamento e cores, além de um ícone de pasta personalizado, um bloco de voltar e uma animação de abertura.",
+  keywords: [
+    "personalizar pasta widget iphone",
+    "subpastas widget iphone",
+    "pastas de cores diferentes iphone",
+    "ícone de pasta widget iphone",
+    "visual de pastas aninhadas widget",
+    "personalizar pastas iphone ios 27",
+  ],
+  ogTitle: "Dê a cada subpasta um visual próprio",
+  ogDescription:
+    "Tamanho de ícone, nomes, espaçamento, cores, ícone da pasta e bloco de voltar, definidos por subpasta.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline:
+      "Como dar a cada subpasta um visual próprio em um widget do iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pt/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Personalizar cada subpasta em um widget lançador do iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Abra a subpasta",
+        text: "No WidgetLoft, abra o grupo e depois a subpasta que você quer mudar.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Abra Aparência",
+        text: "Toque em Aparência. Defina o tamanho de ícone, os nomes dos apps, o espaçamento e as cores próprios da subpasta.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Escolha o bloco da pasta",
+        text: "Escolha como o bloco da pasta aparece por fora: uma minigrade 2×2 ou 3×3 com os apps dela, uma foto sua ou um SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Personalize o bloco de voltar",
+        text: "Edite o símbolo, a cor, o fundo, a opacidade e o tamanho do bloco de voltar, e use Usar este visual em para aplicá-lo a esta pasta, ao grupo ou a todos os grupos.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Escolha a animação de abertura",
+        text: "Nos Ajustes do WidgetLoft, defina Transição de subpastas como Deslizar, Esmaecer, Zoom ou Instantânea.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Pastas dentro de pastas podem ter visuais diferentes no iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não com as pastas da Apple, que são todas iguais. Em um widget do WidgetLoft, cada subpasta pode ter seu próprio tamanho de ícone, nomes de apps, espaçamento e cores.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quantas subpastas eu posso criar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Cada pasta comporta até 100 apps e 20 subpastas, e o aninhamento não tem limite de profundidade.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "As subpastas mostram pontos de notificação?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sim, no iOS 27. Uma pasta mostra um ponto quando um app dentro dela tem um, com o número de notificações por padrão.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como dar a cada subpasta um visual próprio em um widget do iPhone
+
+**Resposta rápida:** As pastas da Tela de Início da Apple são todas iguais. Em um widget do [WidgetLoft](/widgetloft), cada subpasta agora pode ter seu próprio estilo: abra a subpasta, toque em **Aparência** e defina o tamanho de ícone, os nomes dos apps, o espaçamento e as cores dela. Você também pode dar ao bloco da pasta uma foto ou um símbolo, mudar o estilo do bloco de voltar e escolher como as pastas abrem.
+
+Uma pasta "Jogos" com ícones grandes e coloridos e uma pasta "Trabalho" com ícones pequenos e discretos são mais fáceis de ler num relance. Agora um único widget pode ter as duas.
+
+---
+
+## Por que dar um visual próprio às subpastas
+
+As subpastas permitem que um widget guarde muito mais apps do que os espaços que ele tem: cada pasta comporta até 100 apps e 20 subpastas, e o aninhamento não tem limite de profundidade. Quando você toca numa pasta no widget, ela abre no lugar.
+
+O problema era que todos os níveis tinham a mesma cara. Uma pasta com 6 apps tinha os mesmos ícones minúsculos de uma com 40. Com um visual por subpasta, uma pasta curta pode usar ícones grandes, e uma longa pode usar ícones pequenos para caber tudo numa tela.
+
+## Passo a passo: dê estilo a uma subpasta
+
+1. **Abra a subpasta.** No WidgetLoft, abra o grupo e depois a subpasta que você quer mudar.
+2. **Toque em Aparência.** Defina o **tamanho de ícone**, os **nomes dos apps** (ativados ou desativados), o **espaçamento** e as **cores** só desta subpasta. O resto do grupo continua como está.
+3. **Escolha o bloco da pasta.** Escolha como a pasta aparece por fora: uma minigrade 2×2 ou 3×3 com os apps dela, uma foto sua ou um SF Symbol.
+4. **Personalize o bloco de voltar.** Escolha o símbolo, a cor, o fundo, a opacidade e o tamanho, e arraste-o para qualquer espaço. Em **Usar este visual em**, aplique-o a esta pasta, a este grupo ou a todos os grupos, e escolha se as novas subpastas já começam com ele.
+5. **Escolha a animação.** Nos **Ajustes** do WidgetLoft, defina **Transição de subpastas** como Deslizar, Esmaecer, Zoom ou Instantânea. Instantânea é a mais rápida.
+
+## O que você pode mudar, e onde
+
+| Ajuste | Onde | Vale para |
+| --- | --- | --- |
+| Tamanho de ícone, nomes, espaçamento, cores | Subpasta → Aparência | Aquela subpasta |
+| Bloco da pasta (minigrade, foto, símbolo) | Ajustes da subpasta | Como ela aparece por fora |
+| Bloco de voltar | Subpasta → bloco de voltar | Pasta, grupo ou todos os grupos |
+| Animação de abertura | Ajustes → Transição de subpastas | Todos os widgets |
+
+Precisa reorganizar depois? Você pode mover uma subpasta para outro grupo, ou copiá-la, e tudo o que está dentro vai junto. Novo em pastas aninhadas? Comece por [como colocar pastas dentro de pastas no iPhone](/blog/folders-inside-folders-iphone).
+
+## Pontos nas pastas
+
+No iOS 27, uma pasta mostra um ponto de notificação quando um app dentro dela tem um, assim você não perde uma mensagem escondida dois níveis abaixo. Por padrão, ele mostra quantas notificações chegaram; para um ponto simples, desative **Ajustes → Pontos de Notificação → Mostrar o número**. Para a configuração completa, leia sobre [indicadores de notificação em widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Perguntas frequentes
+
+**Pastas dentro de pastas podem ter visuais diferentes no iPhone?**
+Não com as pastas da Apple. Em um widget do WidgetLoft, cada subpasta pode ter seu próprio tamanho de ícone, nomes de apps, espaçamento e cores.
+
+**Quantas subpastas eu posso criar?**
+Cada pasta comporta até 100 apps e 20 subpastas, sem limite de profundidade.
+
+**As subpastas mostram pontos de notificação?**
+Sim, no iOS 27. Uma pasta mostra um ponto quando um app dentro dela tem um, com o número de notificações por padrão.
+
+---
+
+Pronto para dar a cada pasta seu próprio estilo? [Baixe o WidgetLoft na App Store](/widgetloft/download) e abra o Aparência de uma subpasta.

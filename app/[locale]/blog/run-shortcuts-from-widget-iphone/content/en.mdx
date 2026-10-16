@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "How to Run Shortcuts from a Widget in One Tap on iPhone (iOS 27)",
+  description:
+    "iOS 27 lets widgets run shortcuts and app actions without opening the Shortcuts app. Learn how to add actions to a launcher widget, build an Action Board, and put the same buttons on your Lock Screen.",
+  keywords: [
+    "run shortcut from widget iphone",
+    "ios 27 shortcuts widget",
+    "shortcut widget without opening shortcuts app",
+    "app actions widget iphone",
+    "action board widget",
+    "lock screen shortcut button iphone",
+  ],
+  ogTitle: "Run Shortcuts from a Widget in One Tap (iOS 27)",
+  ogDescription:
+    "Put shortcuts, app actions and apps side by side in one widget, on the Home Screen or the Lock Screen.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Run Shortcuts from a Widget in One Tap on iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Run shortcuts and app actions from an iPhone widget in one tap",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Update to iOS 27",
+        text: "Running actions straight from a widget needs iOS 27. Update in Settings, General, Software Update.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Open Edit Widget on your group widget",
+        text: "Touch and hold your WidgetLoft group widget, tap Edit Widget and open Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add shortcuts, app actions or apps",
+        text: "Add your own shortcuts, an app's actions such as Set Timer, or an app. They appear as tiles after the group's own tiles.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Move an action where you want it",
+        text: "In WidgetLoft, open the group, tap the bolt button (Add Widget Action), pick the action and drag its tile anywhere in the grid.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add an Action Board for a widget made only of actions",
+        text: "Add the WidgetLoft Action Board widget to the Home Screen or Lock Screen, then touch and hold it, tap Edit Widget, pick a board under Style and add your actions.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does the Shortcuts app open when I tap the action?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. On iOS 27 the action runs right from the widget, and the widget stays where it was.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does this work on iOS 26 or earlier?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Actions in widgets and the Action Board need iOS 27. Normal app tiles in WidgetLoft work on iOS 18 and later.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many actions fit on an Action Board?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A board holds up to 64 actions. How many you see at once depends on the widget size you add.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Run Shortcuts from a Widget in One Tap on iPhone (iOS 27)
+
+**Quick answer:** On iOS 27, a widget can run a shortcut or an app action without opening the Shortcuts app. In [WidgetLoft](/widgetloft), touch and hold a group widget, tap **Edit Widget**, open **Actions** and add your shortcuts, app actions (like Set Timer) or apps. They sit next to your app tiles and run in one tap. For a widget made only of buttons, add the **Action Board**, on the Home Screen or the Lock Screen.
+
+The old Shortcuts widget did its job, but it always looked like the Shortcuts app. Now your shortcuts can live in the same grid as the apps you open every day.
+
+---
+
+## What changed in iOS 27
+
+iOS 27 lets apps put shortcuts and app actions inside their own widgets, and run them when you tap. Before, a tap on a shortcut in a third-party widget usually opened the Shortcuts app first, then ran the shortcut.
+
+That matters most for small, repeated jobs: start a timer, turn on a Focus, log a glass of water, send a "on my way" message. One tap, no app switch.
+
+If you build a lot of your own shortcuts, iOS 27 also brings a new way to make them by describing what you want in plain words. Apple has said some Shortcuts features arrive in later updates, so check what your iPhone shows under **Shortcuts → +**.
+
+## Step-by-step: add actions to a launcher widget
+
+1. **Update to iOS 27.** Open **Settings → General → Software Update**. Actions in widgets do not exist on older versions.
+2. **Open Edit Widget.** Touch and hold your WidgetLoft group widget and tap **Edit Widget**, then open **Actions**.
+3. **Add what you want to run.** Pick your own shortcuts, an app's actions or an app. They show up as tiles after the group's own tiles.
+4. **Move an action into place.** In [WidgetLoft](/widgetloft), open the group and tap the bolt button (**Add Widget Action**). Pick the action and drag its tile to any slot, even between two apps.
+5. **Give it an icon.** iOS gives actions no icon, so WidgetLoft looks for one. If one of your apps has the action's exact name, its icon is used. Otherwise you get suggestions, or you make your own.
+
+Tap the tile on your Home Screen and the action runs. The widget stays where it was.
+
+## Build an Action Board
+
+Sometimes you want a widget made only of buttons. That is the **Action Board**.
+
+1. Hold an empty spot on your Home Screen, tap **Edit**, then **Add Widget**.
+2. Find WidgetLoft and add the **Action Board** (normal or Liquid Glass) in the size you like.
+3. The new board starts empty. Touch and hold it, tap **Edit Widget**, pick a board under **Style** and add your actions.
+4. To change how a board looks or to give actions icons, open **Tools → Action Board** in WidgetLoft.
+
+A board holds up to 64 actions. On the Lock Screen there are two shapes: Large (1 or 2 rows) and Small (one action, or a 2×2 grid). That makes the Lock Screen a real control panel: one tap for your "leaving work" shortcut without unlocking the phone and searching for it.
+
+## Shortcuts widget vs WidgetLoft actions
+
+| | Apple's Shortcuts widget | WidgetLoft actions (iOS 27) |
+| --- | --- | --- |
+| Mix shortcuts with app tiles | No | Yes, in the same grid |
+| App actions (like Set Timer) | No | Yes |
+| Lock Screen | Not as a widget | Action Board, Large or Small |
+| Custom icons | Shortcut glyphs | Icons from your apps, or your own |
+
+If you also want shortcuts that run on their own, without a tap, read [iOS 27 Shortcuts automations for your Home Screen](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Common questions
+
+**Does the Shortcuts app open when I tap the action?**
+No. On iOS 27 the action runs right from the widget, and the widget stays where it was.
+
+**Does this work on iOS 26 or earlier?**
+No. Actions in widgets and the Action Board need iOS 27. Normal app tiles in WidgetLoft work on iOS 18 and later.
+
+**How many actions fit on an Action Board?**
+Up to 64. How many you see at once depends on the widget size you add.
+
+---
+
+Ready to turn your shortcuts into one-tap buttons? [Download WidgetLoft on the App Store](/widgetloft/download) and build your first Action Board.

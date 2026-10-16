@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Kurzbefehle per Widget mit einem Tipp auf dem iPhone ausführen (iOS 27)",
+  description:
+    "Mit iOS 27 können Widgets Kurzbefehle und App-Aktionen ausführen, ohne die Kurzbefehle-App zu öffnen. So fügst du einem App-Starter-Widget Aktionen hinzu, baust ein Aktionsboard und legst dieselben Tasten auf deinen Sperrbildschirm.",
+  keywords: [
+    "kurzbefehl über widget ausführen iphone",
+    "ios 27 kurzbefehle widget",
+    "kurzbefehl ohne kurzbefehle app starten",
+    "app aktionen widget iphone",
+    "action board widget",
+    "kurzbefehl sperrbildschirm taste iphone",
+  ],
+  ogTitle: "Kurzbefehle per Widget mit einem Tipp ausführen (iOS 27)",
+  ogDescription:
+    "Kurzbefehle, App-Aktionen und Apps nebeneinander in einem Widget, auf dem Home-Bildschirm oder dem Sperrbildschirm.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "de",
+    headline:
+      "Kurzbefehle per Widget mit einem Tipp auf dem iPhone ausführen (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/de/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "de",
+    name: "Kurzbefehle und App-Aktionen mit einem Tipp über ein iPhone-Widget ausführen",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Auf iOS 27 aktualisieren",
+        text: "Aktionen direkt aus einem Widget auszuführen, braucht iOS 27. Aktualisiere unter Einstellungen, Allgemein, Softwareupdate.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Widget bearbeiten für dein Gruppen-Widget öffnen",
+        text: "Halte dein WidgetLoft-Gruppen-Widget gedrückt, tippe auf Widget bearbeiten und öffne Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kurzbefehle, App-Aktionen oder Apps hinzufügen",
+        text: "Füge eigene Kurzbefehle, die Aktionen einer App wie Timer stellen oder eine App hinzu. Sie erscheinen als Kacheln nach den eigenen Kacheln der Gruppe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Eine Aktion an die gewünschte Stelle verschieben",
+        text: "Öffne in WidgetLoft die Gruppe, tippe auf die Blitz-Taste (Widget-Aktion hinzufügen), wähle die Aktion und zieh ihre Kachel an eine beliebige Stelle im Raster.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ein Aktionsboard für ein Widget nur aus Aktionen hinzufügen",
+        text: "Füge das WidgetLoft-Widget Aktionsboard zum Home-Bildschirm oder Sperrbildschirm hinzu, halte es dann gedrückt, tippe auf Widget bearbeiten, wähle unter Style ein Board und füge deine Aktionen hinzu.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "de",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Öffnet sich die Kurzbefehle-App, wenn ich auf die Aktion tippe?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Unter iOS 27 läuft die Aktion direkt aus dem Widget, und das Widget bleibt, wie es war.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Funktioniert das unter iOS 26 oder früher?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nein. Aktionen in Widgets und das Aktionsboard brauchen iOS 27. Normale App-Kacheln in WidgetLoft funktionieren ab iOS 18.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Wie viele Aktionen passen auf ein Aktionsboard?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ein Board fasst bis zu 64 Aktionen. Wie viele du gleichzeitig siehst, hängt von der Widget-Größe ab, die du hinzufügst.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Kurzbefehle per Widget mit einem Tipp auf dem iPhone ausführen (iOS 27)
+
+**Kurze Antwort:** Unter iOS 27 kann ein Widget einen Kurzbefehl oder eine App-Aktion ausführen, ohne die Kurzbefehle-App zu öffnen. Halte in [WidgetLoft](/widgetloft) ein Gruppen-Widget gedrückt, tippe auf **Widget bearbeiten**, öffne **Aktionen** und füge deine Kurzbefehle, App-Aktionen (wie Timer stellen) oder Apps hinzu. Sie liegen neben deinen App-Kacheln und laufen mit einem Tipp. Für ein Widget nur aus Tasten fügst du das **Aktionsboard** (eine Tastentafel für Aktionen) hinzu, auf dem Home-Bildschirm oder dem Sperrbildschirm.
+
+Das alte Kurzbefehle-Widget hat seinen Job gemacht, sah aber immer aus wie die Kurzbefehle-App. Jetzt können deine Kurzbefehle im selben Raster wohnen wie die Apps, die du jeden Tag öffnest.
+
+---
+
+## Was sich in iOS 27 geändert hat
+
+Mit iOS 27 können Apps Kurzbefehle und App-Aktionen in ihre eigenen Widgets legen und sie beim Tippen ausführen. Vorher hat ein Tipp auf einen Kurzbefehl in einem Widget von Drittanbietern meist erst die Kurzbefehle-App geöffnet und dann den Kurzbefehl ausgeführt.
+
+Das zählt vor allem bei kleinen, wiederkehrenden Aufgaben: einen Timer starten, einen Fokus aktivieren, ein Glas Wasser eintragen, ein „Bin unterwegs“ verschicken. Ein Tipp, kein App-Wechsel.
+
+Wenn du viele eigene Kurzbefehle baust, bringt iOS 27 außerdem eine neue Möglichkeit, sie zu erstellen, indem du in einfachen Worten beschreibst, was du willst. Apple hat angekündigt, dass einige Kurzbefehle-Funktionen erst mit späteren Updates kommen, also sieh nach, was dein iPhone unter **Kurzbefehle → +** anzeigt.
+
+## Schritt für Schritt: Aktionen zu einem App-Starter-Widget hinzufügen
+
+1. **Auf iOS 27 aktualisieren.** Öffne **Einstellungen → Allgemein → Softwareupdate**. In älteren Versionen gibt es keine Aktionen in Widgets.
+2. **Widget bearbeiten öffnen.** Halte dein WidgetLoft-Gruppen-Widget gedrückt, tippe auf **Widget bearbeiten** und öffne dann **Aktionen**.
+3. **Hinzufügen, was laufen soll.** Wähle eigene Kurzbefehle, die Aktionen einer App oder eine App. Sie erscheinen als Kacheln nach den eigenen Kacheln der Gruppe.
+4. **Eine Aktion an ihren Platz schieben.** Öffne in [WidgetLoft](/widgetloft) die Gruppe und tippe auf die Blitz-Taste (**Widget-Aktion hinzufügen**). Wähle die Aktion und zieh ihre Kachel auf einen beliebigen Platz, sogar zwischen zwei Apps.
+5. **Ein Symbol vergeben.** iOS gibt Aktionen kein Symbol, also sucht WidgetLoft eines. Hat eine deiner Apps genau den Namen der Aktion, wird ihr Symbol verwendet. Sonst bekommst du Vorschläge oder gestaltest dein eigenes.
+
+Tippe auf die Kachel auf deinem Home-Bildschirm, und die Aktion läuft. Das Widget bleibt, wie es war.
+
+## Ein Aktionsboard bauen
+
+Manchmal willst du ein Widget, das nur aus Tasten besteht. Genau das ist das **Aktionsboard**.
+
+1. Halte eine freie Stelle auf deinem Home-Bildschirm gedrückt, tippe auf **Bearbeiten** und dann auf **Widget hinzufügen**.
+2. Suche WidgetLoft und füge das **Aktionsboard** (normal oder Liquid Glass) in der gewünschten Größe hinzu.
+3. Das neue Board ist zunächst leer. Halte es gedrückt, tippe auf **Widget bearbeiten**, wähle unter **Stil** ein Board und füge deine Aktionen hinzu.
+4. Um das Aussehen eines Boards zu ändern oder Aktionen Symbole zu geben, öffne in WidgetLoft **Werkzeuge → Aktionsboard**.
+
+Ein Board fasst bis zu 64 Aktionen. Auf dem Sperrbildschirm gibt es zwei Formen: Groß (1 oder 2 Reihen) und Klein (eine Aktion oder ein 2×2-Raster). So wird der Sperrbildschirm zu einer echten Schaltzentrale: ein Tipp für deinen „Feierabend“-Kurzbefehl, ohne das iPhone zu entsperren und danach zu suchen.
+
+## Kurzbefehle-Widget und WidgetLoft-Aktionen im Vergleich
+
+| | Apples Kurzbefehle-Widget | WidgetLoft-Aktionen (iOS 27) |
+| --- | --- | --- |
+| Kurzbefehle mit App-Kacheln mischen | Nein | Ja, im selben Raster |
+| App-Aktionen (wie Timer stellen) | Nein | Ja |
+| Sperrbildschirm | Nicht als Widget | Aktionsboard, Groß oder Klein |
+| Eigene Symbole | Kurzbefehl-Glyphen | Symbole deiner Apps oder eigene |
+
+Wenn du auch Kurzbefehle willst, die ganz ohne Tipp von selbst laufen, lies [iOS 27 Kurzbefehle-Automationen für deinen Home-Bildschirm](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Häufige Fragen
+
+**Öffnet sich die Kurzbefehle-App, wenn ich auf die Aktion tippe?**
+Nein. Unter iOS 27 läuft die Aktion direkt aus dem Widget, und das Widget bleibt, wie es war.
+
+**Funktioniert das unter iOS 26 oder früher?**
+Nein. Aktionen in Widgets und das Aktionsboard brauchen iOS 27. Normale App-Kacheln in WidgetLoft funktionieren ab iOS 18.
+
+**Wie viele Aktionen passen auf ein Aktionsboard?**
+Bis zu 64. Wie viele du gleichzeitig siehst, hängt von der Widget-Größe ab, die du hinzufügst.
+
+---
+
+Bereit, deine Kurzbefehle in Tasten mit einem Tipp zu verwandeln? [Lade WidgetLoft im App Store](/widgetloft/download) und bau dein erstes Aktionsboard.

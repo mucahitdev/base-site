@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Come eseguire comandi rapidi da un widget con un tocco su iPhone (iOS 27)",
+  description:
+    "iOS 27 permette ai widget di eseguire comandi rapidi e azioni delle app senza aprire l'app Comandi. Scopri come aggiungere azioni a un widget per avviare le app, creare un Pannello azioni e mettere gli stessi pulsanti nella schermata di blocco.",
+  keywords: [
+    "eseguire comando rapido da widget iphone",
+    "widget comandi rapidi ios 27",
+    "comandi rapidi senza aprire app comandi",
+    "widget azioni app iphone",
+    "widget pulsanti comandi iphone",
+    "comando rapido schermata di blocco iphone",
+  ],
+  ogTitle: "Esegui comandi rapidi da un widget con un tocco (iOS 27)",
+  ogDescription:
+    "Metti comandi rapidi, azioni delle app e app uno accanto all'altro in un solo widget, nella schermata Home o nella schermata di blocco.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline:
+      "Come eseguire comandi rapidi da un widget con un tocco su iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/it/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Eseguire comandi rapidi e azioni delle app da un widget di iPhone con un tocco",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Aggiorna a iOS 27",
+        text: "Eseguire azioni direttamente da un widget richiede iOS 27. Aggiorna in Impostazioni, Generali, Aggiornamento software.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Apri Modifica widget sul widget del gruppo",
+        text: "Tieni premuto il widget del gruppo di WidgetLoft, tocca Modifica widget e apri Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi comandi rapidi, azioni delle app o app",
+        text: "Aggiungi i tuoi comandi rapidi, le azioni di un'app come Imposta timer, oppure un'app. Compaiono come riquadri dopo i riquadri del gruppo.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Sposta un'azione dove vuoi",
+        text: "In WidgetLoft apri il gruppo, tocca il pulsante a forma di fulmine (Aggiungi azione widget), scegli l'azione e trascina il suo riquadro in qualsiasi punto della griglia.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Aggiungi un Pannello azioni per un widget fatto solo di azioni",
+        text: "Aggiungi il widget Pannello azioni di WidgetLoft alla schermata Home o alla schermata di blocco, poi tienilo premuto, tocca Modifica widget, scegli una bacheca in Style e aggiungi le tue azioni.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Quando tocco l'azione si apre l'app Comandi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Su iOS 27 l'azione viene eseguita direttamente dal widget, e il widget resta com'era.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Funziona su iOS 26 o versioni precedenti?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Le azioni nei widget e l'Pannello azioni richiedono iOS 27. I normali riquadri delle app di WidgetLoft funzionano su iOS 18 e versioni successive.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quante azioni può contenere un Pannello azioni?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Una bacheca contiene fino a 64 azioni. Quante ne vedi contemporaneamente dipende dalla dimensione del widget che aggiungi.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come eseguire comandi rapidi da un widget con un tocco su iPhone (iOS 27)
+
+**Risposta rapida:** Su iOS 27 un widget può eseguire un comando rapido o un'azione di un'app senza aprire l'app Comandi. In [WidgetLoft](/widgetloft), tieni premuto un widget del gruppo, tocca **Modifica widget**, apri **Azioni** e aggiungi i tuoi comandi rapidi, azioni delle app (come Imposta timer) o app. Si affiancano ai riquadri delle app e partono con un tocco. Per un widget fatto solo di pulsanti, aggiungi l'**Pannello azioni**, nella schermata Home o nella schermata di blocco.
+
+Il vecchio widget Comandi faceva il suo lavoro, ma sembrava sempre l'app Comandi. Ora i tuoi comandi rapidi possono stare nella stessa griglia delle app che apri ogni giorno.
+
+---
+
+## Cosa cambia in iOS 27
+
+iOS 27 permette alle app di mettere comandi rapidi e azioni delle app nei propri widget e di eseguirli quando li tocchi. Prima, toccare un comando rapido in un widget di terze parti di solito apriva prima l'app Comandi e poi eseguiva il comando.
+
+Conta soprattutto per i piccoli gesti ripetuti: avviare un timer, attivare una modalità Full immersion, registrare un bicchiere d'acqua, inviare un messaggio "sto arrivando". Un tocco, senza cambiare app.
+
+Se crei molti comandi rapidi tuoi, iOS 27 porta anche un nuovo modo di costruirli descrivendo a parole quello che vuoi. Apple ha detto che alcune funzioni di Comandi arriveranno con aggiornamenti successivi, quindi controlla cosa mostra il tuo iPhone in **Comandi → +**.
+
+## Passo dopo passo: aggiungere azioni a un widget per avviare le app
+
+1. **Aggiorna a iOS 27.** Apri **Impostazioni → Generali → Aggiornamento software**. Le azioni nei widget non esistono nelle versioni precedenti.
+2. **Apri Modifica widget.** Tieni premuto il widget del gruppo di WidgetLoft e tocca **Modifica widget**, poi apri **Azioni**.
+3. **Aggiungi ciò che vuoi eseguire.** Scegli i tuoi comandi rapidi, le azioni di un'app o un'app. Compaiono come riquadri dopo i riquadri del gruppo.
+4. **Metti un'azione al suo posto.** In [WidgetLoft](/widgetloft), apri il gruppo e tocca il pulsante a forma di fulmine (**Aggiungi azione widget**). Scegli l'azione e trascina il suo riquadro in qualsiasi posizione, anche tra due app.
+5. **Dalle un'icona.** iOS non assegna icone alle azioni, quindi WidgetLoft ne cerca una. Se una delle tue app ha esattamente il nome dell'azione, viene usata la sua icona. Altrimenti ricevi dei suggerimenti, oppure crei la tua.
+
+Tocca il riquadro nella schermata Home e l'azione parte. Il widget resta com'era.
+
+## Crea un Pannello azioni
+
+A volte vuoi un widget fatto solo di pulsanti. È l'**Pannello azioni**.
+
+1. Tieni premuto uno spazio vuoto della schermata Home, tocca **Modifica**, poi **Aggiungi widget**.
+2. Trova WidgetLoft e aggiungi l'**Pannello azioni** (normale o Liquid Glass) nella dimensione che preferisci.
+3. La nuova bacheca parte vuota. Tienila premuta, tocca **Modifica widget**, scegli una bacheca in **Stile** e aggiungi le tue azioni.
+4. Per cambiare l'aspetto di una bacheca o dare icone alle azioni, apri **Strumenti → Pannello azioni** in WidgetLoft.
+
+Una bacheca contiene fino a 64 azioni. Nella schermata di blocco ci sono due formati: Grande (1 o 2 righe) e Piccolo (una sola azione o una griglia 2×2). Così la schermata di blocco diventa un vero pannello di controllo: un tocco per il tuo comando "esco dal lavoro" senza sbloccare il telefono e cercarlo.
+
+## Widget Comandi e azioni di WidgetLoft a confronto
+
+| | Widget Comandi di Apple | Azioni di WidgetLoft (iOS 27) |
+| --- | --- | --- |
+| Comandi rapidi insieme ai riquadri delle app | No | Sì, nella stessa griglia |
+| Azioni delle app (come Imposta timer) | No | Sì |
+| Schermata di blocco | Non come widget | Pannello azioni, Grande o Piccolo |
+| Icone personalizzate | Simboli di Comandi | Icone delle tue app, o le tue |
+
+Se vuoi anche comandi rapidi che partono da soli, senza un tocco, leggi [le automazioni di Comandi di iOS 27 per la schermata Home](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Domande frequenti
+
+**Quando tocco l'azione si apre l'app Comandi?**
+No. Su iOS 27 l'azione viene eseguita direttamente dal widget, e il widget resta com'era.
+
+**Funziona su iOS 26 o versioni precedenti?**
+No. Le azioni nei widget e l'Pannello azioni richiedono iOS 27. I normali riquadri delle app di WidgetLoft funzionano su iOS 18 e versioni successive.
+
+**Quante azioni può contenere un Pannello azioni?**
+Fino a 64. Quante ne vedi contemporaneamente dipende dalla dimensione del widget che aggiungi.
+
+---
+
+Pronto a trasformare i tuoi comandi rapidi in pulsanti a un tocco? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e crea il tuo primo Pannello azioni.

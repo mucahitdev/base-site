@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Cách đặt ứng dụng ở bất kỳ đâu và để trống ô trong widget iPhone",
+  description:
+    "iOS cho phép để khoảng trống giữa các biểu tượng trên Màn hình chính, nhưng hầu hết widget lấp đầy mọi ô theo thứ tự. Tìm hiểu cách đặt từng ứng dụng vào đúng vị trí bạn muốn trong widget khởi chạy ứng dụng, kèm ô trống và ô quay lại có thể di chuyển.",
+  keywords: [
+    "đặt ứng dụng tùy ý trong widget iphone",
+    "để trống ô trong widget iphone",
+    "tạo khoảng trống giữa ứng dụng iphone",
+    "bố cục widget tùy chỉnh iphone",
+    "bố cục màn hình chính đẹp ios 27",
+    "di chuyển ứng dụng tự do trong widget",
+  ],
+  ogTitle: "Đặt ứng dụng ở bất kỳ đâu trong widget iPhone",
+  ogDescription:
+    "Chọn một ô trống, thêm ứng dụng vào đó và để khoảng trống ở bất cứ đâu bạn muốn.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách đặt ứng dụng ở bất kỳ đâu và để trống ô trong widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Đặt ứng dụng vào đúng ô trong widget khởi chạy trên iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Mở nhóm của bạn trong WidgetLoft",
+        text: "Mở WidgetLoft, vào tab Nhóm và mở nhóm mà widget của bạn đang hiển thị.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chuyển sang Đặt vào",
+        text: "Trong trình chỉnh sửa nhóm, chọn Đặt vào. Lưới hiển thị mọi ô của widget, kể cả các ô trống.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn một ô trống và thêm ứng dụng",
+        text: "Chạm vào ô trống nơi ứng dụng sẽ nằm, rồi chọn ứng dụng. Nó sẽ vào đúng ô đó.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chủ động để khoảng trống",
+        text: "Những ô bạn không điền sẽ để trống trên widget. Bạn cũng có thể thêm khoảng cách bằng nút hình vuông nét đứt.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Lưu và kiểm tra widget",
+        text: "Xác nhận bằng dấu kiểm. Widget trên Màn hình chính sẽ cập nhật theo bố cục của bạn.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Có thể để khoảng trống giữa các ứng dụng trên Màn hình chính iPhone không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có. Từ iOS 18, bạn có thể kéo biểu tượng đến bất kỳ vị trí nào trên một trang Màn hình chính và để lại khoảng trống. Bên trong widget, ứng dụng tạo ra widget đó quyết định bố cục; WidgetLoft cho phép bạn chọn từng ô bằng Đặt vào.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Chạm vào ô trống có mở gì không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Do bạn quyết định. Một công tắc trong Sửa tiện ích cho biết chạm vào ô trống có mở WidgetLoft hay không, cho từng widget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Chế độ Đặt vào có dùng được trong thư mục con không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Thư mục con có lưới riêng. Bạn cũng có thể kéo ô quay lại của thư mục con đến bất kỳ ô nào, kể cả ô trống.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách đặt ứng dụng ở bất kỳ đâu và để trống ô trong widget iPhone
+
+**Trả lời nhanh:** Trên chính Màn hình chính, iOS 18 trở lên cho phép bạn kéo biểu tượng đến bất cứ đâu và để lại khoảng trống. Bên trong widget, ứng dụng tạo ra widget đó sẽ quyết định. Trong [WidgetLoft](/widgetloft), mở nhóm của bạn, chuyển sang **Đặt vào**, chạm vào một ô trống và thêm ứng dụng: nó sẽ vào đúng ô đó, còn những ô bạn bỏ qua vẫn để trống trên widget.
+
+Một Màn hình chính gọn gàng thường nhờ vào khoảng trống chứ không phải các biểu tượng. Một hàng có một ứng dụng bên trái và một bên phải nói lên "hai ứng dụng này quan trọng" rõ hơn một lưới kín đặc.
+
+---
+
+## Vì sao hầu hết widget lấp đầy mọi ô
+
+Hầu hết widget khởi chạy ứng dụng hoạt động như một danh sách: ứng dụng đầu tiên vào ô trên cùng bên trái, ứng dụng tiếp theo nằm cạnh nó, và cứ thế. Xóa một ứng dụng là mọi thứ dịch chuyển. Với danh sách dài thì không sao, nhưng sẽ khó tạo những bố cục có chủ đích: một ứng dụng ở góc, một khoảng trống ở giữa, một hàng thẳng với hình nền.
+
+## Từng bước: đặt ứng dụng vào đúng ô
+
+1. **Mở nhóm của bạn.** Trong WidgetLoft, vào tab **Nhóm** và mở nhóm mà widget của bạn đang hiển thị.
+2. **Chuyển sang Đặt vào.** Trong trình chỉnh sửa nhóm, chọn **Đặt vào**. Lưới hiển thị mọi ô của widget, kể cả các ô trống.
+3. **Chọn ô, rồi thêm ứng dụng.** Chạm vào ô trống nơi ứng dụng sẽ nằm và chọn ứng dụng. Nó vào ngay chỗ đó.
+4. **Chủ động để khoảng trống.** Những ô bạn không điền sẽ để trống. Để tạo khoảng trống giữa hai ứng dụng trong một danh sách thông thường, nút hình vuông nét đứt sẽ thêm một khoảng cách.
+5. **Lưu.** Xác nhận bằng dấu kiểm. Thay đổi chỉ đến widget sau khi bạn xác nhận.
+
+Muốn ô trống không phản ứng gì? Một công tắc trong **Sửa tiện ích** quyết định chạm vào ô trống có mở WidgetLoft hay không. Đặt riêng cho từng widget.
+
+## Ý tưởng bố cục tận dụng khoảng trống
+
+| Bố cục | Cách tạo |
+| --- | --- |
+| Bốn góc | Widget Lớn, mỗi góc một ứng dụng, còn lại để trống |
+| Một hàng gọn gàng | Widget Vừa, ứng dụng chỉ ở hàng dưới cùng để hình nền lộ ra phía trên |
+| Khung ảnh | Widget Cực lớn (iOS 27), ứng dụng quanh các cạnh, phần giữa để trống |
+| Vùng ngón cái | Ứng dụng chỉ ở nửa dưới, nơi ngón cái với tới khi dùng một tay |
+
+Khoảng trống đẹp nhất khi có ít biểu tượng hơn và lớn hơn. Chọn cỡ biểu tượng lớn hơn trong trình chỉnh sửa nhóm và các ô cũng lớn theo. Để có thêm ý tưởng, xem [ý tưởng Màn hình chính iOS 27](/blog/ios-27-home-screen-ideas), và để dùng cả một trang làm một widget, hãy đọc về [widget Cực lớn của iOS 27](/blog/extra-large-widget-ios-27).
+
+## Thư mục con và ô quay lại
+
+Thư mục con mở ngay tại chỗ trên widget và có lưới riêng. Bên trong một thư mục con, bạn có thể kéo ô quay lại đến bất kỳ ô nào, kể cả ô trống, nên nó không bao giờ phá vỡ bố cục của bạn. Nếu muốn mỗi thư mục con có giao diện khác nhau, hãy xem [cách tạo giao diện riêng cho từng thư mục con](/blog/customize-sub-folders-iphone-widget).
+
+## Câu hỏi thường gặp
+
+**Có thể để khoảng trống giữa các ứng dụng trên Màn hình chính iPhone không?**
+Có. Từ iOS 18, bạn có thể kéo biểu tượng đến bất kỳ vị trí nào trên một trang và để lại khoảng trống. Bên trong widget, ứng dụng tạo ra widget đó quyết định; WidgetLoft cho phép bạn chọn từng ô bằng Đặt vào.
+
+**Chạm vào ô trống có mở gì không?**
+Do bạn quyết định. Một công tắc trong Sửa tiện ích cho phép đặt riêng cho từng widget.
+
+**Đặt vào có dùng được trong thư mục con không?**
+Thư mục con có lưới riêng, và ô quay lại có thể đặt ở bất kỳ ô nào, kể cả ô trống.
+
+---
+
+Sẵn sàng thiết kế widget từng ô một? [Tải WidgetLoft trên App Store](/widgetloft/download) và thử Đặt vào.

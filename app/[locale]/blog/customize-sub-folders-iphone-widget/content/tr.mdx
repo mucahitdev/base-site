@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "iPhone Widget'ında Her Alt Klasöre Kendi Görünümünü Verme",
+  description:
+    "Widget içindeki klasörlerin artık hepsi aynı görünmek zorunda değil. Her alt klasöre kendi ikon boyutunu, uygulama adlarını, aralıklarını ve renklerini, ayrıca özel bir klasör ikonu, geri kutucuğu ve açılış animasyonu vermeyi anlatıyoruz.",
+  keywords: [
+    "iphone widget klasör özelleştirme",
+    "iphone alt klasör widget",
+    "iphone klasör rengi değiştirme",
+    "iphone widget klasör ikonu",
+    "iç içe klasör widget görünümü",
+    "ios 27 klasör özelleştirme",
+  ],
+  ogTitle: "Her Alt Klasöre Kendi Görünümünü Verin",
+  ogDescription:
+    "İkon boyutu, adlar, aralık, renkler, klasör ikonu ve geri kutucuğu, her alt klasör için ayrı ayrı.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone Widget'ında Her Alt Klasöre Kendi Görünümünü Verme",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone başlatıcı widget'ında her alt klasörü özelleştirin",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Alt klasörü açın",
+        text: "WidgetLoft'ta grubu açın, ardından değiştirmek istediğiniz alt klasörü açın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Görünüm'ü açın",
+        text: "Görünüm'e dokunun. Alt klasörün kendi ikon boyutunu, uygulama adlarını, aralıklarını ve renklerini ayarlayın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Klasör kutucuğunu seçin",
+        text: "Klasör kutucuğunun dışarıdan nasıl görüneceğini seçin: içindeki uygulamalardan oluşan 2×2 veya 3×3 mini ızgara, kendi fotoğrafınız ya da bir SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Geri kutucuğunu biçimlendirin",
+        text: "Geri kutucuğunun sembolünü, rengini, arka planını, opaklığını ve boyutunu düzenleyin, ardından Bu Görünümü Kullan ile bu klasöre, gruba veya tüm gruplara uygulayın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Açılış animasyonunu seçin",
+        text: "WidgetLoft Ayarlar'ında Alt klasör geçişi seçeneğini Kaydır, Solma, Yakınlaştır veya Anında yapın.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone'da klasör içindeki klasörler farklı görünebilir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple'ın klasörleriyle hayır, hepsi aynı görünür. Bir WidgetLoft widget'ında ise her alt klasörün kendi ikon boyutu, uygulama adları, aralıkları ve renkleri olabilir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Kaç alt klasör oluşturabilirim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Her klasör en fazla 100 uygulama ve 20 alt klasör alır, iç içe geçme derinliğinde sınır yoktur.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Alt klasörler bildirim noktası gösterir mi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet, iOS 27'de. İçindeki bir uygulamada nokta varsa klasör de nokta gösterir ve varsayılan olarak üzerinde bildirim sayısı yazar.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Widget'ında Her Alt Klasöre Kendi Görünümünü Verme
+
+**Kısa cevap:** Apple'ın Ana Ekran klasörlerinin hepsi aynı görünür. Bir [WidgetLoft](/widgetloft) widget'ında ise artık her alt klasörün kendi stili olabilir: alt klasörü açın, **Görünüm**'e (Görünüm) dokunun ve kendi ikon boyutunu, uygulama adlarını, aralıklarını ve renklerini ayarlayın. Klasör kutucuğuna bir fotoğraf veya sembol de verebilir, geri kutucuğunu yeniden biçimlendirebilir ve klasörlerin nasıl açılacağını seçebilirsiniz.
+
+Büyük, renkli ikonlu bir "Oyunlar" klasörü ile küçük, sade ikonlu bir "İş" klasörü bir bakışta daha kolay okunur. Artık ikisi de tek bir widget'ta durabilir.
+
+---
+
+## Alt klasörlere neden kendi görünümlerini vermeli
+
+Alt klasörler, bir widget'ın yuva sayısından çok daha fazla uygulama taşımasını sağlar: her klasör en fazla 100 uygulama ve 20 alt klasör alır, iç içe geçme derinliğinde sınır yoktur. Widget'taki bir klasöre dokunduğunuzda klasör yerinde açılır.
+
+Eskiden sorun, her seviyenin aynı görünmesiydi. 6 uygulamalı bir klasör, 40 uygulamalı bir klasörle aynı minik ikonlara sahipti. Alt klasör başına görünümle kısa bir klasör büyük ikonlar, uzun bir klasör de her şeyi tek ekrana sığdırmak için küçük ikonlar kullanabilir.
+
+## Adım adım: bir alt klasörü biçimlendirin
+
+1. **Alt klasörü açın.** WidgetLoft'ta grubu, ardından değiştirmek istediğiniz alt klasörü açın.
+2. **Görünüm'e dokunun.** Bu alt klasörün kendi **ikon boyutunu**, **uygulama adlarını** (açık veya kapalı), **aralıklarını** ve **renklerini** ayarlayın. Grubun geri kalanı olduğu gibi kalır.
+3. **Klasör kutucuğunu seçin.** Klasörün dışarıdan nasıl görüneceğini seçin: içindeki uygulamalardan oluşan 2×2 veya 3×3 mini ızgara, kendi fotoğrafınız ya da bir SF Symbol.
+4. **Geri kutucuğunu biçimlendirin.** Sembolünü, rengini, arka planını, opaklığını ve boyutunu seçin ve istediğiniz yuvaya sürükleyin. **Bu Görünümü Kullan** altında bu görünümü bu klasöre, bu gruba veya tüm gruplara uygulayın ve yeni alt klasörlerin bu görünümle başlayıp başlamayacağını seçin.
+5. **Animasyonu seçin.** WidgetLoft **Ayarlar**'ında **Alt klasör geçişi** seçeneğini Kaydır, Solma, Yakınlaştır veya Anında yapın. En hızlısı Anında.
+
+## Neyi nerede değiştirebilirsiniz
+
+| Ayar | Nerede | Neye uygulanır |
+| --- | --- | --- |
+| İkon boyutu, adlar, aralık, renkler | Alt klasör → Görünüm | O alt klasöre |
+| Klasör kutucuğu (mini ızgara, fotoğraf, sembol) | Alt klasör ayarları | Dışarıdan nasıl göründüğüne |
+| Geri kutucuğu | Alt klasör → geri kutucuğu | Klasöre, gruba veya tüm gruplara |
+| Açılış animasyonu | Ayarlar → Alt klasör geçişi | Tüm widget'lara |
+
+Sonradan yeniden düzenlemeniz mi gerekiyor? Bir alt klasörü başka bir gruba taşıyabilir ya da kopyalayabilirsiniz; içindeki her şey de onunla gider. İç içe klasörlerde yeni misiniz? [iPhone'da klasör içine klasör nasıl konur](/blog/folders-inside-folders-iphone) yazımızla başlayın.
+
+## Klasörlerde noktalar
+
+iOS 27'de, içindeki bir uygulamada bildirim noktası varsa klasör de nokta gösterir; böylece iki seviye derinde saklı bir mesajı kaçırmazsınız. Varsayılan olarak kaç bildirim geldiğini gösterir; düz bir nokta için **Ayarlar → Bildirim Noktaları → Sayıyı göster** seçeneğini kapatın. Kurulumun tamamı için [widget'larda bildirim rozetleri](/blog/notification-badges-on-widgets-iphone) yazımızı okuyun.
+
+## Sık sorulan sorular
+
+**iPhone'da klasör içindeki klasörler farklı görünebilir mi?**
+Apple'ın klasörleriyle hayır. Bir WidgetLoft widget'ında ise her alt klasörün kendi ikon boyutu, uygulama adları, aralıkları ve renkleri olabilir.
+
+**Kaç alt klasör oluşturabilirim?**
+Her klasör en fazla 100 uygulama ve 20 alt klasör alır, derinlik sınırı yoktur.
+
+**Alt klasörler bildirim noktası gösterir mi?**
+Evet, iOS 27'de. İçindeki bir uygulamada nokta varsa klasör de nokta gösterir ve varsayılan olarak bildirim sayısını yazar.
+
+---
+
+Her klasöre kendi stilini vermeye hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve bir alt klasörün Görünüm ayarlarını açın.

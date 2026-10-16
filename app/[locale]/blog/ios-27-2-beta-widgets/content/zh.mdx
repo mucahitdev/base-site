@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "iOS 27.2 Beta：有哪些新功能，值得安装吗？（附小组件 Bug）",
+  description:
+    "iOS 27.2 正处于 Beta 测试阶段，Siri AI 新增五种语言，还有“排除的 App”列表等改动。本文介绍新功能、需要注意的小组件 Bug，以及如何决定是否安装 Beta 版。",
+  keywords: [
+    "ios 27.2 beta",
+    "ios 27.2 新功能",
+    "ios 27.2 beta 值得升级吗",
+    "ios 27.2 小组件 bug",
+    "ios 27.2 正式版 发布时间",
+    "ios 27.1 iphone duo",
+  ],
+  ogTitle: "iOS 27.2 Beta：有哪些新功能，值得安装吗？",
+  ogDescription:
+    "新功能、让图块失去响应的小组件 Bug，以及如何在修复前继续使用 iOS 27。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "iOS 27.2 Beta：有哪些新功能，值得安装吗？（附小组件 Bug）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/zh/blog/ios-27-2-beta-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "决定是否安装 iOS 27.2 Beta，并绕过小组件 Bug",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "查看当前版本",
+        text: "打开设置、通用、关于本机，查看 iOS 版本。如果显示 27.0 或 27.0.x，说明你使用的是正式版。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "查看 Beta 版更新是否开启",
+        text: "打开设置、通用、软件更新、Beta 版更新。显示关闭表示你只会收到正式版。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "安装任何 Beta 版前先备份",
+        text: "先用 iCloud 或电脑备份。在 Beta 版上创建的备份无法恢复到较旧的 iOS 版本。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "如果已经在用 Beta 版，就用临时解决办法",
+        text: "如果轻点操作后小组件图块失去响应，滑到另一页主屏幕再滑回来，图块就能恢复正常。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "关闭 Beta 版更新以退出",
+        text: "把 Beta 版更新设为关闭。iOS 27.2 正式版推出后安装它，就退出了 Beta 测试通道。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iOS 27.2 什么时候发布？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple 尚未公布日期。第四个 Beta 版于 2026 年 10 月中旬推出，据报道正式版预计会在今年秋季晚些时候发布。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iOS 27.1 去哪了？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "对大多数 iPhone，Apple 直接跳到了 iOS 27.2 Beta。iPhone Duo 出厂预装 iOS 27.1，该版本加入了它的折叠屏界面。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "为什么在 iOS 27.2 Beta 上小组件图块会失灵？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "在 Beta 版上，轻点小组件中的操作后，该小组件里的其他图块可能会失去响应。这是一个已报告给 Apple 的 iOS Bug。切换主屏幕页面后，图块就能恢复正常。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27.2 Beta：有哪些新功能，值得安装吗？（附小组件 Bug）
+
+**快速回答：** 截至 2026 年 10 月中旬，iOS 27.2 仍处于 Beta 阶段。它带来了法语、日语、韩语、葡萄牙语和西班牙语的 Siri AI，用于 Siri 和搜索的**排除的 App** 列表，以及播客、时钟和 Apple TV App 中的一些小改动。重新设计的健康 App 出现在早期 Beta 版中，但在 Beta 4 中又被撤下。如果你经常使用交互式小组件，建议先等等：在 Beta 版上，轻点小组件中的操作后，该小组件里的其他图块可能会失去响应，直到你切换主屏幕页面。
+
+新 Beta 总是很诱人，尤其是在大版本刚发布之后。下面告诉你能得到什么、可能出什么问题，以及如何做决定。
+
+---
+
+## 为什么 iOS 27.2 比 27.1 先来
+
+iOS 27 于 2026 年 9 月 14 日发布。几天后，Apple 开始测试的是 iOS 27.2，而不是 27.1。原因在于 iPhone Duo：它将于 10 月 23 日发售，预装加入折叠屏界面的 iOS 27.1。对于其他 iPhone，下一个大更新就是 iOS 27.2。
+
+## iOS 27.2 Beta 有哪些新功能
+
+- **Siri AI 支持更多语言。** iOS 27 推出时 Siri AI 只支持英语。27.2 Beta 新增了法语、日语、韩语、葡萄牙语和西班牙语。
+- **排除的 App。** 在 Siri 设置中，“App 访问权限”现在改名为“排除的 App”，并且可以一次添加多个 App。被排除的 App 不会再出现在 Siri、搜索或建议中。
+- **播客。** “接下来播放”变成了“新单集”，下方还新增了一行“继续播放”。
+- **Apple TV App。** 在 iPhone 和 iPad 上新增了简单的个人资料，每个都可以设置名称和分级限制。
+- **时钟。** 闹钟上的“上午”和“下午”标签变小了。
+- **健康 App（再次撤下）。** 早期 Beta 版中有一个重新设计的健康 App，包含“洞察”“长寿”和“浏览”标签页。Beta 4 把它撤下了，Apple 表示它仍会在今年晚些时候推出。
+
+## 需要注意的小组件 Bug
+
+在 iOS 27.2 Beta 上，轻点小组件中的**操作**（运行某项功能的按钮，例如快捷指令）后，该小组件里的其他图块会失去响应。[WidgetLoft](/widgetloft) 的开发者发现了这个问题，确认原因在 iOS 而不在他们的 App，并已报告给 Apple，因此其他带按钮的小组件也可能受到影响。
+
+临时解决办法很简单：滑到另一页主屏幕再滑回来，图块就能恢复正常。如果你的主屏幕是围绕[小组件中的一键操作](/blog/run-shortcuts-from-widget-iphone)搭建的，这个 Bug 每天都会让你烦恼，所以这就是暂时留在 iOS 27 的好理由。
+
+## 分步操作：做决定并保证安全
+
+1. **查看版本。** 打开**设置 → 通用 → 关于本机**。如果显示 27.0 或 27.0.x，说明你使用的是正式版。
+2. **查看 Beta 版更新。** 打开**设置 → 通用 → 软件更新 → Beta 版更新**。显示关闭表示你只会收到正式版。
+3. **先备份。** 安装任何 Beta 版之前，先用 iCloud 或电脑备份。在 Beta 版上创建的备份无法恢复到较旧的 iOS。
+4. **已经在用 Beta 版？用临时解决办法。** 如果轻点操作后图块失去响应，切换页面再回来。
+5. **退出 Beta 测试通道。** 把 **Beta 版更新**设为**关闭**。iOS 27.2 正式版推出后安装它，你就回到了正常更新。
+
+## 现在安装还是再等等？
+
+| 如果你…… | 建议 |
+| --- | --- |
+| 现在就想用法语、日语、韩语、葡萄牙语或西班牙语的 Siri AI | 目前只能通过 Beta 版 |
+| 每天都在用带按钮和操作的小组件 | 等待正式版 |
+| 用 iPhone 工作或出行 | 再等等，Beta 版可能会让你依赖的 App 出问题 |
+| 有一台备用 iPhone 或 iPad | 先在那台设备上试试 |
+
+## 常见问题
+
+**iOS 27.2 什么时候发布？**
+Apple 尚未公布日期。第四个 Beta 版于 2026 年 10 月中旬推出，据报道正式版预计会在今年秋季晚些时候发布。
+
+**iOS 27.1 去哪了？**
+对大多数 iPhone，Apple 直接跳到了 iOS 27.2 Beta。iPhone Duo 出厂预装 iOS 27.1，该版本加入了它的折叠屏界面。
+
+**为什么在 iOS 27.2 Beta 上小组件图块会失灵？**
+轻点小组件中的操作后，该小组件里的其他图块可能会失去响应。这是一个已报告给 Apple 的 iOS Bug。切换主屏幕页面后就能恢复正常。
+
+---
+
+暂时留在 iOS 27？看看 [iOS 27 小组件有哪些新变化](/blog/ios-27-widgets-whats-new)，把它用到极致，或者[在 App Store 下载 WidgetLoft](/widgetloft/download)，搭建一个现在就能用的启动器。

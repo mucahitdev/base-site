@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Comment lancer des raccourcis depuis un widget en un toucher sur iPhone (iOS 27)",
+  description:
+    "iOS 27 permet aux widgets d'exécuter des raccourcis et des actions d'apps sans ouvrir l'app Raccourcis. Découvrez comment ajouter des actions à un widget lanceur, créer un Tableau d'actions et placer les mêmes boutons sur l'écran verrouillé.",
+  keywords: [
+    "lancer un raccourci depuis un widget iphone",
+    "widget raccourcis ios 27",
+    "raccourci sans ouvrir l'app raccourcis",
+    "widget actions d'apps iphone",
+    "widget boutons raccourcis iphone",
+    "raccourci écran verrouillé iphone",
+  ],
+  ogTitle: "Lancer des raccourcis depuis un widget en un toucher (iOS 27)",
+  ogDescription:
+    "Réunissez raccourcis, actions d'apps et apps dans un seul widget, sur l'écran d'accueil ou l'écran verrouillé.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Comment lancer des raccourcis depuis un widget en un toucher sur iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/fr/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Lancer des raccourcis et des actions d'apps depuis un widget iPhone en un toucher",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Passer à iOS 27",
+        text: "Exécuter des actions directement depuis un widget nécessite iOS 27. Mettez à jour dans Réglages, Général, Mise à jour logicielle.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ouvrir Modifier le widget sur votre widget de groupe",
+        text: "Maintenez le doigt sur votre widget de groupe WidgetLoft, touchez Modifier le widget et ouvrez Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter des raccourcis, des actions d'apps ou des apps",
+        text: "Ajoutez vos propres raccourcis, les actions d'une app comme Régler un minuteur, ou une app. Elles apparaissent sous forme de tuiles après les tuiles du groupe.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Placer une action où vous voulez",
+        text: "Dans WidgetLoft, ouvrez le groupe, touchez le bouton éclair (Ajouter une action de widget), choisissez l'action et faites glisser sa tuile n'importe où dans la grille.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ajouter un Tableau d'actions pour un widget composé uniquement d'actions",
+        text: "Ajoutez le widget Tableau d'actions de WidgetLoft à l'écran d'accueil ou à l'écran verrouillé, puis maintenez le doigt dessus, touchez Modifier le widget, choisissez un tableau sous Style et ajoutez vos actions.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "L'app Raccourcis s'ouvre-t-elle quand je touche l'action ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. Sous iOS 27, l'action s'exécute directement depuis le widget, et le widget reste tel quel.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Cela fonctionne-t-il sous iOS 26 ou version antérieure ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non. Les actions dans les widgets et l'Tableau d'actions nécessitent iOS 27. Les tuiles d'apps classiques de WidgetLoft fonctionnent sous iOS 18 et versions ultérieures.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Combien d'actions peut contenir un Tableau d'actions ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Un tableau contient jusqu'à 64 actions. Le nombre visible en même temps dépend de la taille du widget que vous ajoutez.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment lancer des raccourcis depuis un widget en un toucher sur iPhone (iOS 27)
+
+**Réponse rapide :** Sous iOS 27, un widget peut exécuter un raccourci ou une action d'app sans ouvrir l'app Raccourcis. Dans [WidgetLoft](/widgetloft), maintenez le doigt sur un widget de groupe, touchez **Modifier le widget**, ouvrez **Actions** et ajoutez vos raccourcis, des actions d'apps (comme Régler un minuteur) ou des apps. Elles se placent à côté de vos tuiles d'apps et s'exécutent en un toucher. Pour un widget composé uniquement de boutons, ajoutez l'**Tableau d'actions**, sur l'écran d'accueil ou l'écran verrouillé.
+
+L'ancien widget Raccourcis faisait le travail, mais il ressemblait toujours à l'app Raccourcis. Désormais, vos raccourcis peuvent vivre dans la même grille que les apps que vous ouvrez chaque jour.
+
+---
+
+## Ce qui change dans iOS 27
+
+iOS 27 permet aux apps de placer des raccourcis et des actions d'apps dans leurs propres widgets, et de les exécuter quand vous touchez. Avant, toucher un raccourci dans un widget tiers ouvrait généralement d'abord l'app Raccourcis, puis exécutait le raccourci.
+
+C'est surtout utile pour les petites tâches répétées : lancer un minuteur, activer un mode Concentration, noter un verre d'eau, envoyer un message « J'arrive ». Un toucher, sans changer d'app.
+
+Si vous créez beaucoup de raccourcis vous-même, iOS 27 apporte aussi une nouvelle façon de les fabriquer en décrivant ce que vous voulez avec des mots simples. Apple a indiqué que certaines fonctions de Raccourcis arriveront dans des mises à jour ultérieures, alors vérifiez ce que votre iPhone affiche sous **Raccourcis → +**.
+
+## Étape par étape : ajouter des actions à un widget lanceur
+
+1. **Passez à iOS 27.** Ouvrez **Réglages → Général → Mise à jour logicielle**. Les actions dans les widgets n'existent pas sur les versions plus anciennes.
+2. **Ouvrez Modifier le widget.** Maintenez le doigt sur votre widget de groupe WidgetLoft et touchez **Modifier le widget**, puis ouvrez **Actions**.
+3. **Ajoutez ce que vous voulez exécuter.** Choisissez vos propres raccourcis, les actions d'une app ou une app. Elles apparaissent sous forme de tuiles après les tuiles du groupe.
+4. **Mettez une action en place.** Dans [WidgetLoft](/widgetloft), ouvrez le groupe et touchez le bouton éclair (**Ajouter une action de widget**). Choisissez l'action et faites glisser sa tuile vers n'importe quel emplacement, même entre deux apps.
+5. **Donnez-lui une icône.** iOS ne fournit aucune icône pour les actions, alors WidgetLoft en cherche une. Si l'une de vos apps porte exactement le nom de l'action, son icône est utilisée. Sinon, vous obtenez des suggestions, ou vous créez la vôtre.
+
+Touchez la tuile sur votre écran d'accueil et l'action s'exécute. Le widget reste tel quel.
+
+## Créer un Tableau d'actions
+
+Parfois, on veut un widget composé uniquement de boutons. C'est l'**Tableau d'actions**.
+
+1. Maintenez le doigt sur un espace vide de l'écran d'accueil, touchez **Modifier**, puis **Ajouter un widget**.
+2. Trouvez WidgetLoft et ajoutez l'**Tableau d'actions** (normal ou Liquid Glass) dans la taille de votre choix.
+3. Le nouveau tableau est vide au départ. Maintenez le doigt dessus, touchez **Modifier le widget**, choisissez un tableau sous **Style** et ajoutez vos actions.
+4. Pour changer l'aspect d'un tableau ou donner des icônes aux actions, ouvrez **Outils → Tableau d'actions** dans WidgetLoft.
+
+Un tableau contient jusqu'à 64 actions. Sur l'écran verrouillé, il existe deux formats : Grand (1 ou 2 rangées) et Petit (une action, ou une grille 2×2). L'écran verrouillé devient ainsi un vrai panneau de contrôle : un toucher pour votre raccourci « je quitte le travail », sans déverrouiller le téléphone ni le chercher.
+
+## Widget Raccourcis ou actions WidgetLoft
+
+| | Widget Raccourcis d'Apple | Actions WidgetLoft (iOS 27) |
+| --- | --- | --- |
+| Mélanger raccourcis et tuiles d'apps | Non | Oui, dans la même grille |
+| Actions d'apps (comme Régler un minuteur) | Non | Oui |
+| Écran verrouillé | Pas sous forme de widget | Tableau d'actions, Grand ou Petit |
+| Icônes personnalisées | Glyphes de Raccourcis | Icônes de vos apps, ou les vôtres |
+
+Si vous voulez aussi des raccourcis qui s'exécutent tout seuls, sans toucher, lisez [les automatisations Raccourcis d'iOS 27 pour votre écran d'accueil](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Questions fréquentes
+
+**L'app Raccourcis s'ouvre-t-elle quand je touche l'action ?**
+Non. Sous iOS 27, l'action s'exécute directement depuis le widget, et le widget reste tel quel.
+
+**Cela fonctionne-t-il sous iOS 26 ou version antérieure ?**
+Non. Les actions dans les widgets et l'Tableau d'actions nécessitent iOS 27. Les tuiles d'apps classiques de WidgetLoft fonctionnent sous iOS 18 et versions ultérieures.
+
+**Combien d'actions peut contenir un Tableau d'actions ?**
+Jusqu'à 64. Le nombre visible en même temps dépend de la taille du widget que vous ajoutez.
+
+---
+
+Prêt à transformer vos raccourcis en boutons à un toucher ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download) et créez votre premier Tableau d'actions.

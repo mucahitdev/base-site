@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "如何在 iPhone 小组件上一键运行快捷指令（iOS 27）",
+  description:
+    "iOS 27 让小组件无需打开快捷指令 App 就能运行快捷指令和 App 操作。本文介绍如何把操作添加到启动器小组件、搭建 操作面板，并把同样的按钮放到锁定屏幕上。",
+  keywords: [
+    "iphone 小组件 运行快捷指令",
+    "ios 27 快捷指令小组件",
+    "不打开快捷指令 运行快捷指令",
+    "iphone 小组件 一键执行",
+    "快捷指令 按钮 小组件",
+    "锁定屏幕 快捷指令 按钮",
+  ],
+  ogTitle: "在小组件上一键运行快捷指令（iOS 27）",
+  ogDescription:
+    "把快捷指令、App 操作和 App 并排放进同一个小组件，主屏幕和锁定屏幕都能用。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何在 iPhone 小组件上一键运行快捷指令（iOS 27）",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 小组件上一键运行快捷指令和 App 操作",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "更新到 iOS 27",
+        text: "直接从小组件运行操作需要 iOS 27。前往设置、通用、软件更新进行更新。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "在分组小组件上打开编辑小组件",
+        text: "长按你的 WidgetLoft 分组小组件，轻点编辑小组件，然后打开 Actions。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "添加快捷指令、App 操作或 App",
+        text: "添加你自己的快捷指令、App 的操作（例如设定计时器）或某个 App。它们会以图块形式排在分组原有图块的后面。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "把操作移到你想要的位置",
+        text: "在 WidgetLoft 中打开分组，轻点闪电按钮（添加小组件操作），选择操作，然后把它的图块拖到网格中的任意位置。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "想要只有操作的小组件，就添加 操作面板",
+        text: "把 WidgetLoft 的 操作面板 小组件添加到主屏幕或锁定屏幕，然后长按它，轻点编辑小组件，在 Style 中选择一个面板并添加操作。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "轻点操作时会打开快捷指令 App 吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不会。在 iOS 27 上，操作直接在小组件中运行，小组件也会停留在原处。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iOS 26 或更早版本能用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "不能。小组件中的操作和 操作面板 需要 iOS 27。WidgetLoft 的普通 App 图块支持 iOS 18 及更高版本。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "一个 操作面板 能放多少个操作？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "一个面板最多可放 64 个操作。一次能看到多少个，取决于你添加的小组件尺寸。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 小组件上一键运行快捷指令（iOS 27）
+
+**快速回答：** 在 iOS 27 上，小组件无需打开快捷指令 App 就能运行快捷指令或 App 操作。在 [WidgetLoft](/widgetloft) 中，长按分组小组件，轻点**编辑小组件**，打开 **操作**，然后添加你的快捷指令、App 操作（例如设定计时器）或 App。它们会和你的 App 图块排在一起，轻点一下即可运行。如果想要一个全是按钮的小组件，就在主屏幕或锁定屏幕上添加 **操作面板**。
+
+以前的快捷指令小组件也能用，但它看起来永远像快捷指令 App。现在，你的快捷指令可以和每天打开的 App 待在同一个网格里。
+
+---
+
+## iOS 27 有什么变化
+
+iOS 27 允许 App 在自己的小组件里放入快捷指令和 App 操作，并在你轻点时直接运行。以前，在第三方小组件上轻点快捷指令，通常会先打开快捷指令 App，然后才运行。
+
+这对那些重复的小事最有用：开始计时、打开专注模式、记录一杯水、发一条“在路上了”的信息。轻点一下，无需切换 App。
+
+如果你自己做了很多快捷指令，iOS 27 还带来了一种新方式：用平常的话描述你想要什么，就能生成快捷指令。Apple 表示部分快捷指令功能会在之后的更新中推出，所以请看看你的 iPhone 上**快捷指令 → +** 里显示了什么。
+
+## 分步操作：给启动器小组件添加操作
+
+1. **更新到 iOS 27。** 打开**设置 → 通用 → 软件更新**。旧版本没有小组件中的操作。
+2. **打开编辑小组件。** 长按 WidgetLoft 分组小组件，轻点**编辑小组件**，然后打开 **操作**。
+3. **添加想要运行的内容。** 选择你自己的快捷指令、某个 App 的操作或一个 App。它们会以图块形式排在分组原有图块的后面。
+4. **把操作移到合适的位置。** 在 [WidgetLoft](/widgetloft) 中打开分组，轻点闪电按钮（**添加小组件操作**）。选择操作，把它的图块拖到任意格子，甚至可以放在两个 App 之间。
+5. **给它一个图标。** iOS 不会给操作提供图标，所以 WidgetLoft 会帮你找。如果你的某个 App 名称与操作完全相同，就使用它的图标；否则会给出建议图标，你也可以自己制作。
+
+在主屏幕上轻点图块，操作就会运行，小组件依然停留在原处。
+
+## 搭建 操作面板
+
+有时你想要一个只有按钮的小组件，这就是 **操作面板**。
+
+1. 长按主屏幕空白处，轻点**编辑**，然后轻点**添加小组件**。
+2. 找到 WidgetLoft，以你喜欢的尺寸添加 **操作面板**（普通版或 Liquid Glass 版）。
+3. 新面板一开始是空的。长按它，轻点**编辑小组件**，在 **样式** 中选择一个面板并添加操作。
+4. 要更改面板外观或给操作设置图标，请在 WidgetLoft 中打开 **工具 → 操作面板**。
+
+一个面板最多可放 64 个操作。在锁定屏幕上有两种形状：Large（1 行或 2 行）和 Small（一个操作，或 2×2 网格）。这让锁定屏幕变成了真正的控制面板：无需解锁手机再去翻找，轻点一下就能运行你的“下班”快捷指令。
+
+## 快捷指令小组件与 WidgetLoft 操作对比
+
+| | Apple 快捷指令小组件 | WidgetLoft 操作（iOS 27） |
+| --- | --- | --- |
+| 快捷指令与 App 图块混排 | 不支持 | 支持，在同一个网格中 |
+| App 操作（例如设定计时器） | 不支持 | 支持 |
+| 锁定屏幕 | 不能作为小组件 | 操作面板，Large 或 Small |
+| 自定图标 | 快捷指令字形 | 来自你的 App 的图标，或你自己的图标 |
+
+如果你还想要无需轻点、自动运行的快捷指令，请阅读[适用于主屏幕的 iOS 27 快捷指令自动化](/blog/ios-27-shortcuts-automations-home-screen)。
+
+## 常见问题
+
+**轻点操作时会打开快捷指令 App 吗？**
+不会。在 iOS 27 上，操作直接在小组件中运行，小组件也会停留在原处。
+
+**iOS 26 或更早版本能用吗？**
+不能。小组件中的操作和 操作面板 需要 iOS 27。WidgetLoft 的普通 App 图块支持 iOS 18 及更高版本。
+
+**一个 操作面板 能放多少个操作？**
+最多 64 个。一次能看到多少个，取决于你添加的小组件尺寸。
+
+---
+
+想把快捷指令变成一键按钮吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，搭建你的第一个 操作面板。

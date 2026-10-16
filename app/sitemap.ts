@@ -16,6 +16,11 @@ const enPosts = [
 
 // Blog posts translated into every locale (same slug per locale).
 const multilingualPosts = [
+  'fastest-way-to-open-apps-iphone-ios-27',
+  'customize-sub-folders-iphone-widget',
+  'place-apps-anywhere-iphone-widget',
+  'ios-27-2-beta-widgets',
+  'run-shortcuts-from-widget-iphone',
   'ipad-app-launcher-widget',
   'ipados-27-multitasking-home-screen',
   'ipad-lock-screen-widgets',

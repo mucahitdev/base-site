@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Cómo dar a cada subcarpeta su propio aspecto en un widget del iPhone",
+  description:
+    "Las carpetas dentro de un widget ya no tienen que verse iguales. Aprende a dar a cada subcarpeta su propio tamaño de icono, nombres de apps, espaciado y colores, además de un icono de carpeta personalizado, un mosaico para volver y una animación de apertura.",
+  keywords: [
+    "personalizar carpeta widget iphone",
+    "subcarpetas widget iphone",
+    "carpetas de distintos colores iphone",
+    "icono de carpeta widget iphone",
+    "aspecto carpetas anidadas widget",
+    "personalizar carpetas iphone ios 27",
+  ],
+  ogTitle: "Da a cada subcarpeta su propio aspecto",
+  ogDescription:
+    "Tamaño de icono, nombres, espaciado, colores, icono de carpeta y mosaico para volver, configurados en cada subcarpeta.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline:
+      "Cómo dar a cada subcarpeta su propio aspecto en un widget del iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/es/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Personalizar cada subcarpeta en un widget lanzador del iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Abre la subcarpeta",
+        text: "En WidgetLoft, abre el grupo y luego la subcarpeta que quieres cambiar.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Abre Aspecto",
+        text: "Toca Aspecto. Define el tamaño de icono, los nombres de apps, el espaciado y los colores propios de la subcarpeta.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige el mosaico de la carpeta",
+        text: "Elige cómo se ve el mosaico de la carpeta desde fuera: una minicuadrícula de 2×2 o 3×3 con sus apps, tu propia foto o un SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Personaliza el mosaico para volver",
+        text: "Edita el símbolo, el color, el fondo, la opacidad y el tamaño del mosaico para volver, y usa Usar este aspecto en para aplicarlo a esta carpeta, al grupo o a todos los grupos.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige la animación de apertura",
+        text: "En los Ajustes de WidgetLoft, pon Transición de subcarpetas en Deslizar, Fundido, Zoom o Instantánea.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Pueden verse distintas las carpetas dentro de carpetas en el iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No con las carpetas de Apple, que se ven todas iguales. En un widget de WidgetLoft, cada subcarpeta puede tener su propio tamaño de icono, nombres de apps, espaciado y colores.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuántas subcarpetas puedo crear?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Cada carpeta admite hasta 100 apps y 20 subcarpetas, y el anidamiento no tiene límite de profundidad.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Las subcarpetas muestran puntos de notificación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí, en iOS 27. Una carpeta muestra un punto cuando una app de su interior tiene uno, con el número de notificaciones por defecto.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cómo dar a cada subcarpeta su propio aspecto en un widget del iPhone
+
+**Respuesta rápida:** Las carpetas de la pantalla de inicio de Apple se ven todas iguales. En un widget de [WidgetLoft](/widgetloft), cada subcarpeta ya puede tener su propio estilo: abre la subcarpeta, toca **Aspecto** y define su propio tamaño de icono, nombres de apps, espaciado y colores. También puedes dar al mosaico de la carpeta una foto o un símbolo, cambiar el estilo del mosaico para volver y elegir cómo se abren las carpetas.
+
+Una carpeta "Juegos" con iconos grandes y coloridos y una carpeta "Trabajo" con iconos pequeños y discretos se leen mejor de un vistazo. Ahora un solo widget puede tener las dos.
+
+---
+
+## Por qué dar a las subcarpetas su propio aspecto
+
+Las subcarpetas permiten que un widget contenga muchas más apps que huecos tiene: cada carpeta admite hasta 100 apps y 20 subcarpetas, y el anidamiento no tiene límite de profundidad. Al tocar una carpeta en el widget, se abre en el sitio.
+
+El problema era que todos los niveles se veían iguales. Una carpeta con 6 apps tenía los mismos iconos diminutos que una con 40. Con un aspecto por subcarpeta, una carpeta corta puede usar iconos grandes y una larga puede usar pequeños para que todo quepa en una pantalla.
+
+## Paso a paso: dale estilo a una subcarpeta
+
+1. **Abre la subcarpeta.** En WidgetLoft, abre el grupo y luego la subcarpeta que quieres cambiar.
+2. **Toca Aspecto.** Define el **tamaño de icono**, los **nombres de apps** (activados o desactivados), el **espaciado** y los **colores** propios de esta subcarpeta. El resto del grupo se queda como está.
+3. **Elige el mosaico de la carpeta.** Elige cómo se ve la carpeta desde fuera: una minicuadrícula de 2×2 o 3×3 con sus apps, tu propia foto o un SF Symbol.
+4. **Personaliza el mosaico para volver.** Elige su símbolo, color, fondo, opacidad y tamaño, y arrástralo a cualquier hueco. En **Usar este aspecto en**, aplícalo a esta carpeta, a este grupo o a todos los grupos, y elige si las subcarpetas nuevas empiezan con él.
+5. **Elige la animación.** En los **Ajustes** de WidgetLoft, pon **Transición de subcarpetas** en Deslizar, Fundido, Zoom o Instantánea. Instantánea es la más rápida.
+
+## Qué puedes cambiar y dónde
+
+| Ajuste | Dónde | Se aplica a |
+| --- | --- | --- |
+| Tamaño de icono, nombres, espaciado, colores | Subcarpeta → Aspecto | Esa subcarpeta |
+| Mosaico de la carpeta (minicuadrícula, foto, símbolo) | Ajustes de la subcarpeta | Cómo se ve desde fuera |
+| Mosaico para volver | Subcarpeta → mosaico para volver | Carpeta, grupo o todos los grupos |
+| Animación de apertura | Ajustes → Transición de subcarpetas | Todos los widgets |
+
+¿Necesitas reorganizar más adelante? Puedes mover una subcarpeta a otro grupo, o copiarla, y todo lo que contiene va con ella. ¿Nuevo en el anidamiento? Empieza por [cómo poner carpetas dentro de carpetas en iPhone](/blog/folders-inside-folders-iphone).
+
+## Puntos en las carpetas
+
+En iOS 27, una carpeta muestra un punto de notificación cuando una app de su interior tiene uno, así no te pierdes un mensaje escondido dos niveles más abajo. Por defecto muestra cuántas notificaciones han llegado; para un punto sin número, desactiva **Ajustes → Puntos de notificación → Mostrar el número**. Para la configuración completa, lee [insignias de notificación en widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Preguntas frecuentes
+
+**¿Pueden verse distintas las carpetas dentro de carpetas en el iPhone?**
+No con las carpetas de Apple. En un widget de WidgetLoft, cada subcarpeta puede tener su propio tamaño de icono, nombres de apps, espaciado y colores.
+
+**¿Cuántas subcarpetas puedo crear?**
+Cada carpeta admite hasta 100 apps y 20 subcarpetas, sin límite de profundidad.
+
+**¿Las subcarpetas muestran puntos de notificación?**
+Sí, en iOS 27. Una carpeta muestra un punto cuando una app de su interior tiene uno, con el número de notificaciones por defecto.
+
+---
+
+¿Listo para dar a cada carpeta su propio estilo? [Descarga WidgetLoft en la App Store](/widgetloft/download) y abre el Aspecto de una subcarpeta.

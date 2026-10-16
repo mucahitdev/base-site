@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Como colocar apps onde quiser e deixar espaços vazios em um widget do iPhone",
+  description:
+    "O iOS deixa você criar espaços entre os ícones da Tela de Início, mas a maioria dos widgets preenche cada espaço em ordem. Veja como colocar cada app no lugar exato que você quer em um widget lançador, com espaços vazios e um bloco de voltar que pode ser movido.",
+  keywords: [
+    "colocar apps em qualquer lugar widget iphone",
+    "espaço vazio no widget iphone",
+    "deixar espaço entre apps iphone",
+    "layout de widget personalizado iphone",
+    "tela de início aesthetic ios 27",
+    "mover apps livremente no widget",
+  ],
+  ogTitle: "Coloque apps onde quiser em um widget do iPhone",
+  ogDescription:
+    "Escolha um espaço vazio, adicione um app ali e deixe espaços onde você quiser.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline:
+      "Como colocar apps onde quiser e deixar espaços vazios em um widget do iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pt/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Colocar apps em espaços exatos de um widget lançador do iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Abra seu grupo no WidgetLoft",
+        text: "Abra o WidgetLoft, vá até a aba Grupos e abra o grupo que o seu widget mostra.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mude para Posicionar",
+        text: "No editor do grupo, escolha Posicionar. A grade mostra todos os espaços do widget, incluindo os vazios.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Escolha um espaço vazio e adicione um app",
+        text: "Toque no espaço vazio onde o app deve ficar e depois escolha o app. Ele vai exatamente para esse espaço.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Deixe espaços de propósito",
+        text: "Os espaços que você não preencher ficam vazios no widget. Você também pode adicionar um espaçador com o botão do quadrado tracejado.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Salve e confira o widget",
+        text: "Confirme com a marca de seleção. O widget da Tela de Início é atualizado com o seu layout.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Dá para deixar espaços vazios entre os apps na Tela de Início do iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sim. Desde o iOS 18 você pode arrastar ícones para qualquer lugar de uma página da Tela de Início e deixar espaços. Dentro de um widget, quem decide é o app do widget; o WidgetLoft deixa você escolher cada espaço com Posicionar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tocar num espaço vazio abre alguma coisa?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Você decide. Um botão em Editar Widget define, para cada widget, se tocar num espaço vazio abre o WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "O modo Posicionar funciona em subpastas?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "As subpastas têm a própria grade. Você também pode arrastar o bloco de voltar de uma subpasta para qualquer espaço, até um vazio.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como colocar apps onde quiser e deixar espaços vazios em um widget do iPhone
+
+**Resposta rápida:** Na própria Tela de Início, o iOS 18 e posterior deixam você arrastar ícones para qualquer lugar e deixar espaços. Dentro de um widget, quem decide é o app que cria o widget. No [WidgetLoft](/widgetloft), abra seu grupo, mude para **Posicionar**, toque num espaço vazio e adicione um app: ele vai exatamente para esse espaço, e os espaços que você pular ficam vazios no widget.
+
+Uma Tela de Início limpa muitas vezes tem mais a ver com o espaço vazio do que com os ícones. Uma fileira com um app à esquerda e outro à direita diz "estes dois importam" melhor do que uma grade cheia.
+
+---
+
+## Por que a maioria dos widgets preenche todos os espaços
+
+A maioria dos widgets lançadores funciona como uma lista: o primeiro app vai para o espaço do canto superior esquerdo, o próximo ao lado, e assim por diante. Remova um app e tudo se desloca. Isso funciona para uma lista longa, mas dificulta layouts planejados: um app num canto, um espaço no meio, uma fileira alinhada com o papel de parede.
+
+## Passo a passo: coloque apps em espaços exatos
+
+1. **Abra seu grupo.** No WidgetLoft, vá até a aba **Grupos** e abra o grupo que o seu widget mostra.
+2. **Mude para Posicionar.** No editor do grupo, escolha **Posicionar**. A grade mostra todos os espaços do widget, incluindo os vazios.
+3. **Escolha um espaço e adicione um app.** Toque no espaço vazio onde o app deve ficar e escolha o app. Ele vai direto para ali.
+4. **Deixe espaços de propósito.** Os espaços que você não preencher ficam vazios. Para um espaço entre dois apps numa lista normal, o botão do quadrado tracejado adiciona um espaçador.
+5. **Salve.** Confirme com a marca de seleção. As mudanças só chegam ao widget depois que você confirma.
+
+Quer que o espaço vazio não faça nada? Um botão em **Editar Widget** decide se tocar num espaço vazio abre o WidgetLoft. Ajuste em cada widget.
+
+## Ideias de layout que usam o espaço vazio
+
+| Layout | Como montar |
+| --- | --- |
+| Quatro cantos | Widget grande, um app em cada canto e todo o resto vazio |
+| Uma fileira limpa | Widget médio, apps só na fileira de baixo para o papel de parede aparecer acima |
+| Moldura para uma foto | Widget Extragrande (iOS 27), apps nas bordas e o meio vazio |
+| Zona do polegar | Apps só na metade de baixo, onde o polegar alcança com uma mão |
+
+Os espaços ficam mais bonitos com menos ícones e maiores. Escolha um tamanho de ícone maior no editor do grupo e os espaços também crescem. Para mais ideias, veja [ideias de Tela de Início para o iOS 27](/blog/ios-27-home-screen-ideas) e, para usar uma página inteira como um único widget, leia sobre o [widget Extragrande do iOS 27](/blog/extra-large-widget-ios-27).
+
+## Subpastas e o bloco de voltar
+
+As subpastas abrem no lugar, dentro do widget, e têm a própria grade. Dentro de uma, você pode arrastar o bloco de voltar para qualquer espaço, até um vazio, então ele nunca estraga o seu layout. Se você quer que cada subpasta tenha um visual diferente, veja [como dar a cada subpasta um visual próprio](/blog/customize-sub-folders-iphone-widget).
+
+## Perguntas frequentes
+
+**Dá para deixar espaços vazios entre os apps na Tela de Início do iPhone?**
+Sim. Desde o iOS 18 você pode arrastar ícones para qualquer lugar de uma página e deixar espaços. Dentro de um widget, quem decide é o app do widget; o WidgetLoft deixa você escolher cada espaço com Posicionar.
+
+**Tocar num espaço vazio abre alguma coisa?**
+Você decide. Um botão em Editar Widget define isso para cada widget.
+
+**O Posicionar funciona em subpastas?**
+As subpastas têm a própria grade, e o bloco de voltar pode ir para qualquer espaço, até um vazio.
+
+---
+
+Pronto para montar seu widget espaço por espaço? [Baixe o WidgetLoft na App Store](/widgetloft/download) e experimente o Posicionar.

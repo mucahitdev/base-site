@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Cara Memberi Tampilan Sendiri untuk Setiap Subfolder di Widget iPhone",
+  description:
+    "Folder di dalam widget tidak perlu lagi tampil sama. Pelajari cara memberi setiap subfolder ukuran ikon, nama app, jarak, dan warnanya sendiri, plus ikon folder khusus, ubin kembali, dan animasi pembukaan.",
+  keywords: [
+    "kustomisasi folder widget iphone",
+    "subfolder widget iphone",
+    "warna folder berbeda iphone",
+    "ikon folder widget iphone",
+    "tampilan folder bersarang widget",
+    "kustomisasi folder iphone ios 27",
+  ],
+  ogTitle: "Beri Tampilan Sendiri untuk Setiap Subfolder",
+  ogDescription:
+    "Ukuran ikon, nama, jarak, warna, ikon folder, dan ubin kembali, diatur per subfolder.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline:
+      "Cara Memberi Tampilan Sendiri untuk Setiap Subfolder di Widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/id/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Mengustomisasi setiap subfolder di widget peluncur iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Buka subfolder",
+        text: "Di WidgetLoft, buka grup, lalu buka subfolder yang ingin Anda ubah.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Buka Tampilan",
+        text: "Ketuk Tampilan. Atur ukuran ikon, nama app, jarak, dan warna khusus untuk subfolder itu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pilih ubin folder",
+        text: "Pilih tampilan ubin folder dari luar: grid mini 2×2 atau 3×3 berisi app-nya, foto Anda sendiri, atau SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Ubah gaya ubin kembali",
+        text: "Edit simbol, warna, latar, opasitas, dan ukuran ubin kembali, lalu gunakan Gunakan Tampilan Ini Untuk untuk menerapkannya ke folder ini, grup ini, atau semua grup.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pilih animasi pembukaan",
+        text: "Di Pengaturan WidgetLoft, setel Transisi subfolder ke Geser, Pudar, Zoom, atau Instan.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Bisakah folder di dalam folder tampil berbeda di iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak dengan folder Apple, yang semuanya tampil sama. Di widget WidgetLoft, setiap subfolder bisa punya ukuran ikon, nama app, jarak, dan warnanya sendiri.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Berapa banyak subfolder yang bisa saya buat?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Setiap folder memuat hingga 100 app dan 20 subfolder, dan tidak ada batas kedalaman.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah subfolder menampilkan titik notifikasi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ya, di iOS 27. Folder menampilkan titik saat ada app di dalamnya yang punya titik, dengan jumlah notifikasi tertera di atasnya secara bawaan.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cara Memberi Tampilan Sendiri untuk Setiap Subfolder di Widget iPhone
+
+**Jawaban singkat:** Folder Layar Utama dari Apple semuanya tampil sama. Di widget [WidgetLoft](/widgetloft), setiap subfolder kini bisa punya gayanya sendiri: buka subfolder, ketuk **Tampilan**, lalu atur ukuran ikon, nama app, jarak, dan warnanya sendiri. Anda juga bisa memberi ubin folder sebuah foto atau simbol, mengubah gaya ubin kembali, dan memilih cara folder terbuka.
+
+Folder "Game" dengan ikon besar yang berwarna-warni dan folder "Kerja" dengan ikon kecil yang kalem lebih mudah dibaca sekilas. Kini satu widget bisa memuat keduanya.
+
+---
+
+## Mengapa subfolder perlu tampilan sendiri
+
+Subfolder memungkinkan satu widget memuat jauh lebih banyak app daripada jumlah slotnya: setiap folder memuat hingga 100 app dan 20 subfolder, dan tidak ada batas kedalaman. Saat Anda mengetuk folder di widget, folder itu terbuka di tempat.
+
+Kendalanya dulu, setiap tingkat tampil sama. Folder berisi 6 app punya ikon mungil yang sama dengan folder berisi 40 app. Dengan tampilan per subfolder, folder yang pendek bisa memakai ikon besar, dan folder yang panjang bisa memakai ikon kecil agar semuanya muat dalam satu layar.
+
+## Langkah demi langkah: atur gaya subfolder
+
+1. **Buka subfolder.** Di WidgetLoft, buka grup, lalu subfolder yang ingin Anda ubah.
+2. **Ketuk Tampilan.** Atur **ukuran ikon**, **nama app** (nyala atau mati), **jarak**, dan **warna** khusus untuk subfolder ini. Bagian lain grup tetap seperti semula.
+3. **Pilih ubin folder.** Pilih tampilan folder dari luar: grid mini 2×2 atau 3×3 berisi app-nya, foto Anda sendiri, atau SF Symbol.
+4. **Ubah gaya ubin kembali.** Pilih simbol, warna, latar, opasitas, dan ukurannya, lalu seret ke slot mana pun. Di **Gunakan Tampilan Ini Untuk**, terapkan ke folder ini, grup ini, atau semua grup, dan pilih apakah subfolder baru langsung memakainya.
+5. **Pilih animasinya.** Di **Pengaturan** WidgetLoft, setel **Transisi subfolder** ke Geser, Pudar, Zoom, atau Instan. Instan adalah yang tercepat.
+
+## Apa yang bisa diubah, dan di mana
+
+| Pengaturan | Lokasi | Berlaku untuk |
+| --- | --- | --- |
+| Ukuran ikon, nama, jarak, warna | Subfolder → Tampilan | Subfolder itu |
+| Ubin folder (grid mini, foto, simbol) | Pengaturan subfolder | Tampilannya dari luar |
+| Ubin kembali | Subfolder → ubin kembali | Folder, grup, atau semua grup |
+| Animasi pembukaan | Pengaturan → Transisi subfolder | Semua widget |
+
+Perlu menata ulang nanti? Anda bisa memindahkan subfolder ke grup lain, atau menyalinnya, dan semua isinya ikut terbawa. Baru mengenal folder bersarang? Mulailah dengan [cara membuat folder di dalam folder di iPhone](/blog/folders-inside-folders-iphone).
+
+## Titik di folder
+
+Di iOS 27, folder menampilkan titik notifikasi saat ada app di dalamnya yang punya titik, jadi Anda tidak melewatkan pesan yang tersembunyi dua tingkat ke dalam. Secara bawaan, titik menampilkan berapa banyak notifikasi yang masuk; untuk titik polos, matikan **Pengaturan → Titik Notifikasi → Tampilkan angka**. Untuk pengaturan lengkapnya, baca [lencana notifikasi di widget](/blog/notification-badges-on-widgets-iphone).
+
+## Pertanyaan umum
+
+**Bisakah folder di dalam folder tampil berbeda di iPhone?**
+Tidak dengan folder Apple. Di widget WidgetLoft, setiap subfolder bisa punya ukuran ikon, nama app, jarak, dan warnanya sendiri.
+
+**Berapa banyak subfolder yang bisa saya buat?**
+Setiap folder memuat hingga 100 app dan 20 subfolder, tanpa batas kedalaman.
+
+**Apakah subfolder menampilkan titik notifikasi?**
+Ya, di iOS 27. Folder menampilkan titik saat ada app di dalamnya yang punya titik, dengan jumlah notifikasi secara bawaan.
+
+---
+
+Siap memberi setiap folder gayanya sendiri? [Unduh WidgetLoft di App Store](/widgetloft/download) dan buka Tampilan di sebuah subfolder.

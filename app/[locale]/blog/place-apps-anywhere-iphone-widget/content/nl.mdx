@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Apps overal plaatsen en lege plekken laten in een iPhone-widget",
+  description:
+    "iOS laat je ruimte tussen symbolen op het beginscherm laten, maar de meeste widgets vullen elke plek op volgorde. Zo zet je elke app precies op de plek die je wilt in een app-starterwidget, met lege plekken en een verplaatsbare terugtegel.",
+  keywords: [
+    "apps vrij plaatsen iphone widget",
+    "lege plek in widget iphone",
+    "ruimte tussen apps iphone",
+    "eigen widget indeling iphone",
+    "aesthetic beginscherm ios 27",
+    "apps vrij verplaatsen widget",
+  ],
+  ogTitle: "Apps overal plaatsen in een iPhone-widget",
+  ogDescription:
+    "Kies een lege plek, zet daar een app neer en laat ruimte waar jij die wilt.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline:
+      "Apps overal plaatsen en lege plekken laten in een iPhone-widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/nl/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Apps op exacte plekken zetten in een app-starterwidget op de iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Open je groep in WidgetLoft",
+        text: "Open WidgetLoft, ga naar het tabblad Groepen en open de groep die je widget toont.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Schakel over naar Plaatsen",
+        text: "Kies Plaatsen in de groepseditor. Het raster toont elke plek van de widget, ook de lege.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kies een lege plek en voeg een app toe",
+        text: "Tik op de lege plek waar de app moet komen en kies de app. Hij komt precies op die plek terecht.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Laat bewust ruimte open",
+        text: "Plekken die je niet vult, blijven leeg op de widget. Je kunt ook een afstandhouder toevoegen met de knop met het gestippelde vierkant.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bewaar en controleer de widget",
+        text: "Bevestig met het vinkje. De widget op het beginscherm wordt bijgewerkt met je indeling.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Kan ik lege plekken tussen apps laten op het beginscherm van de iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ja. Sinds iOS 18 kun je symbolen naar elke plek op een pagina van het beginscherm slepen en ruimte openlaten. In een widget bepaalt de app van de widget de indeling; met Plaatsen kies je in WidgetLoft elke plek zelf.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Opent een tik op een lege plek iets?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dat bepaal jij. Met een schakelaar in Wijzig widget stel je per widget in of een tik op een lege plek WidgetLoft opent.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werkt de modus Plaatsen ook in submappen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Submappen hebben hun eigen raster. Je kunt de terugtegel van een submap ook naar elke plek slepen, zelfs een lege.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Apps overal plaatsen en lege plekken laten in een iPhone-widget
+
+**Kort antwoord:** Op het beginscherm zelf kun je sinds iOS 18 symbolen overal neerzetten en ruimte openlaten. In een widget bepaalt de app die de widget maakt hoe dat gaat. Open in [WidgetLoft](/widgetloft) je groep, schakel over naar **Plaatsen**, tik op een lege plek en voeg een app toe: hij komt precies op die plek, en de plekken die je overslaat blijven leeg op de widget.
+
+Een rustig beginscherm draait vaak om de lege ruimte, niet om de symbolen. Een rij met één app links en één rechts zegt 'deze twee zijn belangrijk' beter dan een vol raster.
+
+---
+
+## Waarom de meeste widgets elke plek vullen
+
+De meeste app-starterwidgets werken als een lijst: de eerste app komt linksboven, de volgende ernaast, enzovoort. Verwijder je een app, dan schuift alles op. Voor een lange lijst is dat prima, maar ontworpen indelingen worden er lastig door: een app in een hoek, een open plek in het midden, een rij die aansluit op je achtergrond.
+
+## Stap voor stap: apps op exacte plekken zetten
+
+1. **Open je groep.** Ga in WidgetLoft naar het tabblad **Groepen** en open de groep die je widget toont.
+2. **Schakel over naar Plaatsen.** Kies **Plaatsen** in de groepseditor. Het raster toont elke plek van de widget, ook de lege.
+3. **Kies een plek en voeg dan een app toe.** Tik op de lege plek waar de app moet komen en kies de app. Hij komt precies daar terecht.
+4. **Laat bewust ruimte open.** Plekken die je niet vult, blijven leeg. Wil je ruimte tussen twee apps in een gewone lijst, dan voegt de knop met het gestippelde vierkant een afstandhouder toe.
+5. **Bewaar.** Bevestig met het vinkje. Je widget krijgt de wijzigingen pas nadat je hebt bevestigd.
+
+Moet de lege ruimte ook echt rustig blijven? Een schakelaar in **Wijzig widget** bepaalt of een tik op een lege plek WidgetLoft opent. Je stelt het per widget in.
+
+## Indelingsideeën met lege ruimte
+
+| Indeling | Zo maak je hem |
+| --- | --- |
+| Vier hoeken | Grote widget, één app in elke hoek, de rest leeg |
+| Eén strakke rij | Middelgrote widget, apps alleen in de onderste rij zodat je achtergrond erboven zichtbaar blijft |
+| Een foto omlijsten | Extra grote widget (iOS 27), apps langs de randen, het midden leeg |
+| Duimzone | Apps alleen in de onderste helft, waar je duim met één hand bij kan |
+
+Open plekken komen het best tot hun recht met minder, grotere symbolen. Kies een groter symboolformaat in de groepseditor en de plekken worden ook groter. Meer ideeën vind je in [ideeën voor het beginscherm in iOS 27](/blog/ios-27-home-screen-ideas), en wil je een hele pagina als één widget gebruiken, lees dan over de [extra grote widget in iOS 27](/blog/extra-large-widget-ios-27).
+
+## Submappen en de terugtegel
+
+Submappen openen op hun plek in de widget en hebben hun eigen raster. Daarin kun je de terugtegel naar elke plek slepen, zelfs een lege, zodat hij je indeling nooit verstoort. Wil je dat elke submap er anders uitziet? Lees dan [hoe je elke submap een eigen uiterlijk geeft](/blog/customize-sub-folders-iphone-widget).
+
+## Veelgestelde vragen
+
+**Kan ik lege plekken tussen apps laten op het beginscherm van de iPhone?**
+Ja. Sinds iOS 18 kun je symbolen naar elke plek op een pagina slepen en ruimte openlaten. In een widget bepaalt de app van de widget het; met Plaatsen kies je in WidgetLoft elke plek zelf.
+
+**Opent een tik op een lege plek iets?**
+Dat bepaal jij. Met een schakelaar in Wijzig widget stel je het per widget in.
+
+**Werkt Plaatsen ook in submappen?**
+Submappen hebben hun eigen raster, en de terugtegel kan op elke plek staan, zelfs een lege.
+
+---
+
+Klaar om je widget plek voor plek te ontwerpen? [Download WidgetLoft in de App Store](/widgetloft/download) en probeer Plaatsen.

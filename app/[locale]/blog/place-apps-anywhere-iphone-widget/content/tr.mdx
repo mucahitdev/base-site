@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "iPhone Widget'ında Uygulamaları İstediğiniz Yere Koyma ve Boşluk Bırakma",
+  description:
+    "iOS, Ana Ekran ikonları arasında boşluk bırakmanıza izin veriyor ama çoğu widget her yuvayı sırayla dolduruyor. Bir başlatıcı widget'ta her uygulamayı tam istediğiniz yuvaya, boşluklarla ve taşınabilir bir geri kutucuğuyla nasıl koyacağınızı anlatıyoruz.",
+  keywords: [
+    "iphone widget uygulama istediğin yere koyma",
+    "iphone widget boşluk bırakma",
+    "iphone uygulamalar arası boşluk",
+    "iphone özel widget düzeni",
+    "ios 27 estetik ana ekran düzeni",
+    "widget içinde uygulama taşıma",
+  ],
+  ogTitle: "iPhone Widget'ında Uygulamaları İstediğiniz Yere Koyun",
+  ogDescription:
+    "Boş bir yer seçin, oraya bir uygulama ekleyin ve boşlukları istediğiniz yerde bırakın.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone Widget'ında Uygulamaları İstediğiniz Yere Koyma ve Boşluk Bırakma",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone başlatıcı widget'ında uygulamaları tam istediğiniz yuvalara yerleştirin",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Grubunuzu WidgetLoft'ta açın",
+        text: "WidgetLoft'u açın, Gruplar sekmesine gidin ve widget'ınızın gösterdiği grubu açın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Yerleştir moduna geçin",
+        text: "Grup düzenleyicisinde Yerleştir'i seçin. Izgara, boş olanlar dahil widget'ın her yuvasını gösterir.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Boş bir yer seçin ve uygulama ekleyin",
+        text: "Uygulamanın gideceği boş yuvaya dokunun, ardından uygulamayı seçin. Uygulama tam o yuvaya yerleşir.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Bilerek boşluk bırakın",
+        text: "Doldurmadığınız yuvalar widget'ta boş kalır. Kesik çizgili kare düğmesiyle bir ara kutucuk da ekleyebilirsiniz.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kaydedin ve widget'ı kontrol edin",
+        text: "Onay işaretiyle onaylayın. Ana Ekran widget'ı düzeninizle güncellenir.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone Ana Ekranı'nda uygulamalar arasında boşluk bırakabilir miyim?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Evet. iOS 18'den beri ikonları Ana Ekran sayfasında istediğiniz yere sürükleyip boşluk bırakabilirsiniz. Widget'ın içindeki düzene ise widget'ın uygulaması karar verir; WidgetLoft, Yerleştir ile her yuvayı seçmenize izin verir.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Boş bir alana dokunmak bir şey açar mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Siz karar verirsiniz. Widget'ı Düzenle'deki bir anahtar, boş alana dokunmanın WidgetLoft'u açıp açmayacağını her widget için ayrı ayrı belirler.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Yerleştir modu alt klasörlerde çalışır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Alt klasörlerin kendi ızgarası vardır. Bir alt klasörün geri kutucuğunu da boş olanlar dahil istediğiniz yuvaya sürükleyebilirsiniz.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone Widget'ında Uygulamaları İstediğiniz Yere Koyma ve Boşluk Bırakma
+
+**Kısa cevap:** Ana Ekran'ın kendisinde iOS 18 ve sonrası, ikonları istediğiniz yere sürükleyip boşluk bırakmanıza izin veriyor. Bir widget'ın içinde ise karar, widget'ı yapan uygulamanındır. [WidgetLoft](/widgetloft)'ta grubunuzu açın, **Yerleştir** moduna geçin, boş bir yere dokunun ve bir uygulama ekleyin: uygulama tam o yuvaya yerleşir, atladığınız yuvalar da widget'ta boş kalır.
+
+Temiz bir Ana Ekran çoğu zaman ikonlarla değil, boşlukla ilgilidir. Solda bir, sağda bir uygulama olan bir sıra, "bu ikisi önemli" mesajını dolu bir ızgaradan daha iyi verir.
+
+---
+
+## Çoğu widget neden her yuvayı dolduruyor
+
+Çoğu başlatıcı widget bir liste gibi çalışır: ilk uygulama sol üst yuvaya, sıradaki onun yanına gider ve böyle devam eder. Bir uygulamayı kaldırın, her şey kayar. Uzun bir liste için bu sorun değil ama tasarlanmış düzenleri zorlaştırır: köşede bir uygulama, ortada bir boşluk, duvar kâğıdıyla hizalanan bir sıra.
+
+## Adım adım: uygulamaları tam istediğiniz yuvalara koyun
+
+1. **Grubunuzu açın.** WidgetLoft'ta **Gruplar** sekmesine gidin ve widget'ınızın gösterdiği grubu açın.
+2. **Yerleştir'e geçin.** Grup düzenleyicisinde **Yerleştir**'i seçin. Izgara, boş olanlar dahil widget'ın her yuvasını gösterir.
+3. **Önce yeri seçin, sonra uygulamayı ekleyin.** Uygulamanın gideceği boş yuvaya dokunun ve uygulamayı seçin. Tam oraya yerleşir.
+4. **Bilerek boşluk bırakın.** Doldurmadığınız yuvalar boş kalır. Normal bir listede iki uygulama arasında boşluk için kesik çizgili kare düğmesi bir ara kutucuk ekler.
+5. **Kaydedin.** Onay işaretiyle onaylayın. Değişiklikler widget'ınıza ancak onayladıktan sonra yansır.
+
+Boş alanın sessiz kalmasını mı istiyorsunuz? **Widget'ı Düzenle**'deki bir anahtar, boş alana dokunmanın WidgetLoft'u açıp açmayacağını belirler. Bunu her widget için ayrı ayarlayın.
+
+## Boşluğu kullanan düzen fikirleri
+
+| Düzen | Nasıl kurulur |
+| --- | --- |
+| Dört köşe | Büyük widget, her köşede bir uygulama, geri kalan her yer boş |
+| Tek temiz sıra | Orta widget, uygulamalar yalnızca alt sırada, böylece üstte duvar kâğıdı görünür |
+| Fotoğrafa çerçeve | Ekstra Büyük widget (iOS 27), uygulamalar kenarlarda, orta boş |
+| Başparmak bölgesi | Uygulamalar yalnızca alt yarıda, tek elle başparmağınızın yetiştiği yerde |
+
+Boşluklar daha az ama daha büyük ikonlarla en iyi görünür. Grup düzenleyicisinde daha büyük bir ikon boyutu seçin, yuvalar da büyüsün. Daha fazla fikir için [iOS 27 Ana Ekran fikirleri](/blog/ios-27-home-screen-ideas) yazımıza bakın; tam bir sayfayı tek widget olarak kullanmak için de [iOS 27 Ekstra Büyük widget](/blog/extra-large-widget-ios-27) yazımızı okuyun.
+
+## Alt klasörler ve geri kutucuğu
+
+Alt klasörler widget'ın içinde yerinde açılır ve kendi ızgaralarına sahiptir. Birinin içindeyken geri kutucuğunu boş olanlar dahil istediğiniz yuvaya sürükleyebilirsiniz; böylece düzeninizi hiç bozmaz. Her alt klasörün farklı görünmesini istiyorsanız [her alt klasöre kendi görünümünü vermenin yoluna](/blog/customize-sub-folders-iphone-widget) göz atın.
+
+## Sık sorulan sorular
+
+**iPhone Ana Ekranı'nda uygulamalar arasında boşluk bırakabilir miyim?**
+Evet. iOS 18'den beri ikonları sayfada istediğiniz yere sürükleyip boşluk bırakabilirsiniz. Widget'ın içinde ise widget'ın uygulaması karar verir; WidgetLoft, Yerleştir ile her yuvayı seçmenize izin verir.
+
+**Boş bir alana dokunmak bir şey açar mı?**
+Siz karar verirsiniz. Widget'ı Düzenle'deki bir anahtar bunu her widget için ayrı belirler.
+
+**Yerleştir alt klasörlerde çalışır mı?**
+Alt klasörlerin kendi ızgarası vardır ve geri kutucuğu boş olanlar dahil herhangi bir yuvaya gidebilir.
+
+---
+
+Widget'ınızı yuva yuva tasarlamaya hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve Yerleştir'i deneyin.

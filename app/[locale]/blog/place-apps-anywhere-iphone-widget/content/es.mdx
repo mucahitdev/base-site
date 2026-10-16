@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Cómo colocar apps donde quieras y dejar huecos vacíos en un widget del iPhone",
+  description:
+    "iOS te deja dejar huecos entre los iconos de la pantalla de inicio, pero la mayoría de los widgets rellenan cada hueco en orden. Aprende a poner cada app en el sitio exacto que quieras en un widget lanzador, con espacios vacíos y un mosaico para volver que puedes mover.",
+  keywords: [
+    "colocar apps donde quiera widget iphone",
+    "espacios vacíos en widget iphone",
+    "dejar huecos entre apps iphone",
+    "diseño de widget personalizado iphone",
+    "pantalla de inicio estética ios 27",
+    "mover apps libremente en widget",
+  ],
+  ogTitle: "Coloca apps donde quieras en un widget del iPhone",
+  ogDescription:
+    "Elige un hueco vacío, añade una app ahí y deja espacios donde tú quieras.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline:
+      "Cómo colocar apps donde quieras y dejar huecos vacíos en un widget del iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/es/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Colocar apps en huecos exactos de un widget lanzador del iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Abre tu grupo en WidgetLoft",
+        text: "Abre WidgetLoft, ve a la pestaña Grupos y abre el grupo que muestra tu widget.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Cambia a Colocar",
+        text: "En el editor del grupo, elige Colocar. La cuadrícula muestra todos los huecos del widget, incluidos los vacíos.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Elige un hueco vacío y añade una app",
+        text: "Toca el hueco vacío donde debe ir la app y luego elige la app. Se coloca exactamente en ese hueco.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Deja huecos a propósito",
+        text: "Los huecos que no rellenes se quedan vacíos en el widget. También puedes añadir un espaciador con el botón del cuadrado discontinuo.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Guarda y revisa el widget",
+        text: "Confirma con la marca de verificación. El widget de la pantalla de inicio se actualiza con tu diseño.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Puedo dejar espacios vacíos entre apps en la pantalla de inicio del iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí. Desde iOS 18 puedes arrastrar iconos a cualquier lugar de una página de la pantalla de inicio y dejar huecos. Dentro de un widget, decide la app del widget; WidgetLoft te deja elegir cada hueco con Colocar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Tocar un espacio vacío abre algo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tú decides. Un interruptor en Editar widget define si tocar un espacio vacío abre WidgetLoft, para cada widget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿El modo Colocar funciona en las subcarpetas?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Las subcarpetas tienen su propia cuadrícula. También puedes arrastrar el mosaico para volver de una subcarpeta a cualquier hueco, incluso a uno vacío.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cómo colocar apps donde quieras y dejar huecos vacíos en un widget del iPhone
+
+**Respuesta rápida:** En la propia pantalla de inicio, iOS 18 y posteriores te dejan arrastrar iconos a cualquier lugar y dejar huecos. Dentro de un widget, decide la app que crea el widget. En [WidgetLoft](/widgetloft), abre tu grupo, cambia a **Colocar**, toca un hueco vacío y añade una app: se coloca exactamente en ese hueco, y los huecos que te saltes se quedan vacíos en el widget.
+
+Una pantalla de inicio limpia suele depender más del espacio vacío que de los iconos. Una fila con una app a la izquierda y otra a la derecha dice "estas dos importan" mejor que una cuadrícula llena.
+
+---
+
+## Por qué la mayoría de los widgets rellenan todos los huecos
+
+La mayoría de los widgets lanzadores funcionan como una lista: la primera app va al hueco de arriba a la izquierda, la siguiente a su lado, y así sucesivamente. Quitas una app y todo se desplaza. Eso está bien para una lista larga, pero complica los diseños pensados: una app en una esquina, un hueco en el centro, una fila alineada con el fondo de pantalla.
+
+## Paso a paso: coloca apps en huecos exactos
+
+1. **Abre tu grupo.** En WidgetLoft, ve a la pestaña **Grupos** y abre el grupo que muestra tu widget.
+2. **Cambia a Colocar.** En el editor del grupo, elige **Colocar**. La cuadrícula muestra todos los huecos del widget, incluidos los vacíos.
+3. **Elige un hueco y añade una app.** Toca el hueco vacío donde debe ir la app y elige la app. Se coloca justo ahí.
+4. **Deja huecos a propósito.** Los huecos que no rellenes se quedan vacíos. Para dejar un hueco entre dos apps en una lista normal, el botón del cuadrado discontinuo añade un espaciador.
+5. **Guarda.** Confirma con la marca de verificación. Los cambios llegan a tu widget solo después de confirmar.
+
+¿Quieres que el espacio vacío no haga nada? Un interruptor en **Editar widget** decide si tocar un espacio vacío abre WidgetLoft. Se configura en cada widget.
+
+## Ideas de diseño que aprovechan el espacio vacío
+
+| Diseño | Cómo crearlo |
+| --- | --- |
+| Cuatro esquinas | Widget grande, una app en cada esquina y todo lo demás vacío |
+| Una fila limpia | Widget mediano, apps solo en la fila inferior para que se vea el fondo de pantalla encima |
+| Enmarcar una foto | Widget Extragrande (iOS 27), apps alrededor de los bordes y el centro vacío |
+| Zona del pulgar | Apps solo en la mitad inferior, donde llega tu pulgar con una mano |
+
+Los huecos quedan mejor con menos iconos y más grandes. Elige un tamaño de icono mayor en el editor del grupo y los huecos también crecen. Para más ideas, consulta [ideas para la pantalla de inicio de iOS 27](/blog/ios-27-home-screen-ideas), y para usar una página completa como un solo widget, lee sobre el [widget Extragrande de iOS 27](/blog/extra-large-widget-ios-27).
+
+## Subcarpetas y el mosaico para volver
+
+Las subcarpetas se abren en el sitio dentro del widget y tienen su propia cuadrícula. Dentro de una, puedes arrastrar el mosaico para volver a cualquier hueco, incluso a uno vacío, así nunca rompe tu diseño. Si quieres que cada subcarpeta tenga un aspecto distinto, mira [cómo dar a cada subcarpeta su propio aspecto](/blog/customize-sub-folders-iphone-widget).
+
+## Preguntas frecuentes
+
+**¿Puedo dejar espacios vacíos entre apps en la pantalla de inicio del iPhone?**
+Sí. Desde iOS 18 puedes arrastrar iconos a cualquier lugar de una página y dejar huecos. Dentro de un widget, decide la app del widget; WidgetLoft te deja elegir cada hueco con Colocar.
+
+**¿Tocar un espacio vacío abre algo?**
+Tú decides. Un interruptor en Editar widget lo define para cada widget.
+
+**¿Colocar funciona en las subcarpetas?**
+Las subcarpetas tienen su propia cuadrícula, y el mosaico para volver puede ir en cualquier hueco, incluso en uno vacío.
+
+---
+
+¿Listo para diseñar tu widget hueco a hueco? [Descarga WidgetLoft en la App Store](/widgetloft/download) y prueba Colocar.

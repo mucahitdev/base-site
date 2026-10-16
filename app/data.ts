@@ -285,6 +285,44 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title:
+      'The Fastest Ways to Open Apps on iPhone in iOS 27 (Siri AI, Widgets and More)',
+    description:
+      'Siri AI, Spotlight, the Action button, the Dynamic Island and launcher widgets, compared by taps.',
+    link: '/blog/fastest-way-to-open-apps-iphone-ios-27',
+    uid: 'blog-37',
+  },
+  {
+    title: 'How to Give Each Sub-Folder Its Own Look in an iPhone Widget',
+    description:
+      'Icon size, app names, spacing, colors, folder icon and back tile, set per sub-folder.',
+    link: '/blog/customize-sub-folders-iphone-widget',
+    uid: 'blog-36',
+  },
+  {
+    title:
+      'How to Place Apps Anywhere and Leave Empty Spaces in an iPhone Widget',
+    description:
+      'Pick an empty spot, add an app there, and leave gaps where you want them.',
+    link: '/blog/place-apps-anywhere-iphone-widget',
+    uid: 'blog-35',
+  },
+  {
+    title:
+      "iOS 27.2 Beta: What's New and Should You Install It? (Widget Bug Inside)",
+    description:
+      'The new features, a widget bug that makes tiles stop responding, and how to decide.',
+    link: '/blog/ios-27-2-beta-widgets',
+    uid: 'blog-34',
+  },
+  {
+    title: 'How to Run Shortcuts from a Widget in One Tap on iPhone (iOS 27)',
+    description:
+      'Put shortcuts, app actions and apps side by side in one widget, on the Home Screen or the Lock Screen.',
+    link: '/blog/run-shortcuts-from-widget-iphone',
+    uid: 'blog-33',
+  },
+  {
     title: 'How to Turn an iPad Widget Into an App Launcher (Up to 72 Apps)',
     description:
       'The iPad\'s wide Extra Large widget holds up to 72 app tiles, and every tile opens the real app.',

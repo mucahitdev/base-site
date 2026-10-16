@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Cómo ejecutar atajos desde un widget con un toque en iPhone (iOS 27)",
+  description:
+    "iOS 27 permite que los widgets ejecuten atajos y acciones de apps sin abrir la app Atajos. Aprende a añadir acciones a un widget lanzador, crear un Panel de acciones y poner los mismos botones en tu pantalla de bloqueo.",
+  keywords: [
+    "ejecutar atajo desde widget iphone",
+    "widget de atajos ios 27",
+    "atajo sin abrir la app atajos",
+    "acciones de apps en widget iphone",
+    "widget action board",
+    "botón de atajo en pantalla de bloqueo iphone",
+  ],
+  ogTitle: "Ejecuta atajos desde un widget con un toque (iOS 27)",
+  ogDescription:
+    "Pon atajos, acciones de apps y apps juntos en un solo widget, en la pantalla de inicio o en la pantalla de bloqueo.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "es",
+    headline:
+      "Cómo ejecutar atajos desde un widget con un toque en iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/es/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "es",
+    name: "Ejecutar atajos y acciones de apps desde un widget del iPhone con un toque",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Actualiza a iOS 27",
+        text: "Ejecutar acciones directamente desde un widget requiere iOS 27. Actualiza en Ajustes, General, Actualización de software.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Abre Editar widget en tu widget de grupo",
+        text: "Mantén pulsado tu widget de grupo de WidgetLoft, toca Editar widget y abre Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Añade atajos, acciones de apps o apps",
+        text: "Añade tus propios atajos, acciones de una app como Iniciar temporizador, o una app. Aparecen como mosaicos después de los mosaicos del grupo.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Coloca la acción donde quieras",
+        text: "En WidgetLoft, abre el grupo, toca el botón del rayo (Añadir acción de widget), elige la acción y arrastra su mosaico a cualquier lugar de la cuadrícula.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Añade un Panel de acciones para un widget solo de acciones",
+        text: "Añade el widget Panel de acciones de WidgetLoft a la pantalla de inicio o a la pantalla de bloqueo, mantenlo pulsado, toca Editar widget, elige un tablero en Style y añade tus acciones.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "es",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Se abre la app Atajos al tocar la acción?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. En iOS 27 la acción se ejecuta directamente desde el widget, y el widget se queda donde estaba.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Funciona en iOS 26 o anterior?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Las acciones en widgets y el Panel de acciones necesitan iOS 27. Los mosaicos de apps normales de WidgetLoft funcionan en iOS 18 y posteriores.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuántas acciones caben en un Panel de acciones?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Un tablero admite hasta 64 acciones. Cuántas ves a la vez depende del tamaño del widget que añadas.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cómo ejecutar atajos desde un widget con un toque en iPhone (iOS 27)
+
+**Respuesta rápida:** En iOS 27, un widget puede ejecutar un atajo o una acción de una app sin abrir la app Atajos. En [WidgetLoft](/widgetloft), mantén pulsado un widget de grupo, toca **Editar widget**, abre **Acciones** y añade tus atajos, acciones de apps (como Iniciar temporizador) o apps. Se colocan junto a los mosaicos de tus apps y se ejecutan con un toque. Para un widget hecho solo de botones, añade el **Panel de acciones**, en la pantalla de inicio o en la pantalla de bloqueo.
+
+El antiguo widget de Atajos cumplía su función, pero siempre parecía la app Atajos. Ahora tus atajos pueden vivir en la misma cuadrícula que las apps que abres cada día.
+
+---
+
+## Qué cambió en iOS 27
+
+iOS 27 permite que las apps pongan atajos y acciones de apps dentro de sus propios widgets y los ejecuten al tocarlos. Antes, al tocar un atajo en un widget de terceros, normalmente se abría primero la app Atajos y luego se ejecutaba el atajo.
+
+Eso importa sobre todo en las tareas pequeñas y repetidas: iniciar un temporizador, activar un modo de concentración, registrar un vaso de agua, enviar un mensaje de "voy de camino". Un toque, sin cambiar de app.
+
+Si creas muchos atajos propios, iOS 27 también trae una nueva forma de hacerlos: describir lo que quieres con palabras normales. Apple ha dicho que algunas funciones de Atajos llegarán en actualizaciones posteriores, así que revisa lo que muestra tu iPhone en **Atajos → +**.
+
+## Paso a paso: añade acciones a un widget lanzador
+
+1. **Actualiza a iOS 27.** Abre **Ajustes → General → Actualización de software**. Las acciones en widgets no existen en versiones anteriores.
+2. **Abre Editar widget.** Mantén pulsado tu widget de grupo de WidgetLoft, toca **Editar widget** y abre **Acciones**.
+3. **Añade lo que quieras ejecutar.** Elige tus propios atajos, acciones de una app o una app. Aparecen como mosaicos después de los mosaicos del grupo.
+4. **Coloca la acción en su sitio.** En [WidgetLoft](/widgetloft), abre el grupo y toca el botón del rayo (**Añadir acción de widget**). Elige la acción y arrastra su mosaico a cualquier hueco, incluso entre dos apps.
+5. **Dale un icono.** iOS no da iconos a las acciones, así que WidgetLoft busca uno. Si una de tus apps tiene exactamente el mismo nombre que la acción, se usa su icono. Si no, recibes sugerencias o creas el tuyo.
+
+Toca el mosaico en tu pantalla de inicio y la acción se ejecuta. El widget se queda donde estaba.
+
+## Crea un Panel de acciones
+
+A veces quieres un widget hecho solo de botones. Eso es el **Panel de acciones**.
+
+1. Mantén pulsado un espacio vacío de la pantalla de inicio, toca **Editar** y luego **Añadir widget**.
+2. Busca WidgetLoft y añade el **Panel de acciones** (normal o Liquid Glass) en el tamaño que prefieras.
+3. El tablero nuevo empieza vacío. Mantenlo pulsado, toca **Editar widget**, elige un tablero en **Estilo** y añade tus acciones.
+4. Para cambiar el aspecto de un tablero o dar iconos a las acciones, abre **Herramientas → Panel de acciones** en WidgetLoft.
+
+Un tablero admite hasta 64 acciones. En la pantalla de bloqueo hay dos formatos: Large (1 o 2 filas) y Small (una acción o una cuadrícula de 2×2). Así la pantalla de bloqueo se convierte en un verdadero panel de control: un toque para tu atajo de "salgo del trabajo" sin desbloquear el teléfono ni buscarlo.
+
+## Widget de Atajos frente a acciones de WidgetLoft
+
+| | Widget de Atajos de Apple | Acciones de WidgetLoft (iOS 27) |
+| --- | --- | --- |
+| Mezclar atajos con mosaicos de apps | No | Sí, en la misma cuadrícula |
+| Acciones de apps (como Iniciar temporizador) | No | Sí |
+| Pantalla de bloqueo | No como widget | Panel de acciones, Large o Small |
+| Iconos personalizados | Glifos de Atajos | Iconos de tus apps o los tuyos propios |
+
+Si también quieres atajos que se ejecuten solos, sin tocar nada, lee [automatizaciones de Atajos de iOS 27 para tu pantalla de inicio](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Preguntas frecuentes
+
+**¿Se abre la app Atajos al tocar la acción?**
+No. En iOS 27 la acción se ejecuta directamente desde el widget, y el widget se queda donde estaba.
+
+**¿Funciona en iOS 26 o anterior?**
+No. Las acciones en widgets y el Panel de acciones necesitan iOS 27. Los mosaicos de apps normales de WidgetLoft funcionan en iOS 18 y posteriores.
+
+**¿Cuántas acciones caben en un Panel de acciones?**
+Hasta 64. Cuántas ves a la vez depende del tamaño del widget que añadas.
+
+---
+
+¿Listo para convertir tus atajos en botones de un toque? [Descarga WidgetLoft en la App Store](/widgetloft/download) y crea tu primer Panel de acciones.

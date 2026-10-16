@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Cara Menjalankan Pintasan dari Widget dengan Sekali Ketuk di iPhone (iOS 27)",
+  description:
+    "iOS 27 memungkinkan widget menjalankan pintasan dan tindakan app tanpa membuka app Pintasan. Pelajari cara menambahkan tindakan ke widget peluncur, membuat Papan Tindakan, dan memasang tombol yang sama di Layar Terkunci.",
+  keywords: [
+    "jalankan pintasan dari widget iphone",
+    "widget pintasan ios 27",
+    "pintasan tanpa buka app pintasan",
+    "widget tindakan app iphone",
+    "widget action board",
+    "tombol pintasan layar terkunci iphone",
+  ],
+  ogTitle: "Jalankan Pintasan dari Widget dengan Sekali Ketuk (iOS 27)",
+  ogDescription:
+    "Pasang pintasan, tindakan app, dan app berdampingan dalam satu widget, di Layar Utama atau Layar Terkunci.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "id",
+    headline:
+      "Cara Menjalankan Pintasan dari Widget dengan Sekali Ketuk di iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/id/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "id",
+    name: "Menjalankan pintasan dan tindakan app dari widget iPhone dengan sekali ketuk",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Perbarui ke iOS 27",
+        text: "Menjalankan tindakan langsung dari widget memerlukan iOS 27. Perbarui di Pengaturan, Umum, Pemutakhiran Perangkat Lunak.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Buka Edit Widget di widget grup Anda",
+        text: "Tekan lama widget grup WidgetLoft Anda, ketuk Edit Widget, lalu buka Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan pintasan, tindakan app, atau app",
+        text: "Tambahkan pintasan buatan Anda sendiri, tindakan sebuah app seperti Setel Timer, atau sebuah app. Semuanya muncul sebagai ubin setelah ubin milik grup itu sendiri.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pindahkan tindakan ke posisi yang Anda mau",
+        text: "Di WidgetLoft, buka grup, ketuk tombol petir (Tambah Tindakan Widget), pilih tindakannya, lalu seret ubinnya ke mana saja di grid.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tambahkan Papan Tindakan untuk widget yang hanya berisi tindakan",
+        text: "Tambahkan widget Papan Tindakan dari WidgetLoft ke Layar Utama atau Layar Terkunci, lalu tekan lama widget itu, ketuk Edit Widget, pilih papan di bawah Style, dan tambahkan tindakan Anda.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "id",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Apakah app Pintasan terbuka saat saya mengetuk tindakan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak. Di iOS 27, tindakan berjalan langsung dari widget, dan widget tetap di tempatnya.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Apakah ini berfungsi di iOS 26 atau versi lebih lama?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tidak. Tindakan di widget dan Papan Tindakan memerlukan iOS 27. Ubin app biasa di WidgetLoft berfungsi di iOS 18 dan yang lebih baru.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Berapa banyak tindakan yang muat di satu Papan Tindakan?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Satu papan memuat hingga 64 tindakan. Berapa banyak yang terlihat sekaligus bergantung pada ukuran widget yang Anda tambahkan.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cara Menjalankan Pintasan dari Widget dengan Sekali Ketuk di iPhone (iOS 27)
+
+**Jawaban singkat:** Di iOS 27, widget bisa menjalankan pintasan atau tindakan app tanpa membuka app Pintasan. Di [WidgetLoft](/widgetloft), tekan lama widget grup, ketuk **Edit Widget**, buka **Tindakan**, lalu tambahkan pintasan, tindakan app (seperti Setel Timer), atau app. Semuanya berada di samping ubin app Anda dan berjalan dengan sekali ketuk. Untuk widget yang hanya berisi tombol, tambahkan **Papan Tindakan**, di Layar Utama atau Layar Terkunci.
+
+Widget Pintasan yang lama memang menjalankan tugasnya, tetapi tampilannya selalu seperti app Pintasan. Kini pintasan Anda bisa tinggal di grid yang sama dengan app yang Anda buka setiap hari.
+
+---
+
+## Apa yang berubah di iOS 27
+
+iOS 27 memungkinkan app menaruh pintasan dan tindakan app di dalam widget mereka sendiri, lalu menjalankannya saat Anda mengetuk. Sebelumnya, mengetuk pintasan di widget pihak ketiga biasanya membuka app Pintasan terlebih dahulu, baru kemudian menjalankan pintasannya.
+
+Ini paling terasa untuk tugas kecil yang berulang: memulai timer, menyalakan Fokus, mencatat segelas air, mengirim pesan "sedang di jalan". Sekali ketuk, tanpa berpindah app.
+
+Jika Anda sering membuat pintasan sendiri, iOS 27 juga menghadirkan cara baru untuk membuatnya dengan menjelaskan apa yang Anda inginkan dalam kata-kata biasa. Apple menyebut beberapa fitur Pintasan baru hadir di pembaruan berikutnya, jadi periksa apa yang ditampilkan iPhone Anda di **Pintasan → +**.
+
+## Langkah demi langkah: tambahkan tindakan ke widget peluncur
+
+1. **Perbarui ke iOS 27.** Buka **Pengaturan → Umum → Pemutakhiran Perangkat Lunak**. Tindakan di widget tidak ada di versi yang lebih lama.
+2. **Buka Edit Widget.** Tekan lama widget grup WidgetLoft Anda, ketuk **Edit Widget**, lalu buka **Tindakan**.
+3. **Tambahkan apa yang ingin dijalankan.** Pilih pintasan buatan Anda sendiri, tindakan sebuah app, atau sebuah app. Semuanya muncul sebagai ubin setelah ubin milik grup itu sendiri.
+4. **Pindahkan tindakan ke posisinya.** Di [WidgetLoft](/widgetloft), buka grup dan ketuk tombol petir (**Tambah Tindakan Widget**). Pilih tindakannya dan seret ubinnya ke slot mana pun, bahkan di antara dua app.
+5. **Beri ikon.** iOS tidak memberi ikon untuk tindakan, jadi WidgetLoft mencarikannya. Jika salah satu app Anda punya nama yang persis sama dengan tindakan itu, ikonnya yang dipakai. Jika tidak, Anda mendapat saran, atau Anda bisa membuat sendiri.
+
+Ketuk ubinnya di Layar Utama dan tindakan langsung berjalan. Widget tetap di tempatnya.
+
+## Membuat Papan Tindakan
+
+Kadang Anda menginginkan widget yang hanya berisi tombol. Itulah **Papan Tindakan**.
+
+1. Tahan bagian kosong di Layar Utama, ketuk **Edit**, lalu **Tambah Widget**.
+2. Cari WidgetLoft dan tambahkan **Papan Tindakan** (biasa atau Liquid Glass) dalam ukuran yang Anda suka.
+3. Papan baru dimulai dalam keadaan kosong. Tekan lama papan itu, ketuk **Edit Widget**, pilih papan di bawah **Gaya**, lalu tambahkan tindakan Anda.
+4. Untuk mengubah tampilan papan atau memberi ikon pada tindakan, buka **Alat → Papan Tindakan** di WidgetLoft.
+
+Satu papan memuat hingga 64 tindakan. Di Layar Terkunci ada dua bentuk: Besar (1 atau 2 baris) dan Kecil (satu tindakan, atau grid 2×2). Dengan begitu Layar Terkunci menjadi panel kontrol sungguhan: sekali ketuk untuk pintasan "pulang kerja" tanpa membuka kunci ponsel dan mencarinya.
+
+## Widget Pintasan vs tindakan WidgetLoft
+
+| | Widget Pintasan dari Apple | Tindakan WidgetLoft (iOS 27) |
+| --- | --- | --- |
+| Menggabungkan pintasan dengan ubin app | Tidak | Ya, di grid yang sama |
+| Tindakan app (seperti Setel Timer) | Tidak | Ya |
+| Layar Terkunci | Tidak sebagai widget | Papan Tindakan, Besar atau Kecil |
+| Ikon khusus | Glif pintasan | Ikon dari app Anda, atau buatan sendiri |
+
+Jika Anda juga menginginkan pintasan yang berjalan sendiri tanpa diketuk, baca [otomatisasi Pintasan iOS 27 untuk Layar Utama](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Pertanyaan umum
+
+**Apakah app Pintasan terbuka saat saya mengetuk tindakan?**
+Tidak. Di iOS 27, tindakan berjalan langsung dari widget, dan widget tetap di tempatnya.
+
+**Apakah ini berfungsi di iOS 26 atau versi lebih lama?**
+Tidak. Tindakan di widget dan Papan Tindakan memerlukan iOS 27. Ubin app biasa di WidgetLoft berfungsi di iOS 18 dan yang lebih baru.
+
+**Berapa banyak tindakan yang muat di satu Papan Tindakan?**
+Hingga 64. Berapa banyak yang terlihat sekaligus bergantung pada ukuran widget yang Anda tambahkan.
+
+---
+
+Siap mengubah pintasan Anda menjadi tombol sekali ketuk? [Unduh WidgetLoft di App Store](/widgetloft/download) dan buat Papan Tindakan pertama Anda.

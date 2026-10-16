@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Comment placer des apps n'importe où et laisser des espaces vides dans un widget iPhone",
+  description:
+    "iOS permet de laisser des espaces entre les icônes de l'écran d'accueil, mais la plupart des widgets remplissent chaque emplacement dans l'ordre. Découvrez comment mettre chaque app exactement où vous voulez dans un widget lanceur, avec des espaces vides et une tuile retour déplaçable.",
+  keywords: [
+    "placer apps n'importe où widget iphone",
+    "espace vide widget iphone",
+    "laisser des espaces entre les apps iphone",
+    "disposition widget personnalisée iphone",
+    "écran d'accueil esthétique ios 27",
+    "déplacer librement apps widget",
+  ],
+  ogTitle: "Placer des apps n'importe où dans un widget iPhone",
+  ogDescription:
+    "Choisissez un emplacement vide, ajoutez-y une app et laissez des espaces là où vous le voulez.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Comment placer des apps n'importe où et laisser des espaces vides dans un widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/fr/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Placer des apps à des emplacements précis dans un widget lanceur iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Ouvrir votre groupe dans WidgetLoft",
+        text: "Ouvrez WidgetLoft, allez dans l'onglet Groupes et ouvrez le groupe affiché par votre widget.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Passer en mode Placer",
+        text: "Dans l'éditeur du groupe, choisissez Placer. La grille montre tous les emplacements du widget, y compris les vides.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choisir un emplacement vide et ajouter une app",
+        text: "Touchez l'emplacement vide où l'app doit aller, puis choisissez l'app. Elle se place exactement à cet endroit.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Laisser des espaces volontairement",
+        text: "Les emplacements que vous ne remplissez pas restent vides sur le widget. Vous pouvez aussi ajouter un espaceur avec le bouton en carré pointillé.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Enregistrer et vérifier le widget",
+        text: "Validez avec la coche. Le widget de l'écran d'accueil se met à jour avec votre disposition.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Peut-on laisser des espaces vides entre les apps sur l'écran d'accueil de l'iPhone ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui. Depuis iOS 18, vous pouvez faire glisser les icônes vers n'importe quel emplacement d'une page de l'écran d'accueil et laisser des espaces. Dans un widget, c'est l'app du widget qui décide de la disposition ; WidgetLoft vous laisse choisir chaque emplacement avec Placer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Toucher un espace vide ouvre-t-il quelque chose ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "C'est vous qui décidez. Un interrupteur dans Modifier le widget détermine si un toucher sur un espace vide ouvre WidgetLoft, widget par widget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Le mode Placer fonctionne-t-il dans les sous-dossiers ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Les sous-dossiers ont leur propre grille. Vous pouvez aussi faire glisser la tuile retour d'un sous-dossier vers n'importe quel emplacement, même vide.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Comment placer des apps n'importe où et laisser des espaces vides dans un widget iPhone
+
+**Réponse rapide :** Sur l'écran d'accueil lui-même, iOS 18 et versions ultérieures permettent de faire glisser les icônes n'importe où et de laisser des espaces. Dans un widget, c'est l'app qui crée le widget qui décide. Dans [WidgetLoft](/widgetloft), ouvrez votre groupe, passez en mode **Placer**, touchez un emplacement vide et ajoutez une app : elle se place exactement à cet endroit, et les emplacements que vous sautez restent vides sur le widget.
+
+Un écran d'accueil épuré tient souvent à l'espace vide, pas aux icônes. Une rangée avec une app à gauche et une à droite dit « ces deux-là comptent » mieux qu'une grille pleine.
+
+---
+
+## Pourquoi la plupart des widgets remplissent chaque emplacement
+
+La plupart des widgets lanceurs fonctionnent comme une liste : la première app va dans l'emplacement en haut à gauche, la suivante à côté, et ainsi de suite. Retirez une app et tout se décale. C'est très bien pour une longue liste, mais cela complique les dispositions soignées : une app dans un coin, un vide au milieu, une rangée alignée sur le fond d'écran.
+
+## Étape par étape : placer des apps à des emplacements précis
+
+1. **Ouvrez votre groupe.** Dans WidgetLoft, allez dans l'onglet **Groupes** et ouvrez le groupe affiché par votre widget.
+2. **Passez en mode Placer.** Dans l'éditeur du groupe, choisissez **Placer**. La grille montre tous les emplacements du widget, y compris les vides.
+3. **Choisissez un emplacement, puis ajoutez une app.** Touchez l'emplacement vide où l'app doit aller et choisissez l'app. Elle se place pile à cet endroit.
+4. **Laissez des espaces volontairement.** Les emplacements que vous ne remplissez pas restent vides. Pour un espace entre deux apps dans une liste classique, le bouton en carré pointillé ajoute un espaceur.
+5. **Enregistrez.** Validez avec la coche. Les modifications n'arrivent sur votre widget qu'après validation.
+
+Vous voulez que l'espace vide reste inerte ? Un interrupteur dans **Modifier le widget** détermine si un toucher sur un espace vide ouvre WidgetLoft. Réglez-le widget par widget.
+
+## Des idées de disposition qui jouent avec le vide
+
+| Disposition | Comment la créer |
+| --- | --- |
+| Quatre coins | Grand widget, une app dans chaque coin, tout le reste vide |
+| Une rangée épurée | Widget moyen, des apps uniquement sur la rangée du bas pour laisser voir le fond d'écran au-dessus |
+| Encadrer une photo | Widget Très grand (iOS 27), des apps sur les bords, le centre laissé vide |
+| Zone du pouce | Des apps uniquement dans la moitié inférieure, à portée du pouce à une main |
+
+Les espaces rendent mieux avec moins d'icônes, plus grandes. Choisissez une taille d'icône plus grande dans l'éditeur du groupe et les emplacements grandissent aussi. Pour d'autres idées, consultez [des idées d'écran d'accueil pour iOS 27](/blog/ios-27-home-screen-ideas), et pour utiliser une page entière comme un seul widget, lisez notre article sur le [widget Très grand d'iOS 27](/blog/extra-large-widget-ios-27).
+
+## Sous-dossiers et tuile retour
+
+Les sous-dossiers s'ouvrent sur place dans le widget et ont leur propre grille. À l'intérieur, vous pouvez faire glisser la tuile retour vers n'importe quel emplacement, même vide, pour qu'elle ne casse jamais votre disposition. Si vous voulez que chaque sous-dossier ait un look différent, voyez [comment donner à chaque sous-dossier son propre style](/blog/customize-sub-folders-iphone-widget).
+
+## Questions fréquentes
+
+**Peut-on laisser des espaces vides entre les apps sur l'écran d'accueil de l'iPhone ?**
+Oui. Depuis iOS 18, vous pouvez faire glisser les icônes vers n'importe quel emplacement d'une page et laisser des espaces. Dans un widget, c'est l'app du widget qui décide ; WidgetLoft vous laisse choisir chaque emplacement avec Placer.
+
+**Toucher un espace vide ouvre-t-il quelque chose ?**
+C'est vous qui décidez. Un interrupteur dans Modifier le widget le règle widget par widget.
+
+**Placer fonctionne-t-il dans les sous-dossiers ?**
+Les sous-dossiers ont leur propre grille, et la tuile retour peut aller dans n'importe quel emplacement, même vide.
+
+---
+
+Prêt à concevoir votre widget emplacement par emplacement ? [Téléchargez WidgetLoft sur l'App Store](/widgetloft/download) et essayez Placer.

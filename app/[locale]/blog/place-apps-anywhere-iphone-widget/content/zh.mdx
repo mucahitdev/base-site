@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "如何在 iPhone 小组件中随意摆放 App 并留出空位",
+  description:
+    "iOS 允许在主屏幕图标之间留空，但大多数小组件会按顺序填满每个格子。本文介绍如何在启动器小组件中把每个 App 放到你想要的准确位置，并留出空位、自由移动返回按钮。",
+  keywords: [
+    "iphone 小组件 自由摆放 app",
+    "iphone 小组件 留空位",
+    "iphone app 之间留空",
+    "iphone 小组件 自定义布局",
+    "ios 27 主屏幕 布局 美化",
+    "小组件 app 随意排列",
+  ],
+  ogTitle: "在 iPhone 小组件中随意摆放 App",
+  ogDescription:
+    "选一个空格子，把 App 放进去，想在哪里留空就在哪里留空。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何在 iPhone 小组件中随意摆放 App 并留出空位",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 启动器小组件中把 App 放到准确的格子",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "在 WidgetLoft 中打开分组",
+        text: "打开 WidgetLoft，进入分组标签页，打开小组件所显示的分组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "切换到 放置",
+        text: "在分组编辑器中选择 放置。网格会显示小组件的所有格子，包括空格子。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选一个空格子并添加 App",
+        text: "轻点想放 App 的空格子，然后选择 App。它会准确地落在那个格子里。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "有意留出空位",
+        text: "没有填充的格子在小组件上保持空白。你也可以用虚线方框按钮添加一个占位格。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "保存并查看小组件",
+        text: "轻点对勾确认。主屏幕小组件会按你的布局更新。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone 主屏幕上能在 App 之间留空吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "可以。从 iOS 18 起，你可以把图标拖到主屏幕页面的任意位置并留出空位。在小组件内部，布局由小组件所属的 App 决定；WidgetLoft 可以用 放置 让你选择每一个格子。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "轻点空白处会打开什么吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "由你决定。编辑小组件中有一个开关，可以按小组件分别设置轻点空白处时是否打开 WidgetLoft。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "放置 模式在子文件夹中能用吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "子文件夹有自己的网格。你还可以把子文件夹的返回按钮拖到任意格子，空格子也可以。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何在 iPhone 小组件中随意摆放 App 并留出空位
+
+**快速回答：** 在主屏幕本身，iOS 18 及更高版本允许你把图标拖到任意位置并留出空位。而在小组件内部，则由制作小组件的 App 决定。在 [WidgetLoft](/widgetloft) 中，打开你的分组，切换到 **放置**，轻点一个空格子并添加 App：它会准确地落在那个格子里，你跳过的格子在小组件上保持空白。
+
+干净的主屏幕往往靠的是留白，而不是图标。一行里左边一个 App、右边一个 App，比塞满的网格更能表达“这两个最重要”。
+
+---
+
+## 为什么大多数小组件会填满每个格子
+
+大多数启动器小组件像列表一样工作：第一个 App 放在左上角，下一个放在它旁边，依此类推。删掉一个 App，后面的全都往前挪。对长列表来说这没问题，但很难做出精心设计的布局：角落里的一个 App、中间的一块空白、和壁纸对齐的一行。
+
+## 分步操作：把 App 放到准确的格子
+
+1. **打开分组。** 在 WidgetLoft 中进入**分组**标签页，打开小组件所显示的分组。
+2. **切换到 放置。** 在分组编辑器中选择 **放置**。网格会显示小组件的所有格子，包括空格子。
+3. **先选格子，再添加 App。** 轻点想放 App 的空格子，然后选择 App。它就会落在那里。
+4. **有意留出空位。** 没有填充的格子会保持空白。如果想在普通列表的两个 App 之间留空，可以用虚线方框按钮添加一个占位格。
+5. **保存。** 轻点对勾确认。只有确认后，更改才会同步到小组件。
+
+想让空白处保持“安静”？**编辑小组件**中有一个开关，决定轻点空白处时是否打开 WidgetLoft。可以按小组件分别设置。
+
+## 利用留白的布局灵感
+
+| 布局 | 做法 |
+| --- | --- |
+| 四个角 | 大号小组件，每个角放一个 App，其余全部留空 |
+| 干净的一行 | 中号小组件，只在最下面一行放 App，让上方露出壁纸 |
+| 照片相框 | 超大小组件（iOS 27），App 沿边缘排列，中间留空 |
+| 拇指区 | 只在下半部分放 App，单手用拇指就能够到 |
+
+图标越少、越大，留白效果越好。在分组编辑器中选择更大的图标尺寸，格子也会随之变大。更多灵感请看 [iOS 27 主屏幕布局灵感](/blog/ios-27-home-screen-ideas)；想把一整页做成一个小组件，请阅读 [iOS 27 超大小组件](/blog/extra-large-widget-ios-27)。
+
+## 子文件夹与返回按钮
+
+子文件夹会在小组件中原位打开，并拥有自己的网格。在子文件夹里，你可以把返回按钮拖到任意格子，空格子也可以，这样它就不会打乱你的布局。如果想让每个子文件夹看起来都不一样，请看[如何让每个子文件夹拥有自己的外观](/blog/customize-sub-folders-iphone-widget)。
+
+## 常见问题
+
+**iPhone 主屏幕上能在 App 之间留空吗？**
+可以。从 iOS 18 起，你可以把图标拖到页面的任意位置并留出空位。在小组件内部，由小组件所属的 App 决定；WidgetLoft 可以用 放置 让你选择每一个格子。
+
+**轻点空白处会打开什么吗？**
+由你决定。编辑小组件中的开关可以按小组件分别设置。
+
+**放置 在子文件夹中能用吗？**
+子文件夹有自己的网格，返回按钮可以放在任意格子，空格子也可以。
+
+---
+
+想一格一格地设计你的小组件吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，试试 放置。

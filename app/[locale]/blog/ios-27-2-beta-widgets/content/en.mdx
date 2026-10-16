@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "iOS 27.2 Beta: What's New and Should You Install It? (Widget Bug Inside)",
+  description:
+    "iOS 27.2 is in beta with Siri AI in five more languages, an Excluded Apps list and other tweaks. Here is what is new, the widget bug to know about, and how to decide whether to install the beta.",
+  keywords: [
+    "ios 27.2 beta",
+    "ios 27.2 new features",
+    "should i install ios 27.2 beta",
+    "ios 27.2 widget bug",
+    "ios 27.2 release date",
+    "ios 27.1 iphone duo",
+  ],
+  ogTitle: "iOS 27.2 Beta: What's New and Should You Install It?",
+  ogDescription:
+    "The new features, a widget bug that makes tiles stop responding, and how to stay on iOS 27 until the fix.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "iOS 27.2 Beta: What's New and Should You Install It? (Widget Bug Inside)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/blog/ios-27-2-beta-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Decide whether to install the iOS 27.2 beta and work around the widget bug",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Check your current version",
+        text: "Open Settings, General, About and look at iOS Version. If it says 27.0 or 27.0.x you are on the public release.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Check whether beta updates are on",
+        text: "Open Settings, General, Software Update, Beta Updates. Off means you only get public releases.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Back up before any beta",
+        text: "Make an iCloud or computer backup first. A backup made on a beta cannot be restored to an older iOS version.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "If you are already on the beta, use the workaround",
+        text: "If widget tiles stop responding after you tap an action, swipe to another Home Screen page and back. The tiles work again.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Turn off beta updates to leave",
+        text: "Set Beta Updates to Off. When the public iOS 27.2 arrives, install it and you are off the beta track.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "When will iOS 27.2 be released?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple has not announced a date. The fourth beta arrived in mid-October 2026, and reports expect the public release later in the fall.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happened to iOS 27.1?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple skipped straight to iOS 27.2 betas for most iPhones. The iPhone Duo ships with iOS 27.1, which adds its foldable interface.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do my widget tiles stop working on the iOS 27.2 beta?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "On the beta, after you tap an action in a widget, the other tiles in that widget can stop responding. It is an iOS bug that has been reported to Apple. Switching Home Screen pages makes the tiles work again.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27.2 Beta: What's New and Should You Install It? (Widget Bug Inside)
+
+**Quick answer:** iOS 27.2 is in beta as of mid-October 2026. It brings Siri AI in French, Japanese, Korean, Portuguese and Spanish, an **Excluded Apps** list for Siri and Search, and smaller changes in Podcasts, Clock and the Apple TV app. The redesigned Health app was in early betas but was pulled in beta 4. If you rely on interactive widgets, wait: on the beta, tapping an action in a widget can make the other tiles in that widget stop responding until you switch Home Screen pages.
+
+New betas are tempting, especially right after a big release. Here is what you get, what can break, and how to decide.
+
+---
+
+## Why iOS 27.2 came before 27.1
+
+iOS 27 was released on September 14, 2026. A few days later, Apple started testing iOS 27.2, not 27.1. The reason is the iPhone Duo: it ships on October 23 with iOS 27.1, the version that adds the foldable interface. For other iPhones, the next big update is iOS 27.2.
+
+## What's new in the iOS 27.2 beta
+
+- **Siri AI in more languages.** iOS 27 launched Siri AI in English only. The 27.2 beta adds French, Japanese, Korean, Portuguese and Spanish.
+- **Excluded Apps.** In Siri settings, App Access is now called Excluded Apps, and you can add several apps at once. Excluded apps no longer show up in Siri, Search or Suggestions.
+- **Podcasts.** Up Next becomes New Episodes, with a Continue Playing row below it.
+- **Apple TV app.** Simple profiles on iPhone and iPad, each with a name and a rating limit.
+- **Clock.** The a.m. and p.m. labels on alarms are smaller.
+- **Health app (removed again).** Early betas had a redesigned Health app with Insights, Longevity and Browse tabs. Beta 4 took it out, and Apple says it is still coming later this year.
+
+## The widget bug to know about
+
+On the iOS 27.2 beta, after you tap an **action** in a widget (a button that runs something, such as a shortcut), the other tiles in that widget stop responding. The developers of [WidgetLoft](/widgetloft) found it, traced it to iOS rather than to their app, and reported it to Apple, so other widgets with buttons may be affected too.
+
+The workaround is quick: swipe to another Home Screen page and back. The tiles work again. If your Home Screen is built around [one-tap actions in widgets](/blog/run-shortcuts-from-widget-iphone), the bug will annoy you every day, so it is a good reason to stay on iOS 27 for now.
+
+## Step-by-step: decide and stay safe
+
+1. **Check your version.** Open **Settings → General → About**. If it says 27.0 or 27.0.x, you are on the public release.
+2. **Check Beta Updates.** Open **Settings → General → Software Update → Beta Updates**. Off means you only get public releases.
+3. **Back up first.** Before any beta, make an iCloud or computer backup. A backup made on a beta cannot be restored to an older iOS.
+4. **Already on the beta? Use the workaround.** If tiles stop responding after an action, switch pages and come back.
+5. **Leave the beta track.** Set **Beta Updates** to **Off**. When the public iOS 27.2 arrives, install it and you are back on normal updates.
+
+## Install now or wait?
+
+| You... | Recommendation |
+| --- | --- |
+| Want Siri AI in French, Japanese, Korean, Portuguese or Spanish now | The beta is the only way today |
+| Use widgets with buttons and actions every day | Wait for the public release |
+| Use your iPhone for work or travel | Wait, betas can break apps you depend on |
+| Have a spare iPhone or iPad | Try it there first |
+
+## Common questions
+
+**When will iOS 27.2 be released?**
+Apple has not announced a date. The fourth beta arrived in mid-October 2026, and reports expect the public release later in the fall.
+
+**What happened to iOS 27.1?**
+Apple went straight to iOS 27.2 betas for most iPhones. The iPhone Duo ships with iOS 27.1, which adds its foldable interface.
+
+**Why do my widget tiles stop working on the iOS 27.2 beta?**
+After you tap an action in a widget, the other tiles in that widget can stop responding. It is an iOS bug that has been reported to Apple. Switching Home Screen pages makes them work again.
+
+---
+
+Staying on iOS 27 for now? Make the most of it with [what's new for widgets in iOS 27](/blog/ios-27-widgets-whats-new), or [download WidgetLoft on the App Store](/widgetloft/download) and build a launcher that works today.

@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "Bêta d'iOS 27.2 : quoi de neuf et faut-il l'installer ? (bug des widgets inclus)",
+  description:
+    "iOS 27.2 est en bêta avec Siri AI dans cinq langues de plus, une liste Apps exclues et d'autres ajustements. Voici les nouveautés, le bug des widgets à connaître et comment décider d'installer ou non la bêta.",
+  keywords: [
+    "ios 27.2 bêta",
+    "nouveautés ios 27.2",
+    "faut-il installer la bêta ios 27.2",
+    "bug widget ios 27.2",
+    "date de sortie ios 27.2",
+    "ios 27.1 iphone duo",
+  ],
+  ogTitle: "Bêta d'iOS 27.2 : quoi de neuf et faut-il l'installer ?",
+  ogDescription:
+    "Les nouveautés, un bug qui bloque les tuiles des widgets et comment rester sous iOS 27 en attendant le correctif.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "fr",
+    headline:
+      "Bêta d'iOS 27.2 : quoi de neuf et faut-il l'installer ? (bug des widgets inclus)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/fr/blog/ios-27-2-beta-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "fr",
+    name: "Décider d'installer ou non la bêta d'iOS 27.2 et contourner le bug des widgets",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Vérifier votre version actuelle",
+        text: "Ouvrez Réglages, Général, Informations et regardez Version d'iOS. Si elle indique 27.0 ou 27.0.x, vous êtes sur la version publique.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Vérifier si les mises à jour bêta sont activées",
+        text: "Ouvrez Réglages, Général, Mise à jour logicielle, Mises à jour bêta. Désactivé signifie que vous ne recevez que les versions publiques.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Sauvegarder avant toute bêta",
+        text: "Faites d'abord une sauvegarde iCloud ou sur ordinateur. Une sauvegarde faite sous une bêta ne peut pas être restaurée sur une version plus ancienne d'iOS.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Si vous êtes déjà sur la bêta, utiliser le contournement",
+        text: "Si les tuiles d'un widget ne répondent plus après avoir touché une action, balayez vers une autre page de l'écran d'accueil puis revenez. Les tuiles fonctionnent de nouveau.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Désactiver les mises à jour bêta pour en sortir",
+        text: "Réglez Mises à jour bêta sur Désactivé. Quand la version publique d'iOS 27.2 arrive, installez-la et vous quittez le canal bêta.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "fr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Quand iOS 27.2 sortira-t-il ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple n'a annoncé aucune date. La quatrième bêta est arrivée mi-octobre 2026, et les rumeurs prévoient la version publique plus tard cet automne.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Qu'est-il arrivé à iOS 27.1 ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple est passée directement aux bêtas d'iOS 27.2 pour la plupart des iPhone. L'iPhone Duo est livré avec iOS 27.1, qui ajoute son interface pliable.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Pourquoi les tuiles de mes widgets ne fonctionnent-elles plus sous la bêta d'iOS 27.2 ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sous la bêta, après avoir touché une action dans un widget, les autres tuiles de ce widget peuvent ne plus répondre. C'est un bug d'iOS qui a été signalé à Apple. Changer de page d'écran d'accueil remet les tuiles en marche.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Bêta d'iOS 27.2 : quoi de neuf et faut-il l'installer ? (bug des widgets inclus)
+
+**Réponse rapide :** iOS 27.2 est en bêta depuis mi-octobre 2026. Il apporte Siri AI en français, japonais, coréen, portugais et espagnol, une liste **Apps exclues** pour Siri et la Recherche, et de petits changements dans Podcasts, Horloge et l'app Apple TV. L'app Santé redessinée figurait dans les premières bêtas mais a été retirée dans la bêta 4. Si vous comptez sur les widgets interactifs, attendez : sous la bêta, toucher une action dans un widget peut empêcher les autres tuiles de ce widget de répondre jusqu'à ce que vous changiez de page d'écran d'accueil.
+
+Les nouvelles bêtas sont tentantes, surtout juste après une grosse version. Voici ce que vous obtenez, ce qui peut casser et comment décider.
+
+---
+
+## Pourquoi iOS 27.2 est arrivé avant 27.1
+
+iOS 27 est sorti le 14 septembre 2026. Quelques jours plus tard, Apple a commencé à tester iOS 27.2, et non 27.1. La raison, c'est l'iPhone Duo : il sort le 23 octobre avec iOS 27.1, la version qui ajoute l'interface pliable. Pour les autres iPhone, la prochaine grosse mise à jour est iOS 27.2.
+
+## Les nouveautés de la bêta d'iOS 27.2
+
+- **Siri AI dans plus de langues.** iOS 27 a lancé Siri AI uniquement en anglais. La bêta 27.2 ajoute le français, le japonais, le coréen, le portugais et l'espagnol.
+- **Apps exclues.** Dans les réglages de Siri, Accès aux apps s'appelle désormais Apps exclues, et vous pouvez ajouter plusieurs apps d'un coup. Les apps exclues n'apparaissent plus dans Siri, la Recherche ni les Suggestions.
+- **Podcasts.** À suivre devient Nouveaux épisodes, avec une rangée Reprendre la lecture en dessous.
+- **App Apple TV.** Des profils simples sur iPhone et iPad, chacun avec un nom et une limite de classification.
+- **Horloge.** Les mentions AM et PM des alarmes sont plus petites.
+- **App Santé (de nouveau retirée).** Les premières bêtas proposaient une app Santé redessinée avec les onglets Analyses, Longévité et Parcourir. La bêta 4 l'a retirée, et Apple affirme qu'elle arrivera toujours plus tard cette année.
+
+## Le bug des widgets à connaître
+
+Sous la bêta d'iOS 27.2, après avoir touché une **action** dans un widget (un bouton qui exécute quelque chose, comme un raccourci), les autres tuiles de ce widget ne répondent plus. Les développeurs de [WidgetLoft](/widgetloft) l'ont découvert, ont établi qu'il venait d'iOS et non de leur app, et l'ont signalé à Apple : d'autres widgets avec des boutons peuvent donc aussi être touchés.
+
+Le contournement est rapide : balayez vers une autre page de l'écran d'accueil, puis revenez. Les tuiles fonctionnent de nouveau. Si votre écran d'accueil repose sur des [actions en un toucher dans les widgets](/blog/run-shortcuts-from-widget-iphone), le bug vous agacera chaque jour, ce qui est une bonne raison de rester sous iOS 27 pour l'instant.
+
+## Étape par étape : décider et rester en sécurité
+
+1. **Vérifiez votre version.** Ouvrez **Réglages → Général → Informations**. Si elle indique 27.0 ou 27.0.x, vous êtes sur la version publique.
+2. **Vérifiez les mises à jour bêta.** Ouvrez **Réglages → Général → Mise à jour logicielle → Mises à jour bêta**. Désactivé signifie que vous ne recevez que les versions publiques.
+3. **Sauvegardez d'abord.** Avant toute bêta, faites une sauvegarde iCloud ou sur ordinateur. Une sauvegarde faite sous une bêta ne peut pas être restaurée sur un iOS plus ancien.
+4. **Déjà sur la bêta ? Utilisez le contournement.** Si les tuiles ne répondent plus après une action, changez de page puis revenez.
+5. **Quittez le canal bêta.** Réglez **Mises à jour bêta** sur **Désactivé**. Quand la version publique d'iOS 27.2 arrive, installez-la et vous retrouvez les mises à jour normales.
+
+## Installer maintenant ou attendre ?
+
+| Vous... | Recommandation |
+| --- | --- |
+| Voulez Siri AI en français, japonais, coréen, portugais ou espagnol dès maintenant | La bêta est aujourd'hui le seul moyen |
+| Utilisez chaque jour des widgets avec des boutons et des actions | Attendez la version publique |
+| Utilisez votre iPhone pour le travail ou en voyage | Attendez, les bêtas peuvent casser des apps dont vous dépendez |
+| Avez un iPhone ou un iPad de rechange | Essayez d'abord dessus |
+
+## Questions fréquentes
+
+**Quand iOS 27.2 sortira-t-il ?**
+Apple n'a annoncé aucune date. La quatrième bêta est arrivée mi-octobre 2026, et les rumeurs prévoient la version publique plus tard cet automne.
+
+**Qu'est-il arrivé à iOS 27.1 ?**
+Apple est passée directement aux bêtas d'iOS 27.2 pour la plupart des iPhone. L'iPhone Duo est livré avec iOS 27.1, qui ajoute son interface pliable.
+
+**Pourquoi les tuiles de mes widgets ne fonctionnent-elles plus sous la bêta d'iOS 27.2 ?**
+Après avoir touché une action dans un widget, les autres tuiles de ce widget peuvent ne plus répondre. C'est un bug d'iOS qui a été signalé à Apple. Changer de page d'écran d'accueil les remet en marche.
+
+---
+
+Vous restez sous iOS 27 pour l'instant ? Profitez-en au maximum avec [les nouveautés des widgets dans iOS 27](/blog/ios-27-widgets-whats-new), ou [téléchargez WidgetLoft sur l'App Store](/widgetloft/download) et créez un lanceur qui fonctionne dès aujourd'hui.

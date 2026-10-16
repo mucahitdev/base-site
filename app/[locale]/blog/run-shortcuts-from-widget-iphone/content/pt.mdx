@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Como executar atalhos a partir de um widget com um toque no iPhone (iOS 27)",
+  description:
+    "O iOS 27 permite que widgets executem atalhos e ações de apps sem abrir o app Atalhos. Veja como adicionar ações a um widget lançador, montar um Painel de ações e colocar os mesmos botões na Tela Bloqueada.",
+  keywords: [
+    "executar atalho pelo widget iphone",
+    "widget de atalhos ios 27",
+    "atalho sem abrir o app atalhos",
+    "ações de apps no widget iphone",
+    "widget action board",
+    "botão de atalho na tela bloqueada iphone",
+  ],
+  ogTitle: "Execute atalhos a partir de um widget com um toque (iOS 27)",
+  ogDescription:
+    "Coloque atalhos, ações de apps e apps lado a lado em um único widget, na Tela de Início ou na Tela Bloqueada.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pt",
+    headline:
+      "Como executar atalhos a partir de um widget com um toque no iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pt/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pt",
+    name: "Executar atalhos e ações de apps a partir de um widget do iPhone com um toque",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Atualize para o iOS 27",
+        text: "Executar ações diretamente de um widget exige o iOS 27. Atualize em Ajustes, Geral, Atualização de Software.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Abra Editar Widget no seu widget de grupo",
+        text: "Toque e segure o seu widget de grupo do WidgetLoft, toque em Editar Widget e abra Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adicione atalhos, ações de apps ou apps",
+        text: "Adicione seus próprios atalhos, ações de um app como Iniciar Timer, ou um app. Eles aparecem como blocos depois dos blocos do próprio grupo.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mova a ação para onde quiser",
+        text: "No WidgetLoft, abra o grupo, toque no botão do raio (Adicionar ação de widget), escolha a ação e arraste o bloco dela para qualquer lugar da grade.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Adicione um Painel de ações para um widget só de ações",
+        text: "Adicione o widget Painel de ações do WidgetLoft à Tela de Início ou à Tela Bloqueada, depois toque e segure nele, toque em Editar Widget, escolha um painel em Style e adicione suas ações.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pt",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "O app Atalhos abre quando eu toco na ação?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não. No iOS 27 a ação roda direto do widget, e o widget fica onde estava.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Isso funciona no iOS 26 ou anterior?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Não. Ações em widgets e o Painel de ações precisam do iOS 27. Os blocos de apps normais do WidgetLoft funcionam no iOS 18 e posterior.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quantas ações cabem em um Painel de ações?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Um painel comporta até 64 ações. Quantas você vê de uma vez depende do tamanho do widget que você adicionar.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Como executar atalhos a partir de um widget com um toque no iPhone (iOS 27)
+
+**Resposta rápida:** No iOS 27, um widget pode executar um atalho ou uma ação de um app sem abrir o app Atalhos. No [WidgetLoft](/widgetloft), toque e segure um widget de grupo, toque em **Editar Widget**, abra **Ações** e adicione seus atalhos, ações de apps (como Iniciar Timer) ou apps. Eles ficam ao lado dos blocos dos seus apps e rodam com um toque. Para um widget feito só de botões, adicione o **Painel de ações**, na Tela de Início ou na Tela Bloqueada.
+
+O antigo widget do Atalhos fazia o trabalho, mas sempre parecia o app Atalhos. Agora seus atalhos podem morar na mesma grade dos apps que você abre todo dia.
+
+---
+
+## O que mudou no iOS 27
+
+O iOS 27 permite que os apps coloquem atalhos e ações de apps dentro dos próprios widgets e os executem quando você toca. Antes, tocar em um atalho num widget de terceiros normalmente abria primeiro o app Atalhos e só depois rodava o atalho.
+
+Isso faz mais diferença nas tarefas pequenas e repetidas: iniciar um timer, ativar um Foco, registrar um copo de água, mandar uma mensagem de "estou a caminho". Um toque, sem trocar de app.
+
+Se você cria muitos atalhos próprios, o iOS 27 também traz um jeito novo de montá-los: descrevendo o que você quer com palavras simples. A Apple disse que alguns recursos do Atalhos chegam em atualizações futuras, então confira o que o seu iPhone mostra em **Atalhos → +**.
+
+## Passo a passo: adicione ações a um widget lançador
+
+1. **Atualize para o iOS 27.** Abra **Ajustes → Geral → Atualização de Software**. Ações em widgets não existem em versões anteriores.
+2. **Abra Editar Widget.** Toque e segure o seu widget de grupo do WidgetLoft, toque em **Editar Widget** e abra **Ações**.
+3. **Adicione o que você quer executar.** Escolha seus próprios atalhos, ações de um app ou um app. Eles aparecem como blocos depois dos blocos do próprio grupo.
+4. **Coloque a ação no lugar.** No [WidgetLoft](/widgetloft), abra o grupo e toque no botão do raio (**Adicionar ação de widget**). Escolha a ação e arraste o bloco dela para qualquer espaço, até entre dois apps.
+5. **Dê um ícone a ela.** O iOS não dá ícone às ações, então o WidgetLoft procura um. Se um dos seus apps tiver exatamente o mesmo nome da ação, o ícone dele é usado. Caso contrário, você recebe sugestões ou cria o seu.
+
+Toque no bloco na Tela de Início e a ação roda. O widget fica onde estava.
+
+## Monte um Painel de ações
+
+Às vezes você quer um widget feito só de botões. Esse é o **Painel de ações**.
+
+1. Toque e segure um espaço vazio da Tela de Início, toque em **Editar** e depois em **Adicionar Widget**.
+2. Encontre o WidgetLoft e adicione o **Painel de ações** (normal ou Liquid Glass) no tamanho que preferir.
+3. O novo painel começa vazio. Toque e segure nele, toque em **Editar Widget**, escolha um painel em **Estilo** e adicione suas ações.
+4. Para mudar a aparência de um painel ou dar ícones às ações, abra **Ferramentas → Painel de ações** no WidgetLoft.
+
+Um painel comporta até 64 ações. Na Tela Bloqueada há dois formatos: Large (1 ou 2 fileiras) e Small (uma ação ou uma grade 2×2). Isso transforma a Tela Bloqueada num verdadeiro painel de controle: um toque no seu atalho de "saindo do trabalho" sem desbloquear o telefone e procurar por ele.
+
+## Widget do Atalhos x ações do WidgetLoft
+
+| | Widget do Atalhos da Apple | Ações do WidgetLoft (iOS 27) |
+| --- | --- | --- |
+| Misturar atalhos com blocos de apps | Não | Sim, na mesma grade |
+| Ações de apps (como Iniciar Timer) | Não | Sim |
+| Tela Bloqueada | Não como widget | Painel de ações, Large ou Small |
+| Ícones personalizados | Glifos do Atalhos | Ícones dos seus apps ou os seus próprios |
+
+Se você também quer atalhos que rodem sozinhos, sem toque, leia [automações do Atalhos no iOS 27 para a sua Tela de Início](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Perguntas frequentes
+
+**O app Atalhos abre quando eu toco na ação?**
+Não. No iOS 27 a ação roda direto do widget, e o widget fica onde estava.
+
+**Isso funciona no iOS 26 ou anterior?**
+Não. Ações em widgets e o Painel de ações precisam do iOS 27. Os blocos de apps normais do WidgetLoft funcionam no iOS 18 e posterior.
+
+**Quantas ações cabem em um Painel de ações?**
+Até 64. Quantas você vê de uma vez depende do tamanho do widget que você adicionar.
+
+---
+
+Pronto para transformar seus atalhos em botões de um toque? [Baixe o WidgetLoft na App Store](/widgetloft/download) e monte o seu primeiro Painel de ações.

@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Cách chạy phím tắt từ widget chỉ với một chạm trên iPhone (iOS 27)",
+  description:
+    "iOS 27 cho phép widget chạy phím tắt và tác vụ ứng dụng mà không cần mở ứng dụng Phím tắt. Tìm hiểu cách thêm tác vụ vào widget khởi chạy ứng dụng, tạo Bảng tác vụ và đặt cùng các nút đó lên Màn hình khóa.",
+  keywords: [
+    "chạy phím tắt từ widget iphone",
+    "widget phím tắt ios 27",
+    "chạy phím tắt không mở ứng dụng phím tắt",
+    "widget tác vụ ứng dụng iphone",
+    "widget action board",
+    "nút phím tắt màn hình khóa iphone",
+  ],
+  ogTitle: "Chạy phím tắt từ widget chỉ với một chạm (iOS 27)",
+  ogDescription:
+    "Đặt phím tắt, tác vụ ứng dụng và ứng dụng cạnh nhau trong một widget, trên Màn hình chính hoặc Màn hình khóa.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách chạy phím tắt từ widget chỉ với một chạm trên iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Chạy phím tắt và tác vụ ứng dụng từ widget iPhone chỉ với một chạm",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Cập nhật lên iOS 27",
+        text: "Chạy tác vụ trực tiếp từ widget cần iOS 27. Cập nhật trong Cài đặt, Cài đặt chung, Cập nhật phần mềm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mở Sửa tiện ích trên widget nhóm của bạn",
+        text: "Chạm và giữ widget nhóm WidgetLoft, chạm Sửa tiện ích và mở Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm phím tắt, tác vụ ứng dụng hoặc ứng dụng",
+        text: "Thêm phím tắt của riêng bạn, tác vụ của một ứng dụng như Đặt hẹn giờ, hoặc một ứng dụng. Chúng xuất hiện dưới dạng ô, nằm sau các ô của chính nhóm đó.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Di chuyển tác vụ đến vị trí bạn muốn",
+        text: "Trong WidgetLoft, mở nhóm, chạm nút tia sét (Thêm tác vụ tiện ích), chọn tác vụ và kéo ô của nó đến bất kỳ đâu trong lưới.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Thêm Bảng tác vụ để có widget chỉ gồm tác vụ",
+        text: "Thêm widget Bảng tác vụ của WidgetLoft vào Màn hình chính hoặc Màn hình khóa, rồi chạm và giữ nó, chạm Sửa tiện ích, chọn một bảng trong Style và thêm các tác vụ của bạn.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Ứng dụng Phím tắt có mở ra khi tôi chạm vào tác vụ không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Trên iOS 27, tác vụ chạy ngay từ widget, và widget vẫn giữ nguyên như cũ.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tính năng này có dùng được trên iOS 26 trở về trước không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không. Tác vụ trong widget và Bảng tác vụ cần iOS 27. Các ô ứng dụng thông thường trong WidgetLoft hoạt động trên iOS 18 trở lên.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Một Bảng tác vụ chứa được bao nhiêu tác vụ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Một bảng chứa tối đa 64 tác vụ. Số tác vụ bạn thấy cùng lúc phụ thuộc vào kích thước widget bạn thêm.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách chạy phím tắt từ widget chỉ với một chạm trên iPhone (iOS 27)
+
+**Trả lời nhanh:** Trên iOS 27, widget có thể chạy một phím tắt hoặc một tác vụ ứng dụng mà không cần mở ứng dụng Phím tắt. Trong [WidgetLoft](/widgetloft), chạm và giữ widget nhóm, chạm **Sửa tiện ích**, mở **Tác vụ** và thêm phím tắt, tác vụ ứng dụng (như Đặt hẹn giờ) hoặc ứng dụng. Chúng nằm cạnh các ô ứng dụng và chạy chỉ với một chạm. Nếu muốn một widget chỉ gồm các nút, hãy thêm **Bảng tác vụ**, trên Màn hình chính hoặc Màn hình khóa.
+
+Widget Phím tắt cũ vẫn làm tốt việc của nó, nhưng trông lúc nào cũng giống ứng dụng Phím tắt. Giờ đây phím tắt của bạn có thể nằm chung lưới với những ứng dụng bạn mở mỗi ngày.
+
+---
+
+## iOS 27 đã thay đổi những gì
+
+iOS 27 cho phép ứng dụng đặt phím tắt và tác vụ ứng dụng bên trong widget của chính chúng, và chạy chúng khi bạn chạm. Trước đây, chạm vào một phím tắt trong widget bên thứ ba thường mở ứng dụng Phím tắt trước, rồi mới chạy phím tắt.
+
+Điều này có ý nghĩa nhất với những việc nhỏ lặp đi lặp lại: bắt đầu hẹn giờ, bật chế độ Tập trung, ghi lại một cốc nước, gửi tin nhắn "đang trên đường tới". Một chạm, không phải chuyển ứng dụng.
+
+Nếu bạn tự tạo nhiều phím tắt, iOS 27 còn mang đến cách mới để tạo chúng bằng cách mô tả điều bạn muốn bằng lời thông thường. Apple cho biết một số tính năng Phím tắt sẽ có trong các bản cập nhật sau, vì vậy hãy xem iPhone của bạn hiển thị gì trong **Phím tắt → +**.
+
+## Từng bước: thêm tác vụ vào widget khởi chạy ứng dụng
+
+1. **Cập nhật lên iOS 27.** Mở **Cài đặt → Cài đặt chung → Cập nhật phần mềm**. Tác vụ trong widget không có trên các phiên bản cũ hơn.
+2. **Mở Sửa tiện ích.** Chạm và giữ widget nhóm WidgetLoft, chạm **Sửa tiện ích**, rồi mở **Tác vụ**.
+3. **Thêm thứ bạn muốn chạy.** Chọn phím tắt của riêng bạn, tác vụ của một ứng dụng hoặc một ứng dụng. Chúng xuất hiện dưới dạng ô, nằm sau các ô của chính nhóm đó.
+4. **Đưa tác vụ vào đúng chỗ.** Trong [WidgetLoft](/widgetloft), mở nhóm và chạm nút tia sét (**Thêm tác vụ tiện ích**). Chọn tác vụ và kéo ô của nó đến bất kỳ vị trí nào, kể cả giữa hai ứng dụng.
+5. **Gán biểu tượng.** iOS không cấp biểu tượng cho tác vụ, nên WidgetLoft sẽ tìm giúp bạn. Nếu một ứng dụng của bạn có tên trùng khớp hoàn toàn với tác vụ, biểu tượng của ứng dụng đó sẽ được dùng. Nếu không, bạn sẽ nhận được gợi ý, hoặc tự tạo biểu tượng riêng.
+
+Chạm vào ô trên Màn hình chính và tác vụ sẽ chạy. Widget vẫn giữ nguyên như cũ.
+
+## Tạo một Bảng tác vụ
+
+Đôi khi bạn chỉ muốn một widget toàn nút bấm. Đó chính là **Bảng tác vụ**.
+
+1. Chạm và giữ một chỗ trống trên Màn hình chính, chạm **Sửa**, rồi **Thêm tiện ích**.
+2. Tìm WidgetLoft và thêm **Bảng tác vụ** (thường hoặc Liquid Glass) ở kích thước bạn thích.
+3. Bảng mới ban đầu trống. Chạm và giữ nó, chạm **Sửa tiện ích**, chọn một bảng trong **Kiểu** và thêm các tác vụ của bạn.
+4. Để đổi giao diện bảng hoặc gán biểu tượng cho tác vụ, mở **Công cụ → Bảng tác vụ** trong WidgetLoft.
+
+Một bảng chứa tối đa 64 tác vụ. Trên Màn hình khóa có hai dạng: Lớn (1 hoặc 2 hàng) và Nhỏ (một tác vụ, hoặc lưới 2×2). Nhờ vậy Màn hình khóa trở thành một bảng điều khiển thực thụ: một chạm cho phím tắt "tan làm" mà không cần mở khóa điện thoại rồi đi tìm nó.
+
+## Widget Phím tắt so với tác vụ WidgetLoft
+
+| | Widget Phím tắt của Apple | Tác vụ WidgetLoft (iOS 27) |
+| --- | --- | --- |
+| Kết hợp phím tắt với ô ứng dụng | Không | Có, trong cùng một lưới |
+| Tác vụ ứng dụng (như Đặt hẹn giờ) | Không | Có |
+| Màn hình khóa | Không có dạng widget | Bảng tác vụ, Lớn hoặc Nhỏ |
+| Biểu tượng tùy chỉnh | Ký hiệu phím tắt | Biểu tượng từ ứng dụng của bạn, hoặc tự tạo |
+
+Nếu bạn cũng muốn những phím tắt tự chạy mà không cần chạm, hãy đọc [tự động hóa Phím tắt iOS 27 cho Màn hình chính](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Câu hỏi thường gặp
+
+**Ứng dụng Phím tắt có mở ra khi tôi chạm vào tác vụ không?**
+Không. Trên iOS 27, tác vụ chạy ngay từ widget, và widget vẫn giữ nguyên như cũ.
+
+**Tính năng này có dùng được trên iOS 26 trở về trước không?**
+Không. Tác vụ trong widget và Bảng tác vụ cần iOS 27. Các ô ứng dụng thông thường trong WidgetLoft hoạt động trên iOS 18 trở lên.
+
+**Một Bảng tác vụ chứa được bao nhiêu tác vụ?**
+Tối đa 64. Số tác vụ bạn thấy cùng lúc phụ thuộc vào kích thước widget bạn thêm.
+
+---
+
+Sẵn sàng biến phím tắt thành nút một chạm? [Tải WidgetLoft trên App Store](/widgetloft/download) và tạo Bảng tác vụ đầu tiên của bạn.

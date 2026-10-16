@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Cách tạo giao diện riêng cho từng thư mục con trong widget iPhone",
+  description:
+    "Các thư mục bên trong widget không còn phải trông giống hệt nhau. Tìm hiểu cách đặt cỡ biểu tượng, tên ứng dụng, khoảng cách và màu sắc riêng cho từng thư mục con, cùng biểu tượng thư mục tùy chỉnh, ô quay lại và hiệu ứng mở.",
+  keywords: [
+    "tùy chỉnh thư mục widget iphone",
+    "thư mục con widget iphone",
+    "đổi màu thư mục iphone",
+    "biểu tượng thư mục widget iphone",
+    "giao diện thư mục lồng nhau widget",
+    "tùy biến thư mục iphone ios 27",
+  ],
+  ogTitle: "Tạo giao diện riêng cho từng thư mục con",
+  ogDescription:
+    "Cỡ biểu tượng, tên, khoảng cách, màu sắc, biểu tượng thư mục và ô quay lại, đặt riêng cho từng thư mục con.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "vi",
+    headline:
+      "Cách tạo giao diện riêng cho từng thư mục con trong widget iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/vi/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "vi",
+    name: "Tùy chỉnh từng thư mục con trong widget khởi chạy trên iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Mở thư mục con",
+        text: "Trong WidgetLoft, mở nhóm, rồi mở thư mục con bạn muốn thay đổi.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Mở Giao diện",
+        text: "Chạm Giao diện. Đặt cỡ biểu tượng, tên ứng dụng, khoảng cách và màu sắc riêng cho thư mục con đó.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn ô thư mục",
+        text: "Chọn giao diện ô thư mục khi nhìn từ bên ngoài: lưới mini 2×2 hoặc 3×3 gồm các ứng dụng bên trong, ảnh của riêng bạn hoặc một SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Tạo kiểu cho ô quay lại",
+        text: "Chỉnh biểu tượng, màu, nền, độ mờ và kích thước của ô quay lại, rồi dùng Dùng giao diện này cho để áp dụng cho thư mục này, nhóm này hoặc mọi nhóm.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Chọn hiệu ứng mở",
+        text: "Trong Cài đặt của WidgetLoft, đặt Hiệu ứng thư mục con thành Trượt, Mờ dần, Thu phóng hoặc Tức thì.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "vi",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Thư mục trong thư mục trên iPhone có thể trông khác nhau không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Không với thư mục của Apple, vốn đều trông giống nhau. Trong widget WidgetLoft, mỗi thư mục con có thể có cỡ biểu tượng, tên ứng dụng, khoảng cách và màu sắc riêng.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tôi có thể tạo bao nhiêu thư mục con?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Mỗi thư mục chứa tối đa 100 ứng dụng và 20 thư mục con, và không giới hạn số cấp lồng nhau.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Thư mục con có hiển thị chấm thông báo không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Có, trên iOS 27. Thư mục hiện một chấm khi có ứng dụng bên trong có chấm, mặc định kèm số lượng thông báo trên đó.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Cách tạo giao diện riêng cho từng thư mục con trong widget iPhone
+
+**Trả lời nhanh:** Các thư mục trên Màn hình chính của Apple đều trông giống nhau. Trong widget [WidgetLoft](/widgetloft), giờ đây mỗi thư mục con có thể có phong cách riêng: mở thư mục con, chạm **Giao diện** và đặt cỡ biểu tượng, tên ứng dụng, khoảng cách và màu sắc riêng. Bạn cũng có thể gán ảnh hoặc ký hiệu cho ô thư mục, đổi kiểu ô quay lại và chọn cách thư mục mở ra.
+
+Một thư mục "Trò chơi" với biểu tượng lớn, nhiều màu sắc và một thư mục "Công việc" với biểu tượng nhỏ, trầm hơn sẽ dễ nhận ra chỉ trong một cái liếc. Giờ một widget có thể chứa cả hai.
+
+---
+
+## Vì sao nên tạo giao diện riêng cho thư mục con
+
+Thư mục con giúp một widget chứa nhiều ứng dụng hơn hẳn số ô của nó: mỗi thư mục chứa tối đa 100 ứng dụng và 20 thư mục con, và không giới hạn số cấp lồng nhau. Khi bạn chạm vào một thư mục trên widget, nó mở ngay tại chỗ.
+
+Vấn đề trước đây là mọi cấp đều trông giống nhau. Một thư mục có 6 ứng dụng cũng dùng biểu tượng tí hon y như thư mục có 40. Với giao diện riêng cho từng thư mục con, thư mục ngắn có thể dùng biểu tượng lớn, còn thư mục dài có thể dùng biểu tượng nhỏ để vừa hết trên một màn hình.
+
+## Từng bước: tạo kiểu cho một thư mục con
+
+1. **Mở thư mục con.** Trong WidgetLoft, mở nhóm, rồi mở thư mục con bạn muốn thay đổi.
+2. **Chạm Giao diện.** Đặt **cỡ biểu tượng**, **tên ứng dụng** (bật hoặc tắt), **khoảng cách** và **màu sắc** riêng cho thư mục con này. Phần còn lại của nhóm vẫn giữ nguyên.
+3. **Chọn ô thư mục.** Chọn giao diện thư mục khi nhìn từ bên ngoài: lưới mini 2×2 hoặc 3×3 gồm các ứng dụng bên trong, ảnh của riêng bạn hoặc một SF Symbol.
+4. **Tạo kiểu cho ô quay lại.** Chọn biểu tượng, màu, nền, độ mờ và kích thước, rồi kéo nó đến bất kỳ ô nào. Trong **Dùng giao diện này cho**, áp dụng cho thư mục này, nhóm này hoặc mọi nhóm, và chọn xem thư mục con mới có dùng kiểu này ngay từ đầu hay không.
+5. **Chọn hiệu ứng.** Trong **Cài đặt** của WidgetLoft, đặt **Hiệu ứng thư mục con** thành Trượt, Mờ dần, Thu phóng hoặc Tức thì. Tức thì là nhanh nhất.
+
+## Có thể thay đổi gì, và ở đâu
+
+| Cài đặt | Ở đâu | Áp dụng cho |
+| --- | --- | --- |
+| Cỡ biểu tượng, tên, khoảng cách, màu sắc | Thư mục con → Giao diện | Thư mục con đó |
+| Ô thư mục (lưới mini, ảnh, ký hiệu) | Cài đặt thư mục con | Giao diện khi nhìn từ bên ngoài |
+| Ô quay lại | Thư mục con → ô quay lại | Thư mục, nhóm hoặc mọi nhóm |
+| Hiệu ứng mở | Cài đặt → Hiệu ứng thư mục con | Mọi widget |
+
+Sau này cần sắp xếp lại? Bạn có thể chuyển một thư mục con sang nhóm khác, hoặc sao chép nó, và mọi thứ bên trong sẽ đi theo. Mới làm quen với thư mục lồng nhau? Hãy bắt đầu với [cách tạo thư mục trong thư mục trên iPhone](/blog/folders-inside-folders-iphone).
+
+## Chấm trên thư mục
+
+Trên iOS 27, thư mục hiện chấm thông báo khi có ứng dụng bên trong có chấm, nên bạn không bỏ lỡ tin nhắn ẩn sâu hai cấp. Mặc định chấm hiển thị số thông báo đã đến; nếu muốn chấm trơn, hãy tắt **Cài đặt → Chấm thông báo → Hiển thị số**. Để xem toàn bộ cách thiết lập, hãy đọc [huy hiệu thông báo trên widget](/blog/notification-badges-on-widgets-iphone).
+
+## Câu hỏi thường gặp
+
+**Thư mục trong thư mục trên iPhone có thể trông khác nhau không?**
+Không với thư mục của Apple. Trong widget WidgetLoft, mỗi thư mục con có thể có cỡ biểu tượng, tên ứng dụng, khoảng cách và màu sắc riêng.
+
+**Tôi có thể tạo bao nhiêu thư mục con?**
+Mỗi thư mục chứa tối đa 100 ứng dụng và 20 thư mục con, không giới hạn số cấp.
+
+**Thư mục con có hiển thị chấm thông báo không?**
+Có, trên iOS 27. Thư mục hiện một chấm khi có ứng dụng bên trong có chấm, mặc định kèm số lượng thông báo.
+
+---
+
+Sẵn sàng tạo phong cách riêng cho mọi thư mục? [Tải WidgetLoft trên App Store](/widgetloft/download) và mở Giao diện của một thư mục con.

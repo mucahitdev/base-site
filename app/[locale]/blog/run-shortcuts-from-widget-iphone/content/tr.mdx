@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "iPhone'da Widget'tan Tek Dokunuşla Kısayol Çalıştırma (iOS 27)",
+  description:
+    "iOS 27, widget'ların Kısayollar uygulamasını açmadan kısayolları ve uygulama eylemlerini çalıştırmasına izin veriyor. Bir başlatıcı widget'a eylem eklemeyi, bir Eylem Panosu kurmayı ve aynı düğmeleri Kilit Ekranı'na koymayı anlatıyoruz.",
+  keywords: [
+    "widgettan kısayol çalıştırma iphone",
+    "ios 27 kısayollar widget",
+    "kısayollar uygulaması açılmadan kısayol çalıştırma",
+    "iphone uygulama eylemleri widget",
+    "action board widget",
+    "kilit ekranı kısayol düğmesi iphone",
+  ],
+  ogTitle: "Widget'tan Tek Dokunuşla Kısayol Çalıştırın (iOS 27)",
+  ogDescription:
+    "Kısayolları, uygulama eylemlerini ve uygulamaları Ana Ekran'da ya da Kilit Ekranı'nda tek bir widget'ta yan yana koyun.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iPhone'da Widget'tan Tek Dokunuşla Kısayol Çalıştırma (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/tr/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iPhone widget'ından tek dokunuşla kısayol ve uygulama eylemi çalıştırın",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "iOS 27'ye güncelleyin",
+        text: "Eylemleri doğrudan widget'tan çalıştırmak için iOS 27 gerekir. Ayarlar, Genel, Yazılım Güncelleme'den güncelleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Grup widget'ınızda Widget'ı Düzenle'yi açın",
+        text: "WidgetLoft grup widget'ınıza basılı tutun, Widget'ı Düzenle'ye dokunun ve Actions bölümünü açın.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Kısayol, uygulama eylemi veya uygulama ekleyin",
+        text: "Kendi kısayollarınızı, Zamanlayıcı Kur gibi bir uygulama eylemini ya da bir uygulamayı ekleyin. Bunlar grubun kendi kutucuklarından sonra kutucuk olarak görünür.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Eylemi istediğiniz yere taşıyın",
+        text: "WidgetLoft'ta grubu açın, şimşek düğmesine (Widget Eylemi Ekle) dokunun, eylemi seçin ve kutucuğunu ızgarada istediğiniz yere sürükleyin.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Yalnızca eylemlerden oluşan bir widget için Eylem Panosu ekleyin",
+        text: "WidgetLoft Eylem Panosu widget'ını Ana Ekran'a veya Kilit Ekranı'na ekleyin, ardından ona basılı tutun, Widget'ı Düzenle'ye dokunun, Style altında bir pano seçin ve eylemlerinizi ekleyin.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Eyleme dokunduğumda Kısayollar uygulaması açılır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. iOS 27'de eylem doğrudan widget'tan çalışır ve widget olduğu yerde kalır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bu iOS 26 veya öncesinde çalışır mı?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hayır. Widget'lardaki eylemler ve Eylem Panosu iOS 27 gerektirir. WidgetLoft'taki normal uygulama kutucukları iOS 18 ve sonrasında çalışır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Bir Eylem Panosu'na kaç eylem sığar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Bir pano en fazla 64 eylem alır. Aynı anda kaçını gördüğünüz, eklediğiniz widget boyutuna bağlıdır.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iPhone'da Widget'tan Tek Dokunuşla Kısayol Çalıştırma (iOS 27)
+
+**Kısa cevap:** iOS 27'de bir widget, Kısayollar uygulamasını açmadan bir kısayolu veya uygulama eylemini çalıştırabiliyor. [WidgetLoft](/widgetloft)'ta bir grup widget'ına basılı tutun, **Widget'ı Düzenle**'ye dokunun, **Eylemler** bölümünü açın ve kısayollarınızı, uygulama eylemlerini (Zamanlayıcı Kur gibi) ya da uygulamaları ekleyin. Bunlar uygulama kutucuklarınızın yanında durur ve tek dokunuşla çalışır. Yalnızca düğmelerden oluşan bir widget için Ana Ekran'a ya da Kilit Ekranı'na **Eylem Panosu**'nu ekleyin.
+
+Eski Kısayollar widget'ı işini görüyordu ama hep Kısayollar uygulaması gibi görünüyordu. Artık kısayollarınız, her gün açtığınız uygulamalarla aynı ızgarada yaşayabilir.
+
+---
+
+## iOS 27'de ne değişti
+
+iOS 27, uygulamaların kısayolları ve uygulama eylemlerini kendi widget'larının içine koymasına ve dokunduğunuzda çalıştırmasına izin veriyor. Önceden üçüncü taraf bir widget'taki kısayola dokunmak genellikle önce Kısayollar uygulamasını açıyor, sonra kısayolu çalıştırıyordu.
+
+Bu en çok küçük, tekrar eden işlerde fark yaratıyor: zamanlayıcı başlatmak, bir Odak'ı açmak, bir bardak su kaydetmek, "yoldayım" mesajı göndermek. Tek dokunuş, uygulama değiştirmek yok.
+
+Kendi kısayollarınızı çokça oluşturuyorsanız, iOS 27 ayrıca ne istediğinizi sade cümlelerle anlatarak kısayol oluşturmanın yeni bir yolunu getiriyor. Apple bazı Kısayollar özelliklerinin sonraki güncellemelerle geleceğini söyledi, bu yüzden iPhone'unuzun **Kısayollar → +** altında ne gösterdiğine bakın.
+
+## Adım adım: başlatıcı widget'a eylem ekleyin
+
+1. **iOS 27'ye güncelleyin.** **Ayarlar → Genel → Yazılım Güncelleme**'yi açın. Eski sürümlerde widget'larda eylem diye bir şey yok.
+2. **Widget'ı Düzenle'yi açın.** WidgetLoft grup widget'ınıza basılı tutun, **Widget'ı Düzenle**'ye dokunun, ardından **Eylemler** bölümünü açın.
+3. **Çalıştırmak istediklerinizi ekleyin.** Kendi kısayollarınızı, bir uygulamanın eylemlerini ya da bir uygulamayı seçin. Bunlar grubun kendi kutucuklarından sonra kutucuk olarak görünür.
+4. **Eylemi yerine taşıyın.** [WidgetLoft](/widgetloft)'ta grubu açın ve şimşek düğmesine (**Widget Eylemi Ekle**) dokunun. Eylemi seçin ve kutucuğunu istediğiniz yuvaya, hatta iki uygulamanın arasına sürükleyin.
+5. **Bir ikon verin.** iOS eylemlere ikon vermez, bu yüzden WidgetLoft bir tane arar. Uygulamalarınızdan biri eylemle birebir aynı ada sahipse onun ikonu kullanılır. Yoksa öneriler çıkar ya da kendi ikonunuzu yaparsınız.
+
+Ana Ekran'daki kutucuğa dokunun, eylem çalışsın. Widget olduğu yerde kalır.
+
+## Bir Eylem Panosu kurun
+
+Bazen yalnızca düğmelerden oluşan bir widget istersiniz. İşte **Eylem Panosu** bu.
+
+1. Ana Ekran'da boş bir yere basılı tutun, **Düzenle**'ye, ardından **Widget Ekle**'ye dokunun.
+2. WidgetLoft'u bulun ve **Eylem Panosu**'nu (normal veya Liquid Glass) istediğiniz boyutta ekleyin.
+3. Yeni pano boş başlar. Ona basılı tutun, **Widget'ı Düzenle**'ye dokunun, **Stil** altında bir pano seçin ve eylemlerinizi ekleyin.
+4. Bir panonun görünümünü değiştirmek ya da eylemlere ikon vermek için WidgetLoft'ta **Araçlar → Eylem Panosu**'nu açın.
+
+Bir pano en fazla 64 eylem alır. Kilit Ekranı'nda iki biçim var: Büyük (1 veya 2 sıra) ve Küçük (tek eylem ya da 2×2 ızgara). Bu da Kilit Ekranı'nı gerçek bir kontrol paneline çeviriyor: telefonun kilidini açıp aramadan "işten çıkıyorum" kısayolunuz tek dokunuş uzakta.
+
+## Kısayollar widget'ı ve WidgetLoft eylemleri
+
+| | Apple'ın Kısayollar widget'ı | WidgetLoft eylemleri (iOS 27) |
+| --- | --- | --- |
+| Kısayolları uygulama kutucuklarıyla karıştırma | Hayır | Evet, aynı ızgarada |
+| Uygulama eylemleri (Zamanlayıcı Kur gibi) | Hayır | Evet |
+| Kilit Ekranı | Widget olarak değil | Eylem Panosu, Büyük veya Küçük |
+| Özel ikonlar | Kısayol sembolleri | Uygulamalarınızın ikonları ya da kendi ikonlarınız |
+
+Dokunmaya gerek kalmadan kendi kendine çalışan kısayollar da istiyorsanız [Ana Ekran için iOS 27 Kısayollar otomasyonları](/blog/ios-27-shortcuts-automations-home-screen) yazımızı okuyun.
+
+## Sık sorulan sorular
+
+**Eyleme dokunduğumda Kısayollar uygulaması açılır mı?**
+Hayır. iOS 27'de eylem doğrudan widget'tan çalışır ve widget olduğu yerde kalır.
+
+**Bu iOS 26 veya öncesinde çalışır mı?**
+Hayır. Widget'lardaki eylemler ve Eylem Panosu iOS 27 gerektirir. WidgetLoft'taki normal uygulama kutucukları iOS 18 ve sonrasında çalışır.
+
+**Bir Eylem Panosu'na kaç eylem sığar?**
+En fazla 64. Aynı anda kaçını gördüğünüz, eklediğiniz widget boyutuna bağlıdır.
+
+---
+
+Kısayollarınızı tek dokunuşluk düğmelere çevirmeye hazır mısınız? [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve ilk Eylem Panosu'nuzu kurun.

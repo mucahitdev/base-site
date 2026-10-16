@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Come posizionare le app dove vuoi e lasciare spazi vuoti in un widget di iPhone",
+  description:
+    "iOS ti permette di lasciare spazi tra le icone della schermata Home, ma la maggior parte dei widget riempie ogni posizione in ordine. Scopri come mettere ogni app esattamente dove vuoi in un widget per avviare le app, con spazi vuoti e un riquadro Indietro spostabile.",
+  keywords: [
+    "posizionare app ovunque widget iphone",
+    "spazio vuoto widget iphone",
+    "lasciare spazi tra le app iphone",
+    "layout widget personalizzato iphone",
+    "schermata home aesthetic ios 27",
+    "spostare liberamente app nel widget",
+  ],
+  ogTitle: "Posiziona le app dove vuoi in un widget di iPhone",
+  ogDescription:
+    "Scegli una posizione vuota, aggiungi lì un'app e lascia spazi dove preferisci.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "it",
+    headline:
+      "Come posizionare le app dove vuoi e lasciare spazi vuoti in un widget di iPhone",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/it/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "it",
+    name: "Posizionare le app in punti precisi di un widget per avviare le app su iPhone",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Apri il gruppo in WidgetLoft",
+        text: "Apri WidgetLoft, vai nella scheda Gruppi e apri il gruppo mostrato dal tuo widget.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Passa a Posiziona",
+        text: "Nell'editor del gruppo scegli Posiziona. La griglia mostra tutte le posizioni del widget, comprese quelle vuote.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Scegli una posizione vuota e aggiungi un'app",
+        text: "Tocca la posizione vuota in cui deve andare l'app, poi scegli l'app. Finisce esattamente in quella posizione.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Lascia spazi di proposito",
+        text: "Le posizioni che non riempi restano vuote nel widget. Puoi anche aggiungere un distanziatore con il pulsante a quadrato tratteggiato.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Salva e controlla il widget",
+        text: "Conferma con il segno di spunta. Il widget della schermata Home si aggiorna con il tuo layout.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "it",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Si possono lasciare spazi vuoti tra le app nella schermata Home dell'iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sì. Da iOS 18 puoi trascinare le icone in qualsiasi posizione di una pagina della schermata Home e lasciare spazi. Dentro un widget decide l'app del widget; WidgetLoft ti fa scegliere ogni posizione con Posiziona.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Toccare uno spazio vuoto apre qualcosa?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Decidi tu. Un interruttore in Modifica widget stabilisce se un tocco su uno spazio vuoto apre WidgetLoft, widget per widget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "La modalità Posiziona funziona nelle sottocartelle?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le sottocartelle hanno una griglia propria. Puoi anche trascinare il riquadro Indietro di una sottocartella in qualsiasi posizione, anche vuota.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Come posizionare le app dove vuoi e lasciare spazi vuoti in un widget di iPhone
+
+**Risposta rapida:** Nella schermata Home vera e propria, iOS 18 e versioni successive ti permettono di trascinare le icone ovunque e lasciare spazi. Dentro un widget decide l'app che crea il widget. In [WidgetLoft](/widgetloft), apri il gruppo, passa a **Posiziona**, tocca una posizione vuota e aggiungi un'app: finisce esattamente in quella posizione, e quelle che salti restano vuote nel widget.
+
+Una schermata Home pulita spesso dipende dallo spazio vuoto, non dalle icone. Una riga con un'app a sinistra e una a destra dice "queste due contano" meglio di una griglia piena.
+
+---
+
+## Perché la maggior parte dei widget riempie ogni posizione
+
+La maggior parte dei widget per avviare le app funziona come un elenco: la prima app va nella posizione in alto a sinistra, la successiva accanto e così via. Togli un'app e tutto scorre. Va bene per un elenco lungo, ma rende difficili i layout studiati: un'app in un angolo, uno spazio al centro, una riga allineata allo sfondo.
+
+## Passo dopo passo: posiziona le app in punti precisi
+
+1. **Apri il gruppo.** In WidgetLoft vai nella scheda **Gruppi** e apri il gruppo mostrato dal tuo widget.
+2. **Passa a Posiziona.** Nell'editor del gruppo scegli **Posiziona**. La griglia mostra tutte le posizioni del widget, comprese quelle vuote.
+3. **Scegli una posizione, poi aggiungi un'app.** Tocca la posizione vuota in cui deve andare l'app e scegli l'app. Finisce proprio lì.
+4. **Lascia spazi di proposito.** Le posizioni che non riempi restano vuote. Per uno spazio tra due app in un normale elenco, il pulsante a quadrato tratteggiato aggiunge un distanziatore.
+5. **Salva.** Conferma con il segno di spunta. Le modifiche arrivano al widget solo dopo la conferma.
+
+Vuoi che lo spazio vuoto non faccia nulla? Un interruttore in **Modifica widget** stabilisce se un tocco su uno spazio vuoto apre WidgetLoft. Impostalo widget per widget.
+
+## Idee di layout che sfruttano lo spazio vuoto
+
+| Layout | Come crearlo |
+| --- | --- |
+| Quattro angoli | Widget grande, un'app in ogni angolo, tutto il resto vuoto |
+| Una riga pulita | Widget medio, app solo nella riga in basso così sopra si vede lo sfondo |
+| Cornice per una foto | Widget Extra grande (iOS 27), app lungo i bordi, centro lasciato vuoto |
+| Zona del pollice | App solo nella metà inferiore, dove arriva il pollice usando una mano |
+
+Gli spazi rendono meglio con meno icone e più grandi. Scegli una dimensione delle icone maggiore nell'editor del gruppo e anche le posizioni diventano più grandi. Per altre idee, guarda [le idee per la schermata Home di iOS 27](/blog/ios-27-home-screen-ideas), e per usare un'intera pagina come un solo widget leggi il nostro articolo sul [widget Extra grande di iOS 27](/blog/extra-large-widget-ios-27).
+
+## Sottocartelle e riquadro Indietro
+
+Le sottocartelle si aprono sul posto nel widget e hanno una griglia propria. Al loro interno puoi trascinare il riquadro Indietro in qualsiasi posizione, anche vuota, così non rovina mai il tuo layout. Se vuoi che ogni sottocartella abbia un aspetto diverso, scopri [come dare a ogni sottocartella il suo stile](/blog/customize-sub-folders-iphone-widget).
+
+## Domande frequenti
+
+**Si possono lasciare spazi vuoti tra le app nella schermata Home dell'iPhone?**
+Sì. Da iOS 18 puoi trascinare le icone in qualsiasi posizione di una pagina e lasciare spazi. Dentro un widget decide l'app del widget; WidgetLoft ti fa scegliere ogni posizione con Posiziona.
+
+**Toccare uno spazio vuoto apre qualcosa?**
+Decidi tu. Un interruttore in Modifica widget lo imposta widget per widget.
+
+**Posiziona funziona nelle sottocartelle?**
+Le sottocartelle hanno una griglia propria, e il riquadro Indietro può andare in qualsiasi posizione, anche vuota.
+
+---
+
+Pronto a progettare il tuo widget posizione per posizione? [Scarica WidgetLoft dall'App Store](/widgetloft/download) e prova Posiziona.

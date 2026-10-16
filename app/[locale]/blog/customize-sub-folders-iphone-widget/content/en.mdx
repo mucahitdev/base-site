@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "How to Give Each Sub-Folder Its Own Look in an iPhone Widget",
+  description:
+    "Folders inside a widget no longer have to look the same. Learn how to give each sub-folder its own icon size, app names, spacing and colors, plus a custom folder icon, back tile and opening animation.",
+  keywords: [
+    "customize folder iphone widget",
+    "sub-folder widget iphone",
+    "different folder colors iphone",
+    "folder icon iphone widget",
+    "nested folders widget look",
+    "iphone folder customization ios 27",
+  ],
+  ogTitle: "Give Each Sub-Folder Its Own Look",
+  ogDescription:
+    "Icon size, names, spacing, colors, folder icon and back tile, set per sub-folder.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Give Each Sub-Folder Its Own Look in an iPhone Widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Customize each sub-folder in an iPhone launcher widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Open the sub-folder",
+        text: "In WidgetLoft, open the group, then open the sub-folder you want to change.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Open Appearance",
+        text: "Tap Appearance. Set the sub-folder's own icon size, app names, spacing and colors.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pick the folder's tile",
+        text: "Choose how the folder's tile looks from the outside: a 2×2 or 3×3 mini-grid of its apps, your own photo or an SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Style the back tile",
+        text: "Edit the back tile's symbol, color, background, opacity and size, then use Use This Look For to apply it to this folder, the group or every group.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose the opening animation",
+        text: "In WidgetLoft Settings, set Sub-folder transition to Slide, Fade, Zoom or Instant.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can folders inside folders look different on iPhone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Not with Apple's folders, which all look the same. In a WidgetLoft widget each sub-folder can have its own icon size, app names, spacing and colors.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many sub-folders can I make?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Each folder holds up to 100 apps and 20 sub-folders, and nesting has no depth limit.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do sub-folders show notification dots?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, on iOS 27. A folder shows a dot when an app inside it has one, with the number of notifications on it by default.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Give Each Sub-Folder Its Own Look in an iPhone Widget
+
+**Quick answer:** Apple's Home Screen folders all look the same. In a [WidgetLoft](/widgetloft) widget, each sub-folder can now have its own style: open the sub-folder, tap **Appearance**, and set its own icon size, app names, spacing and colors. You can also give the folder tile a photo or symbol, restyle the back tile, and choose how folders open.
+
+A "Games" folder with big, colorful icons and a "Work" folder with small, quiet ones is easier to read at a glance. Now one widget can hold both.
+
+---
+
+## Why give sub-folders their own look
+
+Sub-folders let one widget hold far more apps than it has slots: each folder holds up to 100 apps and 20 sub-folders, and nesting has no depth limit. When you tap a folder on the widget, it opens in place.
+
+The catch used to be that every level looked the same. A folder with 6 apps had the same tiny icons as one with 40. With a look per sub-folder, a short folder can use big icons, and a long one can use small ones to fit everything on one screen.
+
+## Step-by-step: style a sub-folder
+
+1. **Open the sub-folder.** In WidgetLoft, open the group, then the sub-folder you want to change.
+2. **Tap Appearance.** Set this sub-folder's own **icon size**, **app names** (on or off), **spacing** and **colors**. The rest of the group stays as it is.
+3. **Pick the folder tile.** Choose what the folder looks like from outside: a 2×2 or 3×3 mini-grid of its apps, your own photo or an SF Symbol.
+4. **Style the back tile.** Pick its symbol, color, background, opacity and size, and drag it to any slot. Under **Use This Look For**, apply it to this folder, this group or every group, and choose whether new sub-folders start with it.
+5. **Choose the animation.** In WidgetLoft **Settings**, set **Sub-folder transition** to Slide, Fade, Zoom or Instant. Instant is the fastest.
+
+## What you can change, and where
+
+| Setting | Where | Applies to |
+| --- | --- | --- |
+| Icon size, names, spacing, colors | Sub-folder → Appearance | That sub-folder |
+| Folder tile (mini-grid, photo, symbol) | Sub-folder settings | How it looks from outside |
+| Back tile | Sub-folder → back tile | Folder, group or every group |
+| Opening animation | Settings → Sub-folder transition | All widgets |
+
+Need to reorganize later? You can move a sub-folder to another group, or copy it, and everything inside goes with it. New to nesting? Start with [how to put folders inside folders on iPhone](/blog/folders-inside-folders-iphone).
+
+## Dots on folders
+
+On iOS 27, a folder shows a notification dot when an app inside it has one, so you do not miss a message hidden two levels deep. By default it shows how many notifications arrived; for a plain dot, turn off **Settings → Notification Dots → Show the number**. For the full setup, read [notification badges on widgets](/blog/notification-badges-on-widgets-iphone).
+
+## Common questions
+
+**Can folders inside folders look different on iPhone?**
+Not with Apple's folders. In a WidgetLoft widget each sub-folder can have its own icon size, app names, spacing and colors.
+
+**How many sub-folders can I make?**
+Each folder holds up to 100 apps and 20 sub-folders, with no depth limit.
+
+**Do sub-folders show notification dots?**
+Yes, on iOS 27. A folder shows a dot when an app inside it has one, with the number of notifications by default.
+
+---
+
+Ready to give every folder its own style? [Download WidgetLoft on the App Store](/widgetloft/download) and open a sub-folder's Appearance.

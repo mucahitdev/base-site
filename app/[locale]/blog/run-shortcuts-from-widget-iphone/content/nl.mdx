@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Opdrachten met één tik vanuit een widget uitvoeren op je iPhone (iOS 27)",
+  description:
+    "In iOS 27 kunnen widgets opdrachten en app-acties uitvoeren zonder de Opdrachten-app te openen. Zo voeg je acties toe aan een app-starterwidget, bouw je een Actiepaneel en zet je dezelfde knoppen op je toegangsscherm.",
+  keywords: [
+    "opdracht uitvoeren vanuit widget iphone",
+    "ios 27 opdrachten widget",
+    "opdrachten widget zonder app te openen",
+    "app acties widget iphone",
+    "widget met knoppen iphone",
+    "opdracht knop toegangsscherm iphone",
+  ],
+  ogTitle: "Opdrachten met één tik vanuit een widget (iOS 27)",
+  ogDescription:
+    "Zet opdrachten, app-acties en apps naast elkaar in één widget, op het beginscherm of het toegangsscherm.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "nl",
+    headline:
+      "Opdrachten met één tik vanuit een widget uitvoeren op je iPhone (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/nl/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "nl",
+    name: "Opdrachten en app-acties met één tik uitvoeren vanuit een iPhone-widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Werk bij naar iOS 27",
+        text: "Acties direct vanuit een widget uitvoeren vereist iOS 27. Werk bij via Instellingen, Algemeen, Software-update.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Open Wijzig widget op je groepswidget",
+        text: "Houd je WidgetLoft-groepswidget ingedrukt, tik op Wijzig widget en open Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg opdrachten, app-acties of apps toe",
+        text: "Voeg je eigen opdrachten toe, acties van een app zoals Stel timer in, of een app. Ze verschijnen als tegels na de eigen tegels van de groep.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zet een actie op de gewenste plek",
+        text: "Open in WidgetLoft de groep, tik op de bliksemknop (Widgetactie toevoegen), kies de actie en sleep de tegel naar elke plek in het raster.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Voeg een Actiepaneel toe voor een widget met alleen acties",
+        text: "Voeg de WidgetLoft-widget Actiepaneel toe aan het beginscherm of het toegangsscherm, houd hem ingedrukt, tik op Wijzig widget, kies een bord bij Style en voeg je acties toe.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "nl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Gaat de Opdrachten-app open als ik op de actie tik?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Op iOS 27 wordt de actie direct vanuit de widget uitgevoerd en blijft de widget staan waar hij was.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Werkt dit op iOS 26 of ouder?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nee. Acties in widgets en het Actiepaneel hebben iOS 27 nodig. Gewone app-tegels in WidgetLoft werken op iOS 18 en nieuwer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Hoeveel acties passen er op een Actiepaneel?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Een bord bevat tot 64 acties. Hoeveel je er tegelijk ziet, hangt af van het widgetformaat dat je toevoegt.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Opdrachten met één tik vanuit een widget uitvoeren op je iPhone (iOS 27)
+
+**Kort antwoord:** Op iOS 27 kan een widget een opdracht of een app-actie uitvoeren zonder de Opdrachten-app te openen. Houd in [WidgetLoft](/widgetloft) een groepswidget ingedrukt, tik op **Wijzig widget**, open **Acties** en voeg je opdrachten, app-acties (zoals Stel timer in) of apps toe. Ze staan naast je app-tegels en werken met één tik. Wil je een widget met alleen knoppen, voeg dan het **Actiepaneel** toe, op het beginscherm of het toegangsscherm.
+
+De oude Opdrachten-widget deed wat hij moest doen, maar zag er altijd uit als de Opdrachten-app. Nu kunnen je opdrachten in hetzelfde raster staan als de apps die je elke dag opent.
+
+---
+
+## Wat er verandert in iOS 27
+
+Met iOS 27 kunnen apps opdrachten en app-acties in hun eigen widgets zetten en ze uitvoeren als je tikt. Vroeger opende een tik op een opdracht in een widget van een andere ontwikkelaar meestal eerst de Opdrachten-app, en pas daarna werd de opdracht uitgevoerd.
+
+Dat maakt vooral verschil bij kleine, terugkerende klusjes: een timer starten, een focus aanzetten, een glas water bijhouden, een berichtje 'Ik ben onderweg' sturen. Eén tik, zonder van app te wisselen.
+
+Maak je veel eigen opdrachten? iOS 27 brengt ook een nieuwe manier om ze te maken door in gewone woorden te beschrijven wat je wilt. Apple heeft gezegd dat sommige functies van Opdrachten in latere updates komen, dus kijk wat je iPhone toont onder **Opdrachten → +**.
+
+## Stap voor stap: acties toevoegen aan een app-starterwidget
+
+1. **Werk bij naar iOS 27.** Open **Instellingen → Algemeen → Software-update**. Acties in widgets bestaan niet op oudere versies.
+2. **Open Wijzig widget.** Houd je WidgetLoft-groepswidget ingedrukt, tik op **Wijzig widget** en open daarna **Acties**.
+3. **Voeg toe wat je wilt uitvoeren.** Kies je eigen opdrachten, acties van een app of een app. Ze verschijnen als tegels na de eigen tegels van de groep.
+4. **Zet een actie op zijn plek.** Open in [WidgetLoft](/widgetloft) de groep en tik op de bliksemknop (**Widgetactie toevoegen**). Kies de actie en sleep de tegel naar elke gewenste plek, zelfs tussen twee apps.
+5. **Geef de actie een symbool.** iOS geeft acties geen symbool, dus WidgetLoft zoekt er een. Heeft een van je apps precies dezelfde naam als de actie, dan wordt dat symbool gebruikt. Anders krijg je suggesties of maak je er zelf een.
+
+Tik op de tegel op je beginscherm en de actie wordt uitgevoerd. De widget blijft staan waar hij was.
+
+## Een Actiepaneel bouwen
+
+Soms wil je een widget met alleen knoppen. Dat is het **Actiepaneel**, een bord vol actieknoppen.
+
+1. Houd een lege plek op je beginscherm ingedrukt, tik op **Wijzig** en daarna op **Voeg widget toe**.
+2. Zoek WidgetLoft en voeg het **Actiepaneel** toe (normaal of Liquid Glass) in het formaat dat je wilt.
+3. Het nieuwe bord is eerst leeg. Houd het ingedrukt, tik op **Wijzig widget**, kies een bord bij **Stijl** en voeg je acties toe.
+4. Wil je het uiterlijk van een bord veranderen of acties een symbool geven, open dan **Tools → Actiepaneel** in WidgetLoft.
+
+Een bord bevat tot 64 acties. Op het toegangsscherm zijn er twee vormen: Groot (1 of 2 rijen) en Klein (één actie of een raster van 2×2). Zo wordt het toegangsscherm een echt bedieningspaneel: één tik voor je opdracht 'Vertrek van werk', zonder de telefoon te ontgrendelen en ernaar te zoeken.
+
+## Opdrachten-widget vs. WidgetLoft-acties
+
+| | Opdrachten-widget van Apple | WidgetLoft-acties (iOS 27) |
+| --- | --- | --- |
+| Opdrachten mengen met app-tegels | Nee | Ja, in hetzelfde raster |
+| App-acties (zoals Stel timer in) | Nee | Ja |
+| Toegangsscherm | Niet als widget | Actiepaneel, Groot of Klein |
+| Eigen symbolen | Symbolen van opdrachten | Symbolen van je apps, of je eigen |
+
+Wil je ook opdrachten die vanzelf worden uitgevoerd, zonder tik? Lees dan [Opdrachten-automatiseringen in iOS 27 voor je beginscherm](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Veelgestelde vragen
+
+**Gaat de Opdrachten-app open als ik op de actie tik?**
+Nee. Op iOS 27 wordt de actie direct vanuit de widget uitgevoerd en blijft de widget staan waar hij was.
+
+**Werkt dit op iOS 26 of ouder?**
+Nee. Acties in widgets en het Actiepaneel hebben iOS 27 nodig. Gewone app-tegels in WidgetLoft werken op iOS 18 en nieuwer.
+
+**Hoeveel acties passen er op een Actiepaneel?**
+Tot 64. Hoeveel je er tegelijk ziet, hangt af van het widgetformaat dat je toevoegt.
+
+---
+
+Klaar om van je opdrachten knoppen met één tik te maken? [Download WidgetLoft in de App Store](/widgetloft/download) en bouw je eerste Actiepaneel.

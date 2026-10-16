@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Jak umieszczać aplikacje w dowolnym miejscu i zostawiać puste pola w widżecie na iPhonie",
+  description:
+    "iOS pozwala zostawiać odstępy między ikonami na ekranie początkowym, ale większość widżetów wypełnia pola po kolei. Dowiedz się, jak umieścić każdą aplikację dokładnie tam, gdzie chcesz, w widżecie z aplikacjami, z pustymi polami i przesuwanym przyciskiem wstecz.",
+  keywords: [
+    "aplikacje w dowolnym miejscu widżet iphone",
+    "puste miejsce w widżecie iphone",
+    "odstępy między aplikacjami iphone",
+    "własny układ widżetu iphone",
+    "estetyczny ekran początkowy ios 27",
+    "swobodne przesuwanie aplikacji w widżecie",
+  ],
+  ogTitle: "Aplikacje w dowolnym miejscu widżetu na iPhonie",
+  ogDescription:
+    "Wybierz puste pole, dodaj tam aplikację i zostaw odstępy tam, gdzie chcesz.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak umieszczać aplikacje w dowolnym miejscu i zostawiać puste pola w widżecie na iPhonie",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Umieszczanie aplikacji w konkretnych polach widżetu z aplikacjami na iPhonie",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Otwórz grupę w WidgetLoft",
+        text: "Otwórz WidgetLoft, przejdź na kartę Grupy i otwórz grupę, którą pokazuje Twój widżet.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Przełącz na Umieść",
+        text: "W edytorze grupy wybierz Umieść. Siatka pokazuje wszystkie pola widżetu, także puste.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz puste pole i dodaj aplikację",
+        text: "Stuknij puste pole, w którym ma się znaleźć aplikacja, i wybierz aplikację. Trafi dokładnie w to pole.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Celowo zostaw odstępy",
+        text: "Pola, których nie wypełnisz, zostaną puste w widżecie. Możesz też dodać przekładkę przyciskiem z kwadratem z przerywanej linii.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zapisz i sprawdź widżet",
+        text: "Potwierdź znaczkiem wyboru. Widżet na ekranie początkowym zaktualizuje się zgodnie z Twoim układem.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy na ekranie początkowym iPhone'a można zostawić puste miejsca między aplikacjami?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak. Od iOS 18 możesz przeciągać ikony w dowolne miejsce strony ekranu początkowego i zostawiać odstępy. W widżecie o układzie decyduje aplikacja widżetu; WidgetLoft pozwala wybrać każde pole za pomocą Umieść.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy stuknięcie pustego miejsca coś otwiera?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To zależy od Ciebie. Przełącznik w Edytuj widżet określa dla każdego widżetu osobno, czy stuknięcie pustego miejsca otwiera WidgetLoft.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy tryb Umieść działa w podfolderach?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Podfoldery mają własną siatkę. Możesz też przeciągnąć przycisk wstecz podfolderu w dowolne pole, nawet puste.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak umieszczać aplikacje w dowolnym miejscu i zostawiać puste pola w widżecie na iPhonie
+
+**Krótka odpowiedź:** Na samym ekranie początkowym iOS 18 i nowsze pozwalają przeciągać ikony w dowolne miejsce i zostawiać odstępy. W widżecie decyduje aplikacja, która go tworzy. W [WidgetLoft](/widgetloft) otwórz grupę, przełącz na **Umieść**, stuknij puste pole i dodaj aplikację: trafi dokładnie w to pole, a pominięte pola zostaną w widżecie puste.
+
+Schludny ekran początkowy często zależy od pustej przestrzeni, a nie od ikon. Rząd z jedną aplikacją po lewej i jedną po prawej mówi „te dwie są ważne” lepiej niż pełna siatka.
+
+---
+
+## Dlaczego większość widżetów wypełnia każde pole
+
+Większość widżetów z aplikacjami działa jak lista: pierwsza aplikacja trafia w lewy górny róg, następna obok niej i tak dalej. Usuń aplikację, a wszystko się przesunie. Przy długiej liście to nie problem, ale przemyślane układy stają się trudne: aplikacja w rogu, odstęp pośrodku, rząd dopasowany do tapety.
+
+## Krok po kroku: umieść aplikacje w konkretnych polach
+
+1. **Otwórz grupę.** W WidgetLoft przejdź na kartę **Grupy** i otwórz grupę, którą pokazuje Twój widżet.
+2. **Przełącz na Umieść.** W edytorze grupy wybierz **Umieść**. Siatka pokazuje wszystkie pola widżetu, także puste.
+3. **Wybierz pole, potem dodaj aplikację.** Stuknij puste pole, w którym ma się znaleźć aplikacja, i wybierz aplikację. Trafi dokładnie tam.
+4. **Celowo zostaw odstępy.** Pola, których nie wypełnisz, zostaną puste. Aby zrobić odstęp między dwiema aplikacjami na zwykłej liście, użyj przycisku z kwadratem z przerywanej linii, który dodaje przekładkę.
+5. **Zapisz.** Potwierdź znaczkiem wyboru. Zmiany trafią do widżetu dopiero po potwierdzeniu.
+
+Chcesz, żeby puste miejsce pozostało naprawdę nieaktywne? Przełącznik w **Edytuj widżet** decyduje, czy stuknięcie pustego miejsca otwiera WidgetLoft. Ustawiasz to dla każdego widżetu osobno.
+
+## Pomysły na układy z pustą przestrzenią
+
+| Układ | Jak go zbudować |
+| --- | --- |
+| Cztery rogi | Duży widżet, po jednej aplikacji w każdym rogu, reszta pusta |
+| Jeden czysty rząd | Średni widżet, aplikacje tylko w dolnym rzędzie, aby powyżej było widać tapetę |
+| Ramka na zdjęcie | Widżet Bardzo duży (iOS 27), aplikacje wzdłuż krawędzi, środek pusty |
+| Strefa kciuka | Aplikacje tylko w dolnej połowie, w zasięgu kciuka przy obsłudze jedną ręką |
+
+Odstępy wyglądają najlepiej przy mniejszej liczbie większych ikon. Wybierz większy rozmiar ikon w edytorze grupy, a pola też się powiększą. Więcej pomysłów znajdziesz w artykule [pomysły na ekran początkowy w iOS 27](/blog/ios-27-home-screen-ideas), a jeśli chcesz użyć całej strony jako jednego widżetu, przeczytaj o [widżecie Bardzo duży w iOS 27](/blog/extra-large-widget-ios-27).
+
+## Podfoldery i przycisk wstecz
+
+Podfoldery otwierają się w miejscu, w widżecie, i mają własną siatkę. W środku możesz przeciągnąć przycisk wstecz w dowolne pole, nawet puste, więc nigdy nie zepsuje Ci układu. Jeśli chcesz, żeby każdy podfolder wyglądał inaczej, zobacz, [jak nadać każdemu podfolderowi własny wygląd](/blog/customize-sub-folders-iphone-widget).
+
+## Częste pytania
+
+**Czy na ekranie początkowym iPhone'a można zostawić puste miejsca między aplikacjami?**
+Tak. Od iOS 18 możesz przeciągać ikony w dowolne miejsce strony i zostawiać odstępy. W widżecie decyduje aplikacja widżetu; WidgetLoft pozwala wybrać każde pole za pomocą Umieść.
+
+**Czy stuknięcie pustego miejsca coś otwiera?**
+To zależy od Ciebie. Przełącznik w Edytuj widżet ustawiasz dla każdego widżetu osobno.
+
+**Czy Umieść działa w podfolderach?**
+Podfoldery mają własną siatkę, a przycisk wstecz może stać w dowolnym polu, nawet pustym.
+
+---
+
+Gotowy, by zaprojektować widżet pole po polu? [Pobierz WidgetLoft z App Store](/widgetloft/download) i wypróbuj Umieść.

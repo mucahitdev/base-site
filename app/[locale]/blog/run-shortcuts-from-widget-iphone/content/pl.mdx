@@ -1,0 +1,167 @@
+export const meta = {
+  title:
+    "Jak uruchamiać skróty z widżetu jednym stuknięciem na iPhonie (iOS 27)",
+  description:
+    "W iOS 27 widżety mogą uruchamiać skróty i czynności aplikacji bez otwierania aplikacji Skróty. Dowiedz się, jak dodać czynności do widżetu z aplikacjami, zbudować Panel czynności i umieścić te same przyciski na ekranie blokady.",
+  keywords: [
+    "uruchomić skrót z widżetu iphone",
+    "widżet skróty ios 27",
+    "skrót bez otwierania aplikacji skróty",
+    "czynności aplikacji w widżecie iphone",
+    "widżet z przyciskami iphone",
+    "przycisk skrótu na ekranie blokady",
+  ],
+  ogTitle: "Skróty z widżetu jednym stuknięciem (iOS 27)",
+  ogDescription:
+    "Skróty, czynności aplikacji i aplikacje obok siebie w jednym widżecie, na ekranie początkowym lub ekranie blokady.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak uruchamiać skróty z widżetu jednym stuknięciem na iPhonie (iOS 27)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/run-shortcuts-from-widget-iphone",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Uruchamianie skrótów i czynności aplikacji z widżetu na iPhonie jednym stuknięciem",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Zaktualizuj do iOS 27",
+        text: "Uruchamianie czynności bezpośrednio z widżetu wymaga iOS 27. Zaktualizuj w Ustawienia, Ogólne, Uaktualnienia.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Otwórz Edytuj widżet na widżecie grupy",
+        text: "Przytrzymaj widżet grupy WidgetLoft, stuknij Edytuj widżet i otwórz Actions.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj skróty, czynności aplikacji lub aplikacje",
+        text: "Dodaj własne skróty, czynności aplikacji, na przykład Ustaw minutnik, albo aplikację. Pojawią się jako kafelki za kafelkami grupy.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Przenieś czynność tam, gdzie chcesz",
+        text: "W WidgetLoft otwórz grupę, stuknij przycisk z błyskawicą (Dodaj czynność widżetu), wybierz czynność i przeciągnij jej kafelek w dowolne miejsce siatki.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dodaj Panel czynności, aby mieć widżet z samymi czynnościami",
+        text: "Dodaj widżet WidgetLoft Panel czynności na ekran początkowy lub ekran blokady, a potem przytrzymaj go, stuknij Edytuj widżet, wybierz tablicę w sekcji Style i dodaj czynności.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy po stuknięciu czynności otwiera się aplikacja Skróty?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. W iOS 27 czynność uruchamia się bezpośrednio z widżetu, a widżet zostaje tam, gdzie był.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy to działa w iOS 26 lub starszym?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie. Czynności w widżetach i Panel czynności wymagają iOS 27. Zwykłe kafelki aplikacji w WidgetLoft działają w iOS 18 i nowszych.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ile czynności zmieści Panel czynności?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Jedna tablica mieści do 64 czynności. Ile widzisz naraz, zależy od rozmiaru dodanego widżetu.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak uruchamiać skróty z widżetu jednym stuknięciem na iPhonie (iOS 27)
+
+**Krótka odpowiedź:** W iOS 27 widżet może uruchomić skrót lub czynność aplikacji bez otwierania aplikacji Skróty. W [WidgetLoft](/widgetloft) przytrzymaj widżet grupy, stuknij **Edytuj widżet**, otwórz **Czynności** i dodaj swoje skróty, czynności aplikacji (np. Ustaw minutnik) lub aplikacje. Stoją obok kafelków aplikacji i działają jednym stuknięciem. Jeśli chcesz widżet z samymi przyciskami, dodaj **Panel czynności** na ekranie początkowym lub ekranie blokady.
+
+Stary widżet Skrótów spełniał swoje zadanie, ale zawsze wyglądał jak aplikacja Skróty. Teraz Twoje skróty mogą stać w tej samej siatce co aplikacje, które otwierasz każdego dnia.
+
+---
+
+## Co zmieniło się w iOS 27
+
+iOS 27 pozwala aplikacjom umieszczać skróty i czynności aplikacji we własnych widżetach i uruchamiać je po stuknięciu. Wcześniej stuknięcie skrótu w widżecie innej firmy zwykle najpierw otwierało aplikację Skróty, a dopiero potem uruchamiało skrót.
+
+Ma to największe znaczenie przy małych, powtarzalnych czynnościach: włączenie minutnika, włączenie trybu skupienia, zapisanie wypitej szklanki wody, wysłanie wiadomości „Już jadę”. Jedno stuknięcie, bez przełączania aplikacji.
+
+Jeśli tworzysz dużo własnych skrótów, iOS 27 przynosi też nowy sposób ich tworzenia: wystarczy opisać zwykłymi słowami, czego chcesz. Apple zapowiedziało, że część funkcji Skrótów pojawi się w późniejszych aktualizacjach, więc sprawdź, co pokazuje Twój iPhone w **Skróty → +**.
+
+## Krok po kroku: dodaj czynności do widżetu z aplikacjami
+
+1. **Zaktualizuj do iOS 27.** Otwórz **Ustawienia → Ogólne → Uaktualnienia**. W starszych wersjach czynności w widżetach nie istnieją.
+2. **Otwórz Edytuj widżet.** Przytrzymaj widżet grupy WidgetLoft, stuknij **Edytuj widżet**, a potem otwórz **Czynności**.
+3. **Dodaj to, co chcesz uruchamiać.** Wybierz własne skróty, czynności aplikacji lub aplikację. Pojawią się jako kafelki za kafelkami grupy.
+4. **Ustaw czynność na miejscu.** W [WidgetLoft](/widgetloft) otwórz grupę i stuknij przycisk z błyskawicą (**Dodaj czynność widżetu**). Wybierz czynność i przeciągnij jej kafelek w dowolne miejsce, nawet między dwie aplikacje.
+5. **Nadaj jej ikonę.** iOS nie daje czynnościom ikon, więc WidgetLoft sam jej szuka. Jeśli któraś z Twoich aplikacji nazywa się dokładnie tak jak czynność, użyta zostanie jej ikona. W przeciwnym razie dostaniesz propozycje albo utworzysz własną.
+
+Stuknij kafelek na ekranie początkowym, a czynność się uruchomi. Widżet zostaje tam, gdzie był.
+
+## Zbuduj Panel czynności
+
+Czasem potrzebujesz widżetu złożonego wyłącznie z przycisków. Do tego służy **Panel czynności**, czyli tablica przycisków.
+
+1. Przytrzymaj puste miejsce na ekranie początkowym, stuknij **Edytuj**, a potem **Dodaj widżet**.
+2. Znajdź WidgetLoft i dodaj **Panel czynności** (zwykły lub Liquid Glass) w wybranym rozmiarze.
+3. Nowa tablica jest na początku pusta. Przytrzymaj ją, stuknij **Edytuj widżet**, wybierz tablicę w sekcji **Styl** i dodaj czynności.
+4. Aby zmienić wygląd tablicy lub nadać czynnościom ikony, otwórz w WidgetLoft **Narzędzia → Panel czynności**.
+
+Jedna tablica mieści do 64 czynności. Na ekranie blokady są dwa kształty: Duży (1 lub 2 rzędy) i Mały (jedna czynność albo siatka 2×2). Ekran blokady staje się wtedy prawdziwym panelem sterowania: jedno stuknięcie uruchamia skrót „Wychodzę z pracy”, bez odblokowywania telefonu i szukania go.
+
+## Widżet Skrótów a czynności WidgetLoft
+
+| | Widżet Skrótów od Apple | Czynności WidgetLoft (iOS 27) |
+| --- | --- | --- |
+| Skróty razem z kafelkami aplikacji | Nie | Tak, w tej samej siatce |
+| Czynności aplikacji (np. Ustaw minutnik) | Nie | Tak |
+| Ekran blokady | Nie jako widżet | Panel czynności, Duży lub Mały |
+| Własne ikony | Symbole skrótów | Ikony Twoich aplikacji lub własne |
+
+Jeśli chcesz też skrótów, które uruchamiają się same, bez stuknięcia, przeczytaj o [automatyzacjach Skrótów w iOS 27 dla ekranu początkowego](/blog/ios-27-shortcuts-automations-home-screen).
+
+## Częste pytania
+
+**Czy po stuknięciu czynności otwiera się aplikacja Skróty?**
+Nie. W iOS 27 czynność uruchamia się bezpośrednio z widżetu, a widżet zostaje tam, gdzie był.
+
+**Czy to działa w iOS 26 lub starszym?**
+Nie. Czynności w widżetach i Panel czynności wymagają iOS 27. Zwykłe kafelki aplikacji w WidgetLoft działają w iOS 18 i nowszych.
+
+**Ile czynności zmieści Panel czynności?**
+Do 64. Ile widzisz naraz, zależy od rozmiaru dodanego widżetu.
+
+---
+
+Gotowy, by zamienić skróty w przyciski na jedno stuknięcie? [Pobierz WidgetLoft z App Store](/widgetloft/download) i zbuduj swój pierwszy Panel czynności.

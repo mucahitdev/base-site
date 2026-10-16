@@ -1,0 +1,162 @@
+export const meta = {
+  title:
+    "iOS 27.2 Beta: Neler Yeni ve Yüklemeli misiniz? (Widget Hatası Dahil)",
+  description:
+    "iOS 27.2 beta aşamasında: Siri AI beş yeni dilde, Hariç Tutulan Uygulamalar listesi ve başka küçük değişiklikler. Neler yeni, bilmeniz gereken widget hatası ve betayı yükleyip yüklememeye nasıl karar vereceğinizi anlatıyoruz.",
+  keywords: [
+    "ios 27.2 beta",
+    "ios 27.2 yenilikler",
+    "ios 27.2 beta yüklenir mi",
+    "ios 27.2 widget sorunu",
+    "ios 27.2 ne zaman çıkacak",
+    "ios 27.1 iphone duo",
+  ],
+  ogTitle: "iOS 27.2 Beta: Neler Yeni ve Yüklemeli misiniz?",
+  ogDescription:
+    "Yeni özellikler, kutucukların yanıt vermemesine yol açan bir widget hatası ve düzeltme gelene kadar iOS 27'de nasıl kalacağınız.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "tr",
+    headline:
+      "iOS 27.2 Beta: Neler Yeni ve Yüklemeli misiniz? (Widget Hatası Dahil)",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage: "https://mucahitk.com/tr/blog/ios-27-2-beta-widgets",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "tr",
+    name: "iOS 27.2 betasını yükleyip yüklememeye karar verin ve widget hatasını aşın",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Mevcut sürümünüzü kontrol edin",
+        text: "Ayarlar, Genel, Hakkında'yı açın ve iOS Sürümü'ne bakın. 27.0 veya 27.0.x yazıyorsa genel sürümdesiniz.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Beta güncellemelerinin açık olup olmadığını kontrol edin",
+        text: "Ayarlar, Genel, Yazılım Güncelleme, Beta Güncellemeleri'ni açın. Kapalı ise yalnızca genel sürümleri alırsınız.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Herhangi bir betadan önce yedek alın",
+        text: "Önce iCloud'a veya bilgisayara yedek alın. Beta üzerinde alınan bir yedek, daha eski bir iOS sürümüne geri yüklenemez.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Zaten betadaysanız geçici çözümü kullanın",
+        text: "Bir eyleme dokunduktan sonra widget kutucukları yanıt vermiyorsa başka bir Ana Ekran sayfasına kaydırıp geri dönün. Kutucuklar yeniden çalışır.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Betadan çıkmak için beta güncellemelerini kapatın",
+        text: "Beta Güncellemeleri'ni Kapalı yapın. Genel iOS 27.2 yayınlandığında yükleyin; artık beta kanalında değilsiniz.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "tr",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iOS 27.2 ne zaman çıkacak?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple bir tarih açıklamadı. Dördüncü beta Ekim 2026 ortasında geldi ve haberler genel sürümün sonbaharın ilerleyen günlerinde çıkmasını bekliyor.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iOS 27.1'e ne oldu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple çoğu iPhone için doğrudan iOS 27.2 betalarına geçti. iPhone Duo, katlanabilir arayüzünü ekleyen iOS 27.1 ile geliyor.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "iOS 27.2 betasında widget kutucuklarım neden çalışmayı bırakıyor?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Betada, bir widget'taki bir eyleme dokunduktan sonra o widget'taki diğer kutucuklar yanıt vermeyi bırakabiliyor. Bu, Apple'a bildirilmiş bir iOS hatası. Ana Ekran sayfası değiştirmek kutucukları yeniden çalıştırıyor.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# iOS 27.2 Beta: Neler Yeni ve Yüklemeli misiniz? (Widget Hatası Dahil)
+
+**Kısa cevap:** iOS 27.2, Ekim 2026 ortası itibarıyla beta aşamasında. Siri AI'ı Fransızca, Japonca, Korece, Portekizce ve İspanyolcaya getiriyor, Siri ve Arama için bir **Hariç Tutulan Uygulamalar** listesi ekliyor, Podcast'ler, Saat ve Apple TV uygulamasında da küçük değişiklikler yapıyor. Yeniden tasarlanan Sağlık uygulaması ilk betalarda vardı ama beta 4'te kaldırıldı. Etkileşimli widget'lara güveniyorsanız bekleyin: betada bir widget'taki eyleme dokunmak, siz Ana Ekran sayfası değiştirene kadar o widget'taki diğer kutucukların yanıt vermemesine yol açabiliyor.
+
+Yeni betalar cazip gelir, özellikle büyük bir sürümün hemen ardından. İşte neler kazandığınız, neyin bozulabileceği ve nasıl karar vereceğiniz.
+
+---
+
+## iOS 27.2 neden 27.1'den önce geldi
+
+iOS 27, 14 Eylül 2026'da yayınlandı. Birkaç gün sonra Apple, 27.1'i değil iOS 27.2'yi test etmeye başladı. Sebebi iPhone Duo: 23 Ekim'de, katlanabilir arayüzü ekleyen sürüm olan iOS 27.1 ile satışa çıkıyor. Diğer iPhone'lar için sıradaki büyük güncelleme iOS 27.2.
+
+## iOS 27.2 betasında neler yeni
+
+- **Siri AI daha fazla dilde.** iOS 27, Siri AI'ı yalnızca İngilizce olarak başlattı. 27.2 betası Fransızca, Japonca, Korece, Portekizce ve İspanyolca ekliyor.
+- **Hariç Tutulan Uygulamalar.** Siri ayarlarında Uygulama Erişimi'nin adı artık Hariç Tutulan Uygulamalar ve tek seferde birden fazla uygulama ekleyebiliyorsunuz. Hariç tutulan uygulamalar artık Siri'de, Arama'da veya Öneriler'de görünmüyor.
+- **Podcast'ler.** Sıradaki bölümü Yeni Bölümler oluyor, altında da Çalmaya Devam Et sırası yer alıyor.
+- **Apple TV uygulaması.** iPhone ve iPad'de her birinin bir adı ve yaş sınırı olan basit profiller.
+- **Saat.** Alarmlardaki ÖÖ ve ÖS etiketleri daha küçük.
+- **Sağlık uygulaması (yeniden kaldırıldı).** İlk betalarda Öngörüler, Uzun Ömür ve Göz At sekmeleriyle yeniden tasarlanmış bir Sağlık uygulaması vardı. Beta 4 onu çıkardı; Apple bu yıl içinde yine geleceğini söylüyor.
+
+## Bilmeniz gereken widget hatası
+
+iOS 27.2 betasında bir widget'taki bir **eyleme** (kısayol gibi bir şeyi çalıştıran bir düğme) dokunduktan sonra o widget'taki diğer kutucuklar yanıt vermeyi bırakıyor. [WidgetLoft](/widgetloft)'un geliştiricileri hatayı buldu, kaynağının kendi uygulamaları değil iOS olduğunu tespit etti ve Apple'a bildirdi; yani düğmeli başka widget'lar da etkilenebilir.
+
+Geçici çözüm hızlı: başka bir Ana Ekran sayfasına kaydırıp geri dönün. Kutucuklar yeniden çalışır. Ana Ekran'ınız [widget'larda tek dokunuşluk eylemler](/blog/run-shortcuts-from-widget-iphone) üzerine kuruluysa bu hata sizi her gün rahatsız eder; şimdilik iOS 27'de kalmak için iyi bir sebep.
+
+## Adım adım: karar verin ve güvende kalın
+
+1. **Sürümünüzü kontrol edin.** **Ayarlar → Genel → Hakkında**'yı açın. 27.0 veya 27.0.x yazıyorsa genel sürümdesiniz.
+2. **Beta Güncellemeleri'ni kontrol edin.** **Ayarlar → Genel → Yazılım Güncelleme → Beta Güncellemeleri**'ni açın. Kapalı ise yalnızca genel sürümleri alırsınız.
+3. **Önce yedek alın.** Herhangi bir betadan önce iCloud'a veya bilgisayara yedek alın. Beta üzerinde alınan bir yedek, daha eski bir iOS'a geri yüklenemez.
+4. **Zaten betada mısınız? Geçici çözümü kullanın.** Bir eylemden sonra kutucuklar yanıt vermiyorsa sayfa değiştirip geri gelin.
+5. **Beta kanalından çıkın.** **Beta Güncellemeleri**'ni **Kapalı** yapın. Genel iOS 27.2 yayınlandığında yükleyin ve normal güncellemelere geri dönün.
+
+## Şimdi mi yüklemeli, beklemeli mi?
+
+| Siz... | Öneri |
+| --- | --- |
+| Siri AI'ı şimdi Fransızca, Japonca, Korece, Portekizce veya İspanyolca istiyorsanız | Bugün bunun tek yolu beta |
+| Her gün düğmeli ve eylemli widget'lar kullanıyorsanız | Genel sürümü bekleyin |
+| iPhone'unuzu iş veya seyahat için kullanıyorsanız | Bekleyin, betalar güvendiğiniz uygulamaları bozabilir |
+| Yedek bir iPhone'unuz veya iPad'iniz varsa | Önce orada deneyin |
+
+## Sık sorulan sorular
+
+**iOS 27.2 ne zaman çıkacak?**
+Apple bir tarih açıklamadı. Dördüncü beta Ekim 2026 ortasında geldi ve haberler genel sürümün sonbaharın ilerleyen günlerinde çıkmasını bekliyor.
+
+**iOS 27.1'e ne oldu?**
+Apple çoğu iPhone için doğrudan iOS 27.2 betalarına geçti. iPhone Duo, katlanabilir arayüzünü ekleyen iOS 27.1 ile geliyor.
+
+**iOS 27.2 betasında widget kutucuklarım neden çalışmayı bırakıyor?**
+Bir widget'taki bir eyleme dokunduktan sonra o widget'taki diğer kutucuklar yanıt vermeyi bırakabiliyor. Bu, Apple'a bildirilmiş bir iOS hatası. Ana Ekran sayfası değiştirmek onları yeniden çalıştırıyor.
+
+---
+
+Şimdilik iOS 27'de mi kalıyorsunuz? [iOS 27'de widget'lar için neler yeni](/blog/ios-27-widgets-whats-new) yazımızla ondan en iyi şekilde yararlanın ya da [WidgetLoft'u App Store'dan indirin](/widgetloft/download) ve bugün çalışan bir başlatıcı kurun.

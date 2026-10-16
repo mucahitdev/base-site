@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "如何让 iPhone 小组件中的每个子文件夹拥有自己的外观",
+  description:
+    "小组件里的文件夹不必再长得一模一样。本文介绍如何为每个子文件夹单独设置图标大小、App 名称、间距和颜色，以及自定义文件夹图标、返回按钮和打开动画。",
+  keywords: [
+    "iphone 小组件 文件夹 自定义",
+    "iphone 子文件夹 小组件",
+    "iphone 文件夹 不同颜色",
+    "iphone 小组件 文件夹图标",
+    "嵌套文件夹 小组件 美化",
+    "ios 27 iphone 文件夹 自定义",
+  ],
+  ogTitle: "让每个子文件夹拥有自己的外观",
+  ogDescription:
+    "图标大小、名称、间距、颜色、文件夹图标和返回按钮，都能按子文件夹单独设置。",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "zh",
+    headline:
+      "如何让 iPhone 小组件中的每个子文件夹拥有自己的外观",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/zh/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "zh",
+    name: "在 iPhone 启动器小组件中自定义每个子文件夹",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "打开子文件夹",
+        text: "在 WidgetLoft 中打开分组，再打开你想修改的子文件夹。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "打开 外观",
+        text: "轻点 外观，为这个子文件夹单独设置图标大小、App 名称、间距和颜色。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择文件夹图块",
+        text: "选择文件夹图块从外面看的样子：其中 App 的 2×2 或 3×3 迷你网格、你自己的照片，或一个 SF Symbol。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "设置返回按钮样式",
+        text: "编辑返回按钮的符号、颜色、背景、不透明度和大小，然后用 将此样式用于 把它应用到这个文件夹、这个分组或所有分组。",
+      },
+      {
+        "@type": "HowToStep",
+        name: "选择打开动画",
+        text: "在 WidgetLoft 设置中，把 子文件夹切换 设为 滑动、淡入淡出、缩放 或 即时。",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "zh",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "iPhone 上文件夹里的文件夹能有不同的外观吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Apple 的文件夹不行，它们全都长得一样。在 WidgetLoft 小组件中，每个子文件夹都可以有自己的图标大小、App 名称、间距和颜色。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "最多能建多少个子文件夹？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "每个文件夹最多可放 100 个 App 和 20 个子文件夹，嵌套层数不限。",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "子文件夹会显示通知圆点吗？",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "会，在 iOS 27 上。文件夹内的某个 App 有圆点时，文件夹也会显示圆点，并默认在圆点上显示通知数量。",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# 如何让 iPhone 小组件中的每个子文件夹拥有自己的外观
+
+**快速回答：** Apple 的主屏幕文件夹全都长得一样。而在 [WidgetLoft](/widgetloft) 小组件中，每个子文件夹现在都可以拥有自己的风格：打开子文件夹，轻点 **外观**，为它单独设置图标大小、App 名称、间距和颜色。你还可以给文件夹图块换上照片或符号、重新设计返回按钮，并选择文件夹的打开方式。
+
+图标又大又鲜艳的“游戏”文件夹，和图标小而低调的“工作”文件夹，一眼就能分清。现在，一个小组件就能同时容纳这两种。
+
+---
+
+## 为什么要让子文件夹各有外观
+
+有了子文件夹，一个小组件能装下的 App 远超它的格子数：每个文件夹最多可放 100 个 App 和 20 个子文件夹，嵌套层数不限。在小组件上轻点文件夹，它就会原位打开。
+
+以前的问题是每一层看起来都一样。只有 6 个 App 的文件夹，和有 40 个 App 的文件夹用的是一样的小图标。现在每个子文件夹都能有自己的外观，App 少的文件夹可以用大图标，App 多的文件夹可以用小图标，在一屏内全部放下。
+
+## 分步操作：设置子文件夹的样式
+
+1. **打开子文件夹。** 在 WidgetLoft 中打开分组，再打开你想修改的子文件夹。
+2. **轻点 外观。** 为这个子文件夹单独设置**图标大小**、**App 名称**（开或关）、**间距**和**颜色**。分组的其余部分保持不变。
+3. **选择文件夹图块。** 选择文件夹从外面看的样子：其中 App 的 2×2 或 3×3 迷你网格、你自己的照片，或一个 SF Symbol。
+4. **设置返回按钮样式。** 选择它的符号、颜色、背景、不透明度和大小，并把它拖到任意格子。在 **将此样式用于** 中，把它应用到这个文件夹、这个分组或所有分组，并选择新建的子文件夹是否默认使用这个样式。
+5. **选择动画。** 在 WidgetLoft 的**设置**中，把 **子文件夹切换** 设为 滑动、淡入淡出、缩放 或 即时。即时 最快。
+
+## 可以改什么，在哪里改
+
+| 设置 | 位置 | 作用范围 |
+| --- | --- | --- |
+| 图标大小、名称、间距、颜色 | 子文件夹 → 外观 | 该子文件夹 |
+| 文件夹图块（迷你网格、照片、符号） | 子文件夹设置 | 从外面看的样子 |
+| 返回按钮 | 子文件夹 → 返回按钮 | 文件夹、分组或所有分组 |
+| 打开动画 | 设置 → 子文件夹切换 | 所有小组件 |
+
+之后需要重新整理？你可以把子文件夹移动或复制到另一个分组，里面的所有内容都会一起带过去。第一次接触嵌套？先从[如何在 iPhone 上把文件夹放进文件夹](/blog/folders-inside-folders-iphone)开始。
+
+## 文件夹上的圆点
+
+在 iOS 27 上，文件夹内的某个 App 有通知圆点时，文件夹也会显示圆点，这样藏在两层深处的消息也不会错过。默认情况下圆点会显示收到的通知数量；如果只想要一个纯圆点，请关闭**设置 → 通知圆点 → 显示数字**。完整设置方法请阅读[小组件通知标记](/blog/notification-badges-on-widgets-iphone)。
+
+## 常见问题
+
+**iPhone 上文件夹里的文件夹能有不同的外观吗？**
+Apple 的文件夹不行。在 WidgetLoft 小组件中，每个子文件夹都可以有自己的图标大小、App 名称、间距和颜色。
+
+**最多能建多少个子文件夹？**
+每个文件夹最多可放 100 个 App 和 20 个子文件夹，层数不限。
+
+**子文件夹会显示通知圆点吗？**
+会，在 iOS 27 上。文件夹内的某个 App 有圆点时，文件夹也会显示圆点，默认显示通知数量。
+
+---
+
+想让每个文件夹都有自己的风格吗？[在 App Store 下载 WidgetLoft](/widgetloft/download)，打开子文件夹的 外观 试试。

@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "How to Place Apps Anywhere and Leave Empty Spaces in an iPhone Widget",
+  description:
+    "iOS lets you leave gaps between Home Screen icons, but most widgets fill every slot in order. Learn how to put each app in the exact spot you want in a launcher widget, with empty spaces and a movable back tile.",
+  keywords: [
+    "place apps anywhere iphone widget",
+    "empty space in iphone widget",
+    "leave gaps between apps iphone",
+    "custom widget layout iphone",
+    "aesthetic home screen layout ios 27",
+    "move apps freely widget",
+  ],
+  ogTitle: "Place Apps Anywhere in an iPhone Widget",
+  ogDescription:
+    "Pick an empty spot, add an app there, and leave gaps where you want them.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "en",
+    headline:
+      "How to Place Apps Anywhere and Leave Empty Spaces in an iPhone Widget",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/blog/place-apps-anywhere-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "en",
+    name: "Place apps in exact spots in an iPhone launcher widget",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Open your group in WidgetLoft",
+        text: "Open WidgetLoft, go to the Groups tab and open the group your widget shows.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Switch to Place",
+        text: "In the group editor, choose Place. The grid shows every slot of the widget, including the empty ones.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Pick an empty spot and add an app",
+        text: "Tap the empty slot where the app should go, then pick the app. It lands in that exact slot.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Leave gaps on purpose",
+        text: "Slots you do not fill stay empty on the widget. You can also add a spacer with the dashed-square button.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Save and check the widget",
+        text: "Confirm with the check mark. The Home Screen widget updates with your layout.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I leave empty spaces between apps on the iPhone Home Screen?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Since iOS 18 you can drag icons to any spot on a Home Screen page and leave gaps. Inside a widget, the widget's app decides the layout; WidgetLoft lets you pick each slot with Place.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does tapping an empty space open anything?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You decide. A switch in Edit Widget sets whether a tap on empty space opens WidgetLoft, per widget.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does Place mode work in sub-folders?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sub-folders have their own grid. You can also drag a sub-folder's back tile to any slot, even an empty one.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# How to Place Apps Anywhere and Leave Empty Spaces in an iPhone Widget
+
+**Quick answer:** On the Home Screen itself, iOS 18 and later let you drag icons anywhere and leave gaps. Inside a widget, the app that makes the widget decides. In [WidgetLoft](/widgetloft), open your group, switch to **Place**, tap an empty spot and add an app: it lands in that exact slot, and the slots you skip stay empty on the widget.
+
+A clean Home Screen is often about the empty space, not the icons. A row with one app on the left and one on the right says "these two matter" better than a full grid.
+
+---
+
+## Why most widgets fill every slot
+
+Most launcher widgets work like a list: the first app goes in the top-left slot, the next one beside it, and so on. Remove an app and everything shifts. That is fine for a long list, but it makes designed layouts hard: a corner app, a gap in the middle, a row that lines up with the wallpaper.
+
+## Step-by-step: place apps in exact spots
+
+1. **Open your group.** In WidgetLoft, go to the **Groups** tab and open the group your widget shows.
+2. **Switch to Place.** In the group editor, choose **Place**. The grid shows every slot of the widget, including the empty ones.
+3. **Pick a spot, then add an app.** Tap the empty slot where the app should go and pick the app. It lands right there.
+4. **Leave gaps on purpose.** Slots you do not fill stay empty. For a gap between two apps in a normal list, the dashed-square button adds a spacer.
+5. **Save.** Confirm with the check mark. Changes reach your widget only after you confirm.
+
+Want the empty space to stay quiet? A switch in **Edit Widget** decides whether a tap on empty space opens WidgetLoft. Set it per widget.
+
+## Layout ideas that use empty space
+
+| Layout | How to build it |
+| --- | --- |
+| Four corners | Large widget, one app in each corner, everything else empty |
+| One clean row | Medium widget, apps only in the bottom row so the wallpaper shows above |
+| Frame a photo | Extra Large widget (iOS 27), apps around the edges, middle left empty |
+| Thumb zone | Apps only in the lower half, where your thumb reaches one-handed |
+
+Gaps look best with fewer, bigger icons. Pick a larger icon size in the group editor and the slots get bigger too. For more ideas, see [iOS 27 Home Screen ideas](/blog/ios-27-home-screen-ideas), and to use a full page as one widget, read about the [iOS 27 Extra Large widget](/blog/extra-large-widget-ios-27).
+
+## Sub-folders and the back tile
+
+Sub-folders open in place on the widget and have their own grid. Inside one, you can drag the back tile to any slot, even an empty one, so it never breaks your layout. If you want each sub-folder to look different, see [how to give each sub-folder its own look](/blog/customize-sub-folders-iphone-widget).
+
+## Common questions
+
+**Can I leave empty spaces between apps on the iPhone Home Screen?**
+Yes. Since iOS 18 you can drag icons to any spot on a page and leave gaps. Inside a widget, the widget's app decides; WidgetLoft lets you pick each slot with Place.
+
+**Does tapping an empty space open anything?**
+You decide. A switch in Edit Widget sets it per widget.
+
+**Does Place work in sub-folders?**
+Sub-folders have their own grid, and the back tile can go in any slot, even an empty one.
+
+---
+
+Ready to design your widget slot by slot? [Download WidgetLoft on the App Store](/widgetloft/download) and try Place.

@@ -1,0 +1,156 @@
+export const meta = {
+  title:
+    "Jak nadać każdemu podfolderowi własny wygląd w widżecie na iPhonie",
+  description:
+    "Foldery w widżecie nie muszą już wyglądać tak samo. Dowiedz się, jak nadać każdemu podfolderowi własny rozmiar ikon, nazwy aplikacji, odstępy i kolory, a do tego własną ikonę folderu, przycisk wstecz i animację otwierania.",
+  keywords: [
+    "personalizacja folderów widżet iphone",
+    "podfolder w widżecie iphone",
+    "różne kolory folderów iphone",
+    "ikona folderu widżet iphone",
+    "wygląd zagnieżdżonych folderów",
+    "jak zmienić wygląd folderu iphone ios 27",
+  ],
+  ogTitle: "Nadaj każdemu podfolderowi własny wygląd",
+  ogDescription:
+    "Rozmiar ikon, nazwy, odstępy, kolory, ikona folderu i przycisk wstecz ustawiane dla każdego podfolderu.",
+}
+
+export const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    inLanguage: "pl",
+    headline:
+      "Jak nadać każdemu podfolderowi własny wygląd w widżecie na iPhonie",
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Mücahit Kökdemir",
+      url: "https://mucahitk.com",
+    },
+    mainEntityOfPage:
+      "https://mucahitk.com/pl/blog/customize-sub-folders-iphone-widget",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    inLanguage: "pl",
+    name: "Personalizacja każdego podfolderu w widżecie z aplikacjami na iPhonie",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Otwórz podfolder",
+        text: "W WidgetLoft otwórz grupę, a potem podfolder, który chcesz zmienić.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Otwórz Wygląd",
+        text: "Stuknij Wygląd. Ustaw własny rozmiar ikon, nazwy aplikacji, odstępy i kolory podfolderu.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz kafelek folderu",
+        text: "Wybierz, jak kafelek folderu wygląda z zewnątrz: minisiatka 2×2 lub 3×3 z jego aplikacji, Twoje zdjęcie albo SF Symbol.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Dostosuj przycisk wstecz",
+        text: "Zmień symbol, kolor, tło, krycie i rozmiar przycisku wstecz, a potem w Użyj tego wyglądu dla zastosuj go do tego folderu, grupy lub wszystkich grup.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Wybierz animację otwierania",
+        text: "W Ustawieniach WidgetLoft ustaw Przejście podfolderów na Przesunięcie, Zanikanie, Powiększenie lub Natychmiastowe.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "pl",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Czy foldery w folderach na iPhonie mogą wyglądać różnie?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nie w przypadku folderów Apple, które wszystkie wyglądają tak samo. W widżecie WidgetLoft każdy podfolder może mieć własny rozmiar ikon, nazwy aplikacji, odstępy i kolory.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Ile podfolderów mogę utworzyć?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Każdy folder mieści do 100 aplikacji i 20 podfolderów, a głębokość zagnieżdżenia nie jest ograniczona.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Czy podfoldery pokazują kropki powiadomień?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Tak, w iOS 27. Folder pokazuje kropkę, gdy ma ją aplikacja w środku, domyślnie z liczbą powiadomień.",
+        },
+      },
+    ],
+  },
+]
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
+
+# Jak nadać każdemu podfolderowi własny wygląd w widżecie na iPhonie
+
+**Krótka odpowiedź:** Foldery na ekranie początkowym od Apple wyglądają wszystkie tak samo. W widżecie [WidgetLoft](/widgetloft) każdy podfolder może teraz mieć własny styl: otwórz podfolder, stuknij **Wygląd** i ustaw jego własny rozmiar ikon, nazwy aplikacji, odstępy i kolory. Możesz też nadać kafelkowi folderu zdjęcie lub symbol, zmienić styl przycisku wstecz i wybrać, jak foldery się otwierają.
+
+Folder „Gry” z dużymi, kolorowymi ikonami i folder „Praca” z małymi, stonowanymi łatwiej rozróżnić jednym spojrzeniem. Teraz jeden widżet pomieści oba.
+
+---
+
+## Po co nadawać podfolderom własny wygląd
+
+Dzięki podfolderom jeden widżet mieści znacznie więcej aplikacji, niż ma pól: każdy folder mieści do 100 aplikacji i 20 podfolderów, a głębokość zagnieżdżenia nie jest ograniczona. Gdy stukniesz folder w widżecie, otwiera się w miejscu.
+
+Haczyk polegał na tym, że każdy poziom wyglądał tak samo. Folder z 6 aplikacjami miał tak samo malutkie ikony jak folder z 40. Z wyglądem ustawianym dla każdego podfolderu krótki folder może mieć duże ikony, a długi małe, żeby wszystko zmieściło się na jednym ekranie.
+
+## Krok po kroku: nadaj styl podfolderowi
+
+1. **Otwórz podfolder.** W WidgetLoft otwórz grupę, a potem podfolder, który chcesz zmienić.
+2. **Stuknij Wygląd.** Ustaw dla tego podfolderu własny **rozmiar ikon**, **nazwy aplikacji** (włączone lub wyłączone), **odstępy** i **kolory**. Reszta grupy pozostaje bez zmian.
+3. **Wybierz kafelek folderu.** Wybierz, jak folder wygląda z zewnątrz: minisiatka 2×2 lub 3×3 z jego aplikacji, Twoje zdjęcie albo SF Symbol.
+4. **Dostosuj przycisk wstecz.** Wybierz symbol, kolor, tło, krycie i rozmiar, a potem przeciągnij go w dowolne pole. W **Użyj tego wyglądu dla** zastosuj go do tego folderu, tej grupy lub wszystkich grup i zdecyduj, czy nowe podfoldery mają go mieć od początku.
+5. **Wybierz animację.** W **Ustawieniach** WidgetLoft ustaw **Przejście podfolderów** na Przesunięcie, Zanikanie, Powiększenie lub Natychmiastowe. Natychmiastowe jest najszybsza.
+
+## Co możesz zmienić i gdzie
+
+| Ustawienie | Gdzie | Dotyczy |
+| --- | --- | --- |
+| Rozmiar ikon, nazwy, odstępy, kolory | Podfolder → Wygląd | Tego podfolderu |
+| Kafelek folderu (minisiatka, zdjęcie, symbol) | Ustawienia podfolderu | Wyglądu z zewnątrz |
+| Przycisk wstecz | Podfolder → przycisk wstecz | Folderu, grupy lub wszystkich grup |
+| Animacja otwierania | Ustawienia → Przejście podfolderów | Wszystkich widżetów |
+
+Chcesz później coś przeorganizować? Możesz przenieść podfolder do innej grupy albo go skopiować, a cała zawartość pójdzie razem z nim. Dopiero zaczynasz z zagnieżdżaniem? Zacznij od artykułu, [jak umieścić folder w folderze na iPhonie](/blog/folders-inside-folders-iphone).
+
+## Kropki na folderach
+
+W iOS 27 folder pokazuje kropkę powiadomień, gdy ma ją aplikacja w środku, więc nie przegapisz wiadomości ukrytej dwa poziomy niżej. Domyślnie widać, ile przyszło powiadomień; jeśli wolisz samą kropkę, wyłącz **Ustawienia → Kropki powiadomień → Pokaż liczbę**. Pełną konfigurację znajdziesz w poradniku o [plakietkach powiadomień na widżetach](/blog/notification-badges-on-widgets-iphone).
+
+## Częste pytania
+
+**Czy foldery w folderach na iPhonie mogą wyglądać różnie?**
+Nie w przypadku folderów Apple. W widżecie WidgetLoft każdy podfolder może mieć własny rozmiar ikon, nazwy aplikacji, odstępy i kolory.
+
+**Ile podfolderów mogę utworzyć?**
+Każdy folder mieści do 100 aplikacji i 20 podfolderów, bez limitu głębokości.
+
+**Czy podfoldery pokazują kropki powiadomień?**
+Tak, w iOS 27. Folder pokazuje kropkę, gdy ma ją aplikacja w środku, domyślnie z liczbą powiadomień.
+
+---
+
+Gotowy, by nadać każdemu folderowi własny styl? [Pobierz WidgetLoft z App Store](/widgetloft/download) i otwórz Wygląd podfolderu.
