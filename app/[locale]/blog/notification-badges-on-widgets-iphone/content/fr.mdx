@@ -1,7 +1,7 @@
 export const meta = {
   title: "Afficher des points de notification sur les widgets de l’iPhone (iOS 27)",
   description:
-    "Les icônes d’apps dans un widget n’affichent jamais de pastilles. Voici comment placer un point de notification sur une tuile de widget avec le nouveau déclencheur de notification de Raccourcis dans iOS 27 et WidgetLoft, étape par étape, avec les vraies limites.",
+    "Les icônes d’apps dans un widget n’affichent jamais de pastilles. Voici comment placer un point de notification, avec un compteur, sur une tuile de widget avec le nouveau déclencheur de notification de Raccourcis dans iOS 27 et WidgetLoft, étape par étape, avec les vraies limites.",
   keywords: [
     "pastille notification widget iphone",
     "icônes apps widget sans pastille",
@@ -73,7 +73,7 @@ export const jsonLd = [
         name: "Un widget peut-il afficher le nombre de notifications non lues d’une app ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Non. Un widget tiers ne peut pas lire le nombre de non-lus d’une autre app. Sous iOS 27, WidgetLoft peut placer un point sur la tuile de l’app quand une notification arrive, mais c’est un point, pas un nombre.",
+          text: "Pas le vrai nombre de non-lus : un widget tiers ne peut pas lire la pastille d’une autre app. Sous iOS 27, WidgetLoft place un point sur la tuile de l’app quand une notification arrive, et ce point indique combien de notifications sont arrivées depuis votre dernière ouverture de l’app, jusqu’à 9. C’est le décompte de WidgetLoft, pas le nombre de non-lus de l’app. Pour ne voir qu’un simple point, désactivez Afficher le nombre dans Réglages, Pastilles de notification.",
         },
       },
       {
@@ -81,7 +81,7 @@ export const jsonLd = [
         name: "Pourquoi le point ne disparaît-il pas après avoir lu la notification ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Lire une notification uniquement sur l’écran verrouillé ou l’Apple Watch n’efface pas le point. Ouvrez l’app depuis le widget, ajoutez une automatisation L’app est ouverte avec Effacer la pastille de notification, ou utilisez Effacer tous les points dans WidgetLoft.",
+          text: "Lire une notification uniquement sur l’écran verrouillé ou l’Apple Watch n’efface pas le point. Ouvrez l’app depuis le widget, ajoutez une automatisation L’app est ouverte avec Effacer la pastille de notification, ou utilisez Effacer toutes les pastilles dans WidgetLoft.",
         },
       },
       {
@@ -103,7 +103,7 @@ export const jsonLd = [
 
 # Afficher des points de notification sur les widgets de l’iPhone (iOS 27)
 
-**Réponse rapide :** Les widgets ne peuvent pas lire le nombre de non-lus d’une autre app, donc les icônes d’un widget lanceur n’affichent jamais de pastilles. Sous iOS 27, [WidgetLoft](/widgetloft) (anciennement FolderMini) contourne le problème avec une automatisation Raccourcis : quand une app envoie une notification, l’automatisation place un point sur la tuile de cette app, et le point s’efface quand vous ouvrez l’app depuis le widget.
+**Réponse rapide :** Les widgets ne peuvent pas lire le nombre de non-lus d’une autre app, donc les icônes d’un widget lanceur n’affichent jamais de pastilles. Sous iOS 27, [WidgetLoft](/widgetloft) (anciennement FolderMini) contourne le problème avec une automatisation Raccourcis : quand une app envoie une notification, l’automatisation place un point sur la tuile de cette app, le point indique combien de notifications sont arrivées, et il s’efface quand vous ouvrez l’app depuis le widget. Un dossier affiche aussi un point quand une app qu’il contient en a un.
 
 Vous avez rangé vos apps dans un widget pour alléger l’écran d’accueil, et vous ne voyez plus laquelle a du nouveau. Voici comment retrouver ce signal.
 
@@ -123,31 +123,33 @@ iOS 27 a changé une pièce du puzzle. Raccourcis propose désormais des automat
 4. **Ajoutez l’action WidgetLoft.** Ajoutez l’action **Afficher la pastille de notification** de WidgetLoft et choisissez la même app. Répétez les étapes 2 à 4 pour chaque app à surveiller. Comptez environ une minute par app.
 5. **Option : effacez le point quand vous ouvrez l’app ailleurs.** Le point s’efface quand vous ouvrez l’app depuis le widget. Si vous l’ouvrez souvent autrement, ajoutez pour cette app une automatisation **L’app est ouverte** avec l’action **Effacer la pastille de notification**.
 
+Depuis WidgetLoft 2.1.6, les points affichent par défaut le nombre de notifications, sur l’écran verrouillé aussi. Pour ne voir qu’un simple point, allez dans **Réglages → Pastilles de notification** et désactivez **Afficher le nombre**.
+
 ## Point de notification ou pastille avec nombre
 
 | Pastille avec nombre sur une icône de l’écran d’accueil | Point de notification sur une tuile WidgetLoft |
 | --- | --- |
-| Affiche un nombre, par exemple 3 | Affiche un point, sans nombre |
+| Affiche le vrai nombre de non-lus de l’app, par exemple 3 | Affiche combien de notifications sont arrivées depuis votre dernière ouverture de l’app, jusqu’à 9, ou un simple point si vous désactivez Afficher le nombre |
 | Mise à jour par l’app elle-même | S’efface en ouvrant l’app depuis le widget ou via une automatisation Effacer la pastille de notification |
 | Rien à configurer | Une automatisation Raccourcis par app, environ une minute chacune |
 | Fonctionne sur toute version récente d’iOS | Nécessite iOS 27 |
-| Apparaît sur les icônes d’apps | Apparaît sur les tuiles d’apps, pas sur les sites web, les tuiles Raccourcis ni les contacts |
+| Apparaît sur les icônes d’apps | Apparaît sur les tuiles d’apps et sur les dossiers qui les contiennent, pas sur les sites web, les tuiles Raccourcis ni les contacts |
 
-Un point répond à la vraie question derrière un coup d’œil : cette app a-t-elle du nouveau ? Les tuiles [WidgetLoft](/widgetloft) ouvrent toujours l’app directement en un appui, et affichent maintenant ce signal en plus.
+Un point répond à la vraie question derrière un coup d’œil : cette app a-t-elle du nouveau, et à peu près combien ? Les tuiles [WidgetLoft](/widgetloft) ouvrent toujours l’app directement en un appui, et affichent maintenant ce signal en plus.
 
 ## Ce que les points de notification ne font pas
 
-C’est un point, pas un compteur : vous savez que quelque chose est arrivé, pas combien. La configuration nécessite iOS 27, et chaque app a besoin de sa propre automatisation.
+Le nombre n’est pas le vrai nombre de non-lus de l’app. WidgetLoft compte les notifications arrivées depuis votre dernière ouverture de l’app, jusqu’à 9 : considérez-le comme une indication approximative. La configuration nécessite iOS 27, et chaque app a besoin de sa propre automatisation.
 
-Lire une notification uniquement sur l’écran verrouillé ou l’Apple Watch n’efface pas le point. Ouvrez l’app depuis le widget ou utilisez le bouton **Effacer tous les points** dans WidgetLoft. Les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point, et la fonction entière est encore marquée Beta.
+Lire une notification uniquement sur l’écran verrouillé ou l’Apple Watch n’efface pas le point et ne baisse pas le nombre. Ouvrez l’app depuis le widget ou utilisez le bouton **Effacer toutes les pastilles** dans WidgetLoft. Les sites web, les tuiles Raccourcis et les contacts ne peuvent pas avoir de point, et la fonction entière est encore marquée Beta.
 
 ## Questions fréquentes
 
 **Un widget peut-il afficher le nombre de notifications non lues d’une app ?**
-Non. Un widget tiers ne peut pas lire le nombre de non-lus d’une autre app. Sous iOS 27, WidgetLoft peut placer un point sur la tuile de l’app quand une notification arrive, mais c’est un point, pas un nombre.
+Pas le vrai nombre de non-lus : un widget tiers ne peut pas lire la pastille d’une autre app. Sous iOS 27, WidgetLoft place un point sur la tuile de l’app quand une notification arrive, et ce point indique combien de notifications sont arrivées depuis votre dernière ouverture de l’app, jusqu’à 9. Pour ne voir qu’un simple point, désactivez **Afficher le nombre** dans **Réglages → Pastilles de notification**.
 
 **Pourquoi le point ne disparaît-il pas après avoir lu la notification ?**
-La lire uniquement sur l’écran verrouillé ou l’Apple Watch n’efface pas le point. Ouvrez l’app depuis le widget, ajoutez une automatisation L’app est ouverte avec Effacer la pastille de notification, ou touchez Effacer tous les points.
+La lire uniquement sur l’écran verrouillé ou l’Apple Watch n’efface pas le point. Ouvrez l’app depuis le widget, ajoutez une automatisation L’app est ouverte avec Effacer la pastille de notification, ou touchez Effacer toutes les pastilles.
 
 **Les points de notification fonctionnent-ils sous iOS 26 ou avant ?**
 Non. La configuration repose sur le déclencheur de notification de Raccourcis arrivé avec iOS 27. WidgetLoft lui-même fonctionne à partir d’iOS 18, simplement sans points.

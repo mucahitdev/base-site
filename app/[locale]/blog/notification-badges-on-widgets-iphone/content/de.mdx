@@ -1,7 +1,7 @@
 export const meta = {
   title: "Mitteilungspunkte auf iPhone-Widgets anzeigen (iOS 27)",
   description:
-    "App-Symbole in Widgets zeigen nie Kennzeichen für Mitteilungen. So setzt du mit dem neuen Mitteilungs-Auslöser von Kurzbefehle in iOS 27 und WidgetLoft einen Mitteilungspunkt auf eine Widget-Kachel, Schritt für Schritt und mit ehrlichen Grenzen.",
+    "App-Symbole in Widgets zeigen nie Kennzeichen für Mitteilungen. So setzt du mit dem neuen Mitteilungs-Auslöser von Kurzbefehle in iOS 27 und WidgetLoft einen Mitteilungspunkt mit Zahl auf eine Widget-Kachel, Schritt für Schritt und mit ehrlichen Grenzen.",
   keywords: [
     "mitteilungen kennzeichen widget iphone",
     "app symbole im widget ohne badge",
@@ -73,7 +73,7 @@ export const jsonLd = [
         name: "Kann ein Widget die Zahl ungelesener Mitteilungen einer App anzeigen?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nein. Ein Widget eines Drittanbieters kann die Ungelesen-Zahl einer anderen App nicht auslesen. Unter iOS 27 kann WidgetLoft einen Punkt auf die Kachel der App setzen, wenn eine Mitteilung eintrifft, aber es ist ein Punkt, keine Zahl.",
+          text: "Nicht die echte Ungelesen-Zahl: Ein Widget eines Drittanbieters kann das Kennzeichen einer anderen App nicht auslesen. Unter iOS 27 setzt WidgetLoft einen Punkt auf die Kachel der App, wenn eine Mitteilung eintrifft, und der Punkt zeigt, wie viele Mitteilungen seit dem letzten Öffnen der App eingegangen sind, bis 9. Das ist WidgetLofts eigene Zählung, nicht die Ungelesen-Zahl der App. Wenn du nur einen Punkt sehen willst, schalte Zahl anzeigen unter Einstellungen, Mitteilungspunkte aus.",
         },
       },
       {
@@ -81,7 +81,7 @@ export const jsonLd = [
         name: "Warum verschwindet der Punkt nicht, nachdem ich die Mitteilung gelesen habe?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Wenn du eine Mitteilung nur auf dem Sperrbildschirm oder der Apple Watch liest, bleibt der Punkt. Öffne die App über das Widget, füge eine Automation App wird geöffnet mit Mitteilungspunkt löschen hinzu oder nutze Alle Punkte entfernen in WidgetLoft.",
+          text: "Wenn du eine Mitteilung nur auf dem Sperrbildschirm oder der Apple Watch liest, bleibt der Punkt. Öffne die App über das Widget, füge eine Automation App wird geöffnet mit Mitteilungspunkt löschen hinzu oder nutze Alle Punkte löschen in WidgetLoft.",
         },
       },
       {
@@ -103,7 +103,7 @@ export const jsonLd = [
 
 # Mitteilungspunkte auf iPhone-Widgets anzeigen (iOS 27)
 
-**Kurze Antwort:** Widgets können die Ungelesen-Zahl anderer Apps nicht auslesen, deshalb zeigen App-Symbole in einem Launcher-Widget nie Kennzeichen. Unter iOS 27 löst [WidgetLoft](/widgetloft) (früher FolderMini) das mit einer Kurzbefehle-Automation: Sendet eine App eine Mitteilung, setzt die Automation einen Punkt auf die Kachel dieser App, und der Punkt verschwindet, sobald du die App über das Widget öffnest.
+**Kurze Antwort:** Widgets können die Ungelesen-Zahl anderer Apps nicht auslesen, deshalb zeigen App-Symbole in einem Launcher-Widget nie Kennzeichen. Unter iOS 27 löst [WidgetLoft](/widgetloft) (früher FolderMini) das mit einer Kurzbefehle-Automation: Sendet eine App eine Mitteilung, setzt die Automation einen Punkt auf die Kachel dieser App, der Punkt zeigt, wie viele Mitteilungen eingegangen sind, und er verschwindet, sobald du die App über das Widget öffnest. Auch ein Ordner zeigt einen Punkt, wenn eine App darin einen hat.
 
 Du hast deine Apps in ein Widget gepackt, um den Home-Bildschirm aufzuräumen, und siehst jetzt nicht mehr, wo etwas Neues wartet. So holst du dir dieses Signal zurück.
 
@@ -123,31 +123,33 @@ iOS 27 hat ein Puzzleteil geändert. Kurzbefehle bietet jetzt Automationen, die 
 4. **WidgetLoft-Aktion hinzufügen.** Füge die WidgetLoft-Aktion **Mitteilungspunkt anzeigen** hinzu und wähle dieselbe App. Wiederhole die Schritte 2 bis 4 für jede App, die du im Blick behalten willst. Das dauert etwa eine Minute pro App.
 5. **Optional: Punkt entfernen, wenn du die App anderswo öffnest.** Der Punkt verschwindet, wenn du die App über das Widget öffnest. Öffnest du sie oft auf anderem Weg, füge für diese App eine Automation **App wird geöffnet** mit der Aktion **Mitteilungspunkt löschen** hinzu.
 
+Seit WidgetLoft 2.1.6 zeigen Punkte standardmäßig die Zahl der Mitteilungen, auch auf dem Sperrbildschirm. Wenn du nur einen Punkt sehen willst, gehe zu **Einstellungen → Mitteilungspunkte** und schalte **Zahl anzeigen** aus.
+
 ## Mitteilungspunkt oder Zahlen-Kennzeichen
 
 | Zahlen-Kennzeichen auf einem Home-Bildschirm-Symbol | Mitteilungspunkt auf einer WidgetLoft-Kachel |
 | --- | --- |
-| Zeigt eine Zahl, etwa 3 | Zeigt einen Punkt, ohne Zahl |
+| Zeigt die echte Ungelesen-Zahl der App, etwa 3 | Zeigt, wie viele Mitteilungen seit dem letzten Öffnen der App eingegangen sind, bis 9, oder nur einen Punkt, wenn du Zahl anzeigen ausschaltest |
 | Wird von der App selbst aktualisiert | Verschwindet beim Öffnen der App über das Widget oder per Automation Mitteilungspunkt löschen |
 | Keine Einrichtung nötig | Eine Kurzbefehle-Automation pro App, jeweils etwa eine Minute |
 | Funktioniert mit jeder aktuellen iOS-Version | Erfordert iOS 27 |
-| Erscheint auf App-Symbolen | Erscheint auf App-Kacheln, nicht auf Websites, Kurzbefehl-Kacheln oder Kontakten |
+| Erscheint auf App-Symbolen | Erscheint auf App-Kacheln und auf Ordnern, die sie enthalten, nicht auf Websites, Kurzbefehl-Kacheln oder Kontakten |
 
-Ein Punkt beantwortet die eigentliche Frage hinter einem kurzen Blick: Gibt es in dieser App etwas Neues? Kacheln von [WidgetLoft](/widgetloft) öffnen die App weiterhin direkt mit einem Tippen und zeigen jetzt auch dieses Signal.
+Ein Punkt beantwortet die eigentliche Frage hinter einem kurzen Blick: Gibt es in dieser App etwas Neues, und ungefähr wie viel? Kacheln von [WidgetLoft](/widgetloft) öffnen die App weiterhin direkt mit einem Tippen und zeigen jetzt auch dieses Signal.
 
 ## Was Mitteilungspunkte nicht können
 
-Es ist ein Punkt, keine Zahl: Du weißt, dass etwas angekommen ist, aber nicht, wie viel. Die Einrichtung erfordert iOS 27, und jede App braucht ihre eigene Automation.
+Die Zahl ist nicht die echte Ungelesen-Zahl der App. WidgetLoft zählt die Mitteilungen, die seit dem letzten Öffnen der App eingegangen sind, bis 9, sieh sie also als grobe Orientierung. Die Einrichtung erfordert iOS 27, und jede App braucht ihre eigene Automation.
 
-Liest du eine Mitteilung nur auf dem Sperrbildschirm oder der Apple Watch, bleibt der Punkt. Öffne die App über das Widget oder nutze die Taste **Alle Punkte entfernen** in WidgetLoft. Websites, Kurzbefehl-Kacheln und Kontakte können keine Punkte haben, und die ganze Funktion ist noch als Beta gekennzeichnet.
+Liest du eine Mitteilung nur auf dem Sperrbildschirm oder der Apple Watch, bleibt der Punkt, und die Zahl sinkt nicht. Öffne die App über das Widget oder nutze die Taste **Alle Punkte löschen** in WidgetLoft. Websites, Kurzbefehl-Kacheln und Kontakte können keine Punkte haben, und die ganze Funktion ist noch als Beta gekennzeichnet.
 
 ## Häufige Fragen
 
 **Kann ein Widget die Zahl ungelesener Mitteilungen einer App anzeigen?**
-Nein. Ein Widget eines Drittanbieters kann die Ungelesen-Zahl einer anderen App nicht auslesen. Unter iOS 27 kann WidgetLoft einen Punkt auf die Kachel der App setzen, wenn eine Mitteilung eintrifft, aber es ist ein Punkt, keine Zahl.
+Nicht die echte Ungelesen-Zahl: Ein Widget eines Drittanbieters kann das Kennzeichen einer anderen App nicht auslesen. Unter iOS 27 setzt WidgetLoft einen Punkt auf die Kachel der App, wenn eine Mitteilung eintrifft, und der Punkt zeigt, wie viele seit dem letzten Öffnen der App eingegangen sind, bis 9. Wenn du nur einen Punkt sehen willst, schalte **Zahl anzeigen** unter **Einstellungen → Mitteilungspunkte** aus.
 
 **Warum verschwindet der Punkt nicht, nachdem ich die Mitteilung gelesen habe?**
-Liest du sie nur auf dem Sperrbildschirm oder der Apple Watch, bleibt der Punkt. Öffne die App über das Widget, füge eine Automation App wird geöffnet mit Mitteilungspunkt löschen hinzu oder tippe auf Alle Punkte entfernen.
+Liest du sie nur auf dem Sperrbildschirm oder der Apple Watch, bleibt der Punkt. Öffne die App über das Widget, füge eine Automation App wird geöffnet mit Mitteilungspunkt löschen hinzu oder tippe auf Alle Punkte löschen.
 
 **Funktionieren Mitteilungspunkte unter iOS 26 oder älter?**
 Nein. Die Einrichtung nutzt den Mitteilungs-Auslöser von Kurzbefehle, der mit iOS 27 kam. WidgetLoft selbst läuft ab iOS 18, nur eben ohne Punkte.

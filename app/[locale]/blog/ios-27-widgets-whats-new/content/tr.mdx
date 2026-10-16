@@ -75,7 +75,7 @@ export const jsonLd = [
         name: "iOS 27 widget'ları bildirim sayısı gösterebilir mi?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sayı gösteremez. Yeni Kısayollar Bildirim tetikleyicisiyle WidgetLoft, uygulamanın kutucuğunda bir nokta gösterebilir. Nokta, uygulamayı widget'tan açtığınızda kaybolur. Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı silmez; web siteleri, Kısayol kutucukları ve kişiler nokta alamaz.",
+          text: "Evet, bir şartla. Yeni Kısayollar Bildirim tetikleyicisiyle WidgetLoft, uygulamanın kutucuğunda bir nokta gösterir ve 2.1.6 sürümünden beri nokta, uygulamayı son açtığınızdan beri kaç bildirim geldiğini 9'a kadar gösterir. Bu, uygulamanın gerçek okunmamış sayısı değil, WidgetLoft'un kendi saydığı sayıdır; sayıyı Ayarlar, Bildirim Noktaları, Sayıyı göster'den kapatabilirsiniz. Nokta, uygulamayı widget'tan açtığınızda kaybolur. Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı silmez; web siteleri, Kısayol kutucukları ve kişiler nokta alamaz.",
         },
       },
       {
@@ -116,7 +116,7 @@ iOS 27 widget'ları baştan yenilemiyor, ama getirdikleri işe yarar. İşte ney
 [WidgetLoft](/widgetloft), uygulama gruplarını Ana Ekran ve Kilit Ekranı widget'larına dönüştürür; bir kutucuğa dokunmak uygulamayı doğrudan açar. iOS 27 buna iki şey ekliyor:
 
 - **Ekstra Büyük 77 uygulamaya kadar alır.** Küçük ikonlarla tam sayfa tek bir widget'a 77 kutucuk sığar (orta ikonlarla 54, büyükle 40, ekstra büyükle 24). iPad'de geniş Ekstra Büyük 72 uygulamaya kadar alır.
-- **Kutucuklarda bildirim noktaları.** WidgetLoft, yeni Bildirim tetikleyicisini kullanarak bir uygulamaya bildirim geldiğinde o uygulamanın kutucuğuna nokta koyar. Bu bir sayı değil, bir noktadır ve uygulamayı widget'tan açtığınızda kaybolur.
+- **Kutucuklarda bildirim noktaları.** WidgetLoft, yeni Bildirim tetikleyicisini kullanarak bir uygulamaya bildirim geldiğinde o uygulamanın kutucuğuna nokta koyar. WidgetLoft 2.1.6'dan beri nokta kaç bildirim geldiğini gösterir (9'a kadar, uygulamanın gerçek okunmamış sayısı değil), içindeki bir uygulamada nokta olan klasör de nokta gösterir ve nokta, uygulamayı widget'tan açtığınızda kaybolur.
 
 WidgetLoft 2.1.0 ayrıca büyük bir widget'la iyi eşleşen iki özellik ekliyor:
 
@@ -147,7 +147,7 @@ Apple'ın widget'ları çoğunlukla bilgi gösterir. [WidgetLoft](/widgetloft) a
 Takvim, Fotoğraflar, Müzik ve Hava Durumu ile üçüncü taraf uygulamalar. WidgetLoft tek bir widget'a 77 uygulamaya kadar sığdırıyor.
 
 **iOS 27 widget'ları bildirim sayısı gösterebilir mi?**
-Sayı gösteremez. WidgetLoft bir nokta gösterir ve uygulamayı widget'tan açtığınızda nokta kaybolur. Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı silmez; web siteleri, Kısayol kutucukları ve kişiler nokta alamaz.
+Evet, bir şartla. WidgetLoft, uygulamayı son açtığınızdan beri gelen bildirimlerin sayısını 9'a kadar gösteren bir nokta gösterir. Bu, uygulamanın gerçek okunmamış sayısı değildir; sayıyı **Ayarlar → Bildirim Noktaları → Sayıyı göster** bölümünden kapatabilirsiniz. Nokta, uygulamayı widget'tan açtığınızda kaybolur. Bildirimi yalnızca Kilit Ekranı'nda veya Apple Watch'ta okumak noktayı silmez; web siteleri, Kısayol kutucukları ve kişiler nokta alamaz.
 
 **WidgetLoft'u kullanmak için iOS 27 gerekli mi?**
 Hayır. WidgetLoft iOS 18 ve sonrasında çalışır. Yalnızca Ekstra Büyük boyut ve bildirim noktaları iOS 27 gerektirir.
