@@ -112,6 +112,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Shortboard: the app page is translated in en + tr; its legal pages are
+  // English only.
+  for (const locale of ['en', 'tr']) {
+    entries.push({
+      url: localePath(locale, 'shortboard'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${base}/shortboard`,
+          tr: `${base}/tr/shortboard`,
+        },
+      },
+    })
+  }
+  for (const l of legal) {
+    entries.push({
+      url: `${base}/shortboard/${l}`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    })
+  }
+
   // Other apps — English only.
   for (const p of projects) {
     entries.push({

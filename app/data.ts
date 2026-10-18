@@ -56,6 +56,19 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    name: 'Shortboard',
+    description:
+      'Boards of shortcut buttons for Home Screen and Lock Screen widgets — one tap runs a shortcut, an App Shortcut or an app, without opening the Shortcuts app.',
+    id: 'shortboard',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'WidgetKit' }],
+    links: {
+      ios: 'https://apps.apple.com/app/id6824083862',
+      website: 'https://mucahitk.com/shortboard',
+    },
+  },
+  {
     name: 'FaceIdent',
     description:
       'Recognize and group faces and pets, tag objects, read text, and search your photos — entirely on-device, nothing ever leaves your iPhone.',
