@@ -69,6 +69,18 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    name: 'horlo',
+    description:
+      'Analog clock widgets for the iPhone Home Screen and StandBy — live hands, a sweeping second hand, 24 designs and a full clock editor.',
+    id: 'horlo',
+    type: 'personal',
+    platform: 'mobile',
+    technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'WidgetKit' }],
+    links: {
+      website: 'https://mucahitk.com/horlo',
+    },
+  },
+  {
     name: 'FaceIdent',
     description:
       'Recognize and group faces and pets, tag objects, read text, and search your photos — entirely on-device, nothing ever leaves your iPhone.',
