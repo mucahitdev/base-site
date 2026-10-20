@@ -4,9 +4,8 @@ import { setRequestLocale } from 'next-intl/server'
 import { HORLO_CONTENT } from './content'
 
 const APP_NAME = 'horlo: Analog Clock Widget'
-// Fill in once the App Store Connect record exists; until then the page says
-// "coming soon" instead of linking to the store.
-const APP_STORE_ID = ''
+// Without an App Store ID the page says "coming soon" instead of linking to the store.
+const APP_STORE_ID = '6825052868'
 const APP_STORE_URL = APP_STORE_ID ? `https://apps.apple.com/app/id${APP_STORE_ID}` : undefined
 const EN_URL = 'https://mucahitk.com/horlo'
 const TR_URL = 'https://mucahitk.com/tr/horlo'
