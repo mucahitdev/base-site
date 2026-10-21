@@ -57,7 +57,8 @@ export const HORLO_CONTENT: Record<'en' | 'tr', HorloContent> = {
     featuresHeading: 'Key Features',
     features: [
       'Live analog clock widgets with a sweeping second hand',
-      '24 designs in four series: Pastel, Minimal, Vivid and Clear',
+      '24 designs in four series: Tool, Classic, Pop and Clear',
+      'Each design has its own build: dive and 24-hour bezels, sector dials, small seconds, a regulator, rotating discs and a single hand',
       'Clear faces on your wallpaper, or a colored background in a circle, a rounded square or the widget’s own shape',
       'A Liquid Glass widget that puts any clock on frosted glass',
       'A full editor: hands, dial, ticks, numerals, the date or your own words, and palettes',
@@ -107,7 +108,7 @@ export const HORLO_CONTENT: Record<'en' | 'tr', HorloContent> = {
     termsLabel: 'Terms of Use',
     jsonLdFeatures: [
       'Live analog clock widgets with a sweeping second hand',
-      '24 clock designs in four series',
+      '24 clock designs with different builds: bezels, sub-dials, rotating discs',
       'Transparent, colored or Liquid Glass widgets',
       'A full clock editor: hands, dial, ticks, numerals and palettes',
       'StandBy support with a red night mode',
@@ -142,7 +143,8 @@ export const HORLO_CONTENT: Record<'en' | 'tr', HorloContent> = {
     featuresHeading: 'Öne Çıkan Özellikler',
     features: [
       'Akıcı saniye ibreli, canlı analog saat widget’ları',
-      'Dört seride 24 tasarım: Pastel, Sade, Canlı ve Şeffaf',
+      'Dört seride 24 tasarım: Alet, Klasik, Pop ve Şeffaf',
+      'Her tasarımın kendi yapısı var: dalgıç ve 24 saat bezelleri, sektör kadran, küçük saniye, regülatör, dönen diskler ve tek ibre',
       'Duvar kâğıdının üstünde şeffaf kadranlar ya da daire, yuvarlak kare veya widget’ın kendi şeklinde renkli zemin',
       'Her saati buzlu camın üstüne koyan bir Liquid Glass widget’ı',
       'Tam bir editör: ibreler, kadran, tikler, rakamlar, tarih ya da kendi yazın ve paletler',
@@ -193,7 +195,7 @@ export const HORLO_CONTENT: Record<'en' | 'tr', HorloContent> = {
     termsLabel: 'Kullanım Koşulları',
     jsonLdFeatures: [
       'Akıcı saniye ibreli, canlı analog saat widget’ları',
-      'Dört seride 24 saat tasarımı',
+      'Farklı yapılarda 24 saat tasarımı: bezel, alt kadran, dönen diskler',
       'Şeffaf, renkli veya Liquid Glass widget’lar',
       'Tam bir saat editörü: ibreler, kadran, tikler, rakamlar ve paletler',
       'Kırmızı gece modlu Bekleme Modu desteği',
