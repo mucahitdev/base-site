@@ -137,31 +137,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // horlo: the app page is translated in en + tr; its legal pages are
-  // English only.
-  for (const locale of ['en', 'tr']) {
-    entries.push({
-      url: localePath(locale, 'horlo'),
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-      alternates: {
-        languages: {
-          en: `${base}/horlo`,
-          tr: `${base}/tr/horlo`,
-        },
-      },
-    })
-  }
-  for (const l of legal) {
-    entries.push({
-      url: `${base}/horlo/${l}`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    })
-  }
-
   // Other apps — English only.
   for (const p of projects) {
     entries.push({

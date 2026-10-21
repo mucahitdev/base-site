@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
     technologies: [{ name: 'SwiftUI', icon: 'swift' }, { name: 'WidgetKit' }],
     links: {
       ios: 'https://apps.apple.com/app/id6825052868',
-      website: 'https://mucahitk.com/horlo',
+      website: 'https://kokdemirlabs.com/apps/horlo',
     },
   },
   {

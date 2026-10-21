@@ -55,8 +55,26 @@ const nextConfig = {
       },
     ]);
 
+    // horlo lives on kokdemirlabs.com (Kokdemir Labs); this site keeps only its
+    // project card. Old addresses, including shared-design links (/horlo/d#…,
+    // the code after # survives the redirect), go to the new pages.
+    const horloMoved = [
+      { from: '/horlo', to: '/apps/horlo' },
+      { from: '/horlo/privacy-policy', to: '/apps/horlo/privacy' },
+      { from: '/horlo/terms-of-use', to: '/apps/horlo/terms' },
+      { from: '/horlo/d', to: '/apps/horlo/d' },
+    ].flatMap(({ from, to }) => [
+      { source: from, destination: `https://kokdemirlabs.com${to}`, permanent: true },
+      {
+        source: `/:locale(en|tr|es|pt|de|fr|it|nl|ru|pl|ja|ko|zh|ar|hi|id|vi)${from}`,
+        destination: `https://kokdemirlabs.com${to}`,
+        permanent: true,
+      },
+    ])
+
     return [
       ...lectoLegacy,
+      ...horloMoved,
       {
         source: '/widgetloft/download',
         destination: 'https://apps.apple.com/app/id6782827870',
